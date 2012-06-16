@@ -1,0 +1,60 @@
+#Adaptacao dos modelos utilizando HTK e newufpaspeech (NUS)
+
+#Constantes utilizadas em todos os tipos de adaptacao
+adaptlist='../lists/mfc_adapt.list' #lista de arquivos mfc utilizados para adaptacao por ambos os modulos
+adaptlabelslist='../lists/lab_adapt.list' #lista de labels utilizadas pelo NUS
+mlf='../labels/MLF' #MLF passado como argumento para o HERest
+mmf='../utils/MMF' #modelo acustico original
+hmmlist='../utils/tiedlist' #lista de HMMs
+p='5000' #valor de pruning a ser passado para o HERest (deve ser o mesmo especificado no arquivo de conf do NUS)
+testlist='../lists/mfc_test.list' #lista de arquivos mfc para teste
+lmodel='../utils/MIX_LMC-1.3gram.lm' #modelo de linguagem para teste
+dic='../utils/test.dic' #dicionario para teste
+recConf='../confs/hvite.conf' #arquivo de configuracao para reconhecimento 
+words='../voice/words.mlf' #MLF a nivel de palavra das sentencas corretas
+
+mkdir ../adaptResult
+mkdir ../testResult
+
+echo
+echo '============RECONHECIMENTO COM O MODELO ORIGINAL============'
+echo
+#RECONHECIMENTO COM O MODELO ORIGINAL
+rec='../testResult/original.mlf'
+result='../testResult/original.out'
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 -n 8 -a 1.5 -i $rec -S $testlist -H $mmf -w $lmodel $dic $hmmlist 
+HResults -I $words $hmmlist $rec > $result
+
+#ADAPTACAO GLOBAL
+confHTK='../confs/adapt.global'
+confNUS='../confs/adaptNUS.global'
+modelIn=$mmf
+modelOutHTK='../adaptResult/MMF.m.global'
+modelOutNUS='../adaptResult/MMF.m.global_NUS'
+xformNUS='../adaptResult/m.global_NUS' #transformacao linear gerada pelo NUS na adaptacao global
+
+#---Adaptacao
+echo
+echo '============ADAPTACAO GLOBAL COM O HTK============'
+echo
+HERest -A -D -T 1 -C $confHTK -t $p -u a -S $adaptlist -I $mlf -H $modelIn -K ../adaptResult global -h '*/*.%*' $hmmlist 
+echo
+echo '============ADAPTACAO GLOBAL COM O NUS============'
+echo
+java -jar adapter.jar -C $confNUS -L $hmmlist -H $modelIn -P $adaptlist -T $adaptlabelslist -A $modelOutNUS -X $xformNUS 
+
+echo
+echo '============RECONHECIMENTO COM OS MODELOS ADAPTADOS DE FORMA GLOBAL============'
+echo
+#---Reconhecimento
+recHTK='../testResult/globalHTK.mlf'
+recNUS='../testResult/globalNUS.mlf'
+resultHTK='../testResult/globalHTK.out'
+resultNUS='../testResult/globalNUS.out'
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 -n 8 -a 1.5 -i $recHTK -S $testlist -H $modelOutHTK -w $lmodel $dic $hmmlist 
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 -n 8 -a 1.5 -i $recNUS -S $testlist -H $modelOutNUS -w $lmodel $dic $hmmlist 
+HResults -I $words $hmmlist $recHTK > $resultHTK
+HResults -I $words $hmmlist $recNUS > $resultNUS
+
+
+

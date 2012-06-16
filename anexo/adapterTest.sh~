@@ -1,0 +1,165 @@
+#Adaptacao dos modelos utilizando HTK e newufpaspeech (NUS)
+
+#Constantes utilizadas em todos os tipos de adaptacao
+
+#lista de arquivos mfc utilizados para adaptacao por ambos os modulos
+adaptlist='../lists/mfc_adapt.list' 
+#lista de labels utilizadas pelo NUS
+adaptlabelslist='../lists/lab_adapt.list' 
+#MLF passado como argumento para o HERest
+mlf='../labels/MLF'
+#modelo acustico original
+mmf='../utils/MMF' 
+#lista de HMMs
+hmmlist='../utils/tiedlist' 
+#valor de pruning a ser passado para o HERest 
+#(deve ser o mesmo especificado no arquivo de conf do NUS)
+p='5000' 
+#lista de arquivos mfc para teste
+testlist='../lists/mfc_test.list' 
+#modelo de linguagem para teste
+lmodel='../utils/MIX_LMC-1.3gram.lm' 
+#dicionario para teste
+dic='../utils/test.dic' 
+#arquivo de configuracao para reconhecimento 
+recConf='../confs/hvite.conf'
+#MLF a nivel de palavra das sentencas corretas 
+words='../voice/words.mlf' 
+
+mkdir ../adaptResult
+mkdir ../testResult
+
+
+
+#RECONHECIMENTO COM O MODELO ORIGINAL
+rec='../testResult/original.mlf'
+result='../testResult/original.out'
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 (...)
+   (...) -n 8 -a 1.5 -i $rec -S $testlist -H $mmf -w $lmodel $dic $hmmlist 
+HResults -I $words $hmmlist $rec > $result
+
+
+
+#ADAPTACAO GLOBAL
+confHTK='../confs/adapt.global'
+confNUS='../confs/adaptNUS.global'
+modelIn=$mmf
+modelOutHTK='../adaptResult/MMF.m.global'
+modelOutNUS='../adaptResult/MMF.m.global_NUS'
+#transformacao linear gerada pelo NUS na adaptacao global
+xformNUS='../adaptResult/m.global_NUS' 
+
+#---Adaptacao
+HERest -A -D -T 1 -C $confHTK -t $p -u a -S $adaptlist -I $mlf (...)
+   (...) -H $modelIn -K ../adaptResult global -h '*/*.%*' $hmmlist 
+
+java -jar adapter.jar -C $confNUS -L $hmmlist -H $modelIn -P $adaptlist (...)
+   (...) -T $adaptlabelslist -A $modelOutNUS -X $xformNUS 
+
+#---Reconhecimento
+recHTK='../testResult/globalHTK.mlf'
+recNUS='../testResult/globalNUS.mlf'
+resultHTK='../testResult/globalHTK.out'
+resultNUS='../testResult/globalNUS.out'
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 (...)
+   (...) -n 8 -a 1.5 -i $recHTK -S $testlist -H $modelOutHTK -w $lmodel $dic $hmmlist 
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 (...)
+   (...) -n 8 -a 1.5 -i $recNUS -S $testlist -H $modelOutNUS -w $lmodel $dic $hmmlist 
+HResults -I $words $hmmlist $recHTK > $resultHTK
+HResults -I $words $hmmlist $recNUS > $resultNUS
+
+
+
+#CRIACAO DAS ARVORES DE REGRESSAO
+#arquivo de configuracao HED utilizado pelo HTK para gerar uma arvore de regressao
+confHTK='../confs/regtree.hed' 
+#numero de terminais da arvore de regressao a ser passado como argumento para o NUS 
+#(deve ser o mesmo especificado no arquivo de conf do HTK)
+n='64' 
+#arquivo que contem as estatisticas de treino do modelo original 
+#(deve ser o mesmo especificado no arquivo de conf do HTK)
+stats='../utils/stats' 
+#arvore de regressao gerada pelo NUS
+rtreeNUS='../adaptResult/rtree.tree_NUS' 
+#baseclasses associadas a arvore de regressao gerada pelo NUS
+bclassNUS='../adaptResult/rtree.base_NUS' 
+
+HHEd -T 1 -H $mmf -M ../adaptResult $confHTK $hmmlist 
+java -jar creater.jar -L $hmmlist -H $mmf -B $bclassNUS -R $rtreeNUS -S $stats -t $n -v 2
+
+
+
+#ADAPTACAO POR ARVORE DE REGRESSAO TENDO COMO ENTRADA O MODELO ORIGINAL
+confHTK='../confs/adapt.rc'
+confNUS='../confs/adaptNUS.rc'
+modelIn=$mmf
+modelOutHTK='../adaptResult/MMF.m.tree'
+modelOutNUS='../adaptResult/MMF.m.tree_NUS'
+xformNUS='../adaptResult/m.tree_NUS' #transformacao linear gerada pelo NUS na adaptacao global
+
+#---Adaptacao
+HERest -A -D -T 1 -C $confHTK -t $p -u a -S $adaptlist -I $mlf -H $modelIn (...)
+   (...) -J ../adaptResult -K ../adaptResult tree -h '*/*.%*' $hmmlist 
+java -jar adapter.jar -C $confNUS -L $hmmlist -H $modelIn -P $adaptlist -T $adaptlabelslist (...) 
+   (...) -B $bclassNUS -R $rtreeNUS -A $modelOutNUS -X $xformNUS 
+
+#---Reconhecimento
+recHTK='../testResult/tree1HTK.mlf'
+recNUS='../testResult/tree1NUS.mlf'
+resultHTK='../testResult/tree1HTK.out'
+resultNUS='../testResult/tree1NUS.out'
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 -n 8 (...)
+   (...) -a 1.5 -i $recHTK -S $testlist -H $modelOutHTK -w $lmodel $dic $hmmlist 
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 -n 8 (...)
+   (...) -a 1.5 -i $recNUS -S $testlist -H $modelOutNUS -w $lmodel $dic $hmmlist 
+HResults -I $words $hmmlist $recHTK > $resultHTK
+HResults -I $words $hmmlist $recNUS > $resultNUS
+
+
+
+#ADAPTACAO POR ARVORE DE REGRESSAO TENDO COMO ENTRADA O MODELO ADAPTADO DE FORMA GLOBAL PELO HTK
+confHTK='../confs/adapt.rc'
+confNUS='../confs/adaptNUS.rc'
+modelIn='../adaptResult/MMF.m.global'
+modelOutHTK='../adaptResult/MMF.m.m.tree'
+modelOutNUS='../adaptResult/MMF.m.m.tree_NUS'
+xformNUS='../adaptResult/m.tree_NUS' #transformacao linear gerada pelo NUS na adaptacao global
+
+#---Adaptacao
+HERest -A -D -T 1 -C $confHTK -t $p -u a -S $adaptlist -I $mlf -H $modelIn (...)
+   (...) -J ../adaptResult -K ../adaptResult tree -h '*/*.%*' $hmmlist 
+java -jar adapter.jar -C $confNUS -L $hmmlist -H $modelIn -P $adaptlist (...)
+   (...) -T $adaptlabelslist -B $bclassNUS -R $rtreeNUS -A $modelOutNUS -X $xformNUS 
+
+#---Reconhecimento
+recHTK='../testResult/tree2HTK.mlf'
+recNUS='../testResult/tree2NUS.mlf'
+resultHTK='../testResult/tree2HTK.out'
+resultNUS='../testResult/tree2NUS.out'
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 -n 8 (...)
+   (...) -a 1.5 -i $recHTK -S $testlist -H $modelOutHTK -w $lmodel $dic $hmmlist 
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 -n 8 (...)
+   (...)-a 1.5 -i $recNUS -S $testlist -H $modelOutNUS -w $lmodel $dic $hmmlist 
+HResults -I $words $hmmlist $recHTK > $resultHTK
+HResults -I $words $hmmlist $recNUS > $resultNUS
+
+
+
+#ADAPTACAO POR ARVORE DE REGRESSAO TENDO COMO ENTRADA O MODELO ADAPTADO DE FORMA GLOBAL (opcao -g no NUS)
+confNUS='../confs/adaptNUS.rc'
+modelIn=$mmf
+modelOutNUS='../adaptResult/MMF.m.m.tree_NUS2'
+xformNUS='../adaptResult/m.tree_NUS' #transformacao linear gerada pelo NUS na adaptacao global
+
+#---Adaptacao
+java -jar adapter.jar -C $confNUS -L $hmmlist -H $modelIn -P $adaptlist -T $adaptlabelslist (...)
+   (...) -B $bclassNUS -R $rtreeNUS -A $modelOutNUS -X $xformNUS -g
+
+#---Reconhecimento
+recNUS='../testResult/tree2NUS2.mlf'
+resultNUS='../testResult/tree2NUS2.out'
+HDecode -T 0 -C $recConf -t 250.0 -s 20.0 -p 22.0 -v 100.0 -u 4000 -n 8 (...)
+   (...) -a 1.5 -i $recNUS -S $testlist -H $modelOutNUS -w $lmodel $dic $hmmlist 
+HResults -I $words $hmmlist $recNUS > $resultNUS
+
+

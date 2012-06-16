@@ -1,0 +1,3 @@
+mkdir ../RESULTADOS/$speaker
+mv ../adaptResult ../RESULTADOS/'$speaker'_'$n'nos
+mv ../testResult ../RESULTADOS/$speaker

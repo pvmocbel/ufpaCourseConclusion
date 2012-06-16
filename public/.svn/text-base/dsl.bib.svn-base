@@ -1,0 +1,1445 @@
+@phdthesis {,
+   author = {},
+   title = {},
+   school = {},
+   year = {} }
+
+@techreport {,
+   author = {},
+   title = {},
+   institution = {},
+   year = {} }
+
+@inbook {,
+   author = {},
+   title = {},
+   publisher = {},
+   address = {},
+   year = {},
+   type = {},
+   chapter = {},
+   editor = {} }
+
+@misc{,
+   author = {},
+   title = {},
+   text = {},
+   year = {},
+   url = {} }
+
+@book {,
+   author = {},
+   title = {},
+   publisher = {},
+   year = {} }
+
+@article {,
+   author = {},
+   title = {},
+   journal = {},
+   volume = {},
+   pages = {},
+   year = {} }
+
+@inproceedings {,
+   author = {},
+   title = {},
+   bookTitle = {},
+   pages = {},
+   year = {} }
+
+
+@article {Lee96,
+Author = {T.-H. Lee and J.-C. Lin},
+Title = {A fully distributed power control algorithm for cellular mobile systems},
+Journal = {IEEE Journal on Selected Areas in Communications},
+Volume = {14},
+Pages = {692-7},
+Year = {1996} }
+
+@mastersthesis {Chan_dissestacao,
+   author = {V. M. K. Chan},
+   title = {Multiuser Detection and Spectrum Balancing for Digital Subscriber Lines},
+   text = {Msc. thesis},
+   school = {University of Toronto},
+   year = {2005}, }
+
+@article {Verdilen06,
+Author = {Jan Verlinden and Etienne Van den Bogaert and Tom Bostoen and Francesca Zanier and Marco Luise and Raphael Cendrillon and Marc Moonen},
+Title = {Spectrally Compatible Iterative Water Filling},
+Journal = {EURASIP J. on Applied Signal Process.},
+Volume = {2006},
+Number = {ID 58380},
+Year = {2006} }
+
+@article {Statovci06,
+Author = {Driton Statovci and Tomas Nordstr\"om and Rickard Nilsson},
+Title = {The Normalized-Rate Iterative Algorithm: A Practical Dynamic Spectrum Management Method for \textsc{DSL}},
+Journal = {EURASIP J. on Applied Signal Process.},
+Volume = {2006},
+Number = {ID 95175},
+Year = {2006} }
+
+@ARTICLE{Chan07,
+  author =       {Vincent M. K. Chan and Wei Yu},
+  title =        {Multiuser  Spectrum Optimization for Discrete Multitone  Systems with Asynchronous Crosstalk},
+  journal =      {IEEE Trans. on Signal Process.},
+  Volume = {55},
+  Pages = {5425-5435},
+  Year = {Nov. 2007} }
+}
+
+@phdthesis {Aldana02,
+   author = "C. H. Aldana",
+   title = "Interference Estimation in Multicarrier Systems",
+   school = "Stanford University",
+   year = 2002,
+   }
+
+@misc{adsl,
+  author = {ITU Std. G.992.2},
+  title = {Assimetrical Digital Subscriber Line Transceivers 2 (ADSL2)},
+  text = {},
+  year = {2002},
+  url = {}
+  }
+
+@misc{adsl2+,
+  author = {ITU Std. G.992.5},
+  title = {Asymmetric Digital Subscriber Line (ADSL) transceivers - Extended bandwidth ADSL2 (ADSL2 )},
+  text = {},
+  year = {2005},
+  url = {}
+  }
+
+@misc{adslmeas,
+   author = {Agilent Technologies},
+   title = {ADSL Copper Loop Measurements},
+   text = {Agilent 4395A Network/Spectrum/Impedance Analyzer},
+   year = {2000},
+   url = {} }
+
+@misc{adslheatmapURL,
+   author = {Internode},
+   title = {{ADSL2+} Speed Distribution, {Sydney}},
+   note = {http://www.internode.on.net/residential/internet/home/, last access in June, 2008}
+}
+
+@inbook {Astels03,
+Author = {Astels, D.},
+Title = {Test-Driven Development - A Practical Guide},
+Publisher = {Prentice-Hall},
+Year = {2003} }
+
+@misc{Anatel94,
+    author = "Ag\^encia Nacional de {Telecomunica\c c\~oes}",
+    title = {Servi\c co de r\'adio amador -- {N}orma 31/94},
+    text = {Norma de execu\c c\~ao do servi\c co de r\'adio amador -- Norma 31/94},
+    year = 1994,
+    url = {http://www.anatel.gov.br/Tools/frame.asp?link=/biblioteca/normas/normas_mc/norma31_94.pdf},
+    }
+
+@techreport {ax4000,
+Author = {{Spirent Communications}},
+Title = {{AX/4000} Test Suite Manager},
+institution = {Spirent Communications},
+Year = {Rev B, 2004} }
+
+
+@techreport {Backstig01,
+   author = {Anders Backstig},
+   title = {ADSL Toolbox for MATLAB},
+   institution = {ALinkï¿½ping University and Ericsson Microelectronics AB},
+   year = {2001} }
+
+@book{Bazaraa06,
+   author = "M. Bazaraa and C. M. Shetty",
+   title = "Nonlinear Programming",
+   publisher = "Jonh Wiley",
+   year = {2006},
+   }
+
+@inbook {Beck99,
+   author = {Kent Beck},
+   title = {Extreme Programming Explained: Embrace Change},
+   publisher = {Addison-Wesley Professional},
+   address = {},
+   year = {October 5, 1999},
+   type = {},
+   chapter = {},
+   editor = {} }   
+
+@inbook {Beck04,
+   author = {Kent Beck, Cynthia Andres},
+   title = {Extreme Programming Explained: Embrace Change, Second Edition},
+   publisher = {Addison-Wesley Professional},
+   address = {},
+   year = {November 16, 2004},
+   type = {},
+   chapter = {},
+   editor = {} }   
+
+@inproceedings {Bezerra06,
+   author = "Johelden. Bezerra and Ana Claudia Gomes and Boris Dortschy and Aldebaro Klautau and Evaldo Pelaes",
+   title = "The influence of DSM on legacy {xDSL} services",
+   bookTitle = "Proc. I2TS'2006 - 5th International Information and Telecommunication Technologies  Symposium",
+   pages = {},
+   city = {Cuiaba},
+   year = {2006}
+   }
+
+@misc{Bogaert04a,
+   author = "E. Van Bogaert and T. Bostoen and J. Verlinden and R. Suciu",
+   title = "Dynamic Spectrum Management in Practice",
+   text = "Technology White Paper - Alcatel",
+   year = {2004},
+   url = {}
+   }
+
+MORAES, Rodrigo ; Klautau, Aldebaro ; RIUS, J. ; DORTSCHY, B. ; ZAMPOLO, Ronaldo . Optimal Solution for the Fixed Margin Problem in Digital Subscriber Lines. In: 3rd International Symposium on Communications, Control and Signal Processing, 2008, St. Julians. ISCCSP 2008, 2008. p. 1395-1399.
+
+@inproceedings{Bogaert04b,
+   author = "E. Van den Bogaert and T. Bostoen and J. Van Elsen and R. Cendrillon and M. Moonen",
+   title = "{DSM} in Practice: Iterative Water-Filling Implemented on {ADSL} Modems",
+   bookTitle = "Proc. IEEE Int. Conf. on Acoust., Speech and Sig. Processing (ICASSP)",
+   pages = {},
+   city = {Montreal},
+   year = {2004},
+   }
+
+@misc{Bogaert04c,
+   author = "E. Van Bogaert and R. Cendrillon and T. Bostoen and J. Verlinden and M. Moonen",
+   title = "{ADSL} transceivers applying {DSM} and their non-stationary noise robustness",
+   text = "Technology White Paper - Alcatel",
+   year = {2004},
+   url = {}
+   }
+   
+@article{Bogaert06,
+  author = {Etienne Van den Bogaert and Tom Bostoen and Jan Verlinden and Raphael Cendrillon and Marc Moonen},
+  title = {{ADSL} Transceivers Applying {DSM} and Their Nonstationary Noise Robustness},
+  journal = {{EURASIP} Journal on Applied Signal Processing},
+  volume = {2006. Article {ID} 67686, 8 pages},
+  year = {2006},
+  pages = {},
+  }      
+   
+@book {Boyd04,
+   author = {Stephen Boyd and Lieven Vandenberghe},
+   title = {Convex Optimization},
+   publisher = {Cambridge University Press},
+   year = {2004} }
+
+@inbook {Burke03,
+   author = {Erick M. Brurke and Bryan M Coyner},
+   title = {Java Extreme Programming Cookbook},
+   publisher = {O'Reilly},
+   address = {},
+   year = {2003},
+   type = {},
+   chapter = {},
+   editor = {} }   
+
+@article {Campello99,
+   author = {Jorge Campello},
+   title = {Practical Bit Loading for DMT},
+   journal = {IEEE ICC'99 Proceedings},
+   volume = {},
+   pages = {801-805},
+   year = {1999} }
+
+@phdthesis {Campello99b,
+   author = {Jorge Campello},
+   title = {Discrete Bitloading for Multicarrier Modulation System},
+   school = {Stanford University},
+   year = {1999} }
+
+@misc{Cendrillon03,
+  author = "R. Cendrillon and M. Moonen and W. Yu and J. Verlinden and T. Bostoen",
+  title = "{On the Optimality of Iterative Waterfilling}",
+  text = {T1E1.4/2003-325, San Diego, California, USA},
+  year = {2003},
+  }
+
+@phdthesis{Cendrillon04a,
+   author = "R. Cendrillon",
+   title = "Multi-user Signal and Spectra Co-Ordination for Digital Subscriber Lines",
+   school = "Katholieke Universiteit Leuven",
+   month = dec,
+   year = {2004},
+   }
+
+@inproceedings{Cendrillon04b,
+   author = "Raphael Cendrillon and Marc Moonen and Jan Verliden and Tom Bostoen and Wei Yu",
+   title = "{Optimal Multi-user Spectrum Management for Digital Subscriber Lines}",
+   bookTitle = {IEEE International Conference on Communications (ICC)},
+   volume = {1},
+   pages = {1-5},
+   year = {2004},
+   }
+
+@misc{Cendrillon04c,
+  author = "R. Cendrillon and M. Moonen and W. Yu and J. Verlinden and T. Bostoen",
+  title = "Optimal Spectrum Management",
+  text = {T1E1.4/2004-459, Charlotte, North Carolina, USA. May 24-27},
+  year = {2004},
+  }
+
+
+
+@inproceedings {Cendrillon04d,
+   author = "R. Cendrillon and M. Moonen and W. Yu and J. Verlinden and T. Bostoen",
+   title = "Proof of the Optimality of Optimal Spectrum Management",
+   bookTitle = {ANSI T1E1.4 Working Group - DSL Access- Meeting, contrib. 2004-460, North Carolina},
+   month = may,
+   year = {2004} 
+}
+
+@inproceedings {Cendrillon05a,
+   author = "R. Cendrillon and M. Moonen",
+   title = "Iterative Spectrum Balancing for Digital Subscriber Lines",
+   bookTitle = {Communications, 2005. ICC '05. IEEE International Conference on},
+   volume = {3},
+   pages = {1937-1941},
+   month = may,
+   year = {2005}
+   }
+
+@inproceedings{Cendrillon05b,
+   author = "R. Cendrillon and M. Moonen",
+   title = "Iterative Spectrum Balancing for Digital Water-Filling Implemented on {ADSL} Modems",
+   bookTitle = "Proc. IEEE Int. Conf. on Acoust., Speech and Sig. Processing (ICASSP)",
+   pages = {},
+   month = may,
+   year = {2005},
+   }
+
+@article{Cendrillon06,
+   author = {Raphael Cendrillon and Wei Yu and Marc Moonen and Jan Verlinden and Tom Bostoen},
+   title = {Optimal multiuser spectrum balancing for digital subscriber lines},
+   journal = {{IEEE} Transactions on Communications},
+   volume = {54},
+   number = {5},
+   pages = {922-933},
+   month = may,
+   year = {2006}
+   }
+   
+@article{Cendrillon07,
+   author = {Raphael Cendrillon and J. Huang and Mung Chiang and Marc Moonen},
+   title = {Autonomous Spectrum Balancing for Digital Subscriber Lines},
+   journal = {{IEEE} Transactions on Signal Processing},
+   volume = {55},
+   number = {8},
+   pages = {4241-4257},
+   month = aug,
+   year = {2007}
+   }   
+ 
+ 
+@inproceedings{Cendrillon08,
+   author = "Raphael Cendrillon and Fang Liming and James Chou and Guozhu Long and Chin Hung and Dong Wi",
+   title = "{DSM from Theory to Practice}",
+   bookTitle = {{IEEE} Global Communications Conference (GLOBECOM), New Orleans, LA, USA},
+   year = {2008} 
+   }   
+
+@article {cioffiADSLperf,
+   author = {Wei Yu and Dimitris Toumpakaris and John M. Cioffi and Daniel Gardan and Fr\'ed\'eric Gauthier},
+   title = {Performance of Asymmetric Digital Subscriber Lines in an Impulse Noise Environment},
+   journal = {IEEE Transactions on Communications},
+   volume = {51},
+   pages = {},
+   year = {2003} }
+
+@inproceedings {Cioffi08,
+    Author = "J. Cioffi and S. Jagannathan and W. Lee and H. Zou and A. Chowdhery and W. Rhee and G. Ginis and P. Silverman",
+    title = "{Greener Copper with Dynamic Spectrum Management}",
+    bookTitle = {{IEEE} Global Communications Conference (GLOBECOM), New Orleans, LA, USA},
+    year = {2008}
+}
+
+
+@misc {Cioffi04c,
+  author = {J. M. Cioffi},
+  title = {Adaptive fec codeword management},
+  text = {United States patent, No. WO 2005/057837},
+  year = {2004},
+}
+
+
+@misc {Chan05,
+   author = {V. M. K. Chan},
+   title = {Multiuser detection and spectrum balancing for digital subscriber lines},
+   school = {Master Thesis, University of Toronto},
+   year = {2005} }
+
+@inproceedings{Huang06,
+    author = "Jianwei Huang and Raphael Cendrillon and Mung Chiang",
+    title = "Autonomous Spectrum Balancing (\textsc{ASB}) for Frequency Selective Interference Channels",
+    bookTitle = "IEEE International Symposium on Information Theory (ISIT), Seattle, Washington, USA",
+    pages = {},
+    month = jul,
+    year = {2006} }
+
+@inproceedings{Cendrillon06d,
+    author = "Jianwei Huang and Raphael Cendrillon and Mung Chiang and Mark Moonen",
+    title = "Autonomous Spectrum Balancing (\textsc{ASB}) for Digital Subscriber Lines",
+    bookTitle = "IEEE Trans. Signal Processing (Accepted)",
+    pages = {},
+    month = dec,
+    year = {2006},
+    }
+
+@phdthesis {Chan05}
+   author = {V. M. K. Chan}, 
+ 	 title = {Multi-user detection and spectrum balancing for digital subscriber lines},
+   school = {Department of Electrical and Computer Engineering, University of Toronto}
+   month = aug,
+   year = {2005}.
+   }
+
+@article {Chow91,
+   author = {Jacky S. Chow, Jeny C. Tu, John M. Cioffi},
+   title = {A Discrete Multitone Transceiver System for HDSL},
+   journal = {IEEE Journal on Selected areas in Communications},
+   volume = {9},
+   pages = {},
+   year = {1991} }
+
+@phdthesis {Chung03,
+   author = "Seong Taek Chung",
+   title = "Transmission Schemes for Frequency Selective Gaussian interference Channels",
+   school = {Stanford University},
+   month = nov,
+   year = {2003},
+   }
+
+@misc{Ciofficn,
+   author = {John M. Cioffi},
+   title = {Stanford Class Notes - http://www.stanford.edu/group/cioffi/},
+   text = {},
+   year = {2008},
+   url = {} }
+
+@misc{Cioffi03,
+   author = "J. Cioffi, M. Mohseni",
+   title = "Band Preference in Water-filling with DSM",
+   text = "CT1E1.4 Congribution 2003-321R1, San Diego, CA",
+   month = dec,
+   year = {2003},
+   url = {},
+   }
+
+@article {Cioffi04a,
+   author = "J. M. Cioffi and M. Mohseni",
+   title = "{Dynamic Spectrum Management}",
+   journal = "ISSLS, Edinburgh, Scotland",
+   text = {(winner conference best paper award)},
+   month = mar,
+   year = {2004},
+   }
+
+@article {Cioffi04b,
+   author = "J. M. Cioffi and M. Brady and W. Rhee and M. Mohseni",
+   title = "{Band Preference In Dynamic Spectrum Management}",
+   journal = "Eurasip Signal Processing Conference",
+   text = {Vienna, Austria},
+   month = sep,
+   year = {2004}
+   }
+
+@misc{CMeas,
+   author = {Neiva Fonseca and Klas Ericsson and Boris Dortschy},
+   title = {Crosstalk measurements on wire-loops of cable-drums {C8}, {C9} and {C10} - A pilot study},
+   text = {Ericsson Technical Report (unpublished work)},
+   year = {2005},
+   url = {} }
+
+@article {Cook99,
+   author = "J.W. Cook and R.H. Kirkby and M.G. Booth and K.T. Foster and D.E.A. Clarke and G. Young",
+   title = "The noise and crosstalk environment for {ADSL} and {VDSL} systems",
+   journal = "IEEE Commu. Mag.",
+   volume = {37},
+   number = {5},
+   pages = {73-78},
+   month = May,
+   year = {1999},
+   }
+
+@inbook {Cockburn00,
+   author = {Alistair Cockburn},
+   title = {Agile Software Development},
+   publisher = {Highsmith Series Editors},
+   address = {},
+   year = {2000},
+   type = {},
+   chapter = {},
+   editor = {} }
+
+
+@misc {Chow95,
+  author = {P. S. Chow and J. M. Cioffi},
+  title = {Method and apparatus for adaptive, variable bandwidth, high-speed data transmission of a multicarrier signal over digital subscriber lines},
+  text = {United States patent, No. 5479447},
+  year = {1995},
+}
+
+@misc{Conex06,
+author = {Conexant Systems, Inc.},
+title = {Proposal for Construction of a {MIMO} Channel Model for Evaluation of {FEXT} Cancellation Systems - NIPP-NAI-2006-169},
+text = {NIPP-NAI-2006-169},
+year = {2006},
+url = {} }   
+
+@misc{Conex07,
+author = {AT\&T and Adtran and Conexant Systems},
+title = {Proposal for Construction of a {MIMO} Channel Model for Evaluation of {FEXT} Cancellation Systems-NIPP-NAI-2007-008},
+text = {NIPP-NAI-2007-008},
+year = {2007},
+url = {} } 
+
+@book {Cover91,
+   author = "T. Cover and J. A. Thomas",
+   title = "Elements of Information Theory",
+   publisher = {Wiley},
+   year = {1991},
+   }
+
+@inproceedings {Daou98,
+   author = {Daou, F.H.},
+   title = {Overview of {ADSL} test requirement towards conformance, performance and interoperability},
+   bookTitle = {AUTOTESTCON '98. IEEE Systems Readiness Technology Conference.},
+   pages = {413-420},
+   year = {1998} }
+
+@techreport {dslFo04,
+Author = {{Testing and Interoperability Working Group}},
+Title = {ADSL Interoperability Test Plan - Technical Report {TR-067}},
+institution = {DSL Forum},
+Year = {2004} }
+
+@techreport {dslFo07,
+   author = {{Test and Interoperability Working Group}},
+   title = {{ADSL2/ADSL2+} Performance Test Plan - Technical Report {TR-100}},
+   institution = {DSL Forum},
+   year = {2007} }
+
+@misc{dslforumURL,
+   title = {{DSL} {F}orum},
+   note  = {\url{http://dslforum.org/}, último acesso em 14/06/2008} 
+}
+
+@techreport {dsl410,
+Author = {{Spirent Communications}},
+Title = {{ADSL2+} Wireline Simulator - Operating manual},
+institution = {Spirent Communications},
+Year = {2004} }
+
+@misc{DSM07,
+	author = {{Dynamic Spectrum Management Technical Report}},
+	title = {{ATIS} Committee {NIPP} Pre-published document {ATIS-PP-0600007}},
+	year = {May 2007}, 
+	}
+
+@article {Dias06,
+   author = {Jacklyn Dias and Igor Negrão and Agostinho Castro and João C. W. A. Costa and Gervásio Cavalcante and Jaume Riu and Klas Ericson and Fredrik Lindqvist},
+   title = {Improving the Performance Evaluation of {ADSL} systems by using a Modem Diagnosis Methodology},
+   journal = {12º SBMO Simpósio Brasileiro de Microondas e Optoeletrônica},
+   volume = {1},
+   pages = {1-6},
+   year = {2006} }
+
+@misc{etsi101388,
+   author = "ETSI",
+   title = "{TS 101 388 v1.4.1 - Access Terminals Transmission and Multiplexing (ATTM); Access transmission systems on metallic access cables;Asymmetric Digital Subscriber Line (ADSL) - European specific requirements}",
+   year = {2007},
+   }
+
+@misc{etsi_vdsl,
+  title = {Very High Speed Digital Subscriber Lines (\textsc{VDSL}); Functional Requirements},
+  author = "{ETSI std. TS 101 270-1}",
+  text = {},
+  year = {2003},
+  url = {}
+  }
+
+
+@phdthesis {Fang02,
+   author = "J. L. Fang",
+   title = "Modeling and Characterization of Copper Access Systems",
+   school = {Stanford University},
+   year = 2002,
+   }
+
+@article {Freeman06,
+   author = "Steve Freeman and Nat Pryce",
+   title = "{Evolving a Domain-Specific Language in Java}",
+   journal = {19th Annual ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications - OOPSLA06},
+   year = {2006},
+   }
+
+@misc{ftwxdslsimURL,
+   author = {Telecommunications Research Center Vienna (FTW)},
+   title  = {{FTW}'s {xDSL} simulation tool},
+   note   = {\url{http://xdsl.ftw.at/xdslsimu/}, último acesso em 14/06/2008}
+}
+
+@article {Galli01,
+   author = "S. Galli and C. Valenti and K. J. Kerpez",
+   title = "{A Frequency-Domain Approach to Crosstalk Identification in {xDSL} Systems}",
+   journal = {IEEE J. Select. Areas Commun.},
+   volume = {19},
+   pages = {1497-1506},
+   year = {2001},
+   }
+
+@article {Galli02a,
+   author = "S. Galli and R. Hausman and K. Kerpez and C. Valenti",
+   title = "Multiuser Channel Estimation: Finding the Best Sparse Representation of Crosstalk on the Basis of Overcomplete Dictionaries",
+   journal = {GLOBECOM'02 IEEE},
+   volume = {2},
+   pages = {1213-1217},
+   year = {2002},
+   }
+
+@article {Galli02c,
+   author = "S. Galli and K. Kerpez",
+   title = "Methods of Summing Crosstalk from Mixed Sources - Part I: Theorectical Analysis",
+   journal = {IEEE Transations on Communication},
+   volume = {50},
+   month = {march},
+   pages = {453-461},
+   year = {2002},
+   }
+
+@article {Galli02b,
+   author = "K. Kerpez and S. Galli",
+   title = "Methods of Summing Crosstalk from Mixed Sources - Part II: Performance Results",
+   journal = {IEEE Transations on Communication},
+   volume = {50},
+   month = {april},
+   pages = {600-607},
+   year = {2002},
+   }
+
+@article {Ginis02,
+   author = "G. Ginis and J.M. Cioffi",
+   title = "Vectored transmission for digital subscriber line systems",
+   journal = "IEEE Commu. Mag.",
+   volume = {20},
+   number = {5},
+   pages = {1085-1104},
+   month = {june},
+   year = {2002},
+   }
+
+@misc{G9925,
+   author = "ITU-T",
+   title = "{Asymmetric Digital Subscriber Line (ADSL) transceivers - Extended bandwidth ADSL2 (ADSL2+)}",
+   year = {},
+   month = {}
+   }
+
+
+@misc{G9923,
+   author = "ITU-T",
+   title = "{Asymmetric Digital Subscriber Line transceivers 2 (ADSL2)}",
+   year = {},
+   month = {}
+   }
+
+@misc{G9921,
+   author = "ITU-T",
+   title = "{Asymmetric Digital Subscriber Line (ADSL) transceivers}",
+   year = {1999},
+   month = {June}
+   }
+
+@misc{G9971,
+   author = "{PLOAM} Standard G.997.1",
+   title = "International Telecommunications Union",
+   year = {2002},
+   }
+
+@misc{G9932,
+   author = "ITU-T",
+   title = "{Very high speed digital subscriber line transceivers 2 (VDSL2)}",
+   year = {2006},
+   month = {February}
+   }
+
+@misc{G9931,
+   author = "ITU-T",
+   title = "{Very high speed digital subscriber line transceivers}",
+   year = {2004},
+   month = {June}
+   }
+
+
+@book{Golden06, 
+	author = "Philip Golden and Herve Dedieu and Krista Jacobsen", 
+	title  = "Fundamentals of DSL Technology", 
+	publisher = "Auerbach Publications, Taylor \& Francis Group", 
+	year   = "2006"	
+	}	
+
+@book{Golden07, 
+	author = "Philip Golden and Herve Dedieu and Krista Jacobsen", 
+	title  = "Implementation and Applications of DSL Technology", 
+	publisher = "Auerbach Publications, Taylor \& Francis Group", 
+	year   = "2007"	
+	}	
+
+@misc{GPIB,
+   author = "ITU-T",
+   title = "{Very high speed digital subscriber line transceivers}",
+   year = {2004},
+   month = {June}
+   }
+
+@misc{impemeas,
+   author = {Agilent Technologies},
+   title = {Impedance Measurement Handbook},
+   text = {A Guide to Measurement Technology and Techniques},
+   year = {2003},
+   url = {} }
+
+@techreport {ioldsl06,
+   author = {{DSL Consortium}},
+   institution = {InterOperability Laboratory},
+   title = { On-line Reconfiguration Interoperability Test Suite {(OLR)} Version 2.0.0},
+   year = {2006} }
+
+@ARTICLE{Jagannathan08,
+title={Margin Optimization in Digital Subscriber Lines Employing Level-2 Dynamic Spectrum Management},
+author={Jagannathan, S. and Chan Soo Hwang and Cioffi, J.M.},
+journal={Communications, 2008. ICC '08. IEEE International Conference on},
+year={2008},
+month={May},
+volume={},
+number={},
+pages={435-440},
+abstract={This paper investigates the optimization of margins in digital subscriber lines employing level-2 dynamic spectrum management, where lines are jointly optimized with an emphasis on their stability, throughput-guarantee, and politeness. A new definition of noise margin and the concept of probability of outage are introduced, which allow for an easier formulation of the problems of joint margin and spectra optimization of the lines taking into account their stabilities. The solutions to the highly-coupled optimization problems are simplified using noise margins instead of signal-to-interference-and-noise-ratio margins. The presented algorithms provide up to 100% improvements in the data-rates or a reduction in the probability of outage by an order of magnitude, thus improving the stability of the lines at high data rates.},
+keywords={digital subscriber lines, optimisation, probability, radio spectrum managementdigital subscriber lines, dynamic spectrum management, margin optimization, outage probability},
+doi={10.1109/ICC.2008.87},
+ISSN={}, }
+
+@article{JLee05,
+   author = {Jungwon Lee ans Ranjan V. Sonalkar and John M. Cioffi},
+   title = {A Multi-User Power Control Algorithm for Digital Subscriber Lines},
+   journal = {IEEE Communications Letters},
+   volume = {9},
+   number = {3},
+   month = {march},
+   year = {2005},
+   }
+
+@inbook {Jeffr01,
+   author = {Ron Jeffries, Ann Anderson, Chet Hendrickson , Ronald E. Jeffries},
+   title = {Extreme Programming Installed},
+   publisher = {Addison-Wesley Professional},
+   address = {},
+   year = {2001},
+   type = {},
+   chapter = {},
+   editor = {} }
+
+@article{Kri01,
+   author = "Krista S. Jacobsen",
+   title = "{Methods of Upstream Power Backoff on Very High-Speed Digital Subscriber Lines}",
+   journal = {IEEE Communications Magazine},
+   volume = {},
+   number = {},
+   month = mar,
+   year = {2001},
+   }
+
+@article {Kerpez08,
+   author = {K. Kerpez and R. Kinney},
+   title = {Integrated {DSL} Test, Analysis, and Operations},
+   journal = {IEEE Transactions on Instrumentation and Measurement},
+   volume = {57},
+   pages = {770 - 780},
+   year = {2008} }
+
+@article {Kerpez03,
+   author = "K.J. Kerpez and D.L. Waring and S. Galli and J. Dixon and P. Madon",
+   title = "Advanced {DSL} management",
+   journal = "IEEE Commu. Mag.",
+   volume = {41},
+   number = {9},
+   pages = {116- 123},
+   month = sep,
+   year = {2003},
+   }
+
+@article{Kerpez95,
+   author = "K. Kerpez and A. M. Gottlieb",
+   title = "the error performance of digital subscriber lines in the presence of impulse noise",
+   journal = IEEE_J_COM,
+   volume = {43},
+   number = {5},
+   month = may,
+   year = {1995},
+   pages = "1902-1905",
+   }
+
+@article{Levey02,
+   author = "D. B. Levey and S. McLaughlin",
+   title = "{The statistical Nature of Impulse Noise Interarrival Times in Digital Subscriber Loop Systems}",
+   journal = "Signal Processing",
+   volume = {82},
+   number = {3},
+   month = mar,
+   year = {2002},
+   pages = "329-351",
+   }
+
+
+%pages     = {2837-2841}
+@inproceedings{Lindqvist08a,
+  title = "{Impact of Crosstalk Estimation on the Dynamic Spectrum Management Performance}",
+  author = "Neiva Lindqvist and Fredrik Lindqvist and Boris Dortschy and Evaldo Pelaes and Aldebaro Klautau",
+  BookTitle = {{IEEE} Global Conference in Telecommunication (GLOBECOM), New Orleans, LA, USA},
+  pages     = {},
+  year = {2008},
+} 
+  
+  
+@article{Lindqvist08b,
+  title = "{Crosstalk channel estimation via standardized two-port measurements}",
+  author = {Fredrik Lindqvist and Neiva Lindqvist and Boris Dortschy and Per \"Odling and Per Ola B\"orjesson and Klas Ericsson and Evaldo Pelaes},
+  journal = {{EURASIP} Journal on Advances in Signal Processing},
+  volume = {2008. Article {ID} 916865, 14 pages},
+  pages = {},
+  year = {2008},
+  }
+	
+
+@article {Luo04,
+   author = "Zhi-Quan Luo and Jong-Shi Pang",
+   title = "{Analysis of Iterative Waterfilling Algorithm for Multiuser Power Control in Digital Subscriber Lines}",
+   journal = {IEEE International Conference on Communications},
+   month = dec,
+   year = {2004},
+   }
+
+@inproceedings {Lui05,
+   author = {Lui, R. and Yu, W.},
+   title = {Low-complexity near-optimal spectrum balancing for digital subscriber lines},
+   bookTitle = {Communications, 2005. ICC '05. IEEE International Conference on},
+   volume = {3},   
+   pages = { 1947-1951},
+   month = may,
+   year = {2005},}
+
+@article {Luo06,
+   author = "Zhi-Quan Luo and Wei Yu",
+   title = "{An Introduction to Convex Optimization for Communications and Signal Processing}",
+   journal = {IEEE Journal on Selected Areas in Communications},
+   month = aug,
+   year = {2006},   
+   }
+
+@inproceedings {Macapuna08,
+   author = "C. Macapuna, E. Medeiros and A. Klautau",
+   title = "A Software for Evaluating the Operating Margin of DSL Modems",
+   bookTitle = "Proc. XXVI Simpósio Brasileiro de Telecomunicações - SBrT",
+   pages = {},
+   city = {},
+   year = {2008},
+   }   
+
+@article{Mann02,
+  author = "I. Mann and S. McLaughlin and W. Henkel and R. Kirkby and T. Kessler",
+  title = "{Impulse Generation With Appropriate Amplitude, Length, Inter-Arrival, and Spectral Characteristics}",
+  journal = IEEE_J_JSAC,
+  volume = {20},
+  number = {5},
+  pages = "901-912",
+  month = jun,
+  year = {2002},
+  }
+
+@inproceedings{Monteiro09,
+   author = "Marcio Monteiro and Neiva Lindqvist and Aldebaro Klautau",
+   title = "Spectrum Balancing Algorithms for Power Minimization in {DSL} Networks",
+   BookTitle = {Communications, 2009. ICC '09. IEEE International Conference on},
+   year = {2009},
+   }  
+
+@article {Mackinnon02,
+   author = "Tim Mackinnon and Steve Freeman and Philip Craig",
+   title = "{Endo-Testing: Unit Testing with Mock Objects}",
+   journal = {Conference eXtremme Programming and Flexible Processes in Software Engineering - XP2000},
+   year = {2002},
+   }
+
+
+@article {Mackinnon04,
+   author = "Steve Freeman and Tim Mackinnon and Nat Pryce and Joe Walnes",
+   title = "{Mock Roles, not Objects}",
+   journal = {19th Annual ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications - OOPSLA04},
+   year = {2004},
+   }
+
+%3rd International Symposium on Communications, Control and Signal Processing
+@inproceedings {Moraes08,
+   author = "Rodrigo Moraes and Aldebaro Klautau and J. Rius and B. Dortschy and R. Zampolo",
+   title = "Optimal Solution for the Fixed Margin Problem in Digital Subscriber Lines",
+   bookTitle = "ISCCSP",
+   pages = {1395-1399},
+   city = {St. Julians},
+   year = {2008},
+   }
+
+@inproceedings {Moraes08a,
+   author = "Rodrigo Moraes and Aldebaro Klautau and B. Dortschy and J. Rius",
+   title = "{Semi-Blind Power Allocation for Digital Subscriber Lines}",
+   bookTitle = {Communications, 2008. ICC '08. IEEE International Conference on},
+   pages = {1420-1425},
+   city = {Beijing},
+   year = {2008},
+   }
+
+@inproceedings{Medeiros09a,
+   author="Eduardo Medeiros and Neiva Lindqvist and Marcio Monteiro and Harney Abrahim
+   and Fredrik Lindqvist and Boris Dortschy and Aldebaro Klautau",
+   title="{DSM} Performance on Practical {DSL} Systems Based on Estimated Crosstalk
+   Channel Information",
+   booktitle="17th European Signal Processing Conference 2009",
+   address="Glasgow, Scotland, United Kingdom",
+   days=24,
+   month=8,
+   year=2009,
+   keywords="DSL; dynamic spectrum management, crosstalk channel estimator",
+   }
+
+
+@article {Medeiros09b,
+   author = "Eduardo Medeiros",
+   title = "{A Non-linear Optimization Method for Imposing Arbitrary PSDs to DSL Modems}",
+   journal = "To be published",
+   volume = {},
+   pages = {},
+   year = {2009} }
+
+
+@conference{Nedev02,
+  author = "N. Nedev and S. McLaughlin and D. Laurenson and R. Daley",
+  title = "Data Errors in {ADSL} and {SHDSL} Systems due to Impulse Noise",
+  pages = "4048-4051",
+  year = {2002},
+  booktitle = "2004 International Zurich Seminar on Communications",
+  }
+
+@phdthesis{Nedev03,
+   author = "N. H. Nedev",
+   title = "Analysis of the Impact of Impulse Noise in Digital Subscriber Line Systems",
+   school = "The University of Edinburgh",
+   year = {2003},
+   month = mar,
+   }
+   
+@phdthesis {Nilsson05,
+   author = "M. Nilsson",
+   title = "{Management of a DSL Copper Network using Built-in Loop Qualification Tools}",
+   school = "Royal Institute of Technology",
+   year = {2005},
+   }
+
+@techreport{NIPP135R1,
+Author = {S. Jagannathan, C Hwang and J. M. Cioffi},
+Title = {Margin Optimization in {DSM} Levels 1 and 2},
+institution = {ATIS Committee NIPP document NIPP-NAI-2007-135R1},
+Year = {2007},
+ }
+
+@misc{Nordstrom03,
+   author = " T. Nordstrom and D. Bengtsson",
+   title = "{FTW} Simulation Tool, Version 3.0beta1, http://www.xdsl.ftw.at/xdslsimu/",
+   text = {},
+   year = {2003},
+   url = {http://www.xdsl.ftw.at/xdslsimu/},
+   }
+
+@article {Nowrouzian01,
+   author = {B. Nowrouzian and Luqing Wang and W. Agha},
+   title = {An overview of discrete multitone modulation/demodulation systems in {xDSL} applications},
+   journal = {Conference Record of the Thirty-Fifth Asilomar Conference on Signals, Systems and Computers},
+   volume = {1},
+   pages = {31-35},
+   year = {2001} }
+
+
+@misc{Oaksman99,
+  author = "V. Oaksman and J.M Cioffi",
+  title = "Noise models for VDSL performance verification",
+  text = {T1E1.4/99-438R2},
+  year = {1999},
+  }
+   
+@article{Panigrahi05,
+   author = "Panigrahi, S. and Yang Xu",
+   title = "{Enhanced multiuser resource allocation using near-continuous loading algorithms with adaptive coding for digital subscriber loops}",
+   journal =  {Electrical and Computer Engineering, 2005. Canadian Conference on},
+   volume = {1},
+   pages = {143-146},
+   year = {2005},
+   }  
+
+@ARTICLE{Panigrahi06,
+  title="Multiuser margin optimization in digital subscriber line ({DSL}) channels",
+  author={Panigrahi, S. and Yang Xu and Le-Ngoc, T.},
+  journal={Selected Areas in Communications, IEEE Journal on},
+  year={2006},
+  month={Aug. },
+  volume={24},
+  number={8},
+  pages={1571-1580},
+  abstract={This paper presents efficient multiuser margin optimization algorithms suitable for multicarrier digital subscriber line (DSL) systems using Dynamic Spectrum Management (DSM). The favorable monotonicity and fairness properties of multiuser margin are employed to formulate a box-constrained nonlinear least squares (NLSQ) problem for multiuser margin maximization, which is efficiently solved by using a scaled-gradient trust-region approach with Broyden Jacobian update. Based on this NLSQ formulation, a multiuser harmonized margin (MHM) optimization algorithm for resource allocation is developed. A Newton-Raphson method is also developed for fast margin estimation and used within the MHM. The MHM algorithm converges efficiently to a solution for the best common equal margin to all users, while explicitly guaranteeing their target rate requirements. (This is the reason for the term harmonized.) Furthermore, its predominantly distributed structure can be implemented in DSL/DSM scenarios with only Level 1 coordination. Simulation results of various cases verify the convergence to the unique optimal solution within 5-10 iterations},
+  keywords={Newton-Raphson method, digital subscriber lines, least squares approximations, multiuser channels, optimisation, resource allocation, spectral analysis, telecommunication network managementBroyden Jacobian update, DSL channel, DSM, NLSQ, Newton-Raphson method, box-constrained nonlinear least square formulation, dynamic spectrum management, multicarrier digital subscriber line, multiuser harmonized margin algorithm, multiuser margin optimization algorithm, resource allocation, scaled-gradient trust-region approach},
+  doi={10.1109/JSAC.2006.879383},
+  ISSN={0733-8716}, 
+}
+
+@inproceedings{Papandriopoulos06,
+   author = {John Papandriopoulos and Jamie S. Evans},
+   title = "Low-Complexity Distributed Algorithms for Spectrum Balancing in Multi-User {DSL} Networks",
+   BookTitle = {Communications, 2006. ICC '06. IEEE International Conference on},
+   volume = {7},
+   text = {Istanbul, Turkey},
+   pages = {3270 - 3275},
+   month = Jun,
+   year = {2006}
+}
+
+@TechReport{Q1DSM05,
+author = "DSM Group",
+title = "{A Bibliographical Review of Dynamic Spectrum Management (DSM)}",
+text = {UFA02 DSM Quaterly Report(Q1)},
+institution = {Federal University of Par\'a},
+month = feb,
+year = {2005},
+}
+
+@techreport {Q3GREPORT,
+   author = "University of Campinas (UNICAMP) Research Group",
+   title = "2nd General Report - MIMO-DSL Broadband Access through Multiple-Input Multiple-Output          DSL Systems",
+   institution = {University of Campinas (UNICAMP)},
+   year = {2005} }
+
+
+
+@conference{Scutari06,
+   author = "Scutari G and Palomar D. P. and Barbarossa S.;",
+   title = "Asynchronous Iterative Water-Filling for Gaussian Frequency-Selective Interference Channels: A Unified Framework",
+   pages = "",
+   year = {2006},
+   booktitle = "SPAWC 2006",
+   }
+
+
+@article {Salvekar02,
+   author = "A. A. Salvekar and J. Louveaux and C. Aldana, J. L. Fang and E. de Carvalho and J. M. Cioffi",
+   title = "{Profile Detection in Multiuser Digital Subscriber Line Systems}",
+   journal = {IEEE J. Select. Areas Commun.},
+   volume = {20},
+   pages = {1116-1125},
+   year = {2002},
+   }
+
+@book {Sellers96,
+   author = {Brian Henderson-Sellers},
+   title = {Object-Oriented Metrics, measures of Complexity},
+   publisher = {Prentice Hall},
+   edition = {4th},
+   year = {1996} }
+
+@misc{Smits2000,
+   author = {John Smits},
+   title = {Performing Functional Testing of {ADSL} Modems In a Manufacturing Environment},
+   text = {Evaluation Engineering},
+   year = {2000},
+   url = {http://archive.evaluationengineering.com/archive/articles/0700comm.htm} }
+
+@article {Song02,
+   author = "Kee Bong Song and Seong Taek Chung and George Ginis and John M. Cioffi",
+   title = "Dynamic spectrum Management for Next-Generation {DSL} Systems",
+   journal = "IEEE Commu. Mag.",
+   volume = {40},
+   number = {10},
+   pages = {101-109},
+   month = oct,
+   year = {2002},
+   }
+
+@techreport {Sintef07,
+Author = {Nils Holte, Vidar Ringset},
+Title = {Simulation of DSL systems},
+institution = {SINTEF},
+Year = {2007} }
+
+@misc{Spirent5500,
+   author = {{Spirent Communications}},
+   title = {{DSL} 5500 - Operating Manual - xDSL Custom Noise Generator},
+   year = {2005},
+   }
+
+@misc{Spirent5405,
+   author = {{Spirent Communications}},
+   title = {{DSL} 5405 - Operating Manual - High Bandwidth Noise Injection Unit},
+   year = {2005},
+   }
+
+@book{Starr99,
+   author = "T. Starr and J. M. Cioffi and P. J. Silverman",
+   title = "Understanding Digital Subscriber Line Technology",
+   publisher = "Prentice-Hall",
+   year = {1999},
+   }
+
+
+@book{Starr03,
+   author = "T. Starr and M. Sorbara and J. M. Cioffi and P. J. Silverman",
+   title = "{DSL} Advances",
+   publisher = "Prentice-Hall",
+   year = {2003},
+   }
+ 
+@article{Statovci07,
+    author = "D. Statovci and T. Nordstr�m and and R. Nilsson",
+    title = "{Dynamic Spectrum Management for Standardized {VDSL}}",
+    journal = "{IEEE} International Conference on Acoustics, Speech, and Signal Processing ({ICASSP} 2007. Honolulu, Hawaii, {USA})",
+    month = apr,
+    year = {2007},
+    } 
+   
+@article{Stolle02,
+   author = "R. Stolle",
+   title = "Electromagnetic Coupling of Twisted Pair Cables",
+   journal = IEEE_J_JSAC,
+   volume = {20},
+   number = {5},
+   month = jun,
+   year = {2002},
+   pages = {883-892},
+   }
+
+@misc{usrpfaq,
+   author = {GNU Radio},
+   title = {{USRP} - Frequently Asked Questions},
+   note = {http://gnuradio.org/trac/wiki/UsrpFAQ, last access in April, 2009}
+}
+
+@article{Tan03,
+   author = "S. Y. Tan and Y. H. Chew and T. T. Tjhung and M. W. Wu",
+   title = "{A Two-dimensional Impulse Noise Model and Error Probability of QAM in DSL}",
+   journal = {IEEE Journal Comm.},
+   volume = {51},
+   number = {2},
+   month = feb,
+   year = {2003},
+   pages = {129-134},
+   }
+
+@misc{T1.417-2001,
+   author = {ANSI},
+   title = {Spectrum Management for Loop Transmission Systems},
+   institution = {T1.417-2001},
+   year = {2001} }
+
+@misc{T1417,
+  author = "ANSI",
+  title = "T1.417 - {Spectrum Management fo Loop Transmission Systems, Issue 2}",
+  text = {},
+  year = {2003},
+  url = {},
+  }
+  
+@misc{T1413,
+  author = "ANSI",
+  title = "T1.413 - {Network to customer installation interface - Asymmetric Digital Subscriber Lines (ADSL) Metallic Interface}",
+  text = {Pre-published},
+  year = {2004},
+  url = {} }
+
+
+@misc{T1.417,
+  author = "{ANSI T1.417 (2003)}",
+  title  = {Spectrum Management For Loop Transmission Systems}
+}
+
+@conference{Toumpakaris03,
+   author = "D. Toumpakaris and J. M. Cioffi and D. Gardan and M. Ouzzif",
+   title = "A Square Distance-Based Byte-Erasure Method for Reduced-delay Protection of DSL Systems from Non-stationary Interference",
+   pages = "2114-2119",
+   year = {2003},
+   booktitle = "GLOBECOM 2003",
+   }
+
+@article{Toumpakaris04,
+    author = "D. Toumpakaris and J. M. Cioffi and D. Gardan",
+    title = "Reduced-Delay Protection of DSL Systems Against Nonstationary Disturbances",
+    journal = {IEEE_J_COM},
+    volume = {52},
+    number = {11},
+    pages = "1927-1938",
+    month = nov,
+    year = {2004},
+    }
+
+@article {Valenti02,
+   author = "Craig Valenti",
+   title = "{NEXT and FEXT Models for Twisted-Pair North American Loop Plant}",
+   journal = "IEEE J. Select. Areas Commun.",
+   volume = {20},
+   pages = {893-900},
+   year = {2002},
+   }
+
+@misc{vdsl2,
+  author = {ITU Std. G.993.2},
+  title = {Very high speed digital subscriber line 2 (VDSL2)},
+  text = {},
+  year = {2006},
+  url = {}
+  }
+
+@misc{Verlinden05,
+   author = "J. Verlinden and T. Bostoen and Geert Ysebaert",
+   title = "Dynamic spectrum management for digital subscriber lines - edition 2",
+   text = "Technology White Paper - Alcatel",
+   year = {2005},
+   month = jun,
+   }
+
+@article{Verlinden04,
+    author = "J. Verlinden and E. Van den Bogaert and T. Bostoen",
+    title = "Protecting the robustness of {ADSL} and {VDSL} {DMT} modems when applying {DSM}",
+    journal = {Proc. Int. Zurich Seminar on Communications IZS 2004, Zurich Switzerland},
+    year = {2004},
+    month = feb,
+    pages = {140-143},
+    }
+
+@article{Vincent05,
+    author = "Vincent M. K. Chan and Wei Yu",
+    title = "Joint Multiuser Detection and Optimal Spectrum Balancing for Digital Subscriber Lines",
+    journal = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+    year = {2005},
+    }
+
+@misc {XPORG,
+key = {XPORG},
+Title = {http://www.extremeprogramming.org/},
+Year = {Visited in July, 2007}
+}
+
+@misc {XPDISTILLED,
+key = {XPDISTILLED},
+Title = {http://www.rolemodelsoftware.com/moreAboutUs/publications/xpDistilled.php},
+Year = {Visited in August, 2007}
+}
+
+@article {Werner91,
+   author = {Werner},
+   title = {The {HDSL} Environment},
+   journal = {IEEE JSAC},
+   volume = {},
+   pages = {},
+   month = {August},
+   year = {1991} }
+
+@misc{westhawkURL,
+   author = {Westhawk},
+   title = {Westhawk's {Java SNMP} stack},
+   note = {\url{http://snmp.westhawk.co.uk/}, último acesso em 14/06/2008}
+}
+
+@article {Wolker08,
+   author = "Martin Wolkerstorfer and Driton Statovci and Tomas Nordstrom",
+   title = "{Dynamic spectrum management for energy-efficient transmission in DSL}",
+   journal = "11th IEEE Singapore International Conference on Communication Systems - ICCS 2008",
+   pages = {1015 - 1020},
+   month = nov,
+   year = {2008},
+   }
+
+
+@phdthesis {Yu02a,
+    author = "W. Yu",
+    title = "Competition and Cooperation in Multi-user Communication Environment",
+    school = "Stanford University",
+    year = {2002},
+    }
+
+@article{Yu02b,
+    author = "W. Yu and G. Ginis and J. M. Cioffi",
+    title = "Distributed Multiuser Power Control for Digital Subscriber Lines",
+    journal = "IEEE J. Select. Areas Commun.",
+    volume = {20},
+    number = {5},
+    month = jun,
+    pages = {1105-15},
+    year = {2002},
+    }
+
+@article {Yu03,
+    author = "Wei Yu and D. Toumpakaris and J. M. Cioffi and D. Gardan and F. Gauthier",
+    title = "{Performance of asymmetric digital subscriber lines in an impulse noise environment}",
+    journal = "IEEE Transactions on Communications,",
+    volume = {51},
+    number = {10},
+    month = Oct,
+    pages = {1653-1657},
+    year = {2003},
+    }
+
+@article {Yu04,
+    author = "W. Yu, W. Rhee and J. M. Cioffi",
+    title = "{Iterative Water-Filling for Gaussian Vector Multiple-Access Channels}",
+    journal = "IEEE Transactions Theory",
+    volume = {50},
+    number = {1},
+    month = jan,
+    pages = {145-152},
+    year = {2004},
+    }
+
+@inproceedings { Yu04b,
+    Author = "Wei Yu and Raymond Lui and Raphael Cendrillon",
+    title = "{Dual Optimization Methods for Multiuser Orthogonal Frequency Division Multiplex Systems}",
+    bookTitle = {IEEE Global Communications Conference (Globecom) },
+    pages = {225-229},
+    year = {2004}
+}
+
+@article {Yu06,
+    Author = "Wei Yu and Raymond Lui",
+    title = "{Dual Methods for Nonconvex Spectrum Optimization of Multicarrier Systems}",
+    journal = {IEEE Transactions On Communications},
+    volume = {54},
+    pages = {1310-1322},
+    year = {2006},
+}
+
+@article {Miroslav08,
+    Author = "Miroslav \v{Z}ivkovic and Gerhard Kramer and Carl J. Nuzman and Carl Posthuma and James Wheeler and Phil Whiting and Adriaan J. de Lind van Wijngaarden ",
+    title = "{Performance of digital subscriber line spectrum optimization algorithms}",
+    journal = {Bell Labs Technical Journal archive},
+    volume = {13},
+    pages = {129-146},
+    moth = mar,
+    year = {2008},
+}
+
+
+@article {Zeng01,
+    author = "C. Zeng and C. Aldana and A. A. Salvekar and J. M. Cioffi",
+    title = "{Crosstalk Identification in {xDSL} Systems}",
+    journal = {IEEE J. Select. Areas Commun.},
+    volume = {19},
+    pages = {1488-1496},
+    year = {2001},
+    }
+
+@INPROCEEDINGS{Wolkerstorfer08,
+title="Dynamic spectrum management for energy-efficient transmission in {DSL}",
+author={Wolkerstorfer, M. and Statovci, D. and Nordstrom, T.},
+booktitle={11th IEEE Singapore International Conference on Communication Systems, 2008. ICCS 2008.},
+year={2008},
+month={Nov.},
+volume={},
+number={},
+pages={1015-1020},
+abstract={Dynamic spectrum management (DSM) is an important technique for mitigating crosstalk noise in multi-user digital subscriber line (DSL) environments. Until now, most of the proposed algorithms for DSM have been designed solely for the purpose of bitrate maximization. These algorithms assume a fixed maximum total power and neglect the energy consumption in DSL modems. However, since recently there is a strong interest in the DSL field to reduce energy consumption as shown, e.g., by the European Commissionspsila code of conduct on energy consumption of broadband equipment. In contrast to traditional DSM, this paper will show how DSM can be used for minimizing the energy consumption. We will formulate a global optimization problem for energy minimization and discuss several of its peculiarities compared to the current DSM problems. Furthermore, we derive an iterative, dual-based and semi-distributed algorithm for its local solution, which we call energy-efficient spectrum balancing (EESB). The performance of the algorithm is evaluated through simulations, which show similar results to optimal schemes. In addition, EESB achieves substantial energy savings that can be exploited by adapting the transmit powers to userspsila bitrate demand.},
+keywords={crosstalk, digital subscriber lines, interference suppression, iterative methods, radio spectrum managementDSL energy-efficient transmission, bitrate maximization, crosstalk noise mitigation, dual-based semi-distributed algorithm, dynamic spectrum management, energy-efficient spectrum balancing algorithm, global optimization problem, iterative algorithm, multiuser digital subscriber line},
+doi={10.1109/ICCS.2008.4737336},
+ISSN={}, }
+
+@misc{CioffiT1E14,
+  author = {J. M. Cioffi},
+  title = {A Multicarrier Prime},
+  institution = {ANSI Doc.,T1E1.4 Tech. Subcommittee},
+  year = {1991},
+  url = {}
+  }
+
+
+@book{Summers99,
+   author = "C. K. Summers",
+   title = "ADSL Standards, Implementation and Architecture",
+   publisher = "CRC Press",
+   year = {1999},
+   }
+
+ 
+%AK: This entry Deb01 is in file mlearning.bib. Avoid duplication. 
+%book {Deb01,
+%	author = {Kalyanmoy Deb},
+%	title = {Multi-Objective Optimization Using Evolutionary Algorithms },
+%	publisher = {Wiley},
+%	year = {2001} 
+%}
+
+@misc{Anatel08,
+   author = {ANATEL},
+   title = {Relat\'orio anual 2008},
+   text = {Base October/08},
+   year = {},
+   url = {}
+}
+
+@INPROCEEDINGS{Fonseca07,
+title="Evaluation of {DSM} Performance with Mixed {DSL} Services and Measured Crosstalk Channels",
+author={M. N. Fonseca and D. M. Neves and A. C. Gomes and M. M. Conte and B. Dortschy and K. Ericson and J. Rius I Riu and E. Pelaes and A. Klautau},
+booktitle={25th Simp\' osio Brasileiro de Telecomunica\c c\~ oes (SBrT'07), Recife, Brazil},
+year={2007},
+month={September.},
+volume={},
+number={},
+ISSN={}, }
+
+@misc{Bostoen05,
+   author = "T. Bostoen and R. Oehen and J. Verlinden",
+   title = "Optimizing DSL for Multimedia Services",
+   text = "Technology White Paper - Alcatel",
+   year = {2005},
+   url = {}
+   }
+
+@misc{Alcatel05,
+   author = {ALCATEL},
+   title = {Dynamic Line Management for Digital Subscriber Lines},
+   text = {Base October/05},
+   year = {2005},
+   url = {}
+}
+
+@misc{Vanhastel08,
+   author = {S. Vanhastel},
+   title = {DSL Line Stability - Scaling DSL for Mass-Market Triple Play},
+   text = {Technology White Paper - Alcatel-Lucent},
+   year = {2008},
+   url = {}
+   }
+
+@article{Vanhastel08a,
+   author = "S. Vanhastel and Hernadez, R.",
+   title = "{Enabling IPTV: What�s Needed in the Acess Network}",
+   journal = {IEEE Communications Magazine},
+   volume = {},
+   number = {},
+   month = aug,
+   year = {2008},
+   }
+
+@article {Maes08,
+   author = {J. Maes and M. Peeters and M. Guenach and C. Storry},
+   title = "{Maximizing Digital Subscriber line Performance}",
+   journal = {Bell Labs Technical Report},
+   volume = {},
+   pages = {105-114},
+   year = {2008} }

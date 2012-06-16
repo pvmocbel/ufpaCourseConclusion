@@ -1,0 +1,257 @@
+\documentclass{./public/ufpatcc}
+
+
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath,amssymb}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc} 	
+\usepackage{appendix}
+\usepackage{graphicx,color,amsmath,cite,url,amssymb,subfigure}
+\usepackage{multirow} %tables with multiple rows
+\usepackage{listings} % to list source code: http://www.usq.edu.au/users/leis/notes/latex/code.html
+\usepackage{ifpdf} 
+
+
+
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath,amssymb}
+
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}	%For Windows users
+\usepackage[utf8]{inputenc} 		%For Linux users
+%incluir tudo no table of contents
+    \setcounter{secnumdepth}{5}
+    \setcounter{tocdepth}{5}
+%exemplos de como ensinar o latex a separar silabas corretamente
+\hyphenation {mo-de-lo}
+\hyphenation {EXCELENTE}
+\hyphenation {bra-si-lei-ros}
+\hyphenation {a-mos-tras}
+\hyphenation {SEMINF}
+\hyphenation {re-co-nhe-ci-men-to}
+\hyphenation {apre-sen-tan-do}
+\hyphenation {cor-res-pon-den-tes}
+\hyphenation {mo-de-los}
+\hyphenation {pro-ba-bi-li-da-de}
+\hyphenation {co-nhe-ci-do}
+\hyphenation {li-ne-ar}
+\hyphenation {co-nhe-ci-men-to}
+\hyphenation {di-fe-ren-tes}
+\hyphenation {as-cen-den-tes}
+\hyphenation {ade-qua-da-men-te}
+\hyphenation {com-par-ti-lham}
+\hyphenation {apre-sen-ta}
+\hyphenation {ge-ra-da}
+\hyphenation {res-pec-ti-va-men-te}
+\hyphenation {re-co-nhe-ci-men-to}
+\hyphenation {software}
+\hyphenation {de-ta-lha-da-men-te}
+\hyphenation {des-cen-den-tes}
+\hyphenation {des-cri-tos}
+\hyphenation {li-ne-a-res}
+\hyphenation {ufpaspeech}
+\hyphenation {re-co-nhe-ce-dor}
+
+\usepackage{appendix}
+
+%To use Portuguese:
+%\usepackage[brazil]{babel}   % Para hifenar em portugues
+%\usepackage[latin1]{inputenc}% Para poder digitar os acentos da maneira usual:
+%\usepackage[utf8]{inputenc} %Mesmo acima, mas pra Linux
+
+%\usepackage{ucs} %Unicode functionality
+
+%\usepackage{mathrsfs} %math alphabet I will use for sets
+%%\usepackage{ascii}
+%%\usepackage{mathabx} %convolution symbol
+%\usepackage{makeidx}  %to generate indices, I guess
+%\usepackage{graphicx,color,amsmath,cite,url,amssymb,subfigure}
+%\usepackage{multirow} %tables with multiple rows
+%%\usepackage{pslatex}	% to use PostScript fonts instead of Computer Modern. AK: not sure if I liked
+\usepackage{color}
+\definecolor{light-gray}{gray}{0.95}
+\usepackage{listings} % to list source code: http://www.usq.edu.au/users/leis/notes/latex/code.html
+\lstset{language=Java}
+\lstset{backgroundcolor=\color{light-gray}}
+%\lstset{linewidth=90mm}
+%By default, keywords are typeset bold, comments in italic shape, and spaces in strings appear
+%as . You dont like these settings? Look at this:
+\lstset{% general command to set parameter(s)
+commentstyle=\color{blue}, % white comments
+stringstyle=\ttfamily, % typewriter type for strings
+showstringspaces=false, % no special string spaces
+identifierstyle=, % nothing happens
+keywordstyle=, % nothing happens
+keywordstyle=\color{red}\bfseries ,
+linewidth=\textwidth} %framed box is the text size
+%\lstset{frame=lines}
+%\lstset{frameround=tttt}
+%\lstset{frameround=trbl}  %frameround is not working. use frame:
+\lstset{frame=trbl}
+%\lstset{labelstep=1}
+\lstset{basicstyle=\small} % print whole listing small
+\lstset{firstnumber=1, numberfirstline=false, numbers=left, numberstyle=\tiny, stepnumber=5, numbersep=5pt} %add line numbering
+%The key nolol suppresses an entry for both the environment or the input command.
+
+\usepackage{ifpdf} %The package provides the switch \ifpdf:
+%Example of usage:
+%\ifpdf
+%. . . do things, if pdfTEX is running in pdf mode . . .
+%\else
+%. . . other TEX like latex or pdfTEX in dvi mode . . .
+%\fi
+
+%NF: including hyperlinks and thumbnails features
+\ifpdf
+	\usepackage[pdftex,colorlinks]{hyperref}
+	\usepackage[pdftex]{thumbpdf} %% in case of pdfLaTeX
+	\usepackage{pdflscape}
+%Latex pitfalls: when using dvips the figures must be .eps and
+%when using pdftex the figures must be .pdf (pdftex does not accept .eps)
+%To learn about the issue, read:
+%http://www.math.rug.nl/~trentelman/jacob/pdflatex/pdflatex.html
+%http://www.latex-community.org/viewtopic.php?p=1182
+%http://mintaka.sdsu.edu/GF/bibliog/latex/LaTeXtoPDF.html
+%I (Aldebaro) added the package below:
+\usepackage{epstopdf}
+%and also used Alt+F7 in TeXnicCenter to include --enable-write18 in the command line that invokes 
+%the pdftex "compiler". The warning is still there, but the eps => pdf figure conversion now is
+%done on-the-fly. Later we will have to learn how to use \ifpdf to make the .tex compatible with both
+%latex and pdftex. For that, read: http://www.math.rug.nl/~trentelman/jacob/pdflatex/pdflatex.html
+%command to pdftex:
+%To choose how the system is opened:
+%pdfstartview={FitH}
+%Possible values are:
+%"Fit", to show the whole page;
+%"FitH", to show the width of the page in the window;
+%or "FitB", the width of the contents to the window.
+\hypersetup{%
+pdftitle={Realidade Virtual e Equações de Maxwell},
+pdfauthor={Paulo Victor Mocbel dos Santos},
+pdfkeywords={ASR, SpeechOO, Acessibilidade},
+pdfstartview={FitH}, %% <--
+urlcolor=black,
+linkcolor=black,
+citecolor=black,
+}
+\fi
+
+\graphicspath{{./figures/}}
+\linespread{1.5}
+
+\sloppy
+
+\ufpaTitulo{Realidade Virtual e Solução Numérica das Equações de Maxwell}
+\ufpaAutor{Paulo Victor Mocbel dos Santos}
+\ufpaOrientador{Prof. Dr. Rodrigo Melo e Silva de Oliveira }
+\ufpaCoOrientador{Washington César Braga de Sousa}
+\ufpaMembroBancaA{Prof. Dr. Felipe}
+\ufpaMembroBancaB{Prof. Dr. Josivaldo}
+\ufpaCoordenadorCurso{Prof. Dr. Ádamo Lima de Santana}
+
+
+\begin{document}
+
+
+\begin{ufpaEpigrafe}
+A adversidade leva alguns a serem vencidos e
+ outros a baterem recordes. William Arthur Ward
+\end{ufpaEpigrafe}
+
+\ufpaPaginaDeAprovacao
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Oferecimento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ufpaOferecimento}
+    \index{Oferecimento@Oferecimento}%
+    \addcontentsline{toc}{chapter}{Dedicatria}
+    Dedico esse TCC a minha famlia e amigos, pelo apoio e incentivo,
+    sem os quais, este trabalho no seria possvel.
+\end{ufpaOferecimento}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Agradecimento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ufpaAgradecimentos}
+    \index{Agradecimentos@Agradecimentos}%
+    \addcontentsline{toc}{chapter}{Agradecimentos}
+
+		Dedico esse trabalho a minha familia que sempre me apoio. Agradeço a todos os meus amigos e colegas de turma, por terem me ajudado nessa caminhada.
+
+    \begin{flushright}
+        Paulo Victor Mocbel dos Santos
+    \end{flushright}
+
+\end{ufpaAgradecimentos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sumário
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents    \clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lista de figuras e lista de tabelas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\listoffigures \clearpage \listoftables \clearpage
+
+% Lista de siglas
+\chapter*{Lista de Abreviaturas}
+\addcontentsline{toc}{chapter}{Lista de Abreviaturas}
+
+\begin{description}
+	\item[$\overline{E}$]	Vetor intensidade de campo elétrico ($V/m$)
+	\item[$\overline{H}$]	Vetor intensidade do campo magnético ($A/m$)
+	\item[$\epsilon$]	Permissividade elétrica ($farad/m$)
+	\item[$\mu$]	Permeabilidade magnética ($henry/m$)
+	\item[$\sigma$]	Condutividade elétrica ($siemen/m$)
+	\item[2D]	Bidimensional 
+	\item[3D]	Tridimensional 
+	\item[FDTD]	Finite-difference time-domain 
+	\item[B-rep ou BREP]	Boundary Representation 
+	\item[RV]	Realidade Virtual 
+	\item[AV]	Ambiente Virtual 
+	\item[LANE-SAGS]	Synthesis and Analysis of Grounding Systems 
+\end{description}
+
+\clearpage
+
+\begin{ufpaResumo}
+Neste trabalho, foi realizado o estudo de propagação de ondas eletromagnáticas em um ambiente \textit{indoor}. Estudo esse efetuado através do desenvolvimento de uma interface que modela cenários 3D. Por meio da qual pode-se obeter uma malha compatível com o simulador que usa o método FDTD (LANE-SAGS). Com essa malha, foram feitas várias simulações, cada uma delas referente a um posicionamento diferente da antena nesse ambiente, sempre comparando as repostas simuladas com os valores esperimentais.
+\end{ufpaResumo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Corpo do tcc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{arabic}
+
+\chapter{Introdução}
+\input{introducao}
+
+\chapter{Fundamentação Teórica}
+\input{teoria}
+
+\chapter{Desenvolvimento do Software}
+\input{software}
+
+\chapter{Aplicação e Resultados}
+%\input{resultados}
+
+\chapter{Considerações Finais}
+%\input{conclusao}
+
+\renewcommand\bibname{Referências Bibliográficas}
+%\bibliographystyle{abnt-num} % Estilo para gerar referncias em conformidade com
+                          % as normas brasileiras
+\bibliographystyle{./public/IEEEtran}
+\bibliography{tccMocbel}
+
+\clearpage
+%\appendix
+
+%% -- aqui termina o TCC
+\end{document}

@@ -1,0 +1,64 @@
+@book {irrlichtbook,
+Author = {Aung Sithu Kyan},
+Title = {Irrlicht 1.7 Realtime 3D Engine},
+Publisher = {Packt Publishing Ltd},
+Year = {2011}
+}
+@book{rv,
+  title = {Realidade Virtual Conceitos e Tendências},
+  publisher = {J. Garcia Comunicação Visual},
+  year = {2004},
+  editor = {Claudio Kirner},
+  author = {Romero Tori},
+  edition = {1}
+}
+@book {3dsmod,
+Author = {Andrew Gahan},
+Title = {3ds Max Modeling for Games, Volume 1},
+Publisher = {Focal Press, Inc},
+Year = {2011}
+}
+@book {compgraf,
+Author = {Eduardo Azevedo},
+Title = {Computação Gráfica},
+Publisher = {Editora Campus, Ltda},
+Year = {2003}
+}
+@manual {3dsmax,
+Author = {AutoDesk},
+Title = {User's Reference, Volume 1},
+Publisher = {AutoDesk, Inc},
+Year = {2007}
+}
+@MASTERSTHESIS{adolfo,
+  author = {Adolfo Francesco De Oliveira Colares},
+  title = {Desenvolvimento de Interface Gráfica como Suporte para Solução Numéricas Das Equações de Maxwell em Coordenadas Gerais-3D},
+  school = {Instituto de Tecnologia da Universidade Federal do Pará},
+  year = {2011}
+}
+@phdthesis{rodrigo,
+  author = {Rodrigo Melo e Silva de Oliveira},
+  title = {Nova Metodologia para Análise e Síntese de sistemas de aterramento complexos utilizando o método LN-FDTD, Computação Paralela Automática e Redes Neurais Artificiais},
+  school = {Instituto de Tecnologia da Universidade Federal do Pará},
+  year = {2008}
+}
+@misc{wha,
+  author = {Washington César Braga de Sousa},
+  title = {PLARVICE 3D – Plataforma em Realidade Virtual não-Imersiva para Criação de Estruturas Tridimensionais },
+  howpublished = {Universidade Federal do Pará, Instituto de Tecnologia},
+  year = {2008},
+  note = {Trabalho de Conclusão de Curso} 
+ }
+ @misc{cave,
+  author = {Washington César Braga de Sousa},
+  title = {Caverna Digital},
+  howpublished = {Universidade de São Paulo},
+  url = {http://www.lsi.usp.br/interativos/nrv/caverna.html}; 
+ }
+@eletronic{irrlich,
+  author = {Nikolaus Gebhardt},
+  year = {2003},
+  title = {Engine Irrlicht},
+  url = {http://irrlicht.sourceforge.net}
+}
+

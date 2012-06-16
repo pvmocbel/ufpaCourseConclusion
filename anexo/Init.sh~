@@ -1,0 +1,31 @@
+#Arquivos utilizados
+mmf="..utils/MMF" #modelo acustico
+dic='../utils/dictionary.dic' #dicionario
+led1='../utils/mkPhonesAddSil.led' #script LED para criar fones e adicionar silencio 
+led2='../utils/mkCrossWord.led' #cria trifones
+words='../voice/words.mlf' #MLF a nivel de palavras
+mlf='../labels/MLF' #MLF final a nivel de fonemas
+speaker='denise' #subpasta de ../voice que contem os arquivos de audio e txt de um locutor especifico
+
+mkdir ../labels
+
+echo 'Criando o arquivo MLF a nivel de trifones a partir de um MLF a nivel de palavras...'
+#Criacao de MLF a nivel de trifones a partir de um MLF a nivel de palavras
+find ../voice/$speaker -name '*txt' > txt.list
+java -jar TxtToMLF.jar txt.list
+cat words.mlf | sed s/'.txt'//g > $words
+HLEd -l '*' -d $dic -i phonesp.mlf $led1 $words
+HLEd -l '*' -i $mlf $led2 phonesp.mlf
+rm phonesp.mlf txt.list words.mlf
+
+echo 'Criando os arquivos .lab a serem utilizados pelo NUS a partir do MLF a nivel de trifones...'
+#Criacao dos arquivos individuais de transcricoes (labels .lab) a nivel de trifones 
+#a serem utilizados pelo modulo de adaptacao do newufpaspeech
+#Nota: O modulo de adaptacao do newufpaspeech recebe apenas uma
+#lista de arquivos de texto, em que cada um desses arquivos
+#corresponde a um arquivo de audio (tambem indicado atraves de uma lista),
+#diferente do HTK, que da suporte a labels e a MLFs e tem uma busca
+#mais robusta de arquivos atraves de diversos diretorios
+touch t
+HLEd -l ../labels -d $dic t $mlf
+rm t

@@ -1,0 +1,592 @@
+%This package must be friendly to all users at LaPS
+%If a command is agressive to the template you are using, take it out, but comment in the SVN log, so that other users will know what was excluded.
+%For example, I (AK) moved all commands "\usepackage" to the file usepackages.tex.
+
+%use labels starting with eq: and fig: for equations and figures
+\newcommand{\equl}[1] {{Eq.~(\ref{eq:#1})}}
+\newcommand{\figl}[1] {{Figure~\ref{fig:#1}}}
+
+%Expected value
+\newcommand{\ev}{\mathbb{E}}
+
+\renewcommand{\Re}{{\mathbb R}}
+\newcommand{\ebt}{{\varepsilon_b}}
+\newcommand{\eba}{{\overline\varepsilon_b}}
+%\newcommand{\ekt}{{\varepsilon_k}}
+\newcommand{\ekt}{\varepsilon_{\scriptscriptstyle K}}
+\newcommand{\eka}{\overline\varepsilon_{\scriptscriptstyle K}}
+\newcommand{\deck}{{F}}
+\newcommand{\decb}{{f}}
+\newcommand{\bH}{{\bf H}}
+\newcommand{\bM}{{\bf M}}
+\newcommand{\bw}{{\bf w}}
+\newcommand{\bt}{{\bf t}}
+\renewcommand{\Re}{{\mathbb R}}
+%\def \svmlight {{$\text{SVM}^{Light}$}}
+\def \abM    {{$\alpha$~vs.~$\beta$}}
+\def \svmlight {{$\text{SVM}^{Light}$}}
+%\newcommand{\eka}{\overline\varepsilon_{\scriptscriptstyle K}}
+%\def\x{{\mathbf x}}
+%\def\L{{\cal L}}
+%\def \abM    {{$\alpha$~vs~$\beta$}}
+%\def \svmlight {{$\text{SVM}^{Light}$}}
+%\newcommand{\Num} {\textrm{Num}}
+%\newcommand{\Den} {\textrm{Den}}
+%\newcommand{\tji} {{\theta_{ji}}}
+%\newcommand{\tki} {{\theta_{ki}}}
+%\newcommand{\aij} {{a_{ij}}}
+%\newcommand{\Nji} {{N_{ji}}}
+%\def \kernelxxi {\calK(\bx,\bx_i)}
+%\newcommand{\sign} {\textrm{sign}}
+%\newcommand{\bonea}{\overline{B_1}}
+\newcommand{\ci}[1] {\textsf{#1}}
+\newcommand{\co}[1] {\textsf{#1}}
+
+\newcommand{\myattention}[1] {\textcolor{red}{\LARGE #1}}
+
+\def \rvX     {{\bf X}}
+\def \rvY     {{\bf Y}}
+\newcommand {\Rd}      {{R^{d}}}
+\newcommand {\Rg}      {{R^{g}}}
+\newcommand {\Thetad}      {{\Theta^{d}}}
+\newcommand {\Thetag}      {{\Theta^{g}}}
+
+\newcommand{\bSigma}{\mbox{\boldmath$\Sigma$}}
+\newcommand{\bmu}{\mbox{\boldmath$\mu$}}
+\newcommand{\bpi}{\mbox{\boldmath$\pi$}}
+\newcommand{\bnu}{\mbox{\boldmath$\nu$}}
+
+%this one is beautiful for partial derivative:
+\def \parder#1#2{{ \frac {\partial #1} {\partial #2}}}
+%\def \tp#1#2#3{{\theta_{{#1 #2}}^{#3}}}
+\newcommand{\tp}[3]{{\theta_{{#1 #2}}^{#3}}}
+
+\newcommand{\bm}[1]{{\mbox{\boldmath $#1$}}}
+
+\newcommand{\Line}[0]{%
+  \rule{0cm}{0cm}\\\hrule\rule{0cm}{0cm}%
+}
+
+%Alon Orlitsky
+% Theorem-like environments
+
+\def \qed     {\Box}  % here because other styles don't use box.
+
+\ifdefined\Theorem
+\else
+\newtheorem{Theorem}{Theorem}
+\fi
+
+\newtheorem{Theorem*}{Theorem}
+
+\newtheorem{Application}{Application}
+\newtheorem{Application*}{Application}
+\newtheorem{Claim}{Claim}
+\newtheorem{Claim*}{Claim}
+
+\ifdefined\Corollary
+\else
+\newtheorem{Corollary}[Theorem]{Corollary}
+\fi
+
+\newtheorem{CounterExample*}{$\overline{\hbox{\bf Example}}$}
+
+\ifdefined\Example
+\else
+\newtheorem{Example}{Example}
+\fi
+
+\newtheorem{Example*}{Example}
+\newtheorem{Exercise}{Exercise}
+\newtheorem{Intuition*}{Intuition}
+\newtheorem{Joke*}{Joke}
+
+\ifdefined\Lemma
+\else
+\newtheorem{Lemma}[Theorem]{Lemma}
+\fi
+
+
+\newtheorem{Lemma*}{Lemma}
+\newtheorem{Model}{Model}
+\newtheorem{Model*}{Model}
+\newtheorem{Open problem}{Open problem}
+\newtheorem{Proposition}{Proposition}
+\newtheorem{Property}{Property}
+\newtheorem{Question}{Question}
+\newtheorem{Question*}{Question}
+\newtheorem{Remark*}{Remark}
+\newtheorem{Result}{Result}
+
+% Begin / End Theorems
+
+\def \bthm#1{\begin{#1}\upshape\quad}
+\def \ethm#1{\rqed\end{#1}}
+\def \ethmp#1{\end{#1}}     % No box, when ends in displayed equation
+
+\def \bApplication {\bthm{Application}}
+\def \eApplication {\ethm{Application}}
+\def \bClaim     {\bthm{Claim}}
+\def \eClaim     {\ethm{Claim}}
+\def \eClaimp    {\ethmp{Claim}}
+\def \bCorollary {\bthm{Corollary}}
+\def \eCorollary {\ethm{Corollary}}
+\def \eCorollaryp{\ethmp{Corollary}}
+\def \bCounter   {\bthm{CounterExample*}}
+\def \eCounter   {\ethm{CounterExample*}}
+\def \eCounterp  {\ethmp{CounterExample}}
+\def \bExample   {\bthm{Example}}
+\def \eExample   {\ethm{Example}}
+\def \eExamplep  {\ethmp{Example}}
+\def \bExercise  {\bthm{Exercise}}
+\def \eExercise  {\ethm{Exercise}}
+\def \eExercisep {\ethmp{Exercise}}
+\def \bIntuition {\bthm{Intuition}}
+\def \eIntuition {\ethmp{Intuition}}
+\def \bJoke      {\bthm{Joke}}
+\def \eJoke      {\ethm{Joke}}
+\def \bLemma     {\bthm{Lemma}}
+\def \eLemma     {\ethm{Lemma}}
+\def \eLemmap    {\ethmp{Lemma}}
+\def \bModel     {\bthm{Model}}
+\def \eModel     {\ethm{Model}}
+\def \bOpen      {o\bthm{Open problem}}
+\def \eOpen      {\ethm{Open problem}}
+\def \eOpenp     {\ethmp{Open problem}}
+\def \bProperty  {\bthm{Property}}
+\def \eProperty  {\ethm{Property}}
+\def \bQuestion  {\bthm{Question}}
+\def \eQuestion  {\ethm{Question}}
+\def \bRemark    {\bthm{Remark}}
+\def \eRemark    {\ethm{Remark}}
+\def \bResult    {\bthm{Result}}
+\def \eResult    {\ethm{Result}}
+\def \bTheorem   {\bthm{Theorem}}
+\def \eTheorem   {\ethm{Theorem}}
+\def \eTheoremp  {\ethmp{Theorem}}
+
+\def \bSubexa    {\begin{subexa}}
+\def \eSubexa    {\ethm{subexa}}
+
+% Environments
+
+\ifdefined\Problem
+\else
+\newenvironment{Problem}{\textbf{Problem}\\ \begin{enumerate}}{\end{enumerate}}
+\fi
+
+
+\newenvironment{Problems}{\textbf{Problems}\\ \begin{enumerate}}{\end{enumerate}}
+
+%\newenvironment{Problems}{\begin{trivlist}\item[]{\textbf{Problems}}{\end{trivlist}}}
+
+% Headers
+
+\def \skpbld#1{\par\noindent\textbf{#1}\quad}
+\def \skpblds#1{\skpbld{#1}\par\noindent}
+
+\def \Answer   {\skpbld{Answer}}
+\def \Answers  {\skpblds{Answers}}
+\def \Basis    {\skpbld{Basis}}
+\def \Check    {\skpbld{Check}}
+\def \Intuition{\skpbld{Intuition}}
+\def \Method   {\skpbld{Method}}
+\def \Methods  {\skpblds{Methods}}
+\def \Outline  {\skpbld{Outline}}
+\def \Proof    {\skpbld{Proof}}
+\def \Proofs   {\skpblds{Proofs}}
+%\def \Problem  {\skpbld{Problem}}
+%\def \Problems {\skpblds{Problems}}
+\def \Proline  {\skpbld{Proof Outline}}
+\def \Remark   {\skpbld{Remark}}
+\def \Remarks  {\skpblds{Remarks}}
+\def \Solution {\skpbld{Solution}}
+\def \Solutions{\skpblds{Solutions}}
+\def \Verify   {\skpbld{Verify}}
+\def \Step     {\skpbld{Step}}
+
+% Ignores
+
+\newcommand{\ignore}[1]{{}}
+
+%\newcommand{\problem}[1]{#1}
+%\newcommand{\problem}[1]{}
+
+%\newcommand{\solution}[1]{\mbox{}\\ \medskip\noindent{\bf Solution\medskip}#1}
+%\newcommand{\solution}[1]{{\bf Solution}\quad #1}
+%\newcommand{\solution}[1]{#1}
+%\newcommand{\solution}[1]{}
+
+\newcommand{\source}[1]{(Taken from~\cite{#1})}
+%\newcommand{\source}[1]{}
+
+\newcommand{\takenfrom}[1]{(Taken from~\cite{#1})}
+
+% Formating
+
+\newcommand{\joke}[1]{\footnote{#1}}
+\newcommand{\trivia}[1]{\footnote{#1}}
+
+% Handouts
+
+\newcommand{\hohead}[3]{
+\hfill\begin{minipage}{3.5cm}
+\bf
+#1\\ % class # (CSE20) (perhaps + term)
+#2\\ % term (Fall 2K+1) or name (Alon Orlitsky)
+%Handout #3\\
+\end{minipage}
+}
+
+\newcommand{\solhead}[3]{ % CSE20 -- Discrete Math; Fall 2K+1; 1
+\begin{center}
+  \Large #1\\[1ex]
+  \normalsize #2\\[3ex]
+  Solutions for Homework Assignment \##3\\
+\end{center}
+}
+
+% Blackboard fonts
+
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}} % \dN
+\newcommand{\QQ}{\mathbb{Q}} % \dQ
+\newcommand{\RR}{\mathbb{R}} % \dR
+\newcommand{\ZZ}{\mathbb{Z}} % \dZ
+
+% Numbers
+
+\newcommand{\complex}{\CC}
+\newcommand{\integers}{\ZZ}
+\newcommand{\naturals}{\NN}
+\newcommand{\rationals}{\QQ}
+\newcommand{\reals}{\RR}
+\newcommand{\RRp}{\reals^+}
+\newcommand{\integersp}{\ZZ^+}
+\newcommand{\integerss}[1]{\ZZ_{\ge{#1}}}
+
+% boldface
+\def \bzeroM {{\bf 0}}
+\def \bff     {{\bf f}}
+
+\def \bA {{\textbf A}}
+\def \bB {{\textbf B}}
+\def \bC {{\textbf C}}
+\def \bD {{\textbf D}}
+\def \bE {{\textbf E}}
+\def \bF {{\textbf F}}
+\def \bG {{\textbf G}}
+\def \bH {{\textbf H}}
+\def \bI {{\textbf I}}
+\def \bJ {{\textbf J}}
+\def \bK {{\textbf K}}
+\def \bL {{\textbf L}}
+\def \bM {{\textbf M}}
+\def \bN {{\textbf N}}
+\def \bO {{\textbf O}}
+\def \bP {{\textbf P}}
+\def \bQ {{\textbf Q}}
+\def \bR {{\textbf R}}
+\def \bS {{\textbf S}}
+\def \bT {{\textbf T}}
+\def \bU {{\textbf U}}
+\def \bV {{\textbf V}}
+\def \bW {{\textbf W}}
+\def \bX {{\textbf X}}
+\def \bY {{\textbf Y}}
+\def \bZ {{\textbf Z}}
+
+\def \ba {{\textbf a}}
+\def \bb {{\textbf b}}
+\def \bc {{\textbf c}}
+\def \bd {{\textbf d}}
+\def \be {{\textbf e}}
+\def \bf {{\textbf f}}
+\def \bg {{\textbf g}}
+\def \bh {{\textbf h}}
+\def \bi {{\textbf i}}
+\def \bj {{\textbf j}}
+\def \bk {{\textbf k}}
+\def \bl {{\textbf l}}
+\def \bm {{\textbf m}}
+\def \bn {{\textbf n}}
+\def \bo {{\textbf o}}
+\def \bp {{\textbf p}}
+\def \bq {{\textbf q}}
+\def \br {{\textbf r}}
+\def \bs {{\textbf s}}
+\def \bt {{\textbf t}}
+\def \bu {{\textbf u}}
+\def \bv {{\textbf v}}
+\def \bw {{\textbf w}}
+\def \bx {{\textbf x}}
+\def \by {{\textbf y}}
+\def \bz {{\textbf z}}
+
+% caligraphics
+
+\def \calA {{\cal A}}
+\def \calB {{\cal B}}
+\def \calC {{\cal C}}
+\def \calD {{\cal D}}
+\def \calE {{\cal E}}
+\def \calF {{\cal F}}
+\def \calG {{\cal G}}
+\def \calH {{\cal H}}
+\def \calI {{\cal I}}
+\def \calJ {{\cal J}}
+\def \calK {{\cal K}}
+\def \calL {{\cal L}}
+\def \calM {{\cal M}}
+\def \calN {{\cal N}}
+\def \calO {{\cal O}}
+\def \calP {{\cal P}}
+\def \calQ {{\cal Q}}
+\def \calR {{\cal R}}
+\def \calS {{\cal S}}
+\def \calT {{\cal T}}
+\def \calU {{\cal U}}
+\def \calV {{\cal V}}
+\def \calW {{\cal W}}
+\def \calX {{\cal X}}
+\def \calY {{\cal Y}}
+\def \calZ {{\cal Z}}
+
+\def \cala {{\cal a}}
+\def \calb {{\cal b}}
+\def \calc {{\cal c}}
+\def \cald {{\cal d}}
+\def \cale {{\cal e}}
+\def \calf {{\cal f}}
+\def \calg {{\cal g}}
+\def \calh {{\cal h}}
+\def \cali {{\cal i}}
+\def \calj {{\cal j}}
+\def \calk {{\cal k}}
+\def \call {{\cal l}}
+\def \calm {{\cal m}}
+\def \caln {{\cal n}}
+\def \calo {{\cal o}}
+\def \calp {{\cal p}}
+\def \calq {{\cal q}}
+\def \calr {{\cal r}}
+\def \cals {{\cal s}}
+\def \calt {{\cal t}}
+\def \calu {{\cal u}}
+\def \calv {{\cal v}}
+\def \calw {{\cal w}}
+\def \calx {{\cal x}}
+\def \caly {{\cal y}}
+\def \calz {{\cal z}}
+
+% vectors
+
+%\def \veca  {{\overline a}}
+%\def \vecb  {{\overline b}}
+%\def \vecX  {{\overline X}}
+%\def \vecY  {{\overline Y}}
+%\def \vecx  {{\overline x}}
+%\def \vecy  {{\overline y}}
+%\def \vec#1{{\overline{#1}}}
+
+% Abbreviations
+
+\newcommand{\eg}{\textit{e.g.,}\xspace}
+\newcommand{\etc}{etc.\@\xspace}
+\newcommand{\ie}{\textit{i.e.,}\xspace}  % note that overridden in spanish
+
+% notes
+
+%\definecolor{light}{gray}{.75}
+
+\def \mynote#1{{}}
+
+% marginal notes
+
+\def \marcha{{\marginpar{CHNGD}}}
+\def \marfix{{\#\marginpar{FIX \#}}}
+\def \marnew{{\marginpar{NEW}}}
+\def \marok{{\#\marginpar{\# OK?}}}
+
+% qed's
+
+\def \eqed    {\eqno{\qed}}
+\def \rqed    {\hbox{}~\hfill~$\qed$}
+
+% sequences
+
+\def \upto  {{,}\ldots{,}}
+\def \zn    {0\upto n}
+\def \znmo  {0\upto n-1}
+\def \znpo  {0\upto n+1}
+\def \ztnmo {0\upto 2^n-1}
+\def \on    {1\upto n}
+\def \onmo  {1\upto n-1}
+\def \onpo  {1\upto n+1}
+
+% sets
+
+\def \setpmo   {\{\pm 1\}}
+\def \setmpo   {\{-1{,}1\}}
+\def \setzo    {\{0{,}1\}}
+\def \setzn    {\{\zn\}}
+\def \setznmo  {\{\znmo\}}
+\def \setztnmo {\{\ztnmo\}}
+\def \seton    {\{\on\}}
+\def \setonmo  {\{\onmo\}}
+\def \set#1#2{{\{{#1}\upto{#2}\}}}
+\def \setzon   {\setzo^n}
+\def \setzos   {\setzo^*}
+
+\def \sets#1{{\{#1\}}}
+\def \Sets#1{{\left\{#1\right\}}}
+
+\def \inseg#1{{[#1]}}
+
+% functions
+
+\def \ord    {\#}
+
+\def \suml   {\sum\limits}
+\def \prodl  {\prod\limits}
+
+% Set operations
+
+%\def \union  {\cup}
+\def \union  {\bigcup}
+\def \unionl {\union\limits}
+%\def \Union {\Bigcup} % want this
+\def \Union  {\bigcup}
+\def \Unionl {\Union\limits}
+
+\def \inter  {\cap}
+%\def \inter  {\bigcap}
+\def \interl {\inter\limits}
+\def \Inter {\Bigcap}
+\def \Interl {\Inter\limits}
+
+% Floors and Ceilings
+
+\def \ceil#1{{\lceil{#1}\rceil}}
+\def \Ceil#1{{\left\lceil{#1}\right\rceil}}
+\def \floor#1{{\lfloor{#1}\rfloor}}
+\def \Floor#1{{\left\lfloor{#1}\right\rfloor}}
+
+% Parentheses, brackets
+
+\def \paren#1{{({#1})}}
+\def \Paren#1{{\left({#1}\right)}}
+\def \brack#1{{[{#1}]}}
+\def \Brack#1{{\left[{#1}\right]}}
+
+%\def \frac#1#2{{{#1}\over{#2}}}
+
+\def \binomial#1#2{{{#1}\choose{#2}}}
+
+\def \gcd#1#2{{{\rm gcd}\paren{{#1},{#2}}}}
+\def \Gcd#1#2{{{\rm gcd}\Paren{{#1},{#2}}}}
+
+\def \lcm#1#2{{{\rm lcm}\paren{{#1},{#2}}}}
+\def \Lcm#1#2{{{\rm lcm}\Paren{{#1},{#2}}}}
+
+\newcommand{\ed}{\stackrel{\mathrm{def}}{=}}
+%\def \ed     {\,{\buildrel \rm def \over =}\,}
+\def \gap    {\ \hbox{\raisebox{-.6ex}{$\stackrel{\textstyle>}{\sim}$}}\ }
+
+% values
+
+\def \half    {{\frac12}}
+\def \quarter {{\frac14}}
+\def \oo#1{{\frac1{#1}}}
+
+% notation
+
+\def \pr     {{p}}
+\def \Pr     {{\hbox{Pr}}}
+\def \iff    {{\it iff }}
+\def \th     {{\rm th }}
+
+% ignore
+
+\def\ignore#1{}
+
+% Logic
+
+%\newcommand{\ra}{\rightarrow}
+\def \contra {{\leftrightarrows}}
+\newcommand{\ol}[1]{{\overline{#1}}}
+%\def \ob {\overline}
+
+\def \ve {{\lor}} % needed?
+\def \eq {{\equiv}} % needed?
+
+% spaces
+
+\newcommand{\spcin}{\hspace{1.0in}}
+\newcommand{\spchin}{\hspace{.5in}}
+
+% Default text appears in regular print in both book and class versions.
+% There are two types of text that need to be highlighted in class:
+% clson - not mentioned in book version (eg jokes)
+% clsbk - regular text in book (the parts that need be said)
+
+%For book:
+%\newcommand{\clson}[1]{}
+%\newcommand{\clsbk}[1]{#1}
+%For class:
+\newcommand{\clson}[1]{\colorbox{light}{{#1}}}
+\newcommand{\clsbk}[1]{\colorbox{light}{{#1}}}
+
+%\newcommand{\bi}{\begin{aopl}}
+%\newcommand{\ei}{\end{aopl}}
+
+%\newcommand{\bi}{\begin{itemize}}
+%\newcommand{\ei}{\end{itemize}}
+%\newcommand{\bq}{\begin{quote}}
+%\newcommand{\eq}{\end{quote}}
+
+\newenvironment{aopl}
+  {\begin{list}{}{\setlength{\itemsep}{4pt plus 2pt minus 2pt}}}
+  {\end{list}}
+
+% operators
+
+\def\orpro{\mathop{\mathchoice
+   {\vee\kern-.49em\raise.7ex\hbox{$\cdot$}\kern.4em}
+   {\vee\kern-.45em\raise.63ex\hbox{$\cdot$}\kern.2em}
+   {\vee\kern-.4em\raise.3ex\hbox{$\cdot$}\kern.1em}
+   {\vee\kern-.35em\raise2.2ex\hbox{$\cdot$}\kern.1em}}\limits}
+
+\def\andpro{\mathop{\mathchoice
+ {\wedge\kern-.46em\lower.69ex\hbox{$\cdot$}\kern.3em}
+ {\wedge\kern-.46em\lower.58ex\hbox{$\cdot$}\kern.25em}
+ {\wedge\kern-.38em\lower.5ex\hbox{$\cdot$}\kern.1em}
+ {\wedge\kern-.3em\lower.5ex\hbox{$\cdot$}\kern.1em}}\limits}
+
+\def\inter{\mathop{\mathchoice
+   {\cap}
+   {\cap}
+   {\cap}
+   {\cap}}}
+\def\interl {\inter\limits}
+
+\def\carpro{\mathop{\mathchoice
+   {\times}
+   {\times}
+   {\times}
+   {\times}}\limits}
+
+% for old documents
+
+%\newcommand{\twlrm}{\fontsize{12}{14pt}\normalfont\rmfamily}
+%\newcommand{\tenrm}{\fontsize{10}{12pt}\normalfont\rmfamily}
+
+% picture macros
+
+\newcommand{\grid}[2]{ % grid{width}{height}
+  \multiput(0,0)(1,0){#1}{\line(0,1){#2}}
+  \put(#1,0){\line(0,1){#2}}
+  \multiput(0,0)(0,1){#2}{\line(1,0){#1}}
+  \put(0,#2){\line(1,0){#1}}
+}

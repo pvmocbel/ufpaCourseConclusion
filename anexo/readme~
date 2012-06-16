@@ -1,0 +1,15 @@
+Este diretório contem os scripts utilizados para adaptação de modelos acústicos, 
+envolvendo desde a fase de extração de parâmetros dos arquivos de voz 
+até o teste que compara os modelos adaptados pelo HTK e pelo newufpaspeech
+
+Init: Criacao dos arquivos de transcricao (labels e MLF) utilizados pelos modulos de adaptacao
+FrontEnd: Extração dos parâmetros MFCC dos arquivos de voz e criacao das listas utilizadas pelos módulos
+adapterTest: Adaptação dos modelos e testes
+TxtToMLF.jar: Concatena arquivos txt em um MLF
+creater.jar: Modulo do NUS que cria arvore de regressao para adaptacao
+adapter.jar: Modulo do NUS que adapta os modelos usando MLLR  
+
+Para executar o teste, rode o script MakeAll, que executa os outros scripts na seguinte ordem:
+1) Init
+2) FrontEnd
+3) adapterTest

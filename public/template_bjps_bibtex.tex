@@ -1,0 +1,227 @@
+\documentclass[12pt,twoside,reqno,final]{bjps}
+
+\def\publname{\textit{Brazilian Journal of Probability and Statistics}} 
+\issueinfo{32}{1}{April}{2007}
+\pagespan{1}{5} 
+\def\ISSN{0103-0752}
+\PII{ISSN \ISSN}
+\copyrightinfo{1987}{Brazilian Statistical Association}
+
+\usepackage{amsfonts,amssymb,latexsym,texnames}
+\usepackage{graphicx}
+
+%% use txfonts (Times) 
+\usepackage{txfonts}
+
+\usepackage{hyperref,natbib}
+
+% Optional
+%\usepackage[active]{srcltx}
+
+\usepackage[letterpaper,left=1.40in,right=1.40in,top=1.25in,bottom=1.25in]{geometry}
+
+
+\theoremstyle{plain}
+\numberwithin{equation}{section}
+
+\let\mathbb=\varmathbb
+\let\Bbbk=\varBbbk
+\def\E{{\mathbb E}}
+\def\R{{\mathbb R}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+
+%\setlength{\textwidth}{6truein}
+
+
+\begin{document}
+
+\title[Template for the BJPS]
+      {\LaTeX\ Template for Preparation of Manuscripts for the Brazilian Journal of Probability and Statistics}
+ 
+\author[F.\ Cribari-Neto]{Francisco Cribari--Neto}
+\address{Departamento de Estat\'{\i}stica\\
+Universidade Federal de Pernambuco\\
+Cidade Universit\'{a}ria\\
+Recife/PE, 50740--540, Brazil}
+\email[F.\ Cribari--Neto]{cribari@de.ufpe.br}
+\urladdr[F.\ Cribari--Neto]{\url{http://www.de.ufpe.br/~cribari}}
+
+\author[A.C.\ Frery]{Alejandro C.\ Frery}
+\address{Instituto de Computa\c c\~ao\\
+Universidade Federal de Alagoas\\
+BR 104 Norte km 97\\
+Macei\'o/AL, 57072--970, Brazil}
+\email[A.C.\ Frery]{acfrery@pesquisador.cnpq.br}
+\urladdr[A.C.\ Frery]{\url{http://www.tci.ufal.br/frery}}
+
+\thanks{Received xx/xx/xx, accepted yy/yy/yy}
+
+\keywords{Template, \LaTeX, scientific typesetting}
+
+\begin{abstract}
+This document is intended to serve as a template for authors willing to type their manuscripts in \LaTeX\ for the Brazilian Journal of Probability and Statistics.
+Examples of the some of the most important features are included.
+The style based on the widespread \verb+amsart+ class, while the bibliographic style is a modification of the ``author-year'' Style Manual for Authors, Editors and Printers of Australian Government Publications (AGSM).
+Along with this template file, we provide a 
+\BibTeX\ example file and a file which contains a PostScript figure.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+
+The files that compose this style template are the following:
+\begin{enumerate}
+\item\label{tempbib} \verb+template_bjps_bibtex.tex+: The template file for \BibTeX\ users.
+\item\label{bib} \verb+examples.bib+: A \BibTeX\ file with examples used in the compilation of the first file.
+\item\label{bibstyle} \verb+agsm_url.bst+: The \BibTeX\ style.
+\item\label{tempnobib} \verb+template_bjps_nobibtex.tex+: The template file for users that intend to type the references directly into the source file.
+\item\label{class} \verb+bjps.cls+: The journal style class, which is based on the \verb+amsart+ class (from the American Mathematical Society). 
+\item\label{fig} \verb+furado.ps+: The PostScript file containing the figure used in the document. 
+\end{enumerate}
+Users that will use \BibTeX should copy files numbers~\ref{tempbib}, \ref{bib}, \ref{bibstyle}, and~\ref{fig} to their working directory.
+Users that will not use \BibTeX need only files numbers~\ref{tempnobib} and~\ref{fig}.
+
+
+An introduction should provide a nice bibliographic review.
+Such review may consist of books, either printed~\citep{MaronnaMartinYohai:book:2006} or published online~\citep{manski_analog}.
+A style for edited books is also provided, as can be seen in the work by~\citet{Matthews01}.
+
+Usually, the main references are from research journals.
+These can be cited, as already presented, between parentheses \citep{AllendeFreryetal:JSCS:05} or integrated into the text as is done in the work by \citet{Nakamuraetal:ACMCSUR}.
+
+Papers in conference proceedings \citep[as, e.g., the work by][]{FreryFerrero:Sibgrapi:2006} can also be cited.
+Notice how comments can be included using brackets in the \verb+\citep+ command.
+
+References are sorted in alphabetical order following the name of the first author.
+We recommend that the titles of journals should not be abbreviated.
+When used, however, abbreviations should conform with the Index of Mathematical Papers.
+
+The use of \verb+bibtex+ is highly recomended (for more information, details and software, see \url{http://www.ctan.org}).
+Those authors that prefer to type their references directly in the manuscript, will find commented examples in the source file.
+
+Along with this file (\verb+template_bjps_bibtex.tex+), we provide the \BibTeX\ example file \verb+examples.bib+ which contains a diversity of entries.
+
+The compilation of the current template source file (\verb+template_bjps_bibtex.tex+) together with the example \verb+bibtex+ file 
+(\verb+examples.bib+) was carried out a \texttt{Linux} system as follows:
+\begin{verbatim}
+author@jsbach$ latex template_bjps_bibtex
+author@jsbach$ bibtex template_bjps_bibtex
+author@jsbach$ latex template_bjps_bibtex
+author@jsbach$ latex template_bjps_bibtex
+\end{verbatim}
+
+Users of Windows, Unix and other operational systems should refer to each platform-specific documentation.
+
+\section{Equations, Figures and Tables}
+
+Only equations that are referenced in the text should be numbered following the ``(section.number)'' convention, and the numbering should appear flushed to the right.
+Consider, for instance, the standard Gaussian distribution. The corresponding density is
+$$
+f(x) = \frac1{\sqrt{2\pi}} \exp\{-{x^2}/{2} \},
+$$
+with $x \in \R$. The standard exponential density is
+\begin{equation}
+g(x) = \exp\{-x\},
+\label{dens:exp}
+\end{equation}
+with $x \in \R_+$.
+The density given in equation~\eqref{dens:exp} conveniently scales by any positive number.
+
+Tables are quite conveniently handled by \LaTeX.
+All of them should be sequentially numbered.
+Consider, for instance, Table~\ref{Ta:beta1erroexp}, and notice that its caption is above the table.
+
+\begin{table}[hbt]
+\caption{{Confidence intervals for $\beta_1$: 
+coverages (\%) and lengths; unbalanced design and skewed errors.}}\label{Ta:beta1erroexp}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+& & \multicolumn{2}{|c|}{$n=20$}& \multicolumn{2}{|c|}{$n=60$}&
+\multicolumn{2}{|c|}{$n=100$} \\\hline & interval&cov.\ &length
+&cov.\ &length &cov.\ &length \\\hline
+ &HC0&76.87&0.25&87.31&0.20&89.85&0.17\\\cline{2-8}
+ &HC2&87.26&0.37&89.42&0.22&90.94&0.18\\\cline{2-8}
+ $\lambda=1$ &HC3&94.47&0.66&91.27&0.25&92.23&0.20\\\cline{2-8}
+ &HC4&98.53&2.75&93.52&0.31&93.59&0.22\\\cline{2-8}
+ &OLS&94.37&0.44&94.67&0.25&95.06&0.19\\\hline \hline
+ &HC0&44.19&0.31&74.52&0.41&81.71&0.36\\\cline{2-8}
+ &HC2&64.35&0.51&78.22&0.47&83.67&0.39\\\cline{2-8}
+ $\lambda \approx 9$&HC3&83.09&0.97&81.69&0.54&85.43&0.43\\\cline{2-8}
+ &HC4&95.93&4.21&87.37&0.71&88.43&0.50\\\cline{2-8}
+ &OLS&71.95&0.49&68.97&0.29&68.13&0.23\\\hline \hline
+ &HC0&25.72&0.45&70.26&0.80&79.74&0.72\\\cline{2-8}
+ &HC2&54.39&0.81&74.57&0.92&82.06&0.78\\\cline{2-8}
+ $\lambda \approx 49$&HC3&83.54&1.63&78.68&1.06&84.00&0.85\\\cline{2-8}
+&HC4&96.85&7.26&85.11&1.43&87.53&1.00\\\cline{2-8}
+&OLS&40.62&0.57&45.14&0.38&46.79&0.30\\\hline
+\end{tabular}
+\end{table}
+
+Large tables can be rotated, i.e., displayed in landscape mode 
+(horizontally) 
+using \verb+\begin{sidewaystable}[p]+ to mark its beginning and 
+\verb+\end{sidewaystable}+ to mark its end. 
+For that, make sure that the \verb+rotating+ package is loaded. 
+
+Several graphic formats are handled by the \verb+graphicx+ package, but one of the most convenients is PostScript (PS).
+This package offers a wide variety of options for resizing, cropping and rotating figures.
+Figure~\ref{fig:phantoms} presents an image stored in this format, and inserted in the manuscript with the \verb+\includegraphics+ command.
+Notice that captions are below the graphical element.
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=.48\linewidth]{furado.ps}
+\caption{Observed sphere with holes: amplitude image at the focal plane.}\label{fig:phantoms}
+\end{figure}	
+
+The \verb+rotating+ package can be used to display figures in landscape 
+mode.
+
+\section{Other \LaTeX\ features}
+
+\LaTeX\ is a very rich typesetting system, and authors are encouraged to use its features as, for instances, lists of assumptions:
+\begin{description}
+\item[A1] The model $y=X\beta + \varepsilon$ is correctly specified; 
+\item[A2] $\E(\varepsilon_i)=0,$ $i=1,\ldots,n$;
+\item[A3] $\E(\varepsilon_i ^2)= {\rm var}(\varepsilon_i) = \sigma_i^2$
+($0 < \sigma_i^2 < \infty$), $i=1,\ldots,n$;
+\item[A3'] ${\rm var}(\varepsilon_i) = \sigma^2$, $i=1,\ldots,n$
+($0< \sigma^2 < \infty$);
+\item[A4] $\E(\varepsilon_i \varepsilon_j)=0$ $\forall \, i\neq j$;
+\item[A5] $\lim_{n\rightarrow\infty} n^{-1}(X'X) = Q$, where 
+$Q$ is a positive definite matrix. 
+\end{description}
+
+\begin{theorem}[Usual environments are provided]\label{theo:1}
+Environments for theorems, colloraries, lemmas and propositions are provided in the style.
+\end{theorem}
+
+\begin{corollary}There is an environment for corollaries
+\end{corollary}
+
+\begin{proof}
+The proof follows from Theorem~\ref{theo:1}.
+\end{proof}
+
+Theorems and corollaries should also be sequentially numbered, regardless the section they appear.
+
+\section*{Appendix}
+
+Place proofs and thechnical details in an appendix. 
+
+\section*{Acknowledgements}
+
+Research supported by CNPq. We also thank Johann Sebastian Bach for inspiration.
+
+%% References can be managed by BibTeX, as shown in the following code
+
+\small
+
+\bibliographystyle{agsm_url}
+\bibliography{examples}
+
+\end{document}

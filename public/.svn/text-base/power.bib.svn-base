@@ -1,0 +1,858 @@
+@phdthesis {,
+Author = {},
+Title = {},
+School = {},
+Year = {} }
+
+@mastersthesis {,
+Author = {},
+Title = {},
+School = {},
+Year = {} }
+%Optional fields: address, month, note, key
+
+@techreport {,
+Author = {},
+Title = {},
+Institution = {},
+Year = {} }
+
+@inbook {,
+author = {},
+title = {},
+publisher = {},
+address = {},
+year = {},
+type = {},
+chapter = {},
+Editor = {} }
+
+@misc{,
+  author = {},
+  title = {},
+  text = {},
+  year = {},
+  url = {} }
+
+
+
+@book {,
+Author = {},
+Title = {},
+Publisher = {},
+Year = {} }
+
+@article {,
+Author = {},
+Title = {},
+Journal = {},
+Volume = {},
+Pages = {},
+Year = {} }
+
+@inproceedings {,
+Author = {},
+Title = {},
+BookTitle = {},
+Pages = {},
+Year = {} }
+
+@techreport {kezunovic02d,
+Author = {M. Kezunovic, S. Vasilic and F. Gul-Bagriyanik},
+Title = {Advanced Approaches for Detecting and Diagnosing Transients and Faults},
+Institution = {Texas A\&M University},
+Year = {2002} }
+
+@inproceedings {Salgado04,
+Author = {Salgado, R. M.and Ohishi, Takaaki and Ballini, Rosangela},
+Title = {Clustering Bus Load Curves},
+BookTitle = {Power Systems Conference and Exposition.  IEEE PES, vol.3},
+Pages = {1251- 1256},
+Year = {2004} }
+
+@inproceedings {Fonseca08,
+Author = {Fonseca, M. da C.; et al.},
+Title = {Desenvolvimento de um Sistema Inteligente para Apoio a Tomada de Decisão em Ressarcimento por Danos em 
+Equipamentos Elétricos Utilizando o Algoritmo de Classificação KNN},
+BookTitle = {VIII International Conference of Industry Applications},
+Pages = {},
+Year = {2008} }
+ 
+@inproceedings {Dash07,
+Author = {Dash, P.K. and Samantaray, S.R. and Panda, G.},
+Title = {ault Classification and Section Identification of an Advanced Series-Compensated Transmission Line Using Support Vector Machine},
+BookTitle = {F. IEEE Transactions on Power Delivery,  Vol 22},
+Pages = {67 - 73},
+Year = {2007} }
+
+@inproceedings {Mori02,
+Author = {Mori, H. and Kosemura, N. and Kondo, T.; Numa, K.},
+Title = {Data mining for short-term load forecasting},
+BookTitle = {Power Engineering Society Winter Meeting, IEEE. Vol 1},
+Pages = {623 - 624},
+Year = {2002} }
+
+@inproceedings {Ghendy04,
+Author = {Ghendy Cardoso Jr; Jacqueline G Rolim; Hans Helmut Zürn},
+Title = {Diagnóstico de faltas em sistemas de potência: definição do problema e abordagens via inteligência artificial},
+BookTitle = {Sba Controle \& Automação vol.15 no.2 Campinas Apr./June},
+Pages = {},
+Year = {2004} }
+
+@inproceedings {Tso04,
+Author = {Tso, S.K. and Lin, J.K. and Ho, H.K. and Mak, C.M. and Yung, K.M.; Ho, Y.K.;},
+Title = {Data mining for detection of sensitive buses and influential buses in a power system subjected to disturbances},
+BookTitle = {IEEE Transactions on  Power Systems, Vol 19},
+Pages = {563 - 568},
+Year = {2004} }
+
+@inproceedings {Dola05,
+Author = {Dola, H.M.; Chowdhury, B.H.},
+Title = {Data mining for distribution system fault classification},
+BookTitle = {Proceedings of the 37th Annual North American Power Symposium},
+Pages = {457 - 462},
+Year = {2005} }
+
+@inproceedings {FIGUEREDO05,
+Author = {FIGUEREDO, V. and Rodrigues F. and Vale, Z.and Gouveia, J. B},
+Title = {An eletric energy Consumer characterization Framework based on data mining techniques},
+BookTitle = {Power Systems, IEEE Transactions},
+Pages = {596- 602},
+Year = {2005} }
+
+@inproceedings {Ramos08,
+Author = {Ramos, S.   Vale, Z.},
+Title = {Data mining techniques application in power distribution utilities},
+BookTitle = {Transmission and Distribution Conference and Exposition},
+Pages = {1-8},
+Year = {2008} }
+ 
+@inproceedings {Kezunovic01a,
+Author = {S. Vasilic and M. Kezunovic},
+Title = {New design of a neural network algorithm for detecting and classifying the transmission line faults},
+BookTitle = {IEEE PES Transmission and Distribution Conference},
+Pages = {1306-1314},
+Year = {2001} }
+
+@inproceedings {Vasilic05,
+Author = {S. Vasilic, M. Kezunovic},
+Title = {Fuzzy ART Neural Network Algorithm for Classifying the Power System Faults},
+BookTitle = {IEEE Transactions on Power Delivery},
+Pages = {1306-1314},
+Year = {2005} }
+
+
+@inproceedings {Vasilic02,
+Author = {S. Vasilic, M. Kezunovic},
+Title = {An Improved Neural Network Algorithm for Classifying the Transmission Line Faults},
+BookTitle = {IEEE Power Engineering Society Winter Meeting},
+Pages = {918 - 923},
+Year = {2002} }
+
+
+@inproceedings {COSTA06,
+Author = {COSTA, F. B.and Silva, K. M. and Souza, B. A. and Dantas, K. M. C. and Brito, N. S. D.},
+Title = { A method for fault classification in transmission lines bases on ANN and wavelet coefficients energy},
+BookTitle = {International Joint Conference Neural Networks},
+Pages = {3700 - 3705},
+Year = {2006} }
+
+@inproceedings {Huisheng98,
+Author = {Huisheng Wang; Keerthipala, W.W.L.},
+Title = {Fuzzy-neuro approach to fault classification for transmission line protection},
+BookTitle = {IEEE Transactions Power Delivery},
+Pages = {1093},
+Year = {1998} }
+
+@inproceedings {Pang08,
+Author = {Pang Peilin; Ding Guangbin},
+Title = {Power quality detection and discrimination in distributed power system based on wavelet transform},
+BookTitle = {27th Chinese Control Conference, 2008. CCC 2008.},
+Pages = {635-638},
+Year = {2008} }
+
+@article {Lin06,
+Author = {Chia-Hung Lin; Chia-Hao Wang},
+Title = {Adaptive wavelet networks for power-quality detection and discrimination in a power system},
+Journal = {IEEE Transactions on Power Delivery},
+Volume = {21},
+Pages = {1106-1113},
+Year = {2006} }
+
+@inproceedings {Chanda03,
+Author = {Chanda, D. and Kishore, N.K. and Sinha, A.K.},
+Title = {Application of wavelet multiresolution analysis for classification of faults on transmission lines},
+BookTitle = {Conference on Convergent Technologies for Asia-Pacific Region. TENCON 2003.},
+Pages = {1464-1469},
+Year = {2003} }
+
+@inproceedings {Martin08,
+Author = {Martin, F. and Aguado, J.A. and Medina, M. and Munoz, J.;},
+Title = {Classification of faults in double circuit lines using Wavelet transforms},
+BookTitle = { IEEE International Conference on Industrial Technology, 2008. ICIT 2008.},
+Pages = {1-6},
+Year = {2008} }
+
+@article {Dong09,
+Author = {Dong, Xinzhou and Kong, Wei and Cui, Tao},
+Title = {Fault Classification and Faulted-Phase Selection Based on the Initial Current Traveling Wave},
+Journal = {IEEE Transactions on power Delivery },
+Volume = {24},
+Pages = {552 - 559},
+Year = {2008}}
+
+
+@article{Reddy08,
+Author = {M. Jayabharata Reddy and D.K. Mohanta},
+Title = {A DSP based frequency domain approach for classification of transmission line faults},
+Journal = {Digital Signal Processing},
+Volume = {18},
+number = {5},
+pages = {751-761},
+year = {2008}}
+
+@inproceedings {Silva06a,
+Author = {Silva, K.M. and Dantas, K.M.C. and Souza, B.A. and Brito, N.S.D.and Costa, F.B. and Silva, J.A.C.B },
+Title = {Haar Wavelet-Based Method for Fast Fault Classification in Transmission Lines},
+BookTitle = {Transmission \& Distribution Conference and Exposition: Latin America, 2006. TDC apos;06. IEEE/PES},
+Pages = {1 - 5},
+Year = {2006} }
+
+@inproceedings {Malathi08,
+Author = {Malathi, V and   Marimuthu, N. S},
+Title = {Multi-class Support Vector Machine approach for fault classification in power transmission line},
+BookTitle = {IEEE International Conference on Sustainable Energy Technologies, 2008. ICSET 2008. },
+Pages = {67-71},
+Year = {2008} }
+
+@inproceedings {Hongzhi08,
+Author = {Hongzhi Zang and Xiaodong Yu },
+Title = {Disturbance Classification Utilizing Wavelet and Multi-class Support Vector Machines},
+BookTitle = {Fourth International Conference on Natural Computation, 2008. ICNC '08.},
+Pages = {170-174},
+Year = {2008} }
+
+@inproceedings {Sudha07,
+Author = {Sudha, G. and Basavaraju, T.},
+Title = {A comparison between different approaches for fault classification in transmission lines.},
+BookTitle = {Information and Communication Technology in Electrical Sciences (ICTES)},
+Pages = {398-403},
+Year = {2007} }
+
+@inproceedings {Chandel08,
+Author = {Chandel, A.K and Guleria, G and Chandel, R},
+Title = {Classification of power quality problems using wavelet based artificial neural network},
+BookTitle = {Transmission and Distribution Conference and Exposition, 2008. T\&D. IEEE/PES},
+Pages = {21-24},
+Year = {2008} }
+
+@inproceedings {Shahrtash08,
+Author = {Shahrtash, S.M and Jamehbozorg, A.},
+Title = {A decision tree based method for fault classification in transmission lines},
+BookTitle = {Transmission and Distribution Conference and Exposition, 2008. T\&D. IEEE/PES},
+Pages = {1-5},
+Year = {2008} }
+
+@article {Jayabharata07,
+Author = {M. Jayabharata Reddy and D.K. Mohanta},
+Title = {A wavelet-fuzzy combined approach for classification and location of transmission line faults},
+Journal = {International Journal of Electrical Power \& Energy Systems},
+Volume = {29},
+Pages = {669-678},
+Year = {2007} }
+
+@inproceedings {Hagh07,
+Author = {M.T. Hagh and K. Razi and H. Taghizadeh},
+Title = {Fault classification and location of power transmission lines using artificial neural network},
+BookTitle = {Power Engineering Conference, 2007. IPEC 2007. International},
+Pages = {1109-1114},
+Year = {2007} }
+
+@article {Samantaray06,
+Author = {S.R. Samantaray and P.K. Dash and G. Panda},
+Title = {Fault classification and location using HS-transform and radial basis function neural network},
+Journal = {Electric Power Systems Research},
+Volume = {76},
+Pages = {897-905},
+Year = {2006} }
+
+@inproceedings {Dag04,
+Author = {O. Dag and C. Ucak},
+Title = {Fault classification for power distribution systems via a combined wavelet-neural approach},
+BookTitle = {International Conference on Power System Technology (PowerCon)},
+Pages = {1309-1314},
+Volume = {2},
+Year = {2004} }
+
+@article {Dalstein95,
+Author = {T. Dalstein and B. Kulicke},
+Title = {Neural network approach to fault classification for high speed protective relaying},
+volume = {2},
+Journal = {Power Delivery, IEEE Transactions on},
+Year = {1995},
+Pages = {1002-1011}
+}
+
+@article {Bell98,
+Author = {S. Bell and S. McArthur and J. McDonald et al},
+Title = {Model-based analysis of protection system performance},
+Journal = {IEE Proc.-Gener. Transm. Distrib.},
+Volume = {145},
+Month = {Sept.},
+Pages = {547-552},
+Year = {1998} }
+
+%Analysis of Faulted Power Systems. Paul M. Anderson.
+%ISBN: 978-0-7803-1145-9. Hardcover. 540 pages. June 1995, Wiley-IEEE Press
+
+@book {Anderson95,
+Author = {Anderson, P.M.},
+Title = {Analysis of faulted Power Systems},
+Publisher = {IEEE Press},
+Year = {1995} }
+
+@inproceedings{Zhang05,
+  author    = {Lianmei Zhang and
+               Shihong Chen and
+               Qiping Hu},
+  title     = {Dynamic Shape Modeling of Consumers' Daily Load Based on
+               Data Mining},
+  booktitle = {Advanced Data Mining and Applications (ADMA)},
+  year      = {2005},
+  pages     = {712-719}
+}
+%Dynamic Shape Modeling of Consumers’ Daily Load Based on Data Mining
+%Book Series Lecture Notes in Computer Science
+%Publisher   Springer Berlin / Heidelberg
+%ISSN    0302-9743 (Print) 1611-3349 (Online)
+%Subject Computer Science
+%Volume  Volume 3584/2005
+
+@book {Xue05,
+Author = {Xue Li and Shuliang Wang and Zhao Yang Dong},
+Title = {"Advanced Data Mining and Applications"},
+Publisher = {"SpringerLink"},
+Year = {2005} }
+
+%Book    Advanced Data Mining and Applications
+%DOI 10.1007/b11111
+%Copyright   2005
+%ISBN    978-3-540-27894-8
+%Category    Advanced Applications
+%DOI 10.1007/11527503_84
+%Pages   712-719
+%SpringerLink Date   Wednesday, August 17, 2005
+
+
+@article{Sforna00,
+ author = {M. Sforna},
+ title = {Data mining in a power company customer database.},
+ journal = {Electric Power Systems Research},
+ volume = {55},
+ number = {3},
+ year = {2000},
+ pages = {201-209},
+ publisher = {Elsevier},
+ }
+
+%Data mining in a power company customer database.
+%Electric Power Systems Research, Volume 55, Issue 3, Pages 201-209
+%M. Sforna
+
+@article {Kitayama02,
+Author = {Kitayama, M. and  Matsubara, R. and  Izui, Y.},
+Title = {Application of data mining to customer profile analysis in the power electric industry},
+Journal = {Power Engineering Society Winter Meeting},
+Volume = {1},
+Pages = {632 - 634},
+Year = {2002} }
+
+%Application of data mining to customer profile analysis in the power electric industry
+%Kitayama, M.; Matsubara, R.; Izui, Y.
+%Power Engineering Society Winter Meeting, 2002. IEEE
+%Volume 1, Issue , 2002 Page(s): 632 - 634 vol.1
+
+@article {Kezunovic07,
+Author = {N. Zhang and M. Kezunovic},
+Title = {A real time fault analysis tool for monitoring operation of transmission line protective relay},
+Journal = {Electric Power Systems Research},
+Volume = {77},
+Pages = {361-70},
+Year = {2007} }
+
+@article {McEachern90,
+Author = {A. McEachern},
+Title = {A floating-window algorithm for detecting certain power line faults that disrupt sensitive electronic loads},
+Journal = {Instrumentation and Measurement, IEEE Trans.},
+Volume = {39},
+Pages = {112-115},
+Year = {1990} }
+
+@article {Kezunovic96,
+Author = {M. Kezunovic and I. Rikalo},
+Title = {Detect and classify faults using neural networks},
+Journal = {Computer Applications in Power},
+Volume = {9},
+Pages = {42-47},
+Year = {1996} }
+
+@article {Aguilera06,
+Author = {C.Aguilera and E.Orduna and G.Rattá},
+Title = {Fault detection, classification and faulted phase selection approach based on high-frequency voltage signals applied to a series-compensated line},
+Journal = {IEEE Proc.- Gener. Transm. Distrib.},
+Volume = {153},
+Pages = {469-475},
+Year = {2006} }
+
+@article {Axelberg07,
+Author = {P. G. V. Axelberg and I. Y. H. Gu and M. H. J. Bollen},
+Title = {Support Vector Machine for Classification of Voltage Disturbances},
+Journal = {{IEEE} Trans. Power Delivery},
+Volume = {22},
+Pages = {1297 - 1303},
+Year = {2007} }
+
+@article {Monedero07,
+Author = {Monedero et al.},
+Title = {Classification of Electrical Disturbances in Real Time Using Neural Networks},
+Journal = {{IEEE} Trans. Power Delivery},
+Volume = {22},
+Pages = {1288 - 1296},
+Year = {2007} }
+
+@article {Gaouda99,
+Author = {A. Gaouda and M. Salama and M. Sultan},
+Title = {Power quality detection and classification using wavelet-multiresolution signal decomposition},
+Journal = {{IEEE} Trans. Power Delivery},
+Volume = {14},
+Pages = {1469 - 1476},
+Year = {1999} }
+
+@article {Oleskovicz03,
+Author = {M. Oleskovicz and R. K. Aggarwal and D. V. Coury },
+Title = {O emprego de redes neurais artificiais na detecção, classificação e localização de faltas em linhas de transmissão },
+Journal = {Sba Controle \& Automação},
+Volume = {14},
+Pages = {},
+Year = {2003} }
+
+
+@article{Silva05,
+Author = {M. Silva and M. Oleskovicz and D. V. Coury },
+Title = {Uma nova ferramenta baseada na transformada wavelet para localização digital de faltas},
+Journal = {Sba Controle \& Automação},
+Volume = {16},
+Pages = {},
+Year = {2005} }
+
+@article{Poisson00,
+Author = {O. Poisson and P.Rioual and M.Meunier},
+Title = {Detection and measurement of power quality disturbances using wavelet transform},
+Journal = {Trans. Power Delivery},
+Volume = {15},
+Pages = {1039 - 1044},
+Year = {2000} }
+
+@article {Morais04,
+Author = { C.E. Morais and L.C. Zanetta Jr.},
+Title = {Fault location in transmission lines using one-terminal postfault voltage data},
+Journal = {{IEEE} Trans. Power Delivery},
+Volume = {19},
+Pages = {570-575},
+Year = {2004} }
+
+@article {Liang98,
+Author = { J. Liang and S. Elangovan and J. B. X. Devotta},
+Title = { A wavelet multiresolution analysis approach to fault detection and classification in transmission lines},
+Journal = {International Journal of Electrical Power and Energy Systems},
+Volume = {20},
+Pages = {327-332},
+Year = {1998} }
+
+@mastersthesis{Antonio07,
+  Author =   {A. Carvalho},
+  Title =    {Metodologia para Estudos de Sobretensões Originadas por Manobras em Sistemas Elétricos de Potência},
+  School =  {Universidade Federal do Pará, Departamento de Engenharia Elétrica},
+  Year =     {2007}
+}
+
+
+@mastersthesis {Machado06,
+Author = {Machado, Raimundo N. M},
+Title = {Detecção classificação e quantização automática de variações de tensão de curta duração para aplicação em análise de pós-operação em sistema de energia elétrica},
+School = {Universidade Federal do Pará, Centro Tecnológico},
+Year = {2006} }
+
+
+@misc{Edgard00,
+  Author ={E. Franco},
+  Title ={Qualidade de Energia, disponível em: http://www.engecomp.com.br/ },
+  year = {  visitado em jun. 2008.},
+}
+
+@mastersthesis{Arileide02,
+  Author =   {A. C. Alves},
+  Title =    {Algoritmos Genéticos Aplicados ao Planejamento da Distribuição de Energia Elétrica em Curitiba e Região Metropolitana},
+  School =  {Universidade Federal do Paraná, Departamento de Matemática},
+  Year =     {2002}
+}
+
+@inproceedings {Pires05,
+Author = {Yomara Pires and  Andreia Santos and  Jose Borges and  Antonio Carvalho and  Marcus Vinicius Alves Nunes and  Surya Santoso and Aldebaro Klautau},
+Title = {A Framework for Evaluating Data Mining Techniques Applied to Power Quality},
+BookTitle = {Brazilian Conference on Neural Networks (CBRN)},
+Pages = {{ID}193},
+Year = {2005}}
+
+@book {Atpbook95,
+Author = {EMTP},
+Title = {Alternative Transients Program ({ATP}) Rule Book},
+Publisher = {Canadian/American EMTP User's Group},
+Year = {1995} }
+
+@book {Bollen00,
+Author = {Bollen, Math H.J.},
+Title = {Understanding power quality problems: {V}oltage sags and interruptions},
+Publisher = {IEEE Press Series on Power Engineering},
+Year = {2000} }
+
+@book{VetterliK95,
+  author = "M. Vetterli and J. {Kova\u cevi\'c}",
+  title =   "Wavelets and Subband Coding",
+  publisher =     "Prentice Hall",
+  year =    1995
+}
+
+Morettin, P. A. e Toloi, C. M. Análise de Séries Temporais. São Paulo: Editora Edgard Blücher, 2004. 
+
+
+
+@book{Sneddon95,
+  author = "I. N. Sneddon",
+  title =   "Fourier transforms",
+  publisher = "New York: Dover",
+  year =    1995
+}
+
+@inproceedings {Englert02,
+Author = {H. Englert and J. Stenzel},
+Title = {Automated Classification of power quality events using speech recognition techniques},
+BookTitle = {14th Power Systems Computation Conference},
+Pages = {},
+Year = {2002} }
+
+@inproceedings {Englert01,
+Author = {H.Englert and J.Stenzel},
+Title = {Field test of a system for automated classification of power quality disturbances},
+BookTitle = {International Conference on Power Systems Transients(IPST)},
+Pages = {1-6},
+Year = {2001} }
+URL = {www.ipst.org/IPST01Papers.htm}
+
+@misc{Kezunovic01,
+  Author = {M. Kezunovic and C.C. Liu and J. McDonald and L.E. Smith},
+  Title = {{IEEE} Tutorial on Automated Fault Analysis Course - Available on the Web},
+  Text = {Available on the Web},
+  Url = {eent1.tamu.edu/people/kezresume.htm},
+  Year = {2001}}
+
+@article{Luo05,
+Author = {X. Luo and M. Kezunovic},
+Title ={Fault Analysis Based on Integration of Digital Relay and \textsc{DFR}},
+Journal  = {Power Engineering Society General Meeting},
+Volume = {1},
+Pages = {746 - 751},
+url={ieeexplore.ieee.org},
+Year = {2005}}
+
+@inproceedings {Zhengyou06,
+Author = {B. Zhang and H. Zhengyou and Q. Qian},
+Title = {Application of Wavelet Entropy and Adaptive Nerve-fuzzy Inference to Fault Classification},
+BookTitle = {Power System Technology},
+Pages = {1-6},
+Year = {2006} }
+
+@inproceedings{Zhengyou05,
+Author = {H.Zhengyou and C. Xiaoqin and C. Yumei  },
+Title ={ A Study of Algorithm and Application in Transient Signals Wavelet Post-Analysis Methods},
+BookTitle  = {Transmission and Distribution Conference and Exhibition: Asia and Pacific},
+Pages = {1-6},
+Year = {2005}}
+
+@article{Das06,
+Author = {D. Das and N. K. Singh and A. K. Sinha},
+Title ={A Comparison of Fourier Transform and Wavelet Transform Methods for Detection and Classification of Faults on Transmission Lines},
+Journal  = {IEEE Power India Conference},
+Volume = {},
+Pages = {},
+Year = {2006}}
+
+
+@article{Youssef01,
+Author = { O.A.S.Youssef },
+Title ={Fault classification based on wavelet transforms},
+Journal  = {Transmission and Distribution Conference and Exposition},
+Volume = {1},
+Pages = {531-536},
+url={ieeexplore.ieee.org},
+Year = {2001}}
+
+@article{Youssef04,
+Author = {O. Youssef},
+Title ={Combined Fuzzy-Logic Wavelet-Based Fault
+Classification Technique for Power System Relaying},
+Journal  = {IEEE TRANSACTIONS ON POWER DELIVERY},
+Volume = {19 no.2},
+Pages = {582 - 589},
+url={ieeexplore.ieee.org},
+Year = {2004}}
+
+@article{Silva06,
+Author = {K. M. Silva and B.A. Souza and N.S.D. Brito},
+Title ={Fault Detection and Classification in Transmission Lines Based on Wavelet Transform and ANN},
+Journal  = {IEEE TRANSACTIONS ON POWER DELIVERY},
+Volume = {21 no.4},
+Pages = {2058- 2063},
+url={ieeexplore.ieee.org},
+Year = {2006}}
+
+@article {Kezunovic05,
+Author = {Y. Wu and M. Kezunovic},
+Title = {Automatic simulation of {IED} measurements for substation data integration studies},
+Journal = {IEEE PES 2005 General Meeting},
+Volume = {3},
+Pages = {2556 - 2561},
+URL = {http://www.pserc.org},
+Year = {2005} }
+
+@inproceedings {Santos05,
+Author = {Andreia Santos and José Borges and Antonio Carvalho and Marcus Nunes and Surya Santoso and Aldebaro Klautau},
+Title = {A New Framework for Evaluating {PQ} Event Identification Techniques Based on {ATP} Simulations},
+BookTitle = {VI SBQEE, Brazilian Power Quality Symposium},
+Pages = {591-6},
+Year = {2005},
+URL ={http://www.labplan.ufsc.br/SBQEE/Anaispdf/7752.pdf} }
+
+@article {Reynolds95,
+Author = {D. Reynolds},
+Title = {Speaker identification and verification using {G}aussian mixture speaker models},
+Journal = {Speech Communication},
+Volume = {17},
+Pages = {91-108},
+Month = {August},
+Year = {1995} }
+
+@article {Braga07,
+Author = {Braga-Neto, U.},
+Title = {Fads and fallacies in the name of small-sample microarray classification - A highlight of misunderstanding and erroneous usage in the applications of genomic signal processing},
+Journal = {Signal Processing Magazine, IEEE},
+Volume = {24},
+Pages = {91-99},
+Month = {Jan},
+Year = {2007} }
+
+@article {Wang04,
+Author = {Wang, W. and Mamishev, A. V.},
+Title = {Classification of power quality events using optimal time-frequency representation - Part 1: Theory},
+Journal = {IEEE Trans, on Power Delivery},
+Volume = {19},
+Pages = {1488-1495},
+Year = {2004} }
+
+@misc {IEEE95,
+author = {IEEE},
+title = {Recommended Practice for Monitoring Electric Power Quality},
+text = {IEEE Std.1159},
+month={May},
+year = {1995}}
+
+
+@misc {IEEE92,
+author = {IEEE},
+title = {Recommended Practices and Requirements for Harmonic Control in Electrical Power Systems},
+text = {IEEE Std.519},
+month={},
+year = {1992}}
+
+
+@phdthesis {Vasilic04,
+Author = {Slavko Vasilic},
+Title = {Fuzzy Neural Network Pattern Recognition Algorithm for Classification of the Events in Power System Networks},
+School = {Texas A\&M University},
+Year = {2004} }
+
+@phdthesis {Silveira01e,
+Author = {Paulo da Silveira},
+Title = {Identification and location of faults using wavelets for transmission line breakers (in {P}ortuguese)},
+School = {UFSC, Brazil},
+Year = {2001} }
+
+@phdthesis {Silveira01,
+Author = {Paulo da Silveira},
+Title = {Identificacao e localizacao de faltas utilizando analise por decomposicao wavelet para relés de linhas de transmissao},
+School = {UFSC, Brazil},
+Year = {2001} }
+
+@inproceedings {Souza03,
+Author = {B. A. de Souza et al},
+Title = {Classificacao de faltas via redes neurais artificiais},
+BookTitle = {V SBQEE},
+Pages = {163-8},
+Year = {2003} }
+
+
+@inproceedings {Souza03e,
+Author = {B. A. de Souza et al},
+Title = {Classification of faults via artificial neural networks (in {P}ortuguese)},
+BookTitle = {V SBQEE - Brazilian Symposium on Power Quality},
+Pages = {163-8},
+Year = {2003} }
+
+@inproceedings {Delmont03,
+Author = {Odilon Delmont Filho et al.},
+Title = {Utilizacao da transformada wavelet e RNAs para caracterizacao de disturbios na qualidade da energia},
+BookTitle = {V SBQEE},
+Pages = {381-6},
+Year = {2003} }
+
+@inproceedings {Delmont03e,
+Author = {Odilon Delmont Filho et al.},
+Title = {Using the wavelet transform and {ANNs} for characterizing events in power quality (in {P}ortuguese)},
+BookTitle = {V SBQEE - Brazilian Symposium on Power Quality},
+Pages = {381-6},
+Year = {2003} }
+
+@inproceedings {Soares03,
+Author = {Luciana Soares and Helio de Oliveira},
+Title = {Wavelets na deteccao, classificacao e localizacao de faltas em linhas de transmissao},
+BookTitle = {V SBQEE},
+Pages = {405-10},
+Year = {2003} }
+
+@inproceedings {Soares03e,
+Author = {Luciana Soares and Helio de Oliveira},
+Title = {Wavelets for detecting, classifying and locating faults in transmission lines (in {P}ortuguese)},
+BookTitle = {V SBQEE - Brazilian Symposium on Power Quality},
+Pages = {405-10},
+Year = {2003} }
+
+@inproceedings {Gole97,
+Author = {A.M. Gole and A. Daneshpooy},
+Title = {Towards Open Systems: A {PSCAD/EMTDC} to {MATLAB} Interface},
+BookTitle = {International Conference on Power System Transients, IPST'97, },
+Pages = {145-9},
+Year = {1997} }
+
+@inproceedings {Santoso00,
+Author = {Santoso, S. and Lamoree, J.D. Power},
+Title = {Power quality data analysis: {F}rom raw data to knowledge using knowledge discovery approach},
+BookTitle = {Engineering Society Summer Meeting, IEEE},
+Pages = {172-177},
+Year = {2000} }
+
+@inproceedings {Santoso00b,
+Author = {Santoso, S. and Lamoree, J.D. and Bingham, R.P. },
+Title = {AnswerModule: {A}utonomous expert systems for turning raw {PQ} measurements into answers},
+BookTitle = {International Conference on Harmonics and Quality of Power},
+Pages = {499 -503},
+Year = {2000} }
+
+@article{Santoso00c,
+Author = {Santoso, S. and Grady, W.M and Powers, E.J and Lamore, J. and Bhatt, S.C},
+Title = {Characterization of Distribution Power Quality Events with Fourier and Wavelet Transforms},
+Journal = {IEEE Transactions on Power Delivery},
+Volume = {15},
+Pages = {},
+Year = {2000} }
+
+@inproceedings {Kezunovic03,
+Author = {M. Kezunovic and T. Popovic and D. Sevcik and H. DoCarmo},
+Title = {Transient Testing of Protection Relays: Results, Methodology and Tools},
+BookTitle = {International Conference on Power System Transients},
+Pages = {},
+Year = {2003} }
+
+
+@inproceedings {Kezunovic03b,
+Author = {Kezunovic,M. and Popovic, T. and Sevcik, D. R.  and Chitambar, A. },
+Title = {Requirements for Automated Fault and Disturbance Data Analysis},
+BookTitle = {CIGRE Colloquium, SC B5-Protection, Sydney, Australia, },
+Pages = {},
+Year = {2003} }
+
+
+@inproceedings {Ming05,
+Author = {Ming Li and Sleep, R},
+Title = {A robust approach to sequence classification},
+BookTitle = {International Conference on Tools with Artificial Intelligence},
+Pages = {5},
+Year = {2005}
+}
+
+
+@misc {Reason,
+key = {Reason},
+Title = {http://www.reason.com.br/},
+Year = {Visited in June, 2006}
+}
+
+@misc {,
+key = {},
+Title = {},
+Year = {Visited in }
+}
+
+@techreport {AneelR2400,
+Author = {Agência Nacional de Energia Elétrica},
+Title = {Resolução nº 024 de 27 de janeiro},
+Institution = {Aneel},
+Year = {2000} }
+
+@phdthesis {Emmanouil02,
+Author = {Styvaktakis. E},
+Title = {Automating Power Quality Analysis},
+School = {Chalmers University of Technology, Department of Electric Power Engineering and Department of Signals and Systems. Goteborg, Sweden},
+Year = {2002} }
+
+
+@misc {IEEE99,
+author = {IEEE},
+title = {IEEE Standard Common Format for Transient Data Exchange (COMTRADE) for power systems},
+text = {IEEE Std C37.111-1999},
+month={},
+year = {1999}}
+
+@mastersthesis {JMorais07,
+Author = {Morais, J.},
+Title = {Estudos de Algoritmos para Classificação de Séries Temporais: uma aplicação em Qualidade de Energia Elétrica.},
+School = {Universidade Federal do Pará, Centro de Ciências Exatas e da Terra, PPGCC},
+Year = {2007} }
+%Optional fields: address, month, note, key
+
+@book {Clarke04,
+Author = {Gordon Clarke and Deon Reynders },
+Title = {Practical Modern SCADA Protocols: DNP3, 60870.5 and Related Systems},
+Publisher = {Newnes},
+Year = {2004} }
+
+@book {Boyer99,
+Author = {Boyer, Stuart A},
+Title = {SCADA: Supervisory Control and Data Acquisition, (2nd Ed.)},
+Publisher = {ISA-The Instrumentation, Systems, and Automation Society},
+Year = {1999} }
+
+@article {Chatterjee08,
+Author = {Chatterjee, S. and Chakravorti, S. and Roy, C. K. and Dey, D.},
+Title = {Wavelet network-based classification of transients using dominant frequency signature},
+Journal = {Eletric Power Research},
+Volume = {78},
+Pages = {21-29},
+Year = {2008} }
+
+@article {Bhende08,
+Author = {Bhende, C. N. and Mishra, S. and Panigrahi, B. K.},
+Title = {Detection and classificatin of power quality disturbances using S-transform and modular neural network},
+Journal = {Eletric Power Research},
+Volume = {78},
+Pages = {122-128},
+Year = {2008} }

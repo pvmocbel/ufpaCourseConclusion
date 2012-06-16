@@ -1,0 +1,185 @@
+%to include useful packages
+
+%\usepackage{mathabx} %extended math symbols (DID NOT WORK)
+
+%avoid conflict in the case \appendices is already defined
+\ifdefined\appendices
+\else
+\usepackage{appendix} %More support for appendices
+\fi
+
+%To use Portuguese:
+%\usepackage[brazil]{babel}   % Para hifenar em portugus
+%\usepackage[latin1]{inputenc}% Para poder digitar os acentos da maneira usual:
+
+%\usepackage{ucs} %Unicode functionality
+
+%\usepackage{ascii}
+%\usepackage{mathabx} %convolution symbol
+\usepackage{makeidx}  %to generate indices, I guess
+\usepackage{graphicx,color,url}
+\usepackage{cite} %to be smart when citing multiple references, example: [1-7] instead of [1,2,..]
+%\usepackage{subfigure} %create several figures. Similar to subplot in Matlab
+\usepackage{multirow} %tables with multiple rows
+%\usepackage{pslatex}	% to use PostScript fonts instead of Computer Modern. AK: not sure if I liked
+
+%AK need to learn how to use:
+%\usepackage[cspex,bbgreekl]{mathbbol}
+\usepackage[bbgreekl]{mathbbol}
+%\usepackage{mathbbol}
+
+\ifdefined\amsmath
+\else
+%\usepackage[centertags]{amsmath}
+\usepackage{amsmath}
+\fi
+
+\ifdefined\amsfonts
+\else
+\usepackage{amsfonts}
+\fi
+
+\usepackage{amssymb}
+
+\ifdefined\proof
+\else
+\usepackage{amsthm}
+\fi
+
+%\usepackage{newlfont}
+
+
+\ifdefined\geometry
+\else
+\ifdefined\akbook 
+%MARGINS - NEED BETTER ADJUSTMENT
+%See http://web.image.ufl.edu/help/latex/margins.shtml
+%\usepackage[a4wide]{geometry}
+\usepackage[a4paper, top=3cm, bottom=3.4cm, left=1.8cm, right=2.5cm]{geometry}
+%Simply substitute your desired length (e.g,. 3cm) for each parameter you want to change.
+%\usepackage[left=2cm,top=1cm,right=3cm,nohead,nofoot]{geometry}
+%\textwidth 6.5 %did not work
+%\parindent 1cm  %latex is not indenting...
+%\parskip 0.2cm  %this has an effect
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{0.2cm}
+%\topmargin 0.2cm
+%\oddsidemargin 1cm
+%\evensidemargin 0.5cm
+%\textwidth 15cm
+%\textheight 21cm
+%\setlength{\labelsep}{3cm}
+%\addtolength{\leftmargin}{\labelsep}
+\fi
+\fi
+
+%To use Portuguese:
+%\usepackage[brazil]{babel}   % Para hifenar em português
+%\usepackage[latin1]{inputenc}% Para poder digitar os acentos da maneira usual:
+
+%\usepackage{ucs} %Unicode functionality
+
+\usepackage{mathrsfs} %math alphabet I will use for sets
+%\usepackage{ascii}
+%\usepackage{mathabx} %convolution symbol
+\usepackage{makeidx}  %to generate indices, I guess
+\usepackage{graphicx,color,url,subfigure}
+\usepackage{multirow} %tables with multiple rows
+%\usepackage{pslatex}	% to use PostScript fonts instead of Computer Modern. AK: not sure if I liked
+\usepackage{listings} % to list source code: http://www.usq.edu.au/users/leis/notes/latex/code.html
+\lstset{language=matlab}
+%%\lstset{backgroundcolor=listinggray}
+%\lstset{backgroundcolor=\color{listinggray}}
+%\lstset{linewidth=90mm}
+%By default, keywords are typeset bold, comments in italic shape, and spaces in strings appear
+%as . You don’t like these settings? Look at this:
+%\lstset{% general command to set parameter(s)
+%commentstyle=\color{white}, % white comments
+%stringstyle=\ttfamily, % typewriter type for strings
+\lstset{showstringspaces=false} % no special string spaces
+\lstset{identifierstyle=} % nothing happens
+\lstset{keywordstyle=} % nothing happens
+%\lstset{keywordstyle=\color{red}\bfseries\underbar}
+%\lstset{keywordstyle=\color{black}\bfseries\underbar} % underlined bold black keywords
+\lstset{linewidth=\textwidth}  %framed box is the text size
+%\lstset{frame=lines}
+%\lstset{frameround=tttt}
+%\lstset{frameround=trbl}  %frameround is not working. use frame:
+\lstset{frame=trbl}
+%\lstset{labelstep=1}
+\lstset{basicstyle=\small} % print whole listing small
+\lstset{firstnumber=1, numberfirstline=false, numbers=left, numberstyle=\tiny, stepnumber=5, numbersep=5pt} %add line numbering
+%The key nolol suppresses an entry for both the environment or the input command.
+\lstset{backgroundcolor=\color{yellow}}
+
+\usepackage{ifpdf} %The package provides the switch \ifpdf:
+%Example of usage:
+%\ifpdf
+%. . . do things, if pdfTEX is running in pdf mode . . .
+%\else
+%. . . other TEX like latex or pdfTEX in dvi mode . . .
+%\fi
+
+%NF: including hyperlinks and thumbnails features
+\ifpdf
+
+\ifdefined\hyperref
+\else
+\usepackage[pdftex,colorlinks]{hyperref}
+\fi
+	
+	%AK: Not sure we should use thumbnails because it takes a long time to create with
+	%perl "C:\Program Files\MiKTeX 2.7\scripts\thumbpdf\perl\thumbpdf.pl" ak_fapespa_book.pdf
+	%I will create an output profile in Texnic Center called PDFinal that will invoke it.
+	\usepackage[pdftex]{thumbpdf} %% in case of pdfLaTeX, to generate a thumbnail (Thumbnails are embedded images of the document's pages, drawn in small size and resolution. Their purpose is to facilitate navigation through the document (of course only if the PDF viewer supports them)
+	\usepackage{pdflscape}
+%Latex pitfalls: when using dvips the figures must be .eps and
+%when using pdftex the figures must be .pdf (pdftex does not accept .eps)
+%To learn about the issue, read:
+%http://www.math.rug.nl/~trentelman/jacob/pdflatex/pdflatex.html
+%http://www.latex-community.org/viewtopic.php?p=1182
+%http://mintaka.sdsu.edu/GF/bibliog/latex/LaTeXtoPDF.html
+%I (Aldebaro) added the package below:
+\usepackage{epstopdf}
+%and also used Alt+F7 in TeXnicCenter to include --enable-write18 in the command line that invokes 
+%the pdftex "compiler". The warning is still there, but the eps => pdf figure conversion now is
+%done on-the-fly. Later we will have to learn how to use \ifpdf to make the .tex compatible with both
+%latex and pdftex. For that, read: http://www.math.rug.nl/~trentelman/jacob/pdflatex/pdflatex.html
+%command to pdftex:
+%To choose how the system is opened:
+%pdfstartview={FitH}
+%Possible values are:
+%"Fit", to show the whole page;
+%"FitH", to show the width of the page in the window;
+%or "FitB", the width of the contents to the window.
+\hypersetup{%
+pdftitle={Some title},
+pdfauthor={Your name - LaPS - UFPA},
+pdfkeywords={DSP,Signal},
+pdfstartview={FitH}, %% <--
+urlcolor=black,
+%linkcolor=blue,
+linkcolor=black,
+%citecolor=red,
+citecolor=black,
+}
+\fi %end of commands specific to pdftex
+
+%\usepackage{chngcntr}
+%from http://www.tex.ac.uk/cgi-bin/texfaq2html?label=running-nos
+%Many LaTeX classes (including the standard book class) number things per chapter; so figures in chapter 1 are numbered 1.1, 1.2, and so on. Sometimes this is not appropriate for the user’s needs.
+%Short of rewriting the whole class, one may use the chngcntr package, which provides commands \counterwithin (which establishes this nested numbering relationship) and \counterwithout (which undoes it).
+%AK I wanted to have Figure 1.1, etc., but did not work. I am having Figure 1.1.1 instead. This was probably an error provoked by misplacing the label: it should go inside the caption.
+%\counterwithout{figure}{subsection}
+%\counterwithin{figure}{section}
+%\counterwithout{figure}{section}
+%\counterwithin{figure}{chapter}
+
+%\counterwithout{equation}{subsection}
+%\counterwithin{equation}{section}
+
+%\makeatletter
+%\@removefromreset{figure}{section}
+%\@addtoreset{figure}{chapter}
+%\renewcommand{\thefigure}{\thechapter.\@arabic\c@figure}
+%\makeatother

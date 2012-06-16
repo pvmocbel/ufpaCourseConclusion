@@ -1,0 +1,183 @@
+@phdthesis {,
+Author = {},
+Title = {},
+School = {},
+Year = {} }
+
+@techreport {,
+Author = {},
+Title = {},
+Institution = {},
+Year = {} }
+
+@inbook {,
+author = {},
+title = {},
+publisher = {},
+address = {},
+year = {},
+type = {},
+chapter = {},
+Editor = {} }
+
+@misc{,
+  author = {},
+  title = {},
+  text = {},
+  year = {},
+  url = {} }
+
+@book {,
+Author = {},
+Title = {},
+Publisher = {},
+Year = {} }
+
+@article {,
+Author = {},
+Title = {},
+Journal = {},
+Volume = {},
+Pages = {},
+Year = {} }
+
+@inproceedings {,
+Author = {},
+Title = {},
+BookTitle = {},
+Pages = {},
+Year = {} }
+
+@article {,
+Author = {},
+Title = {},
+Journal = {},
+Volume = {},
+Pages = {},
+Year = {} }
+
+@book {,
+Author = {},
+Title = {},
+Publisher = {},
+Year = {} }
+
+@book {Haykin99,
+Author = {S. Haykin and B. V. Veen},
+Title = {Signals and Systems},
+Publisher = {Wiley},
+Year = {1999} }
+
+@book {Lathi98,
+Author = {B. Lathi},
+Title = {Signal Processing and Linear Systems},
+Publisher = {Berkeley Cambridge Press},
+Year = {1978} }
+
+@book {Malvar92,
+Author = {H. Malvar},
+Title = {Signal Processing with Lapped Transforms},
+Publisher = {Artech House},
+Year = {1992} }
+
+@book {Oppenheim96,
+Author = {A. Oppenheim and A. Willsky and S. Hamid},
+Title = {Signals and Systems},
+Edition = {2nd},
+Publisher = {Prentice Hall},
+Year = {1996} }
+
+@book {Jayant84,
+Author = {N. Jayant and P. Noll},
+Title = {Digital Coding of Waveforms: Principles and Applications to Speech and Video},
+Publisher = {Prentice Hall },
+Year = {1984} }
+
+@article {Butzer92,
+Author = {P. Butzer and R. Stens},
+Title = {Sampling theory for not necessarily band-limited functions: A historical overview},
+Journal = {SIAM Review},
+Volume = {34},
+Pages = {40-53},
+Year = {1992} }
+
+@article {Luke99,
+Author = {H. Luke},
+Title = {The origins of the sampling theory},
+Journal = {IEEE Communications Magazine},
+Volume = {37},
+Pages = {106-108},
+Year = {1999} }
+
+@book {Marvasti01,
+Author = {F. Marvasti},
+Title = {Nonuniform Sampling: Theory and Practice },
+Publisher = {Springer},
+Year = {2001} }
+
+@book {Benedetto01,
+Author = {J. Benedetto and P. Ferreira},
+Title = {Modern Sampling Theory},
+Publisher = {Birkhauser Boston},
+Year = {2001} }
+
+@book {Rao90,
+Author = {K. Rao and P. Yip},
+Title = {Discrete Cosine Transform---Algorithms, Advantages, Applications},
+Publisher = {Academic Press},
+Year = {1990} }
+
+@book {Oppenheim75,
+Author = {A. Oppenheim},
+Title = {Digital Signal Processing},
+Publisher = {Prentice-Hall},
+Year = {1975} }
+
+@book {Oppenheim89,
+Author = {A. Oppenheim and R. Schafer},
+Title = {Discrete-time Signal Processing},
+Publisher = {Prentice-Hall},
+Year = {1989} }
+
+@article {Vandewalle09,
+Author = {P. Vandewalle and J. Kovacevic and M. Vetterli},
+Title = {Reproducible Research in Signal Processing},
+Journal = {IEEE Signal Processing Magazine},
+Volume = {37},
+Pages = {37-47},
+Year = {2009} }
+
+
+
+Digital Signal Processing
+Introduction:
+
+    * James H. McClellan, Ronald W. Schafer, and Mark A. Yoder DSP First: A Multimedia Approach, Prentice Hall, ISBN 0-13-243171-8, 1998.
+    * Douglas K. Lindner, Introduction to Signal and Systems, McGraw-Hill, ISBN 0-256-25259-9, 1999.
+    * Sanjit K. Mitra, Digital Signal Processing, A Computer-Based Approach, McGraw-Hill Higher Education, ISBN 0-07-232105-9, 1998.
+    * Sanjit K. Mitra, Digital Signal Processing Laboratory Using MATLAB, McGraw-Hill, ISBN 0-07-232246-2, 1999.
+    * Chi-Tsong Chen, Digital Signal Processing, spectral computation and filter design, Oxford University Press, ISBN 0-19-513638-1, 2001.
+    * John D. Sherrick, Concepts in Systems and Signals, Prentice Hall, 2000, ISBN 0-13-084115-3.
+    * Jack Cartinhour, Digital Signal Processing: An Overview of Basic Principles , Prentice Hall, ISBN 0-13-769266-0, 2000.
+    * Ashol Ambardar, Analog and Digital Signal Processing, 2nd ed., Brooks/Cole Publishing Company, ISBN 0-534-95409-X, 1999. 
+
+Theory:
+
+    * Alan V. Oppenheim and Ronald W. Schafer, Discrete-Time Signal Processing, Prentice-Hall, ISBN 0-13-216292-X, 1989.
+    * P. P. Vaidyanathan, Multirate Systems and Filter Banks, Englewood Cliffs, NJ, Prentice-Hall, ISBN 0-13-605718-7, 1993.
+    * Stefan L. Hahn, Hilbert Transforms in Signal Processing, Artech House, ISBN 0-89006-886-0, 1996.
+    * Thomas J. Cavicchi, Digital Signal Processing, John Wiley and Sons, Inc., ISBN 0-471-12472-9, 2000. 
+
+Advanced signal processing:
+
+    * Monson H. Hayes, Statistical Digital Signal Processing and Modeling, John Wiley and Sons, ISBN 0-471-59431-8, 1996.
+    * Dimitris G. Manolakis, Vinay K. Ingle, and Stephen M. Kogon, Statistical and Adaptive Signal Processing: Spectral Estimation, Signal Modeling, and Adaptive Filtering and Array Processing McGraw Hill, Inc., ISBN 0-07-040051-2, 2000
+    * John R. Treichler, C. Richard Johnson, Jr., and Michael G. Larimore, Theory and Design of Adaptive Filters, Prentice Hall, ISBN 0-13-040265-6, 2001.
+    * Lawrence J. Ziomek, Fundamentals of Acoustic Field Theory and Space-Time Signal Processing, CRC Press, ISBN 0-8493-9455-4, 1995.
+    * Charles W. Therrien, Discrete Random Signals and Statistical Signal Processing, Prentice Hall, ISBN 0-13-852112-3, 1992.
+    * Donald H. Johnson and Daniel E. Dudgeon, Array Signal Processing, Englewood Cliffs, NJ, Prentice-Hall, 1993.
+    * Robert Grover Brown and Patrick Y. C. Hwang, Introduction to random signals and applied Kalman filtering, John Wiley and Sons, 1992, ISBN 0-471-12839-2.
+    * Simon Haykin, Adaptive Filter Theory, Prentice Hall, ISBN 0-13-090126-1, 2002.
+    * John R. Treichler, C. Richard Johnson, Jr. and Michael G. Larimore, Theory and Design of Adaptive Filters, Prentice Hall, ISBN 0-13-040265-6, 2001.
+    * Allen Gersho and Robert M. Gray, Vector Quantization and Signal Compression, Kluwer Academic Publishers, ISBN 0-7923-9181-0, 1992. 
+

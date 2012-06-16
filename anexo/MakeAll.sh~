@@ -1,0 +1,9 @@
+#Executa todos os scripts
+rm -r ../labels ../lists/
+
+#Configuracoes
+
+./Init.sh
+./FrontEnd.sh
+./adapterTest.sh
+./Final.sh

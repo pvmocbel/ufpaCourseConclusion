@@ -1,0 +1,36 @@
+#Extracao de parametros dos arquivos de voz
+
+#Arquivos utilizados
+hcopyconf='../confs/edaz.conf' #arquivo de configuracao usado na extracao de parametros
+#Nota: as configuracoes (taxa de amostragem da fonte, taxa de amostragem dos valores parametrizados,
+#comprimento da janela etc) utilizadas na extracao de parametros dos audios para adaptacao
+#devem ser as mesmas utilizadas durante a estimacao do modelo acustico a ser adaptado
+adaptlist='../lists/mfc_adapt.list'
+testlist='../lists/mfc_test.list'
+adaptlabelslist='../lists/lab_adapt.list'
+speaker='fernanda'
+
+echo 'Criando listas de arquivos wav para adaptacao e teste...'
+#Cria listas de arquivos wav para adaptacao e teste
+find ../voice/$speaker/adapt/ -name '*wav' > wav_adapt.list
+find ../voice/$speaker/test/ -name '*wav' > wav_test.list
+
+#Copia e renomeia os arquivos ".wav" para ".mfc" para serem usados como arquivos de entrada do HCopy
+cat wav_adapt.list | perl -e 'while (<>) { chomp; s/\.wav$//; $x=$_; print "$x.wav $x.mfc\n"; }' > wav_mfc_adapt.list
+cat wav_test.list | perl -e 'while (<>) { chomp; s/\.wav$//; $x=$_; print "$x.wav $x.mfc\n"; }' > wav_mfc_test.list
+
+echo 'Extraindo parametros dos arquivos de voz...'
+#Extrai os parametros dos arquivos de voz.
+HCopy -T 1 -A -C $hcopyconf -S wav_mfc_adapt.list
+HCopy -T 1 -A -C $hcopyconf -S wav_mfc_test.list
+rm wav_mfc_adapt.list
+rm wav_mfc_test.list
+
+echo 'Criando listas de arquivos .mfc e .lab a serem passadas como parametros para os modulos de adaptacao...'
+#Cria lista de arquivos .mfc e .lab (no caso do NUS) a ser passada como argumento para os modulos de adaptacao
+mkdir ../lists
+cat wav_adapt.list | sed s/wav/mfc/g > $adaptlist
+cat wav_test.list | sed s/wav/mfc/g > $testlist
+cat wav_adapt.list | sed s/"voice\/$speaker\/adapt"/labels/g | sed s/wav/lab/g > $adaptlabelslist
+rm wav_adapt.list
+rm wav_test.list

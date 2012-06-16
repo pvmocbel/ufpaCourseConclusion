@@ -1,0 +1,3393 @@
+@phdthesis {,
+Author = {},
+Title = {},
+School = {},
+Year = {} }
+
+@mastersthesis {,
+Author = {},
+Title = {},
+School = {},
+Year = {} }
+%Optional fields: address, month, note, key
+
+@techreport {,
+Author = {},
+Title = {},
+Institution = {},
+Year = {} }
+
+@inbook {,
+author = {},
+title = {},
+publisher = {},
+address = {},
+year = {},
+type = {},
+chapter = {},
+Editor = {} }
+
+@misc{,
+  author = {},
+  title = {},
+  text = {},
+  year = {},
+  url = {} }
+
+@book {,
+Author = {},
+Title = {},
+Publisher = {},
+Year = {} }
+
+@article {,
+Author = {},
+Title = {},
+Journal = {},
+Volume = {},
+Pages = {},
+Year = {} }
+
+@inproceedings {,
+Author = {},
+Title = {},
+BookTitle = {},
+Pages = {},
+Year = {} }
+
+@techreport{Bakiri91,
+Author = {G. Bakiri},
+Title = { Converting English Text to Speech: {A} Machine learning approach},
+Institution = {Oregon State University},
+Year = {1991} }
+
+@inproceedings{Teixeira06,
+Author = {A. Teixeira and C. Oliveira and L. Moutinho},
+Title = {On the Use of Machine Learning and Syllable Information in European Portuguese Grapheme- Phone Conversion},
+BookTitle = {7th Workshop on Computational Processing of Written and Spoken Portuguese (to be presented) - Itatiaia, Brazil},
+Year = {2006} }
+
+@inproceedings{Andersen,
+Author = {O. Andersen and R. Kuhn and A. Lazarides and P. Dalsgaard and J. Haas and E. Nöth},
+Title = {Comparison of Two Tree-Structured Approaches for Grapheme-to-Phoneme Conversion, http://citeseer.ist.psu.edu/andersen96comparison.html},
+BookTitle = {ICSLP},
+Pages = {1808-1811},
+Year = {1996} }
+
+@inproceedings{Bouma2000,
+Author = {G. Bouma},
+Title = {Comparison of two tree-structured approaches for grapheme-to-phoneme conversion, http://citeseer.ist.psu.edu/article/bouma00finite.html},
+BookTitle = {1st Meeting of the North-American Chapter of the Association for Computational Linguistics, Seattle},
+Year = {2000} }
+
+@inproceedings{Mana,
+Author = {F. Mana and P. Massimino and A. Pacchiotti},
+Title = {Using Machine Learning Techniques for Grapheme to Phoneme Transcription},
+BookTitle = {Proceedings Eurospeech (Scandinavia)},
+Year = {2001} }
+
+@inproceedings{Damper04,
+Author = {R. I. Damper and Y. Marchand and J. Marsters and A. Bazin},
+Title = {Aligning Letters and Phonemes for Speech Synthesis},
+BookTitle = {5th ISCA Speech Synthesis Workshop - Pittsburgh },
+Pages = {209-214},
+Year = {2004} }
+
+@inproceedings{Aiuruete,
+Author = {P. Barbosa and F. Violaro and E. Albano and F. Simões and P. Aquino and S. Madureira and E. Francozo},
+Title = {Aiuruetê: a high-quality concatenative text-to-speech system for brazilian portuguese with demisyllabic analysis-based units and hierarchical model of rhythm production},
+BookTitle = {Proceedings of the Eurospeech'99, Budapest, Hungary},
+Pages = {2059-2062},
+Year = {1999} }
+
+@inproceedings{Trancoso03,
+Author= {D. Caseiro and I. Trancoso and L. Oliveira and C. Viana},
+Title     = {Grapheme-to-Phone Using Finite-State Transducers},
+BookTitle = {In IEEE Workshop on Speech Synthesis},
+year      = {2002}
+}
+
+@article {Dedina91,
+Author = {Dedina, M. J. and H. C. Nusbaum},
+Title = {{PRONOUNCE}: A program for pronunciation by analogy},
+Journal = {Computer Speech and Language},
+Pages = {5:55-64},
+Year = {1991} }
+
+@book {Damper01,
+Author = {Damper, R. I.},
+Title = { Data-Driven Methods in Speech synthesis },
+Journal = { Dordrecht, The Netherlands: Kluwer Academic Publishers },
+Year = {2001} }
+
+@article {Sejnowski87,
+Author = { T. J. Sejnowski and C. R. Rosenberg},
+Title = {Parallel networks that learn to pronounce English text},
+Journal = {Complex Systems},
+Volume = {vol. 1},
+Pages = {145-168},
+Year = {1987} }
+
+@article {McCulloch87,
+Author = { N. McCulloch and M. Bedworth and J. Bridle},
+Title = { Netspeak: a reimplementation of Nettalk},
+Journal = {Computer Speech and Language},
+Volume = {vol. 2, no. 3/4},
+Pages = {289-301},
+Year = {1987} }
+
+@article {Damper05,
+Author = {Damper, R. I. and Marchand, Y. and Marsters, J.D. and Bazin, A.},
+Journal = {Natural Language Engineering},
+Title = {Can syllabification improve pronunciation by analogy of {E}nglish?},
+Pages = {1-25},
+Year = {2005} }
+
+@article {Content90,
+Author = {A. Content and P. Mousty and M. Radeau},
+Title = { Brulex: Une base de données lexicales informatisée pour le Français écrit et parlé },
+Journal = { L'Ann'ee Psychologique },
+Pages = {551-566},
+Year = {1990} }
+
+@inproceedings{Trancoso94,
+Author = {I. Trancoso and M. Viana and F. Silva},
+Title = { On the pronunciation of common lexica and proper names in {E}uropean {P}ortuguese },
+Booktitle = {2nd Onomastica Res. Colloq },
+Year = {1994} }
+
+@inproceedings {Heid98,
+Author = {S. Heid and S. Hawkins},
+Title = {PROCSY: A hybrid approach to high-quality formant synthesis using {HL}syn},
+BookTitle = {Proceedings of the 3rd ESCA/COCOSDA},
+Year = {1998} }
+
+@article {Cruz04,
+Author = {Regina Cruz and Jailma Bulhoes and Lea Fernandes},
+Title = {Banco de dados orais: {U}ma nova perspectiva aos estudos do português brasileiro (in {P}ortuguese)},
+Journal = {Revista de Estudos da Linguagem},
+Volume = {12},
+Pages = {193-212},
+Year = {2004} }
+
+@article {Bickley92,
+Author = {Corine A. Bickley and Kenneth N. Stevens and David R. Williams},
+Title = {Control of {K}latt speech synthesizer with high-level parameters},
+Journal = {The Journal of the Acoustical Society of America},
+Volume = {91},
+Pages = {2442},
+Year = {1992} }
+
+@inproceedings {Jitca03,
+Author = {Jitca, D. and Apopei, V.},
+Title = {Conclusions on analysis and synthesis of large semivocalic formantic transitions},
+BookTitle = {International Symposium on Signals, Circuits and Systems},
+Pages = {177 - 180},
+Year = {2003} }
+
+@inproceedings {Kasuya96,
+Author = {Ding, W. and Kasuya, H.},
+Title = {A novel approach to the estimation of voice source and vocal tract parameters from speech signals},
+BookTitle = {Fourth International Conference on Spoken Language (ICSLP)},
+Pages = {1257 - 1260},
+Year = {1996} }
+
+@inproceedings {Kasuya97,
+Author = {Wen Ding and Campbell, N. and Higuchi, N. and Kasuya, H.;},
+Title = {Fast and robust joint estimation of vocal tract and voice source parameters},
+BookTitle = {IEEE ICASSP},
+Pages = {1291-4},
+Year = {1997} }
+
+@inproceedings {Kasuya98,
+Author = {Chang-Sheng Yang and Kasuya, H.},
+Title = {Automatic estimation of formant and voice source parameters using a subspace based algorithm},
+BookTitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+Pages = {941 - 944},
+Year = {1998} }
+
+@inproceedings {Rutledge95,
+Author = {Rutledge, J.C. and Cummings, K.E. and Lambert, D.A. and Clements, M.A.},
+Title = {Synthesizing styled speech using the {K}latt synthesizer},
+BookTitle = {International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+Pages = {648 - 651},
+Year = {1995} }
+
+@inproceedings {Nagle98,
+Author = {De C.T. Gomes, L. and Nagle, E.J. and Chiquito, J.G.},
+Title = {Text-to-speech conversion system for {B}razilian {P}ortuguese using a formant-based synthesis technique},
+BookTitle = {SBT/IEEE International Telecommunications Symposium},
+Pages = {219-224},
+Year = {1998} }
+
+@article {Hansona02,
+Author = {Helen M. Hansona and Kenneth N. Stevens},
+Title = {A quasiarticulatory approach to controlling acoustic source parameters in a {K}latt-type formant synthesizer using {HL}syn},
+Journal = {J. Acoust. Soc. Am.},
+Volume = {112},
+Pages = {1158-82},
+Year = {2002} }
+
+@inproceedings {Breidegard03,
+Author = {Bjorn Breidegard and Christian Balkenius},
+Title = {Speech Development by Imitation},
+Year = {2003},
+BookTitle = {Proceedings Third International Workshop on Epigenetic Robotics: Modeling Cognitive Development in Robotic Systems},
+Pages = {57-64},
+Contry = {USA},
+URL = {http://cogprints.org/3328/01/Breidegard.pdf} }
+
+@article {Saikachi05,
+Author = {Yoko Saikachi and Robert Hillman and Kenneth Stevens},
+Title = {Analysis by synthesis of electrolarynx speech},
+Journal = {J. Acoust. Soc. Am.},
+Volume = {118},
+Pages = {1965},
+Month = {September},
+Year = {2005} }
+
+%Speaker recognition
+
+@article {Reynolds95,
+Author = {D. Reynolds},
+Title = {Speaker identification and verification using {G}aussian mixture speaker models},
+Journal = {Speech Communication},
+Volume = {17},
+Pages = {91-108},
+Month = {August},
+Year = {1995} }
+
+%Letter to sound
+
+@inproceedings {Lenzo00,
+Author = {K. A. Lenzo and A. W. Black},
+Title = {Diphone Collection and Synthesis},
+BookTitle = {ICSLP},
+Place = {Beijing, China},
+Year = {2000} }
+
+@inproceedings {Isard86,
+Author = {S. Isard and D. Miller},
+Title = {Diphone Synthesis Techniques},
+BookTitle = {Proceedings of the IEE International Conference on Speech Input/Output},
+Pages = {77-82},
+Year = {1986} }
+
+@inproceedings{Black98,
+  author = "A. Black and K. Lenzo and V. Pagel",
+  title = "Issues in Building General Letter to Sound Rules",
+  BookTitle = "ESCA Synthesis Workshop, Australia 1998",
+  year = "1998",
+  url = "citeseer.ist.psu.edu/black98issues.html" }
+
+%Portuguese LVCSR
+
+@inproceedings {Silva04,
+Author = {Enio Silva and Marcus Pantoja and Jackline C. and Aldebaro Klautau},
+Title = {Modelos de Linguagem N-grama para Reconhecimento de Voz com Grande Vocabulário},
+BookTitle = {TIL2004 - III Workshop em Tecnologia da Informação e da Linguagem Humana},
+City = {Salvador},
+Year = {2004} }
+
+@inproceedings {Velho04,
+Author = {Paula Lucena Rodrigues and Bruno Feijó and Luiz Velho},
+Title = {Expressive Talking Heads: uma ferramenta de animação com fala e
+expressão facial sincronizadas para o desenvolvimento de aplicações interativas},
+BookTitle = {Proceedings of Webmídia. SBC},
+Pages = {},
+Year = {2004} }
+
+@misc
+{SPOLTECH,
+  key = {SPOLTECH},
+  title    = {Advancing human language technology in {B}razil and the {U}nited States through collaborative research on Portuguese spoken language systems},
+  publisher = {Final Report, July 2001},
+  address   = {Federal University of Rio Grande do Sul, University of Caxias do Sul, Colorado University, and Oregon Graduate Institute},
+  year      = {2001}
+}
+
+@article
+{
+  Fagundes03,
+  author   = {R. Fagundes and I. Sanches},
+  title    = {Uma nova abordagem fonético-fonológica em sistemas de reconhecimento de fala espontânea},
+  journal  = {Revista da Sociedade Brasileira de Telecomunicações},
+  volume   = {95},
+  year     = {2003}
+}
+
+@inproceedings {Seara03,
+Author = {I. {Seara~et~al}},
+Title = {Geração Automática de Variantes de Léxicos do Português Brasileiro para Sistemas de Reconhecimento de Fala },
+BookTitle = {XX Simpósio Brasileiro de Telecomunicações},
+Pages = {v.1. p.1-6},
+Year = {2003} }
+
+@article{Santos02,
+  author   = {S. Santos and A. Alcaim},
+  title    = {Um Sistema de Reconhecimento de Voz Contínua Dependente da Tarefa em Língua Portuguesa},
+  journal  = {Revista da Sociedade Brasileira de Telecomunicações},
+  volume   = {17},
+  number   = {2},
+  pages    = {135-147},
+  year     = {2002}
+}
+
+@inproceedings {Ynoguti99,
+Author = {Carlos Alberto Ynoguti and Fï¿½bio Violaro},
+Title = {Influência da Transcrição Fonética no Desempenho de Sistemas de Reconhecimento de Fala Contínua},
+BookTitle = {XVII Simpósio Brasileiro de Telecomunicações},
+Pages = {449-454},
+Year = {1999} }
+
+@article{Pessoa99,
+  author   = {L. Pessoa and F. Violaro and P. Barbosa},
+  title    = {Modelos da Língua Baseados em Classes de Palavras para Sistema de Reconhecimento de Fala Contínua},
+  journal  = {Revista da Sociedade Brasileira de Telecomunicações},
+  volume   = {14},
+  number   = {2},
+  pages    = {75-84},
+  month    = {Dez},
+  year     = {1999}
+}
+
+@inproceedings {Pessoa99b,
+Author = {L. Pessoa and F. Violaro and P. Barbosa},
+Title = {Modelo de Língua Baseado em Gramática Gerativa Aplicado ao Reconhecimento de Fala Contínua},
+BookTitle = {XVII Simpósio Brasileiro de Telecomunicações},
+Pages = {455-458},
+Year = {1999} }
+
+@article
+{OSZ03,
+  author   = {Alon Orlitsky and N. Santhanam and J. Zhang},
+  title    = {Always Good Turing: Asymptotically Optimal Probability Estimation},
+  journal  = {International Journal of Foundations of Computer Science},
+  volume   = {},
+  number   = {},
+  pages    = {},
+  month    = {to appear in October},
+  year     = {2003}
+}
+
+@article
+{NikolaASRU03,
+  author   = {N. Jevtic and A. Orlitsky},
+  title    = {On the Relation Between Additive Smoothing and Universal Coding},
+  journal  = {IEEE ASRU},
+  year     = {2003}
+}
+
+@article
+{WB91,
+  author   = {I. H. Witten and T. C. Bell},
+  title    = {The zero frequency problem: Estimating the probabilities of novel events in adaptive text compression},
+  journal  = {IEEE Transactions on Information Theory},
+  volume   = {37},
+  number   = {4},
+  pages    = {1085-94},
+  month    = {July},
+  year     = {1991}
+}
+
+@article
+{KT81,
+  author   = {R. E. Krichevsky and V. K. Trofimov},
+  title    = {The performance of universal encoding},
+  journal  = {IEEE Transactions on Information Theory},
+  volume   = {27},
+  number   = {2},
+  pages    = {199-207},
+  month    = {March},
+  year     = {1981}
+}
+
+@article
+{Kuhn90,
+  author   = {R. Kuhn and R De Mori},
+  title    = {A cache-based natural language model for speech recognition},
+  journal  = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume   = {12},
+  number   = {6},
+  pages    = {570-583},
+  month    = {June},
+  year     = {1990}
+}
+
+@article
+{ CG94,
+  author   = {W. A. Gale and K. W. Church},
+  title    = {What's Wrong with Adding One},
+  journal  = {Corpus-Based Research Into Language (Oosdijk, N. and de Haan, P., eds)},
+  volume   = {},
+  number   = {},
+  pages    = {},
+  month    = {},
+  year     = {1994}
+}
+
+@article
+{CG99,
+  author   = {S. F. Chen and J. Goodman},
+  title    = {An empirical study of smoothing techniques for language modeling},
+  journal  = {Computer Speech and Language},
+  volume   = {13},
+  number   = {},
+  pages    = {359-394},
+  month    = {},
+  year     = {1999}
+}
+
+
+
+@article{ G01,
+  author = {J. Goodman},
+  title = {A Bit of Progress in Language Modeling},
+  journal  = {Computer Speech and Language},
+  volume   = {},
+  number   = {},
+  pages    = {403-434},
+  month    = {October},
+  year = {2001},
+}
+
+
+@article
+{NMW97,
+  author   = {H. Ney and S. Martin and F. Wessel},
+  title    = {Statistical Language Modeling using Leaving-one-out},
+  journal  = {In Corpus Based Methods in Language and Speech Processing},
+  volume   = {},
+  number   = {},
+  pages    = {174-207},
+  month    = {},
+  year     = {1997}
+}
+
+@article
+{JM80,
+  author   = {F. Jelinek and R. L. Mercer},
+  title    = {Interpolated Estimation of Markov Source Parameters from Sparse Data},
+  journal  = {Proceedings of the Workshop on Pattern Recognition in Practice},
+  volume   = {},
+  number   = {},
+  pages    = {381-397},
+  month    = {May},
+  year     = {1980}
+}
+
+@book
+{ChTh,
+  author    = {S. F. Chen},
+  title     = {Building Probabilistic Models for Natural Language},
+  publisher = {PhD Thesis},
+  address   = {},
+  year      = {1996},
+  url       = {}
+}
+
+@article
+{Br92,
+  author   = {P. F. Brown and S. A. Della Pietra and V. J. Della Pietra and J. C. Lai and R. L. Mercer},
+  title    = {An Estimate of an Upper Bound for the Entropy of English},
+  journal  = {Computational Linguistics},
+  volume   = {18},
+  number   = {},
+  pages    = {31-40},
+  month    = {},
+  year     = {1992}
+}
+
+@article
+{ KN95,
+  author   = {R. Kneser and H. Ney},
+  title    = {Improved Backing-off for M-gram Language Modeling},
+  journal  = icassp,
+  volume   = {1},
+  number   = {},
+  pages    = {181-184},
+  month    = {May},
+  year     = {1995}
+}
+
+@article
+{ NEK94,
+  author   = {H. Ney and U. Essen and R. Kneser},
+  title    = {On Structuring Probabilistic Dependences in Stochastic Language Modeling},
+  journal  = {Computer Speech and Language},
+  volume   = {8},
+  number   = {},
+  pages    = {1-38},
+  month    = {},
+  year     = {1994}
+}
+
+@article
+{NE91,
+  author   = {H. Ney and U. Essen},
+  title    = {On Smoothing Techniques for Bigram-based Natural Language Modeling},
+  journal  = icassp,
+  volume   = {2},
+  number   = {},
+  pages    = {825-829},
+  month    = {},
+  year     = {1991}
+}
+
+@article
+{ BJM83,
+  author   = {L. Bahl and F. Jelinek and R. Mercer},
+  title    = {A Maximum Likelihood Approach to Continuous Speech Recognition},
+  journal  = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume   = {5},
+  number   = {2},
+  pages    = {179-190},
+  month    = {},
+  year     = {1983}
+}
+
+
+@article { Ord98,
+  author   = {E. Ordentlich and T. M. Cover},
+  title    = {The cost of achieving the best portfolio in hindsight},
+  journal  = {Mathematics of Operations Research},
+  volume   = {23},
+  number   = {4},
+  pages    = {960-982},
+  month    = {November},
+  year     = {1998}
+}
+
+@article { Xie97,
+  author   = {Q. Xie and A. R. Barron},
+  title    = {Minimax Redundancy for the Class of Memoryless Sources},
+  journal  = {IEEE Transactions on Information Theory},
+  volume   = {43},
+  number   = {2},
+  pages    = {646-657},
+  month    = {March},
+  year     = {1997}
+}
+
+@article { Xie00,
+  author   = {Q. Xie and A. R. Barron},
+  title    = {Asymptotic Minimax Regret for Data Compression, Gambling and Prediction},
+  journal  = {IEEE Transactions on Information Theory},
+  volume   = {46},
+  number   = {2},
+  pages    = {431-445},
+  month    = {March},
+  year     = {2000}
+}
+
+@article { Haym56 ,
+  author   = {W. K. Hayman},
+  title    = {A Generalization of Stirling's Formula},
+  journal  = {J. reine angew. Math.},
+  volume   = {},
+  number   = {196},
+  pages    = {67-95},
+  month    = {},
+  year     = {1956}
+}
+
+
+@article { Sht87,
+  author   = {Y. M. Shtarkov},
+  title    = {Universal Sequential Coding of Single Messages},
+  journal  = {Problems of Information Transmission},
+  volume   = {23},
+  number   = {3},
+  pages    = {3-17},
+  month    = {July-Sept.},
+  year     = {1987}
+}
+
+@article{ Merh98,
+  author   = {N. Merhav and M. Feder},
+  title    = {Universal Prediction},
+  journal  = {IEEE Transactions on Information Theory},
+  volume   = {44},
+  number   = {6},
+  pages    = {2124-2147},
+  month    = {October},
+  year     = {1998}
+}
+
+@article{ Barr98,
+  author   = {A. Barron and J. Rissanen and B. Yu},
+  title    = {Minimum Description Length in Coding and Modeling},
+  journal  = {IEEE Transactions on Information Theory},
+  volume   = {44},
+  number   = {6},
+  pages    = {2743-2760},
+  month    = {October},
+  year     = {1998}
+}
+
+@book
+{ Lap,
+  author    = {P. S. de Laplace},
+  title     = {Essay Philosophique sur la Probabilit\'es},
+  publisher = {Courcier Imprimeur},
+  address   = {Paris},
+  year      = {1816},
+  url       = {}
+}
+
+@book
+{ Jeff,
+  author    = {H. Jeffreys},
+  title     = {Theory of Probability},
+  publisher = {Clarendon},
+  address   = {Oxford},
+  year      = {1939},
+  url       = {}
+}
+
+
+@article
+{JOS02,
+  author   = {N. Jevti\'c and A. Orlitsky and N. Santhanam},
+  title    = {Universal Compression of Unknown Alphabets},
+  journal  = {IEEE International Symposium on Information Theory},
+  volume   = {},
+  number   = {},
+  pages    = {},
+  month    = {July},
+  year     = {2002}
+}
+
+@inproceedings {Imbiriba04,
+Author = {T. Imbiriba and A. Klautau and N. Parihar and S. Raghavan and J. Picone},
+Title = {{GMM} And Kernel-Based Speaker Recognition with the {ISIP} Toolkit},
+BookTitle = {Proceedings of the 2004 IEEE International Workshop on Machine Learning for Signal Processing},
+Pages = {371-380},
+City = {Sao Luis},
+Country = {Brazil},
+Month = {September},
+Year = {2004} }
+
+@inproceedings {Smith02,
+Author = {N. Smith and M. Gales},
+Title = {Speech Recognition using {SVM}s},
+BookTitle = {Advances in Neural Information Processing Systems 14},
+Editor = {MIT Press},
+Pages = {},
+Year = {2002} }
+
+@article {Wan05,
+Author = {V. Wan and S. Renals},
+Title = {Speaker Verification Using Sequence Discriminant Support Vector Machines},
+Journal = {IEEE Transactions on Speech and Audio Processing},
+Volume = {13},
+Month = {March},
+Number = {2},
+Pages = {203-10},
+Year = {2005} }
+
+@InProceedings{Zahorian97,
+ author = "Stephen A. Zahorian and Peter L. Silsbee and Xihong Wang",
+ title = "Phone Classification with Segmental Features and a Binary-Pair Partitioned Neural Network Classifier",
+ year = 1997,
+ booktitle = "Proc.~ICASSP97",
+ pages = "1011--1014"
+}
+
+@inproceedings {Hazen98,
+Author = {T. J. Hazen and A. K. Halberstadt},
+Title = {Using aggregation to improve the performance of mixture {G}aussian acoustic models},
+BookTitle = {ICASSP},
+Pages = {653-656},
+Year = {1998} }
+
+@article {Chengalvarayan97,
+Author = {R. Chengalvarayan and Li Deng},
+Title = {Use of generalized dynamic feature parameters for speech recognition},
+Journal = {IEEE Transactions on Speech and Audio Processing},
+Volume = {5},
+Pages = {232-242},
+Year = {1997} }
+
+@article {Chengalvarayan98,
+Author = {R. Chengalvarayan and Li Deng},
+Title = {Speech Trajectory Discrimination Using the Minimum Classification Error Learning},
+Journal = {IEEE Transactions on Speech and Audio Processing},
+Volume = {6},
+Pages = {505-515},
+Year = {1998} }
+
+@phdthesis {Hosom00,
+Author = {J.-P. Hosom},
+Title = {Automatic Time Alignment of Phonemes Using Acoustic-Phonetic Information},
+School = {Oregon Graduate Institute of Science and Technology},
+Year = {2000} }
+
+@inproceedings {,
+Author = {},
+Title = {},
+BookTitle = {},
+Pages = {},
+Year = {} }
+
+@inproceedings {Paliwal91,
+Author = {K. Paliwal and B. Atal},
+Title = {Efficient Vector Quantization of {LPC} Parameters at 24 bits/frame},
+BookTitle = {ICASSP},
+Pages = {661-4},
+Year = {1991} }
+
+@Book{Goldberg02,
+Author = {David E. Goldberg},
+Title = {The Design of Innovation: Lessons from and for Competent Genetic Algorithms},
+Publisher = {Springer},
+Pages = {272},
+isbn = {1402070985},
+Year = {2002} }
+
+@Book{Langdon02,
+  author =       "W. B. Langdon and Riccardo Poli",
+  title =        "Foundations of Genetic Programming",
+  publisher =    "Springer-Verlag",
+  year =         "2002",
+  keywords =     "genetic algorithms, genetic programming",
+  ISBN =         "3-540-42451-2",
+  URL =          "http://www.springer.de/cgi-bin/search_book.pl?isbn=3-540-42451-2#english",
+  size =         "274 pages",
+}
+
+@Book{langdon98,
+  author =       "William B. Langdon",
+  title =        "Genetic Programming and Data Structures: Genetic
+                 Programming + Data Structures = Automatic
+                 Programming!",
+  publisher =    "Kluwer",
+  year =         "1998",
+  volume =       "1",
+  series =       "Genetic Programming",
+  address =      "Boston",
+  month =        "24 " # apr,
+  keywords =     "genetic algorithms, genetic programming",
+  ISBN =         "0-7923-8135-1"}
+
+
+@book {Dutoit01,
+Author = {Thierry Dutoit},
+Title = {An Introduction to Text-To-Speech Synthesis},
+Publisher = {Kluwer },
+ISBB = {1402003692},
+Year = {2001} }
+
+@book {Holmes01,
+Author = {J. N. Holmes and W. J. Holmes},
+Title = {Speech Synthesis and Recognition},
+Publisher = {T \& F STM},
+ISBB = {0748408576},
+Year = {2001} }
+
+@BOOK{vanSanten96,
+  editor        = {J.P.H. van Santen and J. Hirschberg and J. Olive and R. Sproat},
+  title         = {{Progress in Speech Synthesis}},
+  publisher     = {Springer-Verlag},
+  address       = {New York},
+  year          = {1996},
+  isbn          = {0-387-94701-9},
+  amazon-url    = {http://www.amazon.de/exec/obidos/ASIN/0387947019},
+  remarks       = {van Santen Author Links: \url{http://www.bell-labs.com/project/tts/BOOK.html}, Springer Heidelberg: \url{http://www.springer.de/cgi-bin/search_book.pl?isbn=0-387-94701-9}, Springer New-York: \url{http://www.springer-ny.com/catalog/np/may96np/DATA/0-387-94701-9.html}},
+}
+@ARTICLE{Valbret92,
+  key           = {synthesis},
+  author        = {H. Valbret and E. Moulines and J. P. Tubach},
+  title         = {Voice transformation using {PSOLA} technique},
+  journal       = {speech},
+  year          = {1992},
+  month         = {June},
+  volume        = {11},
+  number        = {2-3},
+  pages         = {189--194},
+}
+
+@book{Allen87,
+ author = {Jonathan Allen and M. Sharon Hunnicutt and Dennis H. Klatt and Robert C. Armstrong and David B. Pisoni},
+ title = {From text to speech: {T}he MITalk system},
+ year = {1987},
+ isbn = {0-521-30641-8},
+ publisher = {Cambridge University Press},
+ }
+
+@INPROCEEDINGS{Dutoit96,
+  author        = {T. Dutoit and V. Pagel and N. Pierret and F. Bataille and O. V. der Vrecken},
+  title         = {The {MBROLA} project: {T}owards a Set of High Quality Speech Synthesizers Free of Use for Non Commercial Purposes},
+  booktitle     = {Proc. ICSLP '96},
+  address       = {Philadelphia, PA},
+  month         = {October},
+  year          = {1996},
+  volume        = {3},
+  pages         = {1393--1396},
+}
+@INPROCEEDINGS{Dutoit94,
+  author        = {T. Dutoit},
+  title         = {High Quality Text-to-Speech Synthesis: a Comparison of four Candidate Algorithms},
+  booktitle     = {Proc. ICASSP '94},
+  address       = {Adelaide, Austrailia},
+  month         = {April},
+  year          = {1994},
+  pages         = {{I--565}--{I--568}},
+}
+
+@article {Pinto89,
+Author = {N. Pinto and D. Childers and A. Lalwani},
+Title = {Formant Speech Synthesis: {I}mproving Production Quality},
+Journal = {IEEE Transactions on Acoustics, Speech and Signal Processing},
+Volume = {37},
+Pages = {1870-1887},
+Year = {1989} }
+
+@article {Klatt90,
+Author = {D. Klatt and L. Klatt},
+Title = {Analysis, synthesis, and perception of voice quality variations
+among female and male speakers},
+Journal = {Journal of the Acoustical Society of America},
+Volume = {87},
+Pages = {820-57},
+Year = {1990} }
+
+@article {Klatt80,
+Author = {D. Klatt},
+Title = {Software for a cascade / parallel formant synthesizer},
+Journal = {Journal of the Acoustical Society of America},
+Volume = {67},
+Pages = {971-95},
+Year = {1980} }
+
+@InProceedings{Jebara98,
+author = "Jebara, T. and Pentland, A.",
+title = "Maximum Conditional Likelihood via Bound Maximization and the CEM Algorithm ",
+booktitle = "Neural Information Processing Systems 11",
+year = "1998",
+}
+
+@inproceedings {Klautau03-rbf,
+Author = {A. Klautau},
+Title = {A new algorithm for training {RBF} networks},
+BookTitle = {SBT, Rio de Janeiro, Brazil},
+Year = {2003} }
+
+@article {Klautau03-ieee,
+Author = {A. Klautau and N. Jevti\'c and A. Orlitsky},
+Title = {A gentle introduction to maximum mutual information estimation},
+Journal = {submitted to IEEE Transactions on Education},
+Year = {2003} }
+
+@inproceedings {Klautau03-sbt,
+Author = {A. Klautau and N. Jevti\'c and A. Orlitsky},
+Title = {Speech recognition based on discriminative classifiers},
+BookTitle = {SBT, Rio de Janeiro, Brazil},
+Year = {2003} }
+
+@inproceedings {Kaylani94,
+Author = {T. Kaylani and S. Dasgupta},
+Title = {A New Method for Initializing Radial Basis Function Classifiers},
+BookTitle = {IEEE International Conference on Systems, Man, andCybernetics. Human, Information and Technology},
+Volume = {3},
+Pages = {2584-7},
+Year = {1994} }
+
+@article {Gardner95,
+Author = {W. Gardner and B. Rao},
+Title = {Theoretical Analysis of The High-Rate Vector Quantization of {LPC} Parameters},
+Journal = {IEEE Trans. On Speech and Audio Processing},
+Volume = {3},
+Pages = {367-381},
+Year = {1995} }
+
+@phdthesis {Lee97-mitthesis,
+Author = {S. Lee},
+Title = {Probabilistic Segmentation for Segment-Based Speech Recognition},
+School = {MIT},
+Year = {1997} }
+
+@inproceedings {Klautau03-icassp,
+Author = {A. Klautau},
+Title = {Mining speech: {A}utomatic selection of heterogeneous features using boosting},
+BookTitle = {ICASSP},
+Year = {2003} }
+
+@inproceedings {Antoniou99,
+Author = {C. Antoniou, J. Reynolds},
+Title = {Using Modular/ensemble Neural Networks For The Acoustic Modelling Of Speech},
+BookTitle = {ASRU},
+Year = {1999} }
+
+@inproceedings {Fritsch96,
+Author = {J. Fritsch and I. Rogina},
+Title = {The Bucket Box Intersection ({BBI}) Algorithm for fast approximative evaluation of Diagonal Mixture {G}aussians},
+BookTitle = {ICASSP},
+Pages = {837-840},
+Year = {1996} }
+
+@article {Bentley79,
+Author = {J. Bentley},
+Title = {Multidimensional Binary Search Trees in Database Applications},
+Journal = {IEEE Transactions on Software Engineering},
+Volume = {5},
+Number = {4},
+Pages = {333-340},
+Year = {1979} }
+
+@article {Ramasubramanian92,
+Author = {V. Ramasubramanian and K. Paliwal},
+Title = {Fast {K}-Dimensional Tree Algorithms for Nearest Neighbor Search with Application to Vector Quantization Encoding},
+Journal = {IEEE Trans. on Signal Processing},
+Volume = {40},
+Number = {3},
+Year = {1992} }
+
+@incollection {Platt99,
+author = {J. Platt},
+booktitle = {Advances in Large Margin Classifiers},
+publisher = {MIT Press},
+year = {1999},
+type = {Chapter},
+pages = {61-74},
+title = {Probabilities for SV Machines},
+Editor = {A. Smola and P. Bartlett and B. Scholkopf and D. Schuurmans} }
+
+@book {Rao90,
+Author = {K. Rao and P. Yip},
+Title = {Discrete Cosine Transform---Algorithms, Advantages, Applications},
+Publisher = {Academic Press},
+Year = {1990} }
+
+@misc{Picone02,
+  author = {J. Picone},
+  title = {Talk at {SRSTW}'02, http://www.isip.msstate.edu},
+  year = {2002},
+  url = {www.isip.msstate.edu} }
+
+@book {Oppenheim75,
+Author = {A. Oppenheim},
+Title = {Digital Signal Processing},
+Publisher = {Prentice-Hall},
+Year = {1975} }
+
+@misc{Elkan97,
+  author = "C. Elkan",
+  title = "Boosting and Naive Bayesian learning",
+  text = "Elkan, C. (1997), Boosting and Naive Bayesian learning, Technical report,
+    Department of Computer Science and Engineering, University of California,
+    San Diego.",
+  year = "1997",
+  url = "citeseer.nj.nec.com/elkan97boosting.html" }
+
+@techreport {Talkin87,
+Author = {D. Talkin},
+Title = {Speech formant trajectory estimation using dynamic programming with modulated transition costs},
+Institution = {AT \& T Bell Laboratories 11222-870720-07TM},
+Year = {1987} }
+
+@incollection {Talkin95,
+author = {D. Talkin},
+booktitle = {Speech Coding and Synthesis},
+publisher = {Elsevier},
+year = {1995},
+type = {Chapter},
+title = {A Robust Algorithm for Pitch Tracking {(RAPT)}},
+Editor = {W. Kleijn and K. Paliwal} }
+
+@article {McNemar47,
+Author = {Q. McNemar},
+Title = {Note on the sampling error of the difference between correlated proportions or percentages},
+Journal = {Psychometrika},
+Volume = {12},
+Pages = {153-7},
+Year = {1947} }
+
+@book {McLachlan97,
+Author = {G. McLachlan and T. Krishnan},
+Title = {The {EM} algorithm and extensions},
+Publisher = {Wiley},
+Year = {1997} }
+
+@book {Bishop95,
+Author = {C. Bishop},
+Title = {Neural networks for pattern recognition},
+Publisher = {Oxford Univerisy Press},
+Year = {1995} }
+
+@book {Nabney02,
+Author = {I. Nabney},
+Title = {Netlab algorithms for pattern recognition},
+Publisher = {Springer},
+Year = {2002} }
+
+@book {Bourlard94,
+Author = {H. Bourlard and N. Morgan},
+Title = {Connectionist speech recognition},
+Publisher = {Kluwer},
+Year = {1994} }
+
+@book{Kondoz94,
+   Author = {Kondoz, A. M.},
+   Title = {Digital Speech: {C}oding for Low Bit Rate Communication Systems},
+   Publisher = {John Wiley \& Sons},
+ Year = {1994} }
+
+@inproceedings{Laprie94,
+   Author = {Y. Laprie and M. Berger},
+   Title = {A New Paradigm for Reliable Automatic Formant Tracking},
+   BookTitle = {ICASSP},
+   Pages = {II 201-204},
+ Year = {1994} }
+
+@incollection{Shoup80,
+   Author = {J. Shoup},
+   Title = {Phonological Aspects of Speech Recognition},
+   BookTitle = {Trends in Speech Recognition},
+   Editor = {LEA, W.A.},
+   Publisher = {Prentice Hall},
+   Address = {Englewood Cliffs},
+   Pages = {125-138},
+ Year = {1980} }
+
+@inproceedings{Zue88,
+   Author = {V. Zue and S. Seneff},
+   Title = {Transcription and alignment of the {TIMIT} database},
+   BookTitle = {Proceedings of the Second Meeting on Advanced Man-Machine Interface through Spoken Language},
+ Year = {1988} }
+
+@book{Ladefoged01,
+   Author = {P. Ladefoged},
+   Title = {A Course in Phonetics},
+   Publisher = {Harcourt Brace},
+   Edition = {4},
+ Year = {2001} }
+
+@book{Rabiner78,
+   Author = {L. Rabiner and R. Schafer},
+   Title = {Digital Processing of Speech Signals},
+   Publisher = {Prentice-Hall},
+ Year = {1978} }
+
+@article {Juang90,
+Author = {B. H. Juang and L. R. Rabiner },
+Title = {The segmental {K}-means algorithm for estimating parameters of hidden {M}arkov models},
+Journal = {IEEE Transactions on Signal Processing},
+Volume = {38},
+Pages = {1639 - 1641},
+Year = {1990} }
+
+
+@article {Baum70,
+Author = {L. E. Baum and T. Petrie and G. Soules and N. Weiss},
+Title = {A Maximization Technique Occurring in the Statistical Analysis of Probabilistic Functions of {M}arkov Chains},
+Journal = {The Annals of Mathematical Statistics},
+Volume = {41},
+Pages = {164 - 171},
+Year = {1970} }
+
+@book{Rabiner93,
+   Author = {L. Rabiner and B. Juang},
+   Title = {Fundamentals of speech recognition},
+   Publisher = {PTR Prentice Hall},
+   Address = {Englewood Cliffs, N.J.},
+   Year = {1993} }
+
+@article{Snell93,
+   Author = {Snell, R. and Milinazzo, F.},
+   Title = {Formant Location From LPC Analysis Data},
+   Journal = {IEEE Trans. on Speech and Audio Processing},
+   Volume = {1},
+   Number = {2},
+   Pages = {129-34},
+ Year = {1993} }
+
+
+@book{Huang90,
+   Author = {Huang and Ariki and Jack},
+   Title = {Hidden {M}arkov Models for Speech Recognition},
+ Year = {1990} }
+
+
+@article{Watrous91,
+   Author = {Watrous, R. L.},
+   Title = {Current status of {P}eterson-{B}arney vowel formant data},
+   Journal = {Journal of the Acoustical Society of America},
+   Volume = {89},
+   Number = {5},
+   Pages = {2459-60},
+ Year = {1991} }
+
+
+@book{Kent92,
+   Author = {R. Kent and C. Read},
+   Title = {The Acoustic Analysis of Speech},
+   Publisher = {Singular},
+ Year = {1992} }
+
+@book{Acero93,
+   Author = {A. Acero},
+   Title = {Acoustical and environmental robustness in automatic speech recognition},
+   Publisher = {Kluwer Academic Publishers},
+   Address = {Boston},
+   Year = {1993} }
+
+@article{Stevens40,
+   Author = {Stevens, S. and Volkman, J.},
+   Title = {The relation of pitch to frequency},
+   Journal = {Journal of Psychology},
+   Volume = {53},
+   Pages = {329},
+ Year = {1940} }
+
+@article{Potter50,
+   Author = {Potter, R. K. and Steinberg, J. C.},
+   Title = {Toward the specification of speech},
+   Journal = {The Journal of the Acoustical Society of America},
+   Volume = {22},
+   Number = {6},
+   Pages = {807-820},
+ Year = {1950} }
+
+@book{Fant60,
+   Author = {G. Fant},
+   Title = {Acoustic theory of speech production},
+   Publisher = {Mounton \& CO},
+   Edition = {1st},
+ Year = {1960} }
+
+
+
+@article{Schafer70,
+   Author = {Schafer, R. W. and Rabiner, L. R.},
+   Title = {System for automatic formant analysis of voiced speech},
+   Journal = {Journal of the Acoustical Society of America},
+   Volume = {47},
+   Number = {2, pt.2},
+   Pages = {634-48},
+   Note = {English},
+ Year = {1970} }
+
+
+@book{Flanagan72,
+   Author = {Flanagan, J. L.},
+   Title = {Speech Analysis, Synthesis and Perception},
+   Publisher = {Springer},
+   Address = {New York},
+ Year = {1972} }
+
+
+@inproceedings{McCandless73,
+   Author = {McCandless, S.},
+   Title = {Automatic formant extraction using linear prediction},
+   BookTitle = {85th Meeting of the Acoustical Society of America (abstracts only)},
+   Address= {Boston, MA, USA},
+   Publisher = {Acoust. Soc. America},
+   Pages = {94},
+ Year = {1973} }
+
+
+
+@book{Fant75,
+   Author = {Fant, Gunnar},
+   Title = {Speech perception and automatic recognition},
+   Publisher = {Almqvist \& Wiksell International ; Wiley},
+   Series = {Speech communication ; v. 3.},
+   Year = {1975} }
+
+@mastersthesis {Srivastava02,
+Author = {S. Srivastava},
+Title = {Fast {G}aussian evaluations in large vocabulary continuous speech recognition},
+School = {Mississippi State University},
+Year = {2002} }
+
+@inproceedings {Cole83,
+Author = {R. Cole and R. Stern and M. Phillips and S. Brill and A. Pilant and P. Specker},
+Title = {Feature-based speaker-independent recognition of isolated english letters},
+BookTitle = {ICASSP},
+Pages = {731-734},
+Year = {1983} }
+
+@inproceedings {Fritsch97,
+Author = {J. Fritsch},
+Title = {{ACID}/{HNN}: A Framework for Hierchical Connectionist Acoutic Modeling},
+BookTitle = {Workshop on Automatic Speech Recognition and Understanding},
+Year = {1997} }
+
+
+@article {Press78,
+Author = {S. Press and S. Wilson},
+Title = {Choosing between logistic regression and discriminant analysis},
+Journal = {Journal of the American Statistical Association},
+Volume = {73},
+Pages = {699-705},
+Year = {1978} }
+
+@misc {SphinxFAQ,
+key = {SphinxFAQ},
+Title = {http://www-2.cs.cmu.edu/$\sim$rsingh/sphinxman/FAQ.html} }
+
+@book {Junqua96,
+Author = {J.-C. Junqua and J.-P. Haton},
+Title = {Robustness in Automatic Speech Recognition},
+Publisher = {Kluwer},
+Year = {1996} }
+
+@article {Lippmann95,
+Author = {Lippmann, R.},
+Title = {A Comparison of Signal Processing Front Ends for Automatic Word Recognition},
+Journal = {IEEE Transactions on Speech},
+Pages = {??},
+Year = {1995} }
+
+@inproceedings {Novorita99,
+Author = {Novorita, B. },
+Title = {Incorporation of temporal masking effects into {B}ark spectral distortion measure},
+BookTitle = {ICASSP},
+Pages = {},
+Year = {1999} }
+
+@inproceedings {Hardt97,
+Author = {Hardt, D. and Fellbaum, K.},
+Title = {Spectral subtraction and {RASTA}-filtering in text-dependent {HMM}-based speaker verification},
+Booktitle = {ICASSP},
+Pages = {867-70},
+Year = {1997}}
+
+@article {Kanedera99,
+Author = {Kanedera, N. and Arai, T. and Hermansky, H. and Pavel, M.},
+Title = {On the relative importance of various components of the modulation spectrum for automatic speech recognition},
+Journal = {Speech Communication},
+Volume = {28},
+Pages = {43-55},
+Year = {1299} }
+
+@article {Allwein00,
+Author = {Allwein, E. and Schapire, R. and Singer, Y.},
+Title = {Reducing multiclass to binary: {A} unifying approach for margin classifiers},
+Journal = {Journal of Machine Learning Research},
+Pages = {113-141},
+Year = {2000} }
+
+
+@inproceedings {Clarkson99,
+Author = {Clarkson, P. and Moreno, P.},
+Title = {On the use of support vector machines for phonetic classification},
+BookTitle = {ICASSP},
+Pages = {585-8 vol.2},
+Year = {1999} }
+
+
+@inproceedings {Crammer00,
+Author = {Crammer, K. and Singer, Y.},
+Title = {On the learnability and design of output codes for multiclass problems},
+BookTitle = {COLT},
+Year = {2000} }
+
+
+@book {Cristianini00,
+Author = {Cristianini, N. and Shawe-Taylor, J.},
+Title = {An introduction to support vector machines and other kernel-based learning methods},
+Publisher = {Cambridge Univ. Press},
+Year = {2000} }
+
+
+@book {Herbrich02,
+Author = {Herbrich, R.},
+Title = {Learning Kernel Classifiers: Theory and Algorithms},
+Publisher = {MIT Press},
+Year = {2002} }
+
+
+@book {Gersho98,
+Author = {Gersho, A. and Gray, R.},
+Title = {Vector Quantization and Signal Compression},
+Publisher = {Kluwer},
+Year = {1992} }
+
+
+@book {David63,
+Author = {David, H.},
+Title = {The method of paired comparisons},
+Publisher = {Charles Griffin},
+Year = {1963} }
+
+
+@article {Dietterich95,
+Author = {Dietterich, T. and Bakiri, G.},
+Title = {Solving multiclass learning problems via error-correcting output codes},
+Journal = {Journal of Artif. Intellig. Research},
+Volume = {2},
+Pages = {263-86},
+Year = {1995} }
+
+
+@inproceedings {Fine02,
+Author = {Fine, S. and Saon, G. and Gopinath, R.},
+Title = {Digits Recognition in a Noisy Environment via a Sequential {GMM}/{SVM} System},
+BookTitle = {ICASSP},
+Year = {2002} }
+
+
+@article {Freund99,
+Author = {Freund, Y. and Schapire, R. and Abe, N.},
+Title = {A short introduction to boosting},
+Journal = {Journal of Japanese Society for Artificial Intelligence},
+Volume = {14},
+Number = {5},
+Pages = {771-80},
+Year = {1999} }
+
+
+@techreport {Friedman96,
+Author = {Friedman, J.},
+Title = {Another approach to polychotomous classification},
+Institution = {Stanford University},
+Year = {1996} }
+
+
+@phdthesis {Ganapathiraju02,
+Author = {Ganapathiraju, A.},
+Title = {Support Vector Machines for Speech Recognition},
+School = {Mississippi State University},
+Year = {2002} }
+
+
+@inproceedings {Ganapathiraju98,
+Author = {Ganapathiraju, A. and Hamaker, J. and Picone, J.},
+Title = {Support Vector Machines for Speech Recognition},
+BookTitle = {ICSLP},
+Year = {1998} }
+
+
+@article {Hastie98,
+Author = {Hastie, T. and Tibshirani, R.},
+Title = {Classification by pairwise coupling},
+Journal = {The Annals of Statistics},
+Volume = {26},
+Number = {2},
+Pages = {451-471},
+Year = {1998} }
+
+
+@inproceedings {Schapire98,
+Author = {Schapire, R. and Singer, Y.},
+Title = {Improved boosting algorithms using confidence-rated predictions},
+BookTitle = {COLT},
+Year = {1998} }
+
+
+@inproceedings {Schwenk99,
+Author = {Schwenk, H},
+Title = {Using boosting to improve a hybrid {HMM}/neural network speech recognizer},
+BookTitle = {ICASSP},
+Pages = {1009-12},
+Year = {1999} }
+
+
+@book {Smola00,
+Editor = {Smola, A. and Bartlett, P. and Scholkopf, B. and Schuurmans, D.},
+Title = {Advances in large margin classifiers},
+Publisher = {MIT Press},
+Year = {2000} }
+
+
+@inproceedings {Tsuda01,
+Author = {Roth, V. and Tsuda, K.},
+Title = {Pairwise Coupling for Machine Recognition of Hand-Printed Japanese Characters},
+BookTitle = {CVPR},
+Pages = {1120-1125},
+Year = {2001} }
+
+
+@article {Utschick01,
+Author = {Utschick, W. and Weichselberger, W.},
+Title = {Stochastic organization of output codes in multiclass learning problems},
+Journal = {Neural Computation},
+Volume = {13},
+Number = {5},
+Pages = {1065-1102},
+Year = {2001} }
+
+
+@inproceedings {Weston99,
+Author = {Weston, J. and Watkins, C.},
+Title = {Support vector machines for multi-class pattern recognition},
+BookTitle = {ESANN},
+Pages = {219-24},
+Year = {1999} }
+
+
+@inproceedings {Yao01,
+Author = {Yao, Y. and Marcialis, G. and Pontil, M. and Frasconi, P. and Roli, F.},
+Title = {A New Machine Learning Approach to Fingerprint Classification},
+BookTitle = {7th Congress of the Italian Association for Artificial Intelligence},
+Pages = {57-63},
+Year = {2001} }
+
+
+@inproceedings {Zadrozny01a,
+Author = {Zadrozny, B. and Elkan, C.},
+Title = {Obtaining calibrated probability estimates from decision trees and naive Bayesian classifiers},
+BookTitle = {ICML},
+Pages = {609-616},
+Year = {2001} }
+
+
+@inproceedings {Zadrozny01b,
+Author = {Zadrozny, B.},
+Title = {Reducing multiclass to binary by coupling probability estimates},
+BookTitle = {NIPS},
+Year = {2001} }
+
+
+@article {Zahorian99,
+Author = {Zahorian, S. and Nossair, Z.},
+Title = {A partitioned neural network approach for vowel classification using smoothed time/frequency features},
+Journal = {IEEE Trans. on Speech and Audio Processing},
+Volume = {7},
+Number = {4},
+Pages = {414-25},
+Year = {1999} }
+
+
+@inproceedings {Zweig00,
+Author = {Zweig, G.},
+Title = {Boosting {G}aussian mixtures in an {LVCSR} system},
+BookTitle = {ICASSP},
+Pages = {1527-30},
+Year = {2000} }
+
+
+@inproceedings {Moreira98,
+Author = {Moreira, M. and Mayoraz, E.},
+Title = {Improved pairwise coupling classification with correcting classifiers},
+BookTitle = {10th European Conference on Machine Learning},
+Pages = {160-71},
+Year = {1998} }
+
+
+@inproceedings {Mayoraz99,
+Author = {Mayoraz, E. and Alpaydin, E.},
+Title = {Support vector machines for multi-class classification},
+BookTitle = {IWANN},
+Pages = {833-42},
+Year = {1999} }
+
+
+@inproceedings {Mayoraz01,
+Author = {Mayoraz, E. N.},
+Title = {Multi-class classification with pairwise coupled neural networks or support vector machines},
+BookTitle = {ICANN},
+Pages = {314-21},
+Year = {2001} }
+
+
+@inproceedings {Platt00,
+Author = {Platt, J. and Cristianini, N. and Shawe-Taylor, J.},
+Title = {Large margin {DAG}s for multiclass classification},
+BookTitle = {NIPS},
+Pages = {547-553},
+Year = {2000} }
+
+
+@article {Wolpert92,
+Author = {Wolpert, D.},
+Title = {Stacked Generalization},
+Journal = {Neural Networks},
+Pages = {241-259},
+Year = {1992} }
+
+
+@inproceedings {Guruswami99,
+Author = {Guruswami, V. and Sahai, A.},
+Title = {Multiclass learning, boosting, and error-correcting codes},
+BookTitle = {COLT},
+Pages = {145-155},
+Year = {1999} }
+
+
+@misc {Remos,
+key = {Remos},
+Title = {http://speech.ucsd.edu/aldebaro/repository} }
+
+@article {Ney99,
+author   = {H. Ney and S. Ortmanns},
+title    = {Dynamic programming search for continuous speech recognition},
+journal  = {IEEE Signal Processing Magazine},
+volume   = {16},
+number   = {5},
+pages    = {64-83},
+month    = {Sept.},
+year     = {1999}
+}
+
+
+@article {Lavie96,
+author   = {A. {Lavie et al}},
+title    = {Dialogue processing in a conversational speech translation system},
+journal  = {ICSLP 96},
+volume   = {1},
+number   = {},
+pages    = {554-7},
+month    = {Oct.},
+year     = {1996}
+}
+
+@article {Soo84,
+author   = {F. Soong and B.-H. Juang},
+title    = {Line spectrum pair (LSP) and speech data compression},
+journal  = {ICASSP 84},
+volume   = {1},
+number   = {},
+pages    = {p.1.10/1-4},
+month    = {Mar.},
+year     = {1984}
+}
+
+@article {Lee89,
+author   = {K.-F. Lee and H.-W. Hon},
+title    = {Speaker-independent phone recognition using hidden {M}arkov models},
+journal  = {IEEE Transactions on Acoustics, Speech and Signal Processing},
+volume   = {37},
+number   = {11},
+pages    = {1641-8},
+month    = {Nov.},
+year     = {1989}
+}
+
+@inproceedings {Freund95,
+author = "Y. Freund and R. Schapire",
+title = "A decision-theoretic generalization of on-line learning and an application to boosting",
+booktitle = "European Conf. on Computational Learning Theory",
+pages = "23-37",
+year = "1995",
+url = "citeseer.nj.nec.com/article/freund95decisiontheoretic.html" }
+
+
+@book {Vapnik95,
+Author = {V. Vapnik},
+Title = {The nature of statistical learning theory},
+Publisher = {Springer Verlag},
+Year = {1995} }
+
+
+@article {Cortes95,
+author = "C. Cortes and V. Vapnik",
+title = "Support-Vector Networks",
+journal = "Machine Learning",
+volume = "20",
+number = "3",
+pages = "273-297",
+year = "1995",
+url = "citeseer.nj.nec.com/cortes95supportvector.html" }
+
+
+@article {Dietterich98,
+Author = {Dietterich, T.},
+Title = {Approximate statistical tests for comparing supervised classification learning algorithms},
+journal = {Neural Computation},
+pages = "1895-1923",
+volume = "10",
+number = "7",
+year = "1998"
+}
+
+
+@mastersthesis {Ng98b,
+Author = {Ng, A.},
+Title = {On Feature Selection: Learning with Exponentially many Irrelevant Features as Training Examples},
+School = {MIT},
+Year = {1998} }
+
+
+@inproceedings {Fayyad93,
+Author = {U. Fayyad and K. Irani},
+Title = {Multi-interval discretization of continuous-valued attributes for classification learning},
+BookTitle = {13th International Joint Conf. on Artificial Intelligence},
+Pages = {1022-1027},
+Year = {1993} }
+
+
+@inproceedings {Freund96,
+author = {Y. Freund and R. E. Schapire},
+title = {Experiments with a New Boosting Algorithm},
+booktitle = {International Conf. on Machine Learning},
+pages = {148-156},
+year = {1996} }
+
+@inproceedings {Tieu01,
+Author = {Tieu, K.},
+Title = {Personal communication},
+Year = {2001} }
+
+@book {Lim90,
+Author = {Lim, J.},
+Title = {Two-dimensional Signal and Image Processing},
+Publisher = {Prentice-Hall},
+Year = {1990} }
+
+
+@book {Gonzales92,
+Author = {Gonzalez, R. and Woods, R.},
+Title = {Digital Image Processing},
+Publisher = {Addison-Wesley},
+Year = {1992} }
+
+
+@book {Hastie01,
+Author = {Hastie, T. and Tibshirani, R. and Friedman, J.},
+Title = {The elements of statistical learning},
+Publisher = {Springer Verlag},
+Year = {2001} }
+
+
+@book {Shwartz95,
+Author = {Shwartz, A. and Weiss, A.},
+Title = {Large deviations for performance analysis},
+Publisher = {Chapman \& Hall},
+Year = {1995} }
+
+
+@book {Castelli02,
+Author = {Castelli, V. and Bergman, L.},
+Title = {Image Databases - Search and Retrieval of Digital Imagery},
+Publisher = {John Wiley and Sons},
+Year = {2002} }
+
+
+@book {Webb99,
+Author = {Webb, A.},
+Title = {Statistical Pattern Recognition},
+Publisher = {Oxford University Press Inc.},
+Year = {1999} }
+
+
+@article {Blum97,
+Author = {Blum, A. and Langley, P.},
+Title = {Selection of relevant features and examples in machine learning},
+Journal = {Artificial Intelligence},
+Pages = {245-271},
+Year = {1997} }
+
+
+@inproceedings {Langley94,
+Author = {Langley, P.},
+Title = {Selection of relevant features in machine learning},
+BookTitle = {AAAI Fall Symposium on Relevance},
+Year = {1994} }
+
+
+@article {Kohavi97,
+Author = {Kohavi, R. and John, G.},
+Title = {Wrapper for feature subset selection},
+Journal = {Artificial Inteliggence},
+Pages = {273-324},
+Year = {1997} }
+
+
+@inproceedings {Evgeniou00,
+Author = {Evgeniou, T. and Pontil, M. and Papageorgiou, C. and Poggio, T.},
+Title = {Image representations for object detection using kernel classifiers},
+BookTitle = {Asian Conf. on Computer Vision},
+Pages = {687-692},
+Year = {2000} }
+
+
+@article {Jain00,
+Author = {Jain, A. and Duin, R. and Mao, J. },
+Title = {Statistical pattern recognition: a review},
+Journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+Pages = {4-37},
+Year = {2000} }
+
+
+@article {Jain97,
+Author = {Jain, A. and Zongker, D.},
+Title = {Feature selection: evaluation, application and small sample performance},
+Journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+Pages = {153-158},
+Year = {1997} }
+
+
+@inproceedings {Tieu00,
+Author = {Tieu, K. and Viola, P.},
+Title = {Boosting Image Retrieval},
+BookTitle = {IEEE Conf. on Computer Vision and Pattern Recognition},
+Pages = {228-235},
+Year = {2000} }
+
+
+@inproceedings {Koller96,
+Author = {Koller, D. and Sahami, M.},
+Title = {Toward optimal feature selection},
+BookTitle = {International Conf. on Machine Learning},
+Year = {1996} }
+
+@inproceedings {Das01,
+Author = {Das, S.},
+Title = {Filters, wrappers and a boosting-based hybrid for feature selection},
+BookTitle = {International Conf. on Machine Learning},
+Pages = {74-81},
+Year = {2001} }
+
+
+@inproceedings {Xing01,
+Author = {Xing, R. and Jordan, M. and Karp, R.},
+Title = {Feature selection for high-dimensional genomic microarray data},
+BookTitle = {International Conf. on Machine Learning},
+Pages = {601-608},
+Year = {2001} }
+
+
+@article {Schapire99,
+Author = {Schapire, R. and Singer, Y.},
+Title = {Improved boosting algorithms using confidence-rated predictions},
+Journal = {Machine Learning},
+Pages = {297-336},
+Year = {1999} }
+
+
+@inproceedings {Kalidindi97,
+Author = {Kalidindi, N. and Le, A. and Zheng, L. and Yaquin, H. and Rudis, V. and Picone, J.},
+Title = {Scenic beauty estimate of forestry images},
+BookTitle = {IEEE Southeastcon},
+Pages = {337-339},
+Year = {1997} }
+
+
+@inproceedings {Zhang99,
+Author = {Zhang, X. and Ramani, V. and Long, Z. and Zeng, Y. and Ganapathiraju, A. and Picone, J.},
+Title = {Scenic beauty estimation using independent component analysis and support vector machines},
+BookTitle = {IEEE Southeastcon},
+Pages = {274-277},
+Year = {1999} }
+
+
+@inproceedings {Sebban99,
+Author = {Sebban, M. and Nock, R.},
+Title = {Contribution of boosting in wrapper models},
+BookTitle = {Principles and Practice of Knowledge Discovery in Databases},
+Pages = {214-222},
+Year = {1999} }
+
+
+@techreport {Viola01,
+Author = {Viola, P. and Jones, M.},
+Title = {Robust real-time object detection},
+Institution = {},
+Year = {2001} }
+
+
+@inproceedings {Ng98,
+Author = {Ng, A.},
+Title = {On Feature Selection: Learning with Exponentially many Irrelevant Features as Training Examples},
+BookTitle = {International Conf. on Machine Learning},
+Pages = {404-412},
+Year = {1998} }
+
+
+@inproceedings {Ng02,
+Author = {Ng, A. and Jordan, M.},
+Title = {On Discriminative vs. Generative Classifiers: A comparison of logistic regression and Naive Bayes},
+BookTitle = {NIPS},
+Year = {2002} }
+
+
+@misc {USFS,
+Title = {http://www.isip.msstate.edu/publications/reports/usfs\_imaging/1996/database/users\_guide.pdf} }
+
+
+@misc {USFS_ak,
+Title = {http://speech.ucsd.edu/aldebaro/usfs} }
+
+
+@article {Bourlard98,
+Author = {Bourlard, H. and Dupont, S. and Ris, C.},
+Title = {Multi-stream speech recognition},
+Journal = {CC-AI, The Journal for the Integrated Study of Artificial Intelligence, Cognitive Science and Applied Epistemology},
+Volume = {15},
+Number = {3},
+Pages = {215-34},
+Year = {1998} }
+
+
+@inproceedings {Christensen00,
+Author = {Christensen, H. and Lindberg, B. and Andersen, O.},
+Title = {Employing heterogeneous information in a multi-stream framework},
+Volume = {3},
+Pages = {1571-4},
+BookTitle  = {ICASSP},
+Year = {2000} }
+
+@misc{Jaakkola98,
+  author = "T. Jaakkola and D. Haussler",
+  title = "Exploiting generative models in discriminative classifiers",
+  text = "T. S. Jaakkola and D. Haussler. Exploiting generative models in discriminative
+    classifiers. Preprint, Dept. of Computer Science, Univ. of California, available
+    from http://www.cse.ucsc.edu/~haussler/pubs.html, 1998.",
+  year = "1998",
+  url = "citeseer.ist.psu.edu/jaakkola98exploiting.html" }
+
+@article {Jaakkola00,
+Author = {Jaakkola, T. and Diekhans, M. and Haussler, D.},
+Title = {A discriminative framework for detecting remote protein homologies},
+Journal = {Journal of Computational Biology},
+Volume = {7},
+Number = {1,2},
+Pages = {95--114},
+Year = {2000} }
+
+
+@inproceedings {Lafferty01,
+author = {Lafferty, J. and McCallum, A. and Pereira, F.},
+title = {Conditional Random Fields: {P}robabilistic Models for Segmenting and Labeling Sequence Data},
+booktitle = {Proc. 18th International Conf. on Machine Learning},
+pages = {282--289},
+year = {2001} }
+
+
+@inproceedings {McCallum00,
+author = {Mc{C}allum, A. and Freitag, D. and Pereira, F.},
+title = {Maximum Entropy {M}arkov Models for Information Extraction and Segmentation},
+booktitle = {Proc. 17th International Conf. on Machine Learning},
+pages = {591--598},
+year = {2000} }
+
+
+@techreport {Friedman98,
+Author = {Friedman, J. and T. Hastie and R. Tibshirani },
+Title = {Additive Logistic Regression: A Statistical View of Boosting},
+Institution = {Stanford, ftp://stat.stanford.edu/pub/friedman/boost.ps},
+Year = {1998} }
+
+
+@inproceedings {Jevtic01,
+Author = {Jevti\'c, N. and Klautau A. and Orlitsky, A.},
+Title = {Estimated rank pruning and {J}ava-based speech recognition},
+BookTitle = {Automatic Speech Recognition and Understanding Workshop},
+Year = {2001} }
+
+
+@inproceedings {Rubinstein97,
+author = {Rubinstein, Y. and Hastie, T.},
+title = {Discriminative vs Informative Learning},
+booktitle = {Knowledge Discovery and Data Mining},
+pages = {49-53},
+year = {1997} }
+
+
+@inproceedings {Hamaker02,
+Author = {Hamaker, J. and Picone, J. and Ganapathiraju, A.},
+Title = {A Sparse Modeling Approach to Speech Recognition Based on Relevance Vector Machines},
+BookTitle = {ICSLP},
+Year = {2002} }
+
+
+@article {Baggenstoss01,
+Author = {Baggenstoss, P.},
+Title = {A modified {B}aum-{W}elch algorithm for hidden {M}arkov models with multiple
+observation spaces},
+Journal = {IEEE Trans. on Speech and Audio Proc.},
+Volume = {9},
+Number = {4},
+Pages = {411-16},
+Year = {2001} }
+
+
+@book {Huang01,
+Author = {Huang, X. and Acero, A. and Hon, H.-W.},
+Title = {Spoken language processing},
+Publisher = {Prentice-Hall},
+Year = {2001} }
+
+
+@article {Bourlard96,
+Author = {Bourlard, H. and Hermansky, H. and Morgan, N.},
+Title = {Towards increasing speech recognition error rates},
+Journal = {Speech Communication},
+Volume = {18},
+Number = {3},
+Pages = {205-31},
+Year = {1996} }
+
+
+@article {Morgan95,
+Author = {Morgan, N. and Bourlard, H. A.},
+Title = {Neural networks for statistical recognition of continuous speech},
+Journal = {Proceedings of the IEEE},
+Volume = {83},
+Number = {5},
+Pages = {742-72},
+Year = {1995} }
+
+
+@article {Deshmukh99,
+author   = {N. Deshmukh and A. Ganapathiraju and J. Picone},
+title    = {Hierarchical Search for Large-Vocabulary Conversational Speech Recognition},
+journal  = {IEEE Signal Processing Magazine},
+pages    = {84-107},
+month    = {Sep.},
+year     = {1999}
+}
+
+@article {Picone93,
+author   = {J. Picone},
+title    = {Signal modeling techniques in speech recognition},
+journal  = {Proceedings of the IEEE},
+volume   = {81},
+number   = {9},
+pages    = {1215-47},
+month    = {Sep.},
+year     = {1993}
+}
+
+@article {Vapnik99,
+Author = {Vapnik, V. N.},
+Title = {An overview of statistical learning theory},
+Journal = {IEEE Transactions on Neural Networks},
+Volume = {10},
+Number = {5},
+Pages = {988-99},
+Year = {1999} }
+
+
+@article {Valtchev97,
+Author = {Valtchev, V. and Odell, J. J. and Woodland, P. C. and Young, S. J.},
+Title = {{MMIE} training of large vocabulary recognition systems},
+Journal = {Speech Communication},
+Volume = {22},
+Number = {4},
+Pages = {303-14},
+Year = {1997} }
+
+
+@book {Jelinek97,
+Author = {Jelinek, F.},
+Title = {Statistical methods for speech recognition},
+Publisher = {MIT Press},
+Year = {1997} }
+
+
+@article {Ostendorf96,
+Author = {Ostendorf, M. and Digalakis, V. and Kimball, O.},
+Title = {From {HMM}'s to segment models: a unified view of stochastic modeling for speech recognition},
+Journal = {IEEE Transactions on Speech and Audio Processing},
+Volume = {4},
+Pages = {360-78},
+Year = {1996} }
+
+@article {Beaufays00,
+Author = {Beaufays, F.  and Bourlard, H.  and Franco, H.  and Morgan, N.},
+Title = {Neural Networks in Automatic Speech Recognition},
+Journal = {in The Handbook of Brain Theory and Neural Networks},
+Publisher = {MIT Press},
+Year = {2000} }
+
+
+@misc {UCI,
+key = {UCI},
+title = {http://www.ics.uci.edu/$\sim$mlearn/MLRepository.html} }
+
+
+@inproceedings {Zadrozny02,
+Author = {Zadrozny, B. and Elkan, C.},
+Title = {Transforming Classifier Scores into Accurate Multiclass Probability Estimates},
+BookTitle = {KDD},
+Year = {2002} }
+
+
+@article {Gama00,
+author = {J. Gama and P. Brazdil},
+title = {Cascade Generalization},
+journal = {Machine Learning},
+volume = {41},
+number = {3},
+pages = {315-343},
+year = {2000},
+url = {citeseer.nj.nec.com/gama00cascade.html} }
+
+
+@techreport {Seewald01,
+author =       {Alexander K. Seewald and Johannes F{\"u}rnkranz},
+title =        {Grading Classifiers},
+year =         {2001},
+number =       {OEFAI-TR-2001-01},
+url =          {citeseer.nj.nec.com/seewald01grading.html} }
+
+@techreport {Rennie01,
+Author = {Rennie, J. and Rifkin, R.},
+Title = {Improving Multiclass Text Classification with the Support Vector Machine},
+Institution = {MIT},
+Year = {2001} }
+
+
+@inproceedings {Price95,
+Author = {D. {Price et al}},
+Title = {Pairwise neural network classifiers with probabilistic outputs},
+BookTitle = {NIPS},
+Pages = {1109-1116},
+Year = {1995} }
+
+
+@article {Crammer01,
+Author = {Crammer, K. and Singer, Y.},
+Title = {On the algorithmic implementation of multiclass kernel-based vector machines},
+Journal = {Journal of Machine Learning Research},
+Pages = {265-292},
+Year = {2001} }
+
+
+@inproceedings {Evgeniou01,
+Author = {Evgeniou, T. and Pontil, M. and Papageorgiou, C. and Poggio, T.},
+Title = {Image representations for object detection using kernel classifiers},
+BookTitle = {},
+Year = {2001} }
+
+
+@inproceedings {Schapire97,
+author = "R. Schapire",
+title = "Using output codes to boost multiclass learning problems",
+booktitle = "Proc. 14th International Conference on Machine Learning",
+publisher = "Morgan Kaufmann",
+pages = "313--321",
+year = "1997",
+url = "citeseer.nj.nec.com/article/schapire97using.html" }
+
+@misc {HTK,
+key = {HTK},
+Year = {Visited in March, 2008},
+Title = {http://htk.eng.ac.uk} }
+
+@misc {HTK00,
+key = {HTK},
+Year = {Visitado em março, 2007},
+Title = {http://htk.eng.cam.ac.uk/} }
+
+@article {Riley99,
+author   = {M. Mohri and M. Riley},
+title    = {Network optimizations for large-vocabulary speech recognition},
+journal  = {Speech Communication},
+volume   = {28},
+number   = {1},
+pages    = {1-12},
+month    = {May},
+year     = {1999}
+}
+
+
+@article {Lavie96,
+author   = {A. {Lavie et al}},
+title    = {Dialogue processing in a conversational speech translation system}
+,
+journal  = {ICSLP 96},
+volume   = {1},
+number   = {},
+pages    = {554-7},
+month    = {Oct.},
+year     = {1996}
+}
+
+
+@article {Hermansky94,
+author   = {H. Hermansky and N. Morgan},
+title    = {RASTA processing of speech},
+journal  = {IEEE Transactions on Speech and Audio Processing},
+volume   = {2},
+number   = {4},
+pages    = {578-89},
+month    = {Oct.},
+year     = {1994}
+}
+
+
+@article {Davis80,
+author   = {Davis, S. and Merlmestein, P.},
+title    = {Comparison of Parametric Representations for Monosyllabic Word Recognition in Continuously Spoken Sentences},
+journal  = {IEEE Trans. on ASSP},
+pages    = {357-366},
+month    = {Aug.},
+year     = {1980}
+}
+
+
+@article {Hermansky90,
+author   = {H. Hermansky},
+title    = {Perceptual linear predictive ({PLP}) analysis of speech},
+journal  = {Journal of the Acoustical Society of America},
+volume   = {87},
+number   = {4},
+pages    = {1738-52},
+month    = {Apr.},
+year     = {1990}
+}
+
+@article {Seneff84,
+author   = {S. Seneff},
+title    = {Pitch and spectral estimation of speech based on auditory synchrony model},
+journal  = {ICASSP 84},
+volume   = {3},
+number   = {},
+pages    = {p.36.2/1-4},
+month    = {Mar.},
+year     = {1984}
+}
+
+@article {Itakura75,
+Author = {Itakura, F.},
+Title = {Line Spectrum Representation of Linear Predictor Coefficients of Speech Signals},
+Journal = {J. Acoust. Soc. Amer.},
+Volume = {57},
+Pages = {pp. S35(A)},
+Year = {1975} }
+
+
+@phdthesis {Halberstadt98,
+Author = {Halberstadt, A.},
+Title = {Heterogeneous acoustic measurements and multiple classifiers for speech recognition},
+School = {MIT},
+Year = {1998} }
+
+
+@inbook {,
+author = {},
+title = {},
+publisher = {},
+address = {},
+year = {} }
+
+
+@article {Tipping01,
+author = "M. Tipping",
+title = "Sparse Bayesian Learning and the Relevance Vector Machine",
+journal = "Journal of Machine Learning Research",
+volume = "1",
+pages = "211-244",
+year = "2001" }
+
+
+@article {Gopalakrishnan91,
+Author = {P. Gopalakrishnan and D. Kanevsky and A. N\'{a}das and D. Nahamoo},
+Title = {An inequality for rational functions with applications to some statistical estimation problems},
+Journal = {IEEE Transactions on Information Theory },
+Volume = {37},
+Pages = {107-113},
+Year = {1991} }
+
+
+@article {Baum67,
+Author = {L. Baum and J. Eagon},
+Title = {An inequality with applications to statistical estimation for probabilistic functions of {M}arkov processes and to a model for ecology},
+Journal = {Bulletin of the AMS},
+Volume = {73},
+Pages = {360-363},
+Year = {1967} }
+
+
+@book {Witten99,
+author = {I. Witten and E. Frank},
+title = {Data Mining: Practical Machine Learning Tools and Techniques with Java Implementations},
+publisher = {Morgan Kaufmann},
+year = {1999} }
+
+
+@book {Rhee89,
+author = {M. Rhee},
+title = {Error-correcting coding theory},
+publisher = {McGraw-Hill},
+year = {1989} }
+
+
+@inproceedings {Berger99,
+author = "A. Berger",
+title = "Error-correcting output coding for text classification",
+BookTitle = {IJCAI: Workshop on machine learning for information filtering},
+year = "1999" }
+
+
+@article {Collobert01,
+author = "R. Collobert and S. Bengio",
+title = "{SVMTorch}: Support Vector Machines for Large-Scale Regression Problems",
+journal = "Journal of Machine Learning Research",
+volume = "1",
+number = "2",
+pages = "143-160",
+year = "2001" }
+
+
+@inproceedings {Veropoulos99,
+author = "K. Veropoulos and N. Cristianini and C. Campbell",
+title = "Controlling the Sensitivity of Support Vector Machines",
+BookTitle = {IJCAI},
+Year = {1999} }
+
+@inproceedings {Klautau02,
+Author = {A. Klautau and N. Jevti\'c and A. Orlitsky},
+Title = {Combined binary classifiers with applications to speech recognition},
+BookTitle = {ICSLP},
+Year = {2002} }
+
+@techreport {Klautau02d,
+author = "A. Klautau",
+title = "Classification of {P}eterson and {B}arney's vowels using {W}eka",
+institution = "UFPA, \emph{http://www.laps.ufpa.br/aldebaro/papers}",
+year = "2002" }
+
+@inbook {Cherkassky98,
+author = {Cherkassky, V. and Mulier, F.},
+title = {Learning from Data --- Concepts, Theory and Methods},
+publisher = {John Wiley \& Sons},
+address = {New York},
+year = {1998} }
+
+
+@inproceedings {Salomon02,
+Author = {Salomon, J. and Simon, K. and Osborne, M.},
+Title = {Framewise phone classification using support vector machines},
+BookTitle = {ICSLP},
+pages = {2645-2648},
+Year = {2002} }
+
+
+@article {Hsu02,
+Author = {C.-W. Hsu and C.-J. Lin},
+Title = {A comparison of methods for multi-class support vector machines},
+Journal = {IEEE Transactions on Neural Networks},
+Volume = {13},
+Number = {2},
+Pages = {415-425},
+Year = {2002} }
+
+
+@phdthesis {Rifkin02,
+Author = {Rifkin, R.},
+Title = {Everything Old Is New Again: A Fresh Look at Historical Approaches in Machine Learning},
+School = {MIT},
+Year = {2002} }
+
+
+@book {Vapnik98,
+Author = {Vapnik, V.},
+Title = {Statistical learning theory},
+Publisher = {John Wiley and Sons},
+Year = {1998} }
+
+
+@phdthesis {Glickman93,
+Author = {Glickman, M.},
+Title = {Paired Comparison Models with Time-Varying Parameters},
+School = {Harvard University},
+Year = {1993} }
+
+
+@incollection {Kressel99,
+author = {U. Kre{\ss}el},
+booktitle = {Advances in Kernel Methods - Support Vector Learning},
+publisher = {MIT Press},
+address = {Cambridge},
+year = {1999},
+type = {Chapter},
+chapter = {15},
+title = {Pairwise Classification and Support Vector Machines},
+Editor = {B. Scholkopf and C. Burges and A. Smola} }
+
+
+@article {Peterson52,
+Author = {Peterson, G. and Barney, H.},
+Title = {Control methods used in a study of vowels},
+Journal = {Journal of the Acoustical Society of America},
+Volume = {24},
+Number = {2},
+Pages = {175-184},
+Year = {1952} }
+
+@article {Crammer02,
+Author = {Crammer, K. and Singer, Y.},
+Title = {On the algorithmic implementation of multiclass kernel-based vector machines},
+Journal = {Journal of Machine Learning Research},
+Volume = {2},
+Number = {2},
+Pages = {265-292},
+Year = {2002} }
+
+
+@article {Crammer02b,
+Author = {Crammer, K. and Singer, Y.},
+Title = {On the learnability and design of output codes for multiclass problems},
+Journal = {Machine Learning},
+Volume = {47},
+Number = {2-3},
+Pages = {201-33},
+Year = {2002} }
+
+
+@misc {Torch,
+key = {Torch},
+Title = {http://old-www.idiap.ch/learning/SVMTorch.html} }
+
+
+@misc {Fu,
+key = {Fu},
+Title = {http://five-percent-nation.mit.edu/SvmFu} }
+
+
+@misc {Light,
+key = {Light},
+Title = {http://svmlight.joachims.org} }
+
+
+@string {ICASSP="IEEE International Conference on Acoustics,
+Signal Processing"}
+
+
+@string{EUROSPEECH="European Conference on Speech Communication and Technology"}
+
+
+@misc{w3voice,
+key = {w3voice},
+title = {http://www.w3.org/Voice.},
+}
+
+@misc{voicexml,
+title    = {http://www.voicexml.org.},
+}
+
+@misc{atis,
+title    = {http://www.speech.sri.com/demos/atis.html.},
+}
+
+@article
+{
+DigNemP,
+author   = {V. Digalakis and L. Neumeyer  and M. Perakakis},
+title    = {Quantization of Cepstral Parameters for Speech Recognition over the {W}orld {W}ide {W}eb},
+journal  = {IEEE Journal on Sel. Areas in Communications},
+pages    = {82-90},
+month    = {Jan.},
+year     = {1999}
+}
+
+@article
+{
+TuZLoP,
+author   = {Z. Tu and P. Loizou},
+title    = {Speech Recognition over the {I}nternet Using {J}ava},
+journal  = ICASSP,
+volume   = {Phoenix, AZ},
+pages    = {2367-70},
+month    = {Mar.},
+year     = {1999}
+}
+
+@article
+{
+KH,
+author   = {K. Kondo and C. Hemphill},
+title    = {A {WWW} Browser Using Speech Recognition and Its Evaluation},
+journal  = {Systems and Computers in Japan},
+pages    = {57-67},
+month    = {Sep.},
+year     = {1998}
+}
+
+@article
+{
+B,
+author   = {S. Bayer},
+title    = {Embedding Speech in Web Interfaces},
+journal  = {International Conference on Spoken Language Processing},
+pages    = {1684-7},
+month    = {Oct.},
+year     = {1996}
+}
+
+@misc
+{
+demo,
+title = {http://speech.ucsd.edu/demos.}
+}
+
+@misc
+{
+javasun,
+title = {http://developer.java.sun.com/developer/earlyAccess.}
+}
+
+@inproceedings
+{
+Abe,
+author   = {H. Abelson},
+title    = {Lower Bounds on Information Transfer in Distributed
+Computations},
+booktitle= {Proceedings of the 19th Annual Symposium on Foundations of
+Computer Science},
+year     = {1978}
+}
+
+
+@inproceedings {Zhu01,
+author = "J. Zhu and T. Hastie",
+title = "Kernel Logistic Regression and the Import Vector Machine",
+BookTitle = {NIPS},
+Year = {2001} }
+
+
+@article {Kimeldorf71,
+Author = {G. Kimeldorf and G. Wahba},
+Title = {Some results on {T}chebychean spline functions},
+Journal = {J. Math. Anal. Applic.},
+Volume = {33},
+Pages = {82-95},
+Year = {1971} }
+
+
+@book {Tikhonov77,
+author = {A. Tikhonov and V. Arsenin},
+title = {Solutions of Ill-Posed Problems},
+publisher = {Winston},
+year = {1977} }
+
+
+@misc {Welch02,
+author = {Lloyd Welch},
+year = {2002},
+title = {Personal communication} }
+
+
+@misc {Neuwirth02,
+author = {Lee Neuwirth},
+year = {2002},
+title = {Personal communication} }
+
+
+@inproceedings {Lawrence02,
+author      = {Lawrence, N. and Seeger, M. and Herbrich, R.},
+title       = {Fast Sparse {Gaussian} Process Methods: The Informative Vector Machine},
+BookTitle   = {Neural Information Processing Systems 15},
+year        = {2002} }
+
+
+@inproceedings {Fung01,
+Author = {G. Fung and O. Mangasarian},
+Title = {Proximal Support Vector Classifiers},
+BookTitle = {KDD},
+Pages = {77-86},
+Year = {2001} }
+
+
+@book {Scholkopf02,
+author = {B. Scholkopf and A. Smola},
+title = {Learning with kernels},
+publisher = {MIT Press},
+year = {2002} }
+
+
+@phdthesis {Brown87,
+Author = {P. Brown},
+Title = {The acoustic-modeling problem in automatic speech recognition},
+School = {Carnegie Mellon University},
+Year = {1987} }
+
+
+@book {Breiman84,
+author = {L. Breiman and J. Friedman and R. Olshen and C. Stone},
+title = {Classification and Regression Trees},
+publisher = {Wadsworth},
+year = {1984} }
+
+
+@article {Williams98,
+Author = {C. Williams and D. Barber},
+Title = {Bayesian classification with {G}aussian processes},
+Journal = {IEEE Transactions on {PAMI}},
+Volume = {20},
+Pages = {1342-51},
+Year = {1998} }
+
+
+@inproceedings {Merialdo88,
+Author = {B. Merialdo},
+Title = {Phonetic recognition using hidden {M}arkov models and
+maximum mutual information training},
+BookTitle = {ICASSP},
+Pages = {111-4},
+Year = {1988} }
+
+
+@inproceedings {Normandin95,
+Author = {Y. Normandin},
+Title = {Optimal splitting of {HMM} {G}aussian mixture components with {MMIE} training},
+BookTitle = {ICASSP},
+Pages = {449-52},
+Year = {1995} }
+
+
+@article {Woodland02,
+Author = {P. Woodland and D. Povey},
+Title = {Large scale discriminative training of hidden {M}arkov models for
+speech recognition},
+Journal = {Computer Speech and Language},
+Volume = {16},
+Pages = {25-47},
+Year = {2002} }
+
+
+@book {Mitchell97,
+author = {T. Mitchell},
+title = {Machine Learning},
+publisher = {McGraw-Hill},
+year = {1997} }
+
+
+@article {Roth01,
+author = "Volker Roth",
+title = "Probabilistic Discriminative Kernel Classifiers for Multi-class Problems",
+journal = "Lecture Notes in Computer Science",
+volume = "2191",
+pages = "246--253",
+year = "2001" }
+
+
+@phdthesis {Valtchev95,
+Author = {V. Valtchev},
+Title = {Discriminative methods in {HMM}-based speech recognition},
+School = {Cambridge University},
+Year = {1995} }
+
+
+@article {Nadas88,
+Author = {A. N{\'{a}}das and D. Nahamoo and M. Picheny},
+Title = {On a model-robust training method for speech recognition},
+Journal = {{IEEE} Trans. on {ASSP}},
+Volume = {36},
+Pages = {1432-6},
+Year = {1988} }
+
+
+@inproceedings {Bahl86,
+Author = {L. Bahl and P. Brown and P. de~Souza and R.L. Mercer (1986).},
+Title = {Maximum Mutual Information Estimation of Hidden {M}arkov Model Parameters for Speech Recognition},
+BookTitle = {ICASSP},
+Pages = {49-52},
+Year = {1986} }
+
+
+@phdthesis {Normandin91,
+Author = {Y. Normandin},
+Title = {Hidden {M}arkov Models, Maximum Mutual Information Estimation and the Speech Recognition Problem},
+School = {McGill University},
+Year = {1991} }
+
+
+@article {Dempster77,
+Author = {A. Dempster and N. Laird and D. Rubin},
+Title = {Maximum Likelihood from Incomplete Data via the {EM} Algorithm},
+Journal = {Journal of the Royal Statistical Society (B)},
+Volume = {39},
+Pages = {pp. 1-22},
+Year = {1977} }
+
+
+@article {Hastie96,
+author = "T. Hastie and R. Tibshirani",
+title = "Discriminant analysis by {Gaussian} mixtures",
+journal = "Journal of the Royal Statistical Society series B",
+volume = "58",
+pages = "158--176",
+year = "1996"}
+
+
+@book {McLachlan92,
+author = {G. McLachlan},
+title = {Discriminant analysis and statistical pattern recognition},
+publisher = {Wiley},
+year = {1992} }
+
+
+@article {Sakoe78,
+Author = {H. Sakoe and S. Chiba},
+Title = {Dynamic Programming Algorithm Optimization For Spoken Word Recognition},
+Journal = {IEEE Trans. on ASSP},
+Volume = {26},
+Number = {1},
+Pages = {43-49},
+Year = {1978} }
+
+@article {Rabiner89,
+author   = {L. Rabiner},
+title    = {A tutorial on hidden {M}arkov models and selected applications in speech recognition},
+journal  = {Proceedings of the IEEE},
+volume   = {77},
+number   = {2},
+pages    = {257-86},
+month    = {Feb.},
+year     = {1989}
+}
+
+@misc {Blake98,
+author = {C.L. Blake and C.J. Merz},
+year = {1998},
+title = {{UCI} Repository of machine learning databases},
+url = {http://www.ics.uci.edu/$\sim$mlearn/MLRepository.html},
+institution = {University of California, Irvine, Dept. of Information and Computer Sciences}
+}
+
+@phdthesis {aha:thesis90,
+title="A study of instance-based algo\-rithms for supervised learning tasks: Mathematical, empirical, and psychological evaluations",
+author="D. W. Aha",
+year="1990",
+school="Department of Information \& Computer Science, University of California, Irvine"}
+%address="Irvine, CA"}
+
+
+@inproceedings {fisher:aaai89,
+title="Noise-tolerant conceptual clustering",
+author="D. H. Fisher",
+booktitle="Proceedings of the Eleventh International Joint Conference on Artificial Intelligence",
+pages="825-830",
+year="1989",
+address="San Francisco",
+publisher="Morgan Kaufmann"
+}
+
+
+@article {jones:mlj94,
+title="Acquisition of children's addition
+strategies: A model of impasse-free, knowledge-level learning",
+Author = "R. M. Jones and K. VanLehn",
+year="1994",
+journal="Machine Learning",
+volume="16",
+pages="11-36"}
+
+
+@book {langley:book95,
+title="Elements of Machine Learning",
+author="P. Langley",
+publisher="Morgan Kaufmann",
+address="San Francisco",
+year="1995"
+}
+
+
+@techreport {maloof:tr98,
+title="Improving rooftop detection in aerial images through machine learning",
+author="M. A. Maloof and P. Langley and T. O. Binford and S. Sage",
+institution="Institute for the Study of Learning and Expertise",
+number="98-1",
+address="Palo Alto, CA",
+year="1998"
+}
+
+
+@book {shrager:book90,
+title="Computational Models of Scientific Discovery and Theory Formation",
+editor="J. Shrager and P. Langley",
+address="San Francisco",
+publisher="Morgan Kaufmann",
+year="1990"
+}
+
+
+@incollection {veloso:bkchapter93,
+author="M. M. Veloso and J. G. Carbonell",
+title="Toward scaling up machine learning: A case study with derivational analogy in {\sc Prodigy}",
+booktitle="Machine Learning Methods For Planning",
+editor="S. Minton",
+publisher="Morgan Kaufmann",
+address="San Francisco",
+year="1993"
+}
+
+@article {Furnkranz02,
+Author = {F\"urnkranz, J.},
+Title = {Round Robin Classification},
+Journal = {Journal of Machine Learning Research},
+Volume = {2},
+Pages = {721-747},
+Year = {2002} }
+
+
+@phdthesis {Klautau03-thesis,
+Author = {A. Klautau},
+Title = {Speech Recognition Using Discriminative Classifiers},
+School = {UCSD},
+Year = {2003} }
+
+
+@article {Klautau03-jmlr,
+Author = {Klautau, A. and Jevti\'c, N. and Orlitsky, A.},
+Title = {On nearest-neighbor {ECOC} with application to all-pairs multiclass {SVM}},
+Journal = {Journal of Machine Learning Research},
+Year = {2003} }
+
+@misc {PLP,
+key = {PLP},
+Title = {http://ece.ogi.edu/ASP/plp.html} }
+
+@misc {CMU-sphinx,
+key = {Sphinx},
+Title = {http://www.speech.cs.cmu.edu/sphinx/}, 
+Year = {Visited in March, 2008}
+}
+
+@misc {CSLU-toolkit,
+key = {CSLU},
+Year = {Visited in March, 2005},
+Title = {http://cslu.cse.ogi.edu/toolkit/} }
+
+@misc {CSLU-corpora,
+key = {CSLU Corpora},
+Year = {Visited in March, 2008},
+Title = {http://cslu.cse.ogi.edu/corpora} }
+
+@misc {ISIP,
+key = {ISIP},
+Title = {http://www.isip.msstate.edu},
+Year = {Visited in March, 2008}
+}
+
+@misc {DGMM,
+key = {DGMM},
+Title = {http://www.deec.ufpa.br/laps/dgmm} }
+
+@misc {Sphinx4,
+key = {Sphinx},
+Title = {http://cmusphinx.sourceforge.net/sphinx4/},
+Year = {Visited in March, 2008}
+}
+
+@misc {PSTL04,
+key = {PSTL},
+Title = {Patent {EP984430} - Speech recognizer with lexicon updateable by spelled word input,
+http://gauss.ffii.org/PatentView/EP984430},
+Year = {2004}
+}
+
+@misc {HTS,
+key = {HTS},
+Title = {http://hts.ics.nitech.ac.jp/},
+Year = {Visited in March,  2005}
+}
+
+@misc {ATT,
+key = {AT\&T},
+Title = {http://www.research.att.com/projects/tts/demo.html},
+Year = {Visited in March,  2005}
+}
+
+@misc {JSAPI,
+key = {JSAPI},
+Title = {http://java.sun.com/products/java-media/speech/},
+Year = {Visited in March,  2005}
+}
+
+@misc {SAPI,
+key = {SAPI},
+Title = {http://www.microsoft.com/speech/},
+Year = {Visited in March,  2005}
+}
+
+@misc{LDC,
+key = {LDC},
+title = {http://www.ldc.upenn.edu.},
+Year = {Visited in March,  2008}
+}
+
+@misc {DOSVOX,
+key = {DOSVOX},
+Title = {http://intervox.nce.ufrj.br/dosvox/},
+Year = {Visited in March, 2005}
+}
+
+@misc {JMATLINK,
+key = {JMATLINK},
+Title = {http://jmatlink.sourceforge.net},
+Year = {Visited in November, 2005}
+}
+
+@misc {KlattDemo,
+key = {KlattDemo},
+Title = {http://www.icsi.berkeley.edu/eecs225d/klatt.html},
+Year = {Visited in December, 2005},
+Author = {Jeff Gilbert and Eric Fosler}
+}
+
+@misc {,
+key = {},
+Title = {},
+Year = {Visited in }
+}
+
+@misc{BELLLABS,
+Key = {BELLLABS},
+Year = {Visited in June,  2005},
+title    = {http://www.belllabs.com/project/tts/},
+}
+
+@misc{Chant,
+Key = {Chant},
+Year = {Visited in June,  2005},
+title    = {http://www.chant.net/speechkit/default.asp},
+}
+
+@misc{CALL,
+Key = {CALL},
+Year = {Visited in June,  2005},
+title    = {http://edvista.com/claire/call.html},
+}
+
+@techreport{FranIgn,
+author = {Francesc Alï¿½as and Ignasi Iriondo},
+title = {La evoluciï¿½n de la Sï¿½ntesis del Habla en Ingenierï¿½a La Salle},
+Institution = {Universitat Ramon Llull. Departamento de Comunicaciones y Teoria de la Seï¿½al Ingenierï¿½a y Arquitectura La Salle},
+year = {2002} }
+
+@techreport {Turunen03,
+author = {Markku Turunen},
+title = {Speech Application Design and Development},
+Institution = {University of Tampere. Department of Computer Sciences},
+Year = {2003} }
+
+@mastersthesis {Lucena02,
+Author = {Lucena, P. S.},
+Title = {Expressive talking heads: Um estudo de fala e expressão facial em personagens virtuais},
+School = {PUC-RIO},
+Year = {2002} }
+
+@article {Ben,
+Author = {Ben Shneiderman},
+Title = {The Limits of Speech Recognition},
+Journal = {COMMUNICATIONS OF THE ACM Vol. 43, No. 9, September},
+Year = {2000} }
+
+@article {Damasceno,
+Author = {Damasceno, E. F.},
+Title = {Síntese e Reconhecimento de voz em ambientes desenvolvidos em Java},
+Journal = {Semana Acadêmica do FESURV - Rio Verde - GO, Outubro},
+Year = {2004} }
+
+@article {Yankelovich95,
+Author = {Nicole Yankelovich and Gina-Anne Levow and Matt Marx},
+Title = {Designing SpeechActs: Issues in Speech User Interfaces},
+Journal = {CHI 95 Conference on Human Factors in Computing Systems, Denver, CO, May 7-11},
+Year = {1995} }
+
+@article {Sehda,
+Author = {Farzad Ehsani and Eva Knodt},
+Title = {SPEECH TECHNOLOGY IN COMPUTER-AIDED LANGUAGE LEARNING: STRENGTHS AND LIMITATIONS OF A NEW CALL PARADIGM},
+Journal = {Language Learning and Technology  Vol. 2, No. 1, July, pp. 45-60},
+Year = {1998} }
+
+@article {Warschauer,
+Author = {Warschauer, M.},
+Title = {Computer-assisted language learning: An introduction},
+Journal = {In S. Fotos Ed., Multimedia language teaching, pp. 3-20. Tokyo: Logos International},
+Year = {1996} }
+
+@article {Chapelle,
+Author = {Chapelle, C.},
+Title = {CALL in the year 2000: Still in search of research paradigms?},
+Journal = {Language Learning and Technology, 1(1), 19-43},
+Year = {1997} }
+
+@article {Strik,
+Author = {Helmer Strik},
+Title = {Speech is like a box of chocolates...},
+Journal = {15th ICPhS Barcelona},
+Year = {2003} }
+
+@book {Amundsen96,
+author = {M. C. Amundsen},
+title = {MAPI, SAPI, and TAPI Developer's Guide},
+publisher = {Sams Publishing},
+year = {1996} }
+
+@thesis {Marquez04,
+author = {B. M. Mï¿½rquez Avendaï¿½o},
+title = {Implementaciï¿½n de un reconocedor de voz gratuito a el sistema de ayuda a invidentes Dos-Vox en espaï¿½ol},
+School = {Universidade das Amï¿½ricas-Puebla},
+year = {2004} }
+
+@phdthesis {Silke,
+Author = {Silke Maren Witt},
+Title = {Use of Speech Recognition in Computer-assisted Language Learning},
+School = {University of Cambridge},
+Year = {1999} }
+
+@book {CCAA,
+author = {CCAA},
+title="CALL Computer-assisted Language Learning",
+publisher="CCLS PUBLISHING HOUSE C1626AK11 ISBN 85-340-0602-4",
+year="1998"
+}
+
+@article {Flite,
+Author = {Black, A. W. and Lenzo, K. A.},
+Title = {Flite: a small fast run-time synthesis engine},
+Journal = {In Proceedings of the 4th ISCA Workshop on Speech Synthesis, page 204, Scotland},
+Year = {2001} }
+
+@article {Dam,
+Author = {Dam, H. H. and de Souza, S.},
+Title = {Applying talking head technology to a web based weather service},
+Journal = {In Proceedings of the HF2002 Workshop on Virtual Conversational Characters: Applications, Methods and Research Challenges, Melbourne, Australia},
+Year = {2002} }
+
+@misc {Festival,
+key = {Festival},
+Title = {http://www.cstr.ed.ac.uk/projects/festival},
+Year = {Visited in March,  2008}
+}
+
+@misc {FreeTTS,
+key = {FreeTTS},
+Title = {http://freetts.sourceforge.net},
+Year = {Visited in May,  2005}
+}
+
+@misc{JSML,
+Key = {JSML},
+Year = {Visited in March, 2005},
+title = {http://java.sun.com/products/java-media/speech/forDevelopers/JSML},
+}
+
+@misc {MBROLA,
+key = {MBROLA},
+Title = {http://tcts.fpms.ac.be/synthesis},
+Year = {Visited in May,  2005},
+}
+
+@article {Murray93,
+Author = {Murray, I. R. and Arnott, J. L.},
+Journal = {Journal of the Acoustic Society of America, Vol. 2, 1097-1108},
+Title = {Toward the simulation of emotion in synthetic speech: A review of the literature of human vocal emotion},
+Year = {1993} }
+
+@article {Murray95,
+Author = {Murray, I. R. and Arnott, J. L.},
+Journal = {Speech Communication, 16, 369-390},
+Title = {Implementation and testing of a system for producing emotion-by-rule in synthetic speech},
+Year = {1995} }
+
+@misc {Group,
+key = {Speech Integration Group},
+Title = {http://research.sun.com/research/speech},
+Year = {Visited in May, 2005}
+}
+
+@thesis {Stallo,
+author = {Stallo, J.},
+title = {Simulating emotional speech for a talking head},
+School = {Honours dissertation, Curtin University of Technology, Perth, Australia},
+year = {2000} }
+
+@misc {DECtalk,
+key = {DECtalk},
+Title = {http://www.disc2.dk/tools/SGsurvey.html},
+Year = {Visited in May, 2005}
+}
+
+@misc {Procsy,
+  author = {PROCSY},
+  Title = {http://kiri.ling.cam.ac.uk/procsy/},
+  Year = {Visited in January, 2006}
+}
+
+@misc {NIST,
+  Title = {http://www.nist.gov/speech},
+  Year = {Visited in March, 2008}
+}
+
+%author = {Letter-to-Phoneme Conversion Challenge},
+@misc {TTSChallenge,
+  Title = {http://www.pascal-network.org/Challenges/PRONALSYL/},
+  Year = {Visited in April, 2006}
+}
+
+@misc {DARPA97,
+  author = {DARPA Speech Recognition Workshop},
+  Title = {http://www.nist.gov/speech/publications/darpa97/index.htm},
+  Year = {Visited in April, 2006}
+}
+
+%author = {2000 Speech Transcription Workshop},
+@misc {ST00,
+  Title = {http://www.nist.gov/speech/publications/tw00},
+  Year = {Visited in April, 2006}
+}
+
+%Passado, Presente e Futuro do PLN no Brasil: uma visï¿½o pessoal
+%author = {Maria das Gracas Volpe Nunes}
+@misc {Graca05,
+author = {Graça Nunes},
+Title = {http://www.unisinos.br/congresso/sbc2005/?sessao=til},
+Year = {TIL'2005} }
+
+@misc {FalaBrasil,
+  Title = {http://www.laps.ufpa.br/falabrasil},
+  Year = {Visited in October, 2009},
+}
+
+@misc {Julius,
+  Title = {http://julius.sourceforge.jp/en/},
+  Year = {Visited in may, 2009},
+}
+
+@misc {BaseIME,
+  Title = {http://larso.ime.eb.br/tools.htm},
+  Year = {Visited in April, 2006}
+}
+
+@misc {beep1.0,
+Year = {Visited in March, 2008},
+Title = {ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/dictionaries} }
+
+@misc {Matlab,
+Key = {Matlab},
+Year = {Visited in February, 2006},
+Title = {www.mathworks.com} }
+
+@article {Marca94,
+Author = {J. R. Boisson {de~Marca} },
+Title = {An {LSF} Quantizer for the North-American Half-Rate Speech Coder},
+Journal = {IEEE Transactions on Vehicular Technology},
+Volume = {43},
+Pages = {413-419},
+Year = {1994} }
+
+
+@inproceedings {Caiani98,
+Author = {Caiani, E.G. and Porta, A. and Baselli, G. and Turiel, M. and Muzzupappa, S. and Pieruzzi, F. and Crema, C. and Malliani, A. and Cerutti, S. },
+Title = {Warped-average template technique to track on a cycle-bycycle basis the cardiac filling phases on left ventricular volume.},
+BookTitle = {IEEE Computers in Cardiology},
+Pages = {73-76},
+Year = {1998} }
+
+
+@article {Wilpon85,
+Author = {G. Wilpon and L. R. Rabiner. A.},
+Title = {Modified k-Means Clustering Algorithm for Use in Isolated Word Recognition},
+Journal = {IEEE Transactions on Acoustics, Speech, and Signal Processing, ASSP},
+Volume = {33},
+Pages = {587-594},
+Year = {1985} }
+
+@book {Young00,
+Author = {Young, S. {et. al}},
+Title = {The HTK Book},
+Publisher = {Microsoft Corporation, Version 3.0},
+Year = {2000} }
+
+@article {Welch03,
+Author = {Lloyd R. Welch},
+Title = {Hidden Markov Models and the Baum-Welch Algorithm},
+Journal = {IEEE Information Theory Society Newsletter.},
+Volume = {53},
+Pages = {10-12},
+Year = {2003} }
+
+@article {Forney73,
+Author = {Forney, G. D.},
+Title = {The Viterbi algorithm},
+Journal = {Proceedings of the IEEE},
+Volume = {3},
+Pages = {268-278},
+Year = {1973} }
+
+@mastersthesis {Hosn06,
+Author = {C. Hosn},
+Title = {Conversão Grafema-Fone para um sistema de Reconhecimento de Voz com suporte a grandes vocabulários para o português brasileiro},
+School = {Universidade Federal do Pará, Centro Tecnológico},
+Year = {2006} }
+%Optional fields: address, month, note, key
+
+@article {Hosn06a,
+Author = {Chadia Hosn and Luiz Alberto Novaes Baptista and Tales Imbiriba and Aldebaro Klautau},
+Title = {New Resources for Brazilian Portuguese: Results for Grapheme-to-Phoneme and Phone Classification},
+Journal = {In VI International Telecommunications Symposium, Fortaleza},
+Year = {2006} }
+
+@misc {Weka,
+  Title = {http://www.cs.waikato.ac.nz/ml/weka/},
+  Year = {Visited in March, 2008}
+}
+
+@article {OGI22,
+Author = {Lander, T. and Cole, R.A. and Oshika, B.T. and Noel, M.},
+Title = {The OGI 22 Language Telephone Speech Corpus},
+Journal = {In: Proc. Eurospeech'95, Madrid},
+Year = {1995} }
+
+@article {Woodland94,
+Author = {Woodland, P. and Odell, J.J. and Valtchev, V. and Young, S.},
+Title = {Large Vocabulary Continuous Speech Recognition Using HTK},
+Journal = {IEEE Int'l Conf. Acoustics, Speech, and Signal Processing, vol. 2, pp. 125--128, Adelaide},
+Year = {1994} }
+
+@article {Woodland93,
+Author = {Woodland, P. and Young, S.},
+Title = {The HTK Tied-State Continuous Speech Recognizer},
+Journal = {In: Proc. Eurospeech'93, Berlim},
+Year = {1993} }
+
+@article {Boite94,
+Author = {Boite, J-M. and Bourlard, H. and Dï¿½Hoore, B. and Accaino, S. and Vantieghem, J.},
+Title = {Task independent and dependent training: performance comparison of HMM and hybrid HMM/MLP approaches},
+Journal = {In: Proceedings of the International Conference on Acoustics, Speech and Signal Processing, vol. 1, pp. 617--620, Adelaide},
+Year = {1994} }
+
+@article {Cosi98,
+Author = {Cosi, P. and Hosom, J.P. and Shalkwyk, J. and Sutton, S. and Cole, R.A.},
+Title = {Connected digit recognition experiments with the OGI toolkit's neural network and HMM-based recognizers},
+Journal = {In: IVTTA'98, pp. 135--140, Torino},
+Year = {1998} }
+
+@book {Young06,
+Author = {Young, S. and Ollason, D. and Valtchev, V. and Woodland, P.},
+Title = {The HTK Book (for HTK Version 3.4)},
+Publisher = {Cambridge University Engineering Department},
+Year = {2006} }
+
+@book {Young07,
+Author = {Young, S.},
+Title = {ATK - An Application Toolkit for HTK (Version 1.6)},
+Publisher = {Cambridge University Engineering Department},
+Year = {2007} }
+
+@article {Stolcke02,
+Author = {Stolcke, A.},
+Title = {SRILM - An Extensible Language Modeling Toolkit},
+Journal = {Proc. Intl. Conf. Spoken Language Processing, Denver, Colorado},
+Year = {2002} }
+
+@book {Chen98,
+Author = {Chen, S. F. and Goodman, J.},
+Title = {An Empirical Study of Smoothing Techniques for Language Modeling},
+Publisher = {Computer Science Group, Harvard University},
+Year = {1998} }
+
+@article {Schramm00,
+Author = {Schramm, M.C. and Freitas, L.R. and Zanuz, A. and Barone, D.},
+Title = {A brazilian portuguese language corpus development},
+Journal = {ICSLP-2000, vol.2, 579-582},
+Year = {2000} }
+
+@misc {Ceten,
+  Title = {http://acdc.linguateca.pt/cetenfolha/},
+  Year = {Visited in January, 2008}
+}
+
+@article {Teruszkin06,
+Author = {Teruszkin, R. and Vianna, F.G. },
+Title = {Implementation of a Large Vocabulary Continuous Speech Recognition System for Brazilian Portuguese},
+Journal = {Journal of Communication and Information Systems, vol. 21, no. 3, pages 204-218},
+Year = {2006} }
+
+
+@techreport {Enio05,
+Author = {Ênio dos Santos Silva},
+Title = {Desenvolvimento de um Reconhecedor Automático de Voz com Suporte a Grandes Vocabularios para o Português Brasileiro},
+School = {Universidade Federal do Pará, Centro Tecnológico},
+Year = {2005} }
+
+@article {Hwang93,
+Author = {Hwang, M.Y. and Huang, X.},
+Title = {Shared Distribution Hidden Markov Models for Speech Recognition},
+Journal = {IEEE Trans Speech and Audio Processing},
+Volume = {1},
+Pages = {414-420},
+Year = {1993} }
+
+
+@article {Young94,
+Author = {Young, S.J. and Woodland, P.C},
+Title = {State Clustering in HMM-based Continuous Speech
+Recognition},
+Journal = {Computer Speech and Language},
+Volume = {8},
+Pages = {369-384},
+Year = {1994} }
+
+
+@inproceedings {Bahl94,
+Author = {Bahl, L.R. and Souza, P.V. and Gopalakrishnan, P.S. and Nahamoo, D. and Picheny, M.A.},
+Title = {Context Dependent Modeling of Phones in Continuous Speech Using Decision Trees},
+BookTitle = {DARPA Speech and Natural Language Processing Workshop},
+Pages = {264-270},
+Year = {1994} }
+
+@mastersthesis {Odell92,
+Author = {Odell JJ},
+Title = {The Use of Decision Trees with Context Sensitive
+Phoneme Modelling},
+School = {Cambridge University Engineering
+Department},
+Year = {1992} }
+
+@article {Kannan94,
+Author = {Kannan A and Ostendorf M and Itohlicek JR},
+Title = {Maximum Likelihood Clustering of Gaussians for Speech Recognition},
+Journal = {IEEE Tans on Speech and Audio Processing},
+Volume = {},
+Pages = {},
+Year = {1994} }
+
+@article {Lippmann97,
+Author = {Lippmann, R.P.},
+Title = {Speech Recognition by Machines and Humans},
+Journal = {Speech Communication},
+Volume = {22},
+Pages = {1-15},
+Year = {1997} }
+
+@misc{picone8463,
+  author = {PICONE, J.},
+  title = {ECE 8463: Fundamentals of Speech Recognition},
+  text = {Department of Electrical and Computer Engineering Mississippi State University},
+  year = {},
+  url = {http://www.ece.msstate.edu/research/isip/publications/courses/ece_8463/} }
+
+@article {Moore05,
+Author = {Moore R. K.},
+Title = {Results from a survey of attendees at ASRU 1997 and 2003},
+Journal = {INTERSPEECH 2005 Lisbon},
+Year = {2005} }
+
+@article {stolcke02,
+Author = {A. Stolcke},
+Title = {SRILM - An Extensible Language Modeling Toolkit},
+Journal = {Intl. Conf. Spoken Language Processing, Colorado},
+Year = {2002} }
+
+@article {kneser95,
+Author = {Kneser, R. and Ney, H.},
+Title = {Improved backing-off for m-gram language modeling},
+Journal = {IEEE International Conference on Acoustics, Speech and Signal Processing},
+Year = {1995} }
+
+@inproceedings {Jelinek76,
+Author = {F. Jelinek},
+Title = {Continuous speech recognition by statistical methods},
+BookTitle = {Proceedings. of. the IEEE, vol. 64 no. 4},
+Pages = {532-555},
+Year = {1976} }
+
+@article {Vintsyuk68,
+Author = {Vintsyuk, T.K.},
+Title = {Speech Discrimination by Dynamic Programming},
+Journal = {Kibernetika (Cybernetics)},
+Volume = {4},
+Pages = {81-88},
+Year = {1968} }
+
+@article {Jelinke98,
+Author = {Jelinke and Frederick},
+Title = {Métodos estatísticos para reconhecimento de voz},
+Journal = {The MIT Press},
+Year = {1998} }
+
+@article {Kurzweil98,
+Author = {Kurzweil and Raymond},
+Title = {"Quando o HAL vai entender o que estamos falando?", em "O legado de HAL: o computador de '2001 - Uma odisséia no espaço' como sonho e realidade"},
+Journal = {The MIT Press},
+Year = {1998} }
+
+
+@misc{Young89,
+author = {SJ Young and NH Russell and
+JHS Thornton},
+Title = {Token Passing: a Conceptual Model for Connected Speech Recognition Systems},
+text = {CUED Technical Report F INFENG/TR38, Cambridge University},
+year = {1989},
+url = {svr-ftp.eng.cam.ac.uk} }
+
+
+@book {IPA,
+Author = {International Phonetic Association},
+Title = {Handbook of the International Phonetic Association: A guide to the use of the International Phonetic Alphabet},
+Publisher = {Cambridge: Cambridge University Press. ISBN 0-521-65236-7 (hb) ISBN 0-521-63751-1 (pb)},
+Year = {1999} }
+
+@techreport {Dacunha03,
+Author = {da Cunha, A. M. and Velho, L.},
+Title = {Métodos probabilísticos para Reconhecimento de Voz},
+Institution = {Laboratório VISGRAF - Instituto de Matemática Pura e Aplicada},
+Year = {2003} }
+
+
+@article {Siravenha08,
+Author = {Ana Carolina Siravenha and Nelson Neto and Valquíria Macedo and Aldebaro Klautau},
+Title = {Uso de Regras Fonológicas com Determinação de Vogal Tônica para Conversão Grafema-Fone em Português Brasileiro},
+Journal = {7th International Information and Telecommunication Technologies Symposium},
+Year = {2008} }
+
+
+@article {Silva06,
+Author = { Denilson C. Silva and Amaro A. de Lima and R. Maia and Daniela Braga,
+João F. de Moraes and João A. de Moraes and Fernando G. V. Resende Jr},
+Title = {A rule-based grapheme-phone converter  and stress determination for brazilian portuguese natural language processing},
+Journal = {VI International Telecommunications Symposium},
+Year = {2006} }
+
+
+@article {Cirigliano05,
+Author = {Ricardo J.R. Cirigliano and Clarisse Monteiro and Filipe Leandro de F. Barbosa and Fernando Gil Vianna Resende Jr and Letícia Rebollo Couto and João A. de Moraes},
+Title = {Um conjunto de 1000 frases foneticamente balanceadas para o português brasileiro obtido utilizando a abordagem de Algoritmos Genéticos},
+Journal = {XXII Simpósio Brasileiro de Telecomunicações},
+Year = {2005} }
+
+@article {Patrick08,
+Author = {Patrick Silva and Nelson Neto and Aldebaro Klautau and Andre Adami and Isabel Trancoso},
+Title = {Speech Recognition for Brazilian Portuguese using the Spoltech and OGI-22 Corpora},
+Journal = {XXVI Simpósio Brasileiro de Telecomunicações - SBrt 2008},
+Year = {2008} }
+
+@article {Nelson08,
+Author = {Nelson Neto and Patrick Silva and Aldebaro Klautau and Andre Adami},
+Title = {Spoltech and OGI-22 Baseline Systems for Speech Recognition in Brazilian Portuguese},
+Journal = {International Conference on Computational Processing of Portuguese Language - PROPOR},
+Year = {2008} }
+
+@misc{Patricktcc,
+  author = {Carlos Patrick Alves da Silva},
+  title = {Sistemas de Reconhecimento de Voz para o Português Brasileiro utilizando os Corpora Spoltech e OGI-22},
+  howpublished = {Universidade Federal do Pará, Instituto de Tecnologia},
+  year = {2008},
+  note = {trabalho de conclusão de curso} }
+
+@article {ynoguti03,
+Author = {Carlos Alberto Ynoguti and Plínio Almeida Barbosa and Fábio Violaro},
+Title = {A Large Speech Database for Brazilian Portuguese Spoken Language Research},
+Journal = {Lecture Notes in Computer Science (LNCS)},
+Volume = {2721/9},
+Pages = {193-196},
+Year = {2003} }
+
+@article {ynoguti08,
+Author = {Carlos Alberto Ynoguti and Fábio Violaro},
+Title = {A Brazilian Portuguese Speech Database},
+Journal = {XXVI Simpósio Brasileiro de Telecomunicações - SBrt 2008},
+Year = {2008} }
+
+@misc {juliusgrammar,
+Year = {Visited in September, 2009},
+Title = {http://julius.sourceforge.jp/en\_index.php?q=en\_grammar.html} }
+
+@article {Rotovnik02,
+Author = {Tomaz Rotovnik and Mirjam Sepesy Maucec and Bogomir Horvat and Zdravko Kacic},
+Title = {A Comparison of HTK, ISIP and Julius in Slovenian Large Vocabulary Continuous Speech Recognition},
+Journal = {7th International Conference on Spoken Language Processing (ICSLP) },
+Year = {2002} }
+
+@article {SWITCHBOARD,
+Author = {John J. Godfrey and Edward C. Holliman and Jane McDaniel},
+Title = {{SWITCHBOARD}: Telephone Speech Corpus for Research and Development},
+Journal = {Texas Instruments Inc. Dallas} }
+
+@article {Patrick09,
+Author = {Patrick Silva and Nelson Neto and Aldebaro Klautau},
+Title = {Novos Recursos e Utilização de Adaptação de Locutor no Desenvolvimento de um Sistema de Reconhecimento de Voz para o Português Brasileiro},
+Journal = {In XXVII Simpósio Brasileiro de Telecomunicações},
+Year = {2009} }
+

@@ -1,0 +1,220 @@
+%% eusipco.sty
+%%
+%% Usage: \documentclass{article}
+%%        \usepackage[psfig,ninepoint]{eusipco}
+%%
+%% LaTeX style file for preparing papers adhering to paper formatting 
+%% instructions of EUSIPCO 2007. Uses 10pt Times Roman font as default.
+%% 
+%% Options: - ninepoint: use 9pt fonts instead of 10pt
+%%          - cmsfonts:  use Computer Modern fonts (fallback for situations
+%%                       when problems with the Times fonts are experienced)
+%%
+%% - use \title{} for paper title
+%% - use \name{} for author(s)
+%% - use \address{} for affiliation(s)
+%%
+%% NO WARRANTY
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EUSIPCO'07 FORMATTING 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\oddsidemargin  17truemm\addtolength{\oddsidemargin}{-1truein}
+\evensidemargin 17truemm\addtolength{\evensidemargin}{-1truein}
+
+\topmargin       0truept
+\headheight      0truept
+\headsep         0truept
+\footskip        0truept
+\textheight    240truemm
+\textwidth     176truemm
+
+\twocolumn
+\sloppy
+\flushbottom
+\columnsep       6truemm
+\columnseprule   0truept
+
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PROCESS DOCUMENT OPTIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newif\if@cmfonts   \global\@cmfontsfalse
+\newif\if@ninepoint \global\@ninepointfalse
+
+\DeclareOption{cmfonts}{\global\@cmfontstrue}
+\DeclareOption{ninepoint}{\global\@ninepointtrue}
+
+\ProcessOptions
+
+\if@cmfonts
+\else
+%
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\ttdefault}{pcr}
+\normalfont\selectfont
+%
+\DeclareSymbolFont{operators}   {OT1}{ztmcm}{m}{n}
+\DeclareSymbolFont{letters}     {OML}{ztmcm}{m}{it}
+\DeclareSymbolFont{symbols}     {OMS}{ztmcm}{m}{n}
+\DeclareSymbolFont{largesymbols}{OMX}{ztmcm}{m}{n}
+\DeclareSymbolFont{bold}        {OT1}{ptm}{bx}{n}
+\DeclareSymbolFont{italic}      {OT1}{ptm}{m}{it}
+%
+\thinmuskip=2mu
+\medmuskip=2.5mu plus 1mu minus 1mu
+\thickmuskip=4mu plus 1.5mu minus 1mu
+%
+\def\boldmath{\mathbf}
+%
+\DeclareMathSizes{9}{9}{7}{5}
+\DeclareMathSizes{10}{10}{7.4}{6}
+\DeclareMathSizes{10.95}{10.95}{8}{6}
+%
+\fi
+
+\if@ninepoint
+\def\ninepointfont{\fontsize{9pt}{9.7pt}\selectfont}
+\let\normalsize\ninepointfont\normalsize
+\else
+\renewcommand{\baselinestretch}{.9}\normalsize
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SOME SPACINGS FOR LISTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\partopsep          \z@
+\parsep             \z@
+\itemsep            0.1\baselineskip
+\leftmargini        1.5em
+\leftmarginii       1.5em
+\leftmarginiii      1.5em
+\leftmarginiv       1.5em
+\labelsep           0.5em 
+\labelwidth           \z@
+
+\def\@listi{\leftmargin\leftmargini \topsep 2pt plus 1pt minus 1pt}
+\let\@listI\@listi
+\def\@listii{\leftmargin\leftmarginii\labelwidth\leftmarginii%
+    \advance\labelwidth-\labelsep \topsep 2pt}
+\def\@listiii{\leftmargin\leftmarginiii\labelwidth\leftmarginiii%
+    \advance\labelwidth-\labelsep \topsep 2pt}
+\def\@listiv{\leftmargin\leftmarginiv\labelwidth\leftmarginiv%
+    \advance\labelwidth-\labelsep \topsep 2pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PAPER TITLE, AUTHOR(S), AFFILIATION(S)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\maketitle{\par
+ \begingroup
+ \def\thefootnote{}
+ \def\@makefnmark{\hbox to 0pt{$^{\@thefnmark}$\hss}}
+ \twocolumn[\@maketitle]
+ \@thanks
+ \endgroup
+ \setcounter{footnote}{0}
+ \let\maketitle\relax
+ \let\@maketitle\relax
+ \gdef\thefootnote{\arabic{footnote}}\gdef\@@savethanks{}%
+ \gdef\@thanks{}\gdef\@author{}\gdef\@title{}\let\thanks\relax}
+
+\def\@maketitle{\newpage
+ \null
+ \vskip 6mm
+ \begin{center}
+ \if@cmfonts
+ {\normalsize\large\bf \@title \par}
+ \else
+ {\fontsize{13pt}{13.5pt}\selectfont\bf \@title \par}
+ \fi
+ \vskip 1.5em 
+ {\fontsize{10pt}{11pt}\selectfont
+ \begin{tabular}[t]{c}
+   \@name\\ 
+   \@address
+ \end{tabular}
+ \par} 
+ \end{center}
+ \par
+ \@thanks
+ \vskip 6mm}
+
+\if@cmfonts
+ \def\title#1{\gdef\@title{\renewcommand{\baselinestretch}{1.0}\normalsize\large\bf\uppercase{#1}}}
+\else
+ \def\title#1{\gdef\@title{\renewcommand{\baselinestretch}{1.0}\normalsize\fontsize{13pt}{13.5pt}\selectfont\bf\uppercase{#1}}}
+\fi
+\def\name#1{\gdef\@name{{\fontsize{12pt}{12.5pt}\selectfont\em #1}\\}}
+\def\address#1{\gdef\@address{#1}}
+
+\gdef\@title{\normalsize\large\bf \uppercase{Title of Paper}}
+\gdef\@name{{\fontsize{12pt}{12.5pt}\selectfont\em Name of author}\\}
+\gdef\@address{\fontsize{10pt}{11pt}\selectfont 
+               First Address Line \\
+               Second Address Line}
+
+\let\@@saveoldthanks\thanks
+\def\thanks#1{\gdef\thefootnote{}\@@saveoldthanks{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SECTION FORMATTING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\@sect#1#2#3#4#5#6[#7]#8{
+    \refstepcounter{#1}
+    \ifnum #2=1
+          \edef\@svsec{\csname the#1\endcsname.\hskip 0.8em}
+    \else
+          \edef\@svsec{\csname the#1\endcsname\hskip 0.8em}
+    \fi
+    \begingroup 
+    \ifnum #2=1\bf\centering
+       {\interlinepenalty \@M \@svsec\uppercase{#8}\par}
+    \else
+       \ifnum #2=2\bf\noindent
+          {\interlinepenalty \@M \@svsec #8\par}
+       \else\it\noindent
+          {\interlinepenalty \@M \@svsec #8\par}
+       \fi
+    \fi
+    \endgroup
+    \csname #1mark\endcsname{#7}
+    \addcontentsline{toc}{#1}{\protect\numberline{\csname the#1\endcsname} #7}
+    \@tempskipa #5\relax
+    \@xsect{\@tempskipa}}
+
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+  {-2.5ex \@plus -0.6ex \@minus -0.1ex}{1.3ex \@plus.1ex}{\normalfont\normalsize\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-2.25ex\@plus -0.5ex \@minus -0.1ex}{1.0ex \@plus 0.1ex}{\normalfont\normalsize\bfseries}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+  {-2.25ex\@plus -0.5ex \@minus -0.1ex}{1.0ex \@plus 0.1ex}{\normalfont\normalsize\bfseries}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ABSTRACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\abstract{\begin{center}{\bf ABSTRACT\vspace{-.5em}}\end{center}}
+\def\endabstract{\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REFERENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\thebibliography#1{%
+ \begin{center}\vskip 1.4ex{\bf REFERENCES}\vskip -0.1ex\end{center}
+ \list
+ {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+ \advance\leftmargin\labelsep\itemsep1mm
+ \usecounter{enumi}}
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax}
+\let\endthebibliography=\endlist
+
