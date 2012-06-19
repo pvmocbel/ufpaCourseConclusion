@@ -70,9 +70,10 @@ Na parte inferior da interface(Figura~\ref{fg:barra_i}) encontram-se os botões 
 
 	Na interface esse "comunicador" pegar as informações de mouse da janela do qt e envia de forma "traduzida" para o motor gráfico irrlicht. São basicamente três métodos do qt que foram modificados para realizar esse tarefa: mouseMoveEvent(), mousePressEvent() e mouseReleaseEvent().\\
 
-	Já o evento de teclado não foi necessário o uso do "comunicador", pelo fato de não haver necessidade usarmos esse tipo de evento no irrlicht. Foram criados vários atalhos de teclado para facilitar a manipulação e navegação na cena, listados na tabela a seguir:
+	Já o evento de teclado não foi necessário o uso do "comunicador", pelo fato de não haver necessidade usarmos esse tipo de evento no irrlicht. Foram criados vários atalhos de teclado para facilitar a manipulação e navegação na cena, listados na tabela~\ref{tb:shortcuts}.
 
-\begin{center}
+\begin{table}
+\centering
 \begin{tabular}{|l|l|}
 	\hline
 		Atalho & Funcionalidade \\ \hline
@@ -96,7 +97,9 @@ Na parte inferior da interface(Figura~\ref{fg:barra_i}) encontram-se os botões 
 		Shift + D & Permite movimentação de objeto selecionado nos eixos X, Y e Z com o mouse \\ 
 	\hline
 \end{tabular}
-\end{center}
+\caption{Tabela de Atalhos de teclado.}
+\label{tb:shortcuts}
+\end{table}
 	
 	\subsection{Colisão}
 	O evento de colisão foi feito baseado na teoria de jogos. Existem vários tipos de colisão, porém a utilizada nesse trabalho foi por reta. Seu funcionamento é bem simples, cria-se uma reta imaginária na cena onde seu ponto de origem é a câmera e seu fim esta localizado em um ponto bastante distante ao inicial. O ponto final acompanha o movimento do mouse. Então quando clica-se em um dado ponto do universo criado na interface é disparado o evento de colisão o qual retorna \textit{nó}\footnote{Objeto selecionado} selecionado. \\

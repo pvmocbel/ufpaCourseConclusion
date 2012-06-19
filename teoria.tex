@@ -1,7 +1,8 @@
 \section{Computação Gráfica e Modelagem 3D}
 A computação gráfica esta presente em quase tudo na vida do homem, desde de pequenos jogos para celular até projetos grandiosos para viagens espaciais, tendo também um papel fundamental na medicina, onde possibilita a visualizações de órgãos internos ao corpo humano o que vem ajudando no tratamento de várias doenças\cite{comp_grafica_h}\cite{azevedo}\cite{kirne}. Esta presente também em muitos outros segmentos, tais como os descritos na tabela~\ref{tab:comp_teoria}. \\
 
-\begin{center}
+\begin{table}
+\centering
 \begin{tabular}{|l|l|}
 	\hline
 	Área & Aplicações \\ \hline
@@ -14,8 +15,9 @@ A computação gráfica esta presente em quase tudo na vida do homem, desde de p
 	Artes & Efeitos especiais, modelagens criativas, esculturas e pinturas\\
 	\hline
 \end{tabular}
+\caption{Diferentes ramos da computação gráfica.}
 \label{tab:comp_teoria}
-\end{center}
+\end{table}
 
 Um dos pioneiros no quesito computação gráfica foi o aluno do MIT\footnote{MIT - Massachusetts Institute of Technology}, Ivan Sutherland, que criou um programa de desenho chamado Sketchpad\cite{sutherland}. Através de uma caneta a laser, podia-se desenha na tela de um computador, salvar e depois recarregar o desenho feito.\\
 
@@ -183,9 +185,10 @@ Mas o que é Realidade Virtual? É uma interface avançada que permite o usuári
 
 O grafo de cena é formado por nós, compondo arrestas que tem como resultado um grafo acíclico direcionado. Com cada nó tendo atributos ,sitados anteriormente, que poderão ou não influenciar nos outros nós que estão conectados a ele. Existe uma classificação para eles, que os divide em três categorias: nós raiz(é o primeiro nó, no qual todos os outros estão ligados de forma direta ou não) ,nós internos (geralmente contem informações de transformações 3D - rotação, escala e translação) e por fim estão os nós folha(que por padrão contem as dados de representação geométrica dos objetos da cena).\\ 
 
-A propriedade fundamental dessa ferramenta é o que se chama de herança de estado. Que diz que cada nó deve herda as propriedades de estado do seus ancestrais até o nó raiz. Então se tivermos um grafo de cena formado por um \textit{nó} raiz, casa, e dois \textit{nós folha}, sendo o primeiro uma cadeira e o segundo mesa. Se rotacionarmos o \textit{nó} casa, por consequência teremos a cadeira e a mesa rotacionadas também. Porém no caso da rotação de um dos \textit{nós folha}, o \textit{nó} casa permanecerá inalterado, haja vista que ele esta hierarquicamente no nível acima e a cadeira também não se moverá pelo fato de ter uma ligação direta com esse nó(esta no mesmo nível e não tem conexão direta). Na tabela~\ref{tb:grafo_cena} estão algumas vantagens e desvantagens proporcionadas pelo uso dessa técnica.\\
+A propriedade fundamental dessa ferramenta é o que se chama de herança de estado. Que diz que cada nó deve herda as propriedades de estado do seus ancestrais até o nó raiz. Então se tivermos um grafo de cena formado por um \textit{nó} raiz, casa, e dois \textit{nós folha}, sendo o primeiro uma cadeira e o segundo mesa. Se rotacionarmos o \textit{nó} casa, por consequência teremos a cadeira e a mesa rotacionadas também. Porém no caso da rotação de um dos \textit{nós folha}, o \textit{nó} casa permanecerá inalterado, haja vista que ele esta hierarquicamente no nível acima e a cadeira também não se moverá pelo fato de ter uma ligação direta com esse nó(esta no mesmo nível e não tem conexão direta). Na tabela~\ref{tb:grafo_cena} estão algumas vantagens proporcionadas pelo uso dessa técnica.\\
 
-\begin{center}
+\begin{table}
+\centering
 \begin{tabular}{|p{3cm}|p{8cm}|}
 	\hline
 	\multicolumn{2}{|c|}{Vantagens} \\ \hline
@@ -196,8 +199,9 @@ excluindo a parte de código que é especifica de uma plataforma.\\ \hline
 	Escalabilidade &  Possibilita trabalhar tanto em máquinas com configurações básicas até supercomputadores.\\ 
 	\hline
 \end{tabular}
+\caption{Vantagens proporcionadas pelo uso do grafo de cena.}
 \label{tb:grafo_cena}
-\end{center}
+\end{table}
 
 \section{Irrlicht}
 O Irrlicht é uma máquina de jogo de alta performasse escrita em linguagem C++\cite{irrlichtbook}. Contem todas as característica que pode-se encontrar em qualquer outra \textit{engine}\footnote{Máquina de jogo.}. Existem muitos projetos desenvolvidos e em desenvolvimento usando-a, com uma boa comunidade, onde pode-se tirar dúvidas e publicar trabalhos e melhorias. E além de tudo isso, é completamente livre\cite{irrlicht}.\\
