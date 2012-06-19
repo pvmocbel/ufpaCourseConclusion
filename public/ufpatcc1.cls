@@ -4,34 +4,34 @@
 %%
 %% Classe ``inetese''
 %%
-%% Para as dissertaÃ§Ãµes de mestrado e teses de doutorado
-%% do curso de pÃ³s-graduaÃ§Ã£o em CiÃªncia da ComputaÃ§Ã£o 
+%% Para as dissertações de mestrado e teses de doutorado
+%% do curso de pós-graduação em Ciência da Computação 
 %% da Universidade Federal de Santa Catarina.
 %%
 %% Mantida pelo GruTeX (http://www.inf.ufsc.br/grutex)
 %%
-%% HistÃ³rico de versÃµes:
+%% Histórico de versões:
 %% --------------------
 %% 0.1 - 26/01/2001 - Augusto Jun Devegili e Luciano Ignaczak
-%%       CriaÃ§Ã£o do protÃ³tipo da primeira versÃ£o
+%%       Criação do protótipo da primeira versão
 %% 0.5 - 06/04/2001 - Augusto Jun Devegili
-%%       CorreÃ§Ãµes e liberaÃ§Ã£o da primeira versÃ£o `oficial'
+%%       Correções e liberação da primeira versão `oficial'
 %% 0.6 - 11/04/2001 - Augusto Jun Devegili
-%%       InclusÃ£o pacote tocbibind
-%%       AlteraÃ§Ãµes nos ambientes para utilizar o comando \chapter*
-%% 0.7 - 26/05/2001 - Ricardo Felipe CustÃ³dio
-%%       InclusÃ£o dos pacotes babel e graphicx
+%%       Inclusão pacote tocbibind
+%%       Alterações nos ambientes para utilizar o comando \chapter*
+%% 0.7 - 26/05/2001 - Ricardo Felipe Custódio
+%%       Inclusão dos pacotes babel e graphicx
 %%
-%% ObservaÃ§Ãµes:
+%% Observações:
 %% -----------
 %%
-%% * todos os comandos de usuÃ¡rio comeÃ§am por `\ine'
-%% * todos os comandos internos comeÃ§am por `\ine@'
-%% * verifique na seÃ§Ã£o de pacotes adicionais quais pacotes
-%%   precisam estar instalados para a utilizaÃ§Ã£o correta
+%% * todos os comandos de usuário começam por `\ine'
+%% * todos os comandos internos começam por `\ine@'
+%% * verifique na seção de pacotes adicionais quais pacotes
+%%   precisam estar instalados para a utilização correta
 %%   desta classe
 %%
-%% Exemplo de utilizaÃ§Ã£o:
+%% Exemplo de utilização:
 %% ---------------------
 %%
 %% \documentclass{inetese}
@@ -39,8 +39,8 @@
 %% \ineTitulo{Aqui vai o titulo da tese}
 %% \ineAutor{Aqui vai o nome do autor da tese}
 %% \ineOrientador{Aqui vai o nome do orientador do autor}
-%% \ineAreaConcentracao{Aqui vai a area de concentraÃ§Ã£o}
-%% \ineTipoTese{Aqui vai o tipo da tese: dissertaÃ§Ã£o ou tese}
+%% \ineAreaConcentracao{Aqui vai a area de concentração}
+%% \ineTipoTese{Aqui vai o tipo da tese: dissertação ou tese}
 %% \ineGrau{Aqui vai o grau: mestre ou doutor}
 %% \ineMes{Aqui vai o mes da tese}
 %% \ineAno{Aqui vai o ano da tese}
@@ -64,7 +64,7 @@
 %%   Aqui vai o texto de agradecimentos
 %% \end{ineAgradecimentos}
 %%
-%% % Insere o SumÃ¡rio
+%% % Insere o Sumário
 %% \tableofcontents    \clearpage
 %%
 %% % Insere a lista de Figuras e de Tabelas
@@ -78,17 +78,17 @@
 %%   Aqui vai o `abstract' da tese
 %% \end{abstract}
 %%
-%% -- aqui comeÃ§a a monografia
+%% -- aqui começa a monografia
 %%
-%% \chapter{IntroduÃ§Ã£o}
-%% \chapter{RevisÃ£o BibliogrÃ¡fica}
-%% \chapter{DescriÃ§Ã£o do Trabalho Realizado}
+%% \chapter{Introdução}
+%% \chapter{Revisão Bibliográfica}
+%% \chapter{Descrição do Trabalho Realizado}
 %% \chapter{Resultador}
-%% \chapter{ConclusÃ£o}
+%% \chapter{Conclusão}
 %%
-%% % Trocar o nome default Bibliografia para ReferÃªncias BibliogrÃ¡ficas
-%% \renewcommand\bibname{ReferÃªncias BibliogrÃ¡ficas}
-%% \bibliographystyle{abnt} % Estilo para gerar referÃªncias em conformidade com
+%% % Trocar o nome default Bibliografia para Referências Bibliográficas
+%% \renewcommand\bibname{Referências Bibliográficas}
+%% \bibliographystyle{abnt} % Estilo para gerar referências em conformidade com
 %%                          % as normas brasileiras
 %% \bibliography{meu_arquivo_bib}
 %%
@@ -97,7 +97,7 @@
 
 %%%%%
 %%
-%% IdentificaÃ§Ã£o da classe
+%% Identificação da classe
 %%
 %%%%%
 \NeedsTeXFormat{LaTeX2e}
@@ -105,16 +105,16 @@
 
 \typeout{}
 \typeout{***********************************************}
-\typeout{* ufpatcc.cls versÃ£o 0.7 - 10/01/2008}
-\typeout{* Estilo para Trabalho de ConclusÃ£o de Curso}
-\typeout{* Universidade Federal do ParÃ¡}
+\typeout{* ufpatcc.cls versão 0.7 - 10/01/2008}
+\typeout{* Estilo para Trabalho de Conclusão de Curso}
+\typeout{* Universidade Federal do Pará}
 \typeout{* Desenvolvido no LaPS: http://www.laps.ufpa.br}
 \typeout{***********************************************}
 \typeout{}
 
 %%%%%
 %%
-%% DeclaraÃ§Ã£o de opÃ§Ãµes
+%% Declaração de opções
 %%
 %%%%%
 \DeclareOption*{\PassOptionToClass{\CurrentOption}{report}}
@@ -122,14 +122,14 @@
 
 %%%%%
 %%
-%% UtilizaÃ§Ã£o da classe `report' como base
+%% Utilização da classe `report' como base
 %%
 %%%%%
 \LoadClass[12pt,a4paper]{report}
 
 %%%%%
 %%
-%% UtilizaÃ§Ã£o de pacotes adicionais
+%% Utilização de pacotes adicionais
 %%
 %%%%%
 \RequirePackage{fancyhdr}
@@ -149,7 +149,7 @@
 
 %%%%%
 %% 
-%% Comandos para formataÃ§Ã£o de tamanhos (margens, espaÃ§amento) e cabecalho
+%% Comandos para formatação de tamanhos (margens, espaçamento) e cabecalho
 %%
 %%%%%
 \AtBeginDocument{
@@ -173,7 +173,7 @@
 
 %%%%%
 %%
-%% DefiniÃ§Ã£o de variaveis e valores padrÃ£o
+%% Definição de variaveis e valores padrão
 %%
 %%%%%
 
@@ -198,13 +198,13 @@
     {Utilize o comando \protect\ufpaOrientador{} no preambulo.}
 }
 
-\newcommand*{\ufpa@CoOrientador}{}
+%\newcommand*{\ufpa@CoOrientador}{}
 
 \newcommand*{\ufpa@TipoTese}{
   \ClassError{ufpatese}
     {Faltou especificar o tipo de tese.}
     {Utilize o comando \protect\ufpaTipoTese{} no preambulo para
-    especificar o tipo de tese: Tese ou DissertacÃ£o.}
+    especificar o tipo de tese: Tese ou Dissertacão.}
 }
 
 \newcommand*{\ufpa@Grau}{
@@ -216,9 +216,9 @@
 
 \newcommand*{\ufpa@AreaConcentracao}{
   \ClassError{ufpatese}
-    {Faltou especificar a area de concentraÃ§Ã£o.}
+    {Faltou especificar a area de concentração.}
     {Utilize o comando \protect\ufpaAreaConcentracao{} no preambulo para
-    especificar a area de concentraÃ§Ã£o (e.g. sistemas de computaÃ§Ã£o ou
+    especificar a area de concentração (e.g. sistemas de computação ou
     sistemas de conhecimento).}
 }
 
@@ -256,13 +256,13 @@
 
 %%%%%
 %%
-%% DefiniÃ§Ã£o dos comandos de usuario para informaÃ§Ãµes padrÃ£o
+%% Definição dos comandos de usuario para informações padrão
 %%
 %%%%%
 \newcommand*{\ufpaTitulo}[1]{\ufpa@DefufpaValor{\ufpa@Titulo}{#1}}
 \newcommand*{\ufpaAutor}[1]{\ufpa@DefufpaValor{\ufpa@Autor}{#1}}
 \newcommand*{\ufpaOrientador}[1]{\ufpa@DefufpaValor{\ufpa@Orientador}{#1}}
-\newcommand*{\ufpaCoOrientador}[1]{\ufpa@DefufpaValor{\ufpa@CoOrientador}{#1}}
+%\newcommand*{\ufpaCoOrientador}[1]{\ufpa@DefufpaValor{\ufpa@CoOrientador}{#1}}
 \newcommand*{\ufpaTipoTese}[1]{\ufpa@DefufpaValor{\ufpa@TipoTese}{#1}}
 \newcommand*{\ufpaGrau}[1]{\ufpa@DefufpaValor{\ufpa@Grau}{#1}}
 \newcommand*{\ufpaAreaConcentracao}[1]{\ufpa@DefufpaValor{\ufpa@AreaConcentracao}{#1}}
@@ -275,7 +275,7 @@
 
 %%%%%
 %%
-%% DefiniÃ§Ã£o da PÃ¡gina de rosto
+%% Definição da Página de rosto
 %%
 %%%%%
 \newcommand*{\ufpaPaginaDeRosto}{
@@ -319,7 +319,7 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%
-%Inicio da PÃ¡gina de rosto 2 
+%Inicio da Página de rosto 2 
 %%%%%%%%%%%%%%%%%%%%%
 \newcommand*{\ufpaPagRostodo}{
   \pagenumbering{roman}
@@ -360,13 +360,13 @@
   \vfill
 }
 %%%%%%%%%%%%%%%%%%%%%
-%Fim da PÃ¡gina de rosto 2
+%Fim da Página de rosto 2
 %%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%
 %%
-%% DefiniÃ§Ã£o da PÃ¡gina de aprovaÃ§Ã£o
+%% Definição da Página de aprovação
 %%
 %%%%%
 \newcommand*{\ufpa@Assinatura}[1]{
@@ -381,9 +381,9 @@
 
 \newcommand*{\ufpaPaginaDeAprovacao}{
   %\clearpage
-  \pagenumbering{roman}
-   %\thispagestyle{empty}
-  \thispagestyle{plain}
+  %\pagenumbering{roman}
+  %\thispagestyle{empty}
+  %\thispagestyle{plain}
 
   \begin{center}
     \fontsize{12pt}{12pt}\selectfont
@@ -406,8 +406,8 @@
   \ufpa@Assinatura{\ufpa@Orientador}
   \vspace{0.3 cm}
   ORIENTADOR
-  \ufpa@Assinatura{\ufpa@CoOrientador}
-  COORIENTADOR
+  %\ufpa@Assinatura{\ufpa@CoOrientador}
+  %COORIENTADOR
   \ufpa@Assinatura{\ufpa@MembroBancaA}
   MEMBRO DA BANCA EXAMINADORA
   \ufpa@Assinatura{\ufpa@MembroBancaB}
@@ -423,11 +423,12 @@
 
 %%%%%
 %%
-%% PÃ¡gina de epigrafe
+%% Página de epigrafe
 %%
 %%%%%
 \newenvironment{ufpaEpigrafe}{
   \clearpage
+  
   
   \null\vfill
 
@@ -446,7 +447,7 @@
 
 %%%%%
 %%
-%% PÃ¡gina de oferecimento
+%% Página de oferecimento
 %%
 %%%%%
 \newenvironment{ufpaOferecimento}{
@@ -465,7 +466,7 @@
 
 %%%%%
 %%
-%% PÃ¡gina de agradecimentos
+%% Página de agradecimentos
 %%
 %%%%%
 \newenvironment{ufpaAgradecimentos}{
@@ -476,7 +477,7 @@
 
 %%%%%
 %%
-%% PÃ¡gina do resumo
+%% Página do resumo
 %%
 %%%%%
 \newenvironment{ufpaResumo}{
@@ -487,7 +488,7 @@
 
 %%%%%
 %%
-%% PÃ¡gina do abstract
+%% Página do abstract
 %%
 %%%%%
 \renewenvironment{abstract}{
@@ -509,19 +510,19 @@
 
 %%%%%
 %%
-%%  Parte de desenvolvimento: SugestÃµes de melhoria e correÃ§Ãµes necessÃ¡rias
+%%  Parte de desenvolvimento: Sugestões de melhoria e correções necessárias
 %%
 %%%%%
 %
-% DÃºvida nÃºmero 1
-% Deve haver uma forma de colocar a primeira letra do \ufpa@TipoTese em minÃºsculo
+% Dúvida número 1
+% Deve haver uma forma de colocar a primeira letra do \ufpa@TipoTese em minúsculo
 %
-% DÃºvida nÃºmero 1
-% Trocar o \bibname de Bibliografia, o default para portugÃ¼Ãªs, para ReferÃªncias BibliogrÃ¡ficas
-% Para contornar o problema estÃ¡-se sugerindo colocar o comando abaixo antes de incluir
+% Dúvida número 1
+% Trocar o \bibname de Bibliografia, o default para portugüês, para Referências Bibliográficas
+% Para contornar o problema está-se sugerindo colocar o comando abaixo antes de incluir
 % o ambiente de bibliografias no corpo da monografia
-% \renewcommand\bibname{ReferÃªncias BibliogrÃ¡ficas}%
+% \renewcommand\bibname{Referências Bibliográficas}%
 %
-% Fim das dÃºvidas
+% Fim das dúvidas
 
 %%%%% EOF: ufpatese.cls

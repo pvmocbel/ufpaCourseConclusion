@@ -1,6 +1,15 @@
-%to include useful packages
+%to include useful packages, please be careful when modifying it
+
+% \usepackage{tocbasic}
 
 %\usepackage{mathabx} %extended math symbols (DID NOT WORK)
+%To use Portuguese:
+\ifdefined\usePortuguese
+\usepackage[brazil]{babel}   % Para hifenar em portugus
+\usepackage[latin1]{inputenc}% Para poder digitar os acentos da maneira usual:
+\else
+\fi
+
 
 %avoid conflict in the case \appendices is already defined
 \ifdefined\appendices
@@ -8,17 +17,28 @@
 \usepackage{appendix} %More support for appendices
 \fi
 
-%To use Portuguese:
-%\usepackage[brazil]{babel}   % Para hifenar em portugus
-%\usepackage[latin1]{inputenc}% Para poder digitar os acentos da maneira usual:
+%AK: not used:
+%\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
 
 %\usepackage{ucs} %Unicode functionality
 
 %\usepackage{ascii}
 %\usepackage{mathabx} %convolution symbol
 \usepackage{makeidx}  %to generate indices, I guess
-\usepackage{graphicx,color,url}
+\usepackage{graphicx}
+\usepackage{color} %http://en.wikibooks.org/wiki/LaTeX/Colors
+\definecolor{darkgreen}{rgb}{0,0.35,0}
+
+
+\usepackage{url} %LIMITED: does not have the text to be displayed as second parameter 
+
+\ifdefined\RCSfile %check if Elsevier class
+%do not include cite because Elsevier uses natbib
+\else
 \usepackage{cite} %to be smart when citing multiple references, example: [1-7] instead of [1,2,..]
+\fi
+
 %\usepackage{subfigure} %create several figures. Similar to subplot in Matlab
 \usepackage{multirow} %tables with multiple rows
 %\usepackage{pslatex}	% to use PostScript fonts instead of Computer Modern. AK: not sure if I liked
@@ -52,6 +72,12 @@
 \ifdefined\geometry
 \else
 \ifdefined\akbook 
+\ifdefined\lulu
+\setlength{\paperwidth}{6in} % set size for latex
+\setlength{\paperheight}{9in}
+\special{papersize=6in,9in} % set size for ghostscript
+\typearea[6mm]{1} % 6mm for spine
+\else
 %MARGINS - NEED BETTER ADJUSTMENT
 %See http://web.image.ufl.edu/help/latex/margins.shtml
 %\usepackage[a4wide]{geometry}
@@ -72,10 +98,8 @@
 %\addtolength{\leftmargin}{\labelsep}
 \fi
 \fi
+\fi
 
-%To use Portuguese:
-%\usepackage[brazil]{babel}   % Para hifenar em português
-%\usepackage[latin1]{inputenc}% Para poder digitar os acentos da maneira usual:
 
 %\usepackage{ucs} %Unicode functionality
 
@@ -92,7 +116,7 @@
 %\lstset{backgroundcolor=\color{listinggray}}
 %\lstset{linewidth=90mm}
 %By default, keywords are typeset bold, comments in italic shape, and spaces in strings appear
-%as . You don’t like these settings? Look at this:
+%as . You donï¿½t like these settings? Look at this:
 %\lstset{% general command to set parameter(s)
 %commentstyle=\color{white}, % white comments
 %stringstyle=\ttfamily, % typewriter type for strings
@@ -110,7 +134,12 @@
 \lstset{basicstyle=\small} % print whole listing small
 \lstset{firstnumber=1, numberfirstline=false, numbers=left, numberstyle=\tiny, stepnumber=5, numbersep=5pt} %add line numbering
 %The key nolol suppresses an entry for both the environment or the input command.
-\lstset{backgroundcolor=\color{yellow}}
+
+%\lstset{backgroundcolor=\color{yellow}}
+\lstset{backgroundcolor=\color{white}}
+
+%captionpos=b,
+\lstset{language=matlab,tabsize=3,frame=lines,keywordstyle=\color{blue},commentstyle=\color{darkgreen},stringstyle=\color{red},numbers=left,numberstyle=\tiny,numbersep=5pt,breaklines=true,showstringspaces=false,basicstyle=\footnotesize,emph={label}}
 
 \usepackage{ifpdf} %The package provides the switch \ifpdf:
 %Example of usage:
@@ -126,6 +155,8 @@
 \ifdefined\hyperref
 \else
 \usepackage[pdftex,colorlinks]{hyperref}
+%\usepackage{hyperref} %http://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+%allows: \href{http://en.wikipedia.org/wiki/Voltage_divider}{Wikipedia Voltage\_divider}
 \fi
 	
 	%AK: Not sure we should use thumbnails because it takes a long time to create with
@@ -163,11 +194,15 @@ linkcolor=black,
 %citecolor=red,
 citecolor=black,
 }
+
+%From http://www.tex.ac.uk/tex-archive/macros/latex/contrib/oberdiek/epstopdf.pdf
+\epstopdfsetup{suffix=}  %needed to add this instruction because epstopdf.sty was adding a suffix.
+
 \fi %end of commands specific to pdftex
 
 %\usepackage{chngcntr}
 %from http://www.tex.ac.uk/cgi-bin/texfaq2html?label=running-nos
-%Many LaTeX classes (including the standard book class) number things per chapter; so figures in chapter 1 are numbered 1.1, 1.2, and so on. Sometimes this is not appropriate for the user’s needs.
+%Many LaTeX classes (including the standard book class) number things per chapter; so figures in chapter 1 are numbered 1.1, 1.2, and so on. Sometimes this is not appropriate for the userï¿½s needs.
 %Short of rewriting the whole class, one may use the chngcntr package, which provides commands \counterwithin (which establishes this nested numbering relationship) and \counterwithout (which undoes it).
 %AK I wanted to have Figure 1.1, etc., but did not work. I am having Figure 1.1.1 instead. This was probably an error provoked by misplacing the label: it should go inside the caption.
 %\counterwithout{figure}{subsection}

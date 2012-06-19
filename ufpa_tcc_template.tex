@@ -1,8 +1,9 @@
-\documentclass{./public/ufpatcc}
-
+\documentclass{./public/ufpatccdoisautores}
 
 \usepackage{multirow}
 \usepackage{graphicx}
+%\usepackage{caption}
+%\usepackage{subcaption}
 \usepackage{url}
 \usepackage{amsmath,amssymb}
 \usepackage[brazil]{babel}
@@ -12,21 +13,11 @@
 \usepackage{multirow} %tables with multiple rows
 \usepackage{listings} % to list source code: http://www.usq.edu.au/users/leis/notes/latex/code.html
 \usepackage{ifpdf} 
-
-
-
-\usepackage{multirow}
-\usepackage{graphicx}
-\usepackage{url}
-\usepackage{amsmath,amssymb}
-
 \usepackage[brazil]{babel}
-%\usepackage[latin1]{inputenc}	%For Windows users
 \usepackage[utf8]{inputenc} 		%For Linux users
-%incluir tudo no table of contents
-    \setcounter{secnumdepth}{5}
-    \setcounter{tocdepth}{5}
-%exemplos de como ensinar o latex a separar silabas corretamente
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
 \hyphenation {mo-de-lo}
 \hyphenation {EXCELENTE}
 \hyphenation {bra-si-lei-ros}
@@ -55,31 +46,12 @@
 \hyphenation {li-ne-a-res}
 \hyphenation {ufpaspeech}
 \hyphenation {re-co-nhe-ce-dor}
-
 \usepackage{appendix}
-
-%To use Portuguese:
-%\usepackage[brazil]{babel}   % Para hifenar em portugues
-%\usepackage[latin1]{inputenc}% Para poder digitar os acentos da maneira usual:
-%\usepackage[utf8]{inputenc} %Mesmo acima, mas pra Linux
-
-%\usepackage{ucs} %Unicode functionality
-
-%\usepackage{mathrsfs} %math alphabet I will use for sets
-%%\usepackage{ascii}
-%%\usepackage{mathabx} %convolution symbol
-%\usepackage{makeidx}  %to generate indices, I guess
-%\usepackage{graphicx,color,amsmath,cite,url,amssymb,subfigure}
-%\usepackage{multirow} %tables with multiple rows
-%%\usepackage{pslatex}	% to use PostScript fonts instead of Computer Modern. AK: not sure if I liked
 \usepackage{color}
 \definecolor{light-gray}{gray}{0.95}
 \usepackage{listings} % to list source code: http://www.usq.edu.au/users/leis/notes/latex/code.html
 \lstset{language=Java}
 \lstset{backgroundcolor=\color{light-gray}}
-%\lstset{linewidth=90mm}
-%By default, keywords are typeset bold, comments in italic shape, and spaces in strings appear
-%as . You dont like these settings? Look at this:
 \lstset{% general command to set parameter(s)
 commentstyle=\color{blue}, % white comments
 stringstyle=\ttfamily, % typewriter type for strings
@@ -88,51 +60,20 @@ identifierstyle=, % nothing happens
 keywordstyle=, % nothing happens
 keywordstyle=\color{red}\bfseries ,
 linewidth=\textwidth} %framed box is the text size
-%\lstset{frame=lines}
-%\lstset{frameround=tttt}
-%\lstset{frameround=trbl}  %frameround is not working. use frame:
 \lstset{frame=trbl}
-%\lstset{labelstep=1}
 \lstset{basicstyle=\small} % print whole listing small
 \lstset{firstnumber=1, numberfirstline=false, numbers=left, numberstyle=\tiny, stepnumber=5, numbersep=5pt} %add line numbering
-%The key nolol suppresses an entry for both the environment or the input command.
 
 \usepackage{ifpdf} %The package provides the switch \ifpdf:
-%Example of usage:
-%\ifpdf
-%. . . do things, if pdfTEX is running in pdf mode . . .
-%\else
-%. . . other TEX like latex or pdfTEX in dvi mode . . .
-%\fi
-
-%NF: including hyperlinks and thumbnails features
 \ifpdf
 	\usepackage[pdftex,colorlinks]{hyperref}
 	\usepackage[pdftex]{thumbpdf} %% in case of pdfLaTeX
 	\usepackage{pdflscape}
-%Latex pitfalls: when using dvips the figures must be .eps and
-%when using pdftex the figures must be .pdf (pdftex does not accept .eps)
-%To learn about the issue, read:
-%http://www.math.rug.nl/~trentelman/jacob/pdflatex/pdflatex.html
-%http://www.latex-community.org/viewtopic.php?p=1182
-%http://mintaka.sdsu.edu/GF/bibliog/latex/LaTeXtoPDF.html
-%I (Aldebaro) added the package below:
 \usepackage{epstopdf}
-%and also used Alt+F7 in TeXnicCenter to include --enable-write18 in the command line that invokes 
-%the pdftex "compiler". The warning is still there, but the eps => pdf figure conversion now is
-%done on-the-fly. Later we will have to learn how to use \ifpdf to make the .tex compatible with both
-%latex and pdftex. For that, read: http://www.math.rug.nl/~trentelman/jacob/pdflatex/pdflatex.html
-%command to pdftex:
-%To choose how the system is opened:
-%pdfstartview={FitH}
-%Possible values are:
-%"Fit", to show the whole page;
-%"FitH", to show the width of the page in the window;
-%or "FitB", the width of the contents to the window.
 \hypersetup{%
 pdftitle={Realidade Virtual e Equações de Maxwell},
 pdfauthor={Paulo Victor Mocbel dos Santos},
-pdfkeywords={ASR, SpeechOO, Acessibilidade},
+pdfkeywords={RV, FDTD, Antena},
 pdfstartview={FitH}, %% <--
 urlcolor=black,
 linkcolor=black,
@@ -144,18 +85,19 @@ citecolor=black,
 \linespread{1.5}
 
 \sloppy
-
 \ufpaTitulo{Realidade Virtual e Solução Numérica das Equações de Maxwell}
 \ufpaAutor{Paulo Victor Mocbel dos Santos}
+\ufpaSegundoAutor{}
 \ufpaOrientador{Prof. Dr. Rodrigo Melo e Silva de Oliveira }
 \ufpaCoOrientador{Washington César Braga de Sousa}
-\ufpaMembroBancaA{Prof. Dr. Felipe}
-\ufpaMembroBancaB{Prof. Dr. Josivaldo}
+\ufpaMembroBancaA{Prof. Dr. Fabrício José Brito Barros }
+\ufpaMembroBancaB{Prof. Dr. Josivaldo de Souza Araújo}
 \ufpaCoordenadorCurso{Prof. Dr. Ádamo Lima de Santana}
-
 
 \begin{document}
 
+\ufpaPaginaDeRostoData{2012}
+\ufpaPagRostodoData{2012}
 
 \begin{ufpaEpigrafe}
 A adversidade leva alguns a serem vencidos e
@@ -239,7 +181,7 @@ Neste trabalho, foi realizado o estudo de propagação de ondas eletromagnática
 \input{software}
 
 \chapter{Aplicação e Resultados}
-%\input{resultados}
+\input{resultados}
 
 \chapter{Considerações Finais}
 %\input{conclusao}

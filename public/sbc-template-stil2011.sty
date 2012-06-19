@@ -17,7 +17,13 @@
 \flushbottom
 
 % captions
-\RequirePackage[bf,sf,footnotesize,indent]{caption2}
+%Pedro 16-jun-2011: include the write caption2, but do not break compatibility.
+%  PS: Any alternative???
+\IfFileExists{../../public/caption2-stil2011.sty}{
+   \RequirePackage[bf,sf,footnotesize,indent]{../../public/caption2-stil2011}
+}{
+   \RequirePackage[bf,sf,footnotesize,indent]{caption2}
+}
 \setlength{\captionmargin}{0.8cm}
 \renewcommand{\captionfont}{\sffamily\footnotesize\bfseries}
 \renewcommand{\captionlabeldelim}{.}

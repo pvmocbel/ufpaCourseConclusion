@@ -1,19 +1,20 @@
 \section{Computação Gráfica e Modelagem 3D}
-A computação gráfica esta em presente em quase todas as áreas vida humana, desde de pequenos jogos para celular até projetos grandiosos para viagens espaciais, tendo também um papel fundamental na medicina, onde possibilita a visualizações realísticas de órgãos internos ao corpo humano o que vem ajudando no tratamento de várias doenças\cite{comp_grafica_h}\cite{azevedo}\cite{kirne}. Ela esta presente em muitos outros segmentos, tais como os descritos na tabela abaixo. \\
+A computação gráfica esta presente em quase tudo na vida do homem, desde de pequenos jogos para celular até projetos grandiosos para viagens espaciais, tendo também um papel fundamental na medicina, onde possibilita a visualizações de órgãos internos ao corpo humano o que vem ajudando no tratamento de várias doenças\cite{comp_grafica_h}\cite{azevedo}\cite{kirne}. Esta presente também em muitos outros segmentos, tais como os descritos na tabela~\ref{tab:comp_teoria}. \\
 
 \begin{center}
 \begin{tabular}{|l|l|}
-    \hline
-    Área & Aplicações \\ \hline
-    Medicina &  Exames, diagnósticos, estudo, planejamento de procedimentos\\ \hline
-    Arquitetura & Perspectivas, projetos de interiores e paisagismo\\ \hline
-    Engenharia & Em todas as suas áreas (mecânica, civil, aeronáutica etc.)\\ \hline
-    Meteorologia & Previsão do tempo, reconhecimento de poluição\\ \hline
-    Segurança Pública & Definição de estratégias, treinamento, reconhecimento\\ \hline
-    Astronomia & Tratamento de imagens, modelagem de superfícies\\ \hline
-    Artes & Efeitos especiais, modelagens criativas, esculturas e pinturas\\
-    \hline
+	\hline
+	Área & Aplicações \\ \hline
+	Medicina &  Exames, diagnósticos, estudo, planejamento de procedimentos\\ \hline
+	Arquitetura & Perspectivas, projetos de interiores e paisagismo\\ \hline
+	Engenharia & Em todas as suas áreas (mecânica, civil, aeronáutica etc.)\\ \hline
+	Meteorologia & Previsão do tempo, reconhecimento de poluição\\ \hline
+	Segurança Pública & Definição de estratégias, treinamento, reconhecimento\\ \hline
+	Astronomia & Tratamento de imagens, modelagem de superfícies\\ \hline
+	Artes & Efeitos especiais, modelagens criativas, esculturas e pinturas\\
+	\hline
 \end{tabular}
+\label{tab:comp_teoria}
 \end{center}
 
 Um dos pioneiros no quesito computação gráfica foi o aluno do MIT\footnote{MIT - Massachusetts Institute of Technology}, Ivan Sutherland, que criou um programa de desenho chamado Sketchpad\cite{sutherland}. Através de uma caneta a laser, podia-se desenha na tela de um computador, salvar e depois recarregar o desenho feito.\\
@@ -21,20 +22,20 @@ Um dos pioneiros no quesito computação gráfica foi o aluno do MIT\footnote{MI
  Mais o primeiro computador com recursos gráficos de visualização de dados numéricos foi o \textbf{Whirlwind I}, também desenvolvido pelo \textbf{MIT}. As industrias automobilística e aeroespacial começaram a utilizá-lo , e assim esse, até então, novo campo da computação foi se desenvolvendo, abrangendo outros segmentos de atuação e com isso melhorando de forma exorbitante\cite{comp_grafica_h2}.  \\
 
 \subsection{Sistemas de Coordenadas}
-Um sistema de coordenada é aquele se utiliza para descrever objetos modelados em um universo. Através dele, consegue-se capturar, por exemplo, a posição e as dimensões dos objetos. Existem vários sistemas, a Figura~\ref{fg:coordenadas} mostra três deles, que são: coordenadas polar, esféricas e cilíndrica. Onde o primeiro, através do raio e um ângulo podemos chegar a qualquer coordenada. Já para o segundo, obtemos as coordenadas pelo raio e dois ângulos. No terceiro, consegue-se um ponto qualquer na região de análise através do raio, um ângulo e um comprimento.\\ 
+Um sistema de coordenada é aquele que se utiliza para descrever objetos modelados em um universo. Através dele, consegue-se capturar, por exemplo, a posição e as dimensões dos objetos. Existem vários sistemas, a Figura~\ref{fg:coordenadas} mostra três deles, que são: coordenadas polares, esféricas e cilíndricas. Onde o primeiro, através do raio e um ângulo podemos chegar a qualquer coordenada. Já para o segundo, obtemos as coordenadas pelo raio e dois ângulos. No terceiro, consegue-se um ponto qualquer na região de análise através do raio, um ângulo e um comprimento.\\ 
 
- \begin{figure}[ht!]
-      \centering
-	  \includegraphics[scale=0.4]{s_coordenadas}
-	  \caption{Sistemas de coordenadas.}
-	  \label{fg:coordenadas}
- \end{figure} 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.4]{s_coordenadas}
+	\caption{Sistemas de coordenadas.}
+	\label{fg:coordenadas}
+\end{figure}
 
 \subsection{Transformações}
-As transformações são umas das características mais importantes da computação gráfica. Elas nada mais são do que um mapeamento de pontos para outra posição\cite{comp_grafica1}. As transformações mais usadas e conhecidas são: rotação, escala e translação.\\
+As transformações são umas das características mais importantes da computação gráfica. Elas representam um mapeamento de ponto(s) de uma determinada posição para outra~\cite{comp_grafica1}. As transformações mais usadas e conhecidas são: rotação, escala e translação.\\
 
 %--------------tranlasao---------------
-Transladar significa mover o objeto. Ela é dada pela equação~\ref{eq:translacao}, onde adicionando quantias($T_x$, $T_y$ e $T_z$) a sua coordenada atual($x$, $y$ e $z$), obtém-se uma nova posição, transladada($x'$, $y'$ e $z'$). A Figura~\ref{fg:trans} mostra essa transformação. \\
+Transladar significa mover o objeto. Essa operação é dada pela equação~\ref{eq:translacao}, onde adicionando quantias($T_x$, $T_y$ e $T_z$) a sua coordenada atual($x$, $y$ e $z$), obtém-se uma nova posição, transladada($x'$, $y'$ e $z'$). A Figura~\ref{fg:trans} mostra essa transformação. \\
 
 \begin{equation}\label{eq:translacao}
 [x'\ y'\ z'] = [x\ y\ z] + [T_{x}\ T_{y}\ T_{z}]
@@ -48,7 +49,7 @@ Transladar significa mover o objeto. Ela é dada pela equação~\ref{eq:translac
 \end{figure} 
 
 %--------------escala---------------
-A operação de escala é aquela que associada à mudança de dimensão dos objetos. Ela é representada pela equação matricial~\ref{eq:escala}, que mostra, claramente, que quando multiplicamos as dimensões atuais($x$, $y$ e $z$) por alguns fatores($S_x$, $S_y$ e $S_z$), obtemos um novo objeto escalado($x'$, $y'$ e $z'$). A Figura~\ref{fg:escala} mostra bem o que ocorre quando escalonamos um objeto.\\
+A operação de escala é aquela associada à mudança de dimensão dos objetos. Ela é representada pela equação matricial~\ref{eq:escala}, que mostra que quando multiplicamos as dimensões atuais ($x$, $y$ e $z$) por alguns fatores ($S_x$, $S_y$ e $S_z$), obtemos um novo objeto escalado ($x'$, $y'$ e $z'$). A Figura~\ref{fg:escala} mostra bem o que ocorre quando escalonamos um objeto.\\
 
 \begin{equation}\label{eq:escala}
     \begin{array}{c c c}
@@ -71,7 +72,7 @@ A operação de escala é aquela que associada à mudança de dimensão dos obje
 \end{figure} 
 
 %--------------rotacao---------------
-Por fim, quando desejamos girar um objeto ou um ponto no nosso sistema de coordenadas, usamos a transformação de rotação, a qual pode ser representada pelas formas matriciais~\ref{eq:rotacao}, que mostram, repectivamente, as matrizes rotação para os eixos $x$, $y$ e $z$. A Figura~\ref{fg:rotacao}, ilustra essa operação.
+Por fim, quando desejamos girar um objeto ou um ponto no nosso sistema de coordenadas, usamos a transformação de rotação, a qual pode ser representada pelas formas matriciais~\ref{eq:rotacao}, que mostram, respectivamente, as matrizes rotação para os eixos $x$, $y$ e $z$. A Figura~\ref{fg:rotacao}, ilustra essa operação.
 
 \begin{figure}[ht!]
       \centering
@@ -105,16 +106,17 @@ Por fim, quando desejamos girar um objeto ou um ponto no nosso sistema de coorde
 
 \subsection{Representação de Sólidos}
 \subsubsection{Representação Armada ou Wireframe}
-É a representação dado por um conjunto de arrestas que define as bordas do objeto\cite{speck}. Tem a vantagem de ser mais rápida quando a renderização, porém tem um problema que esta relacionado ao fato dar margem para várias interpretações além de dificultar cálculos como: volume e massa de sólidos. Por isso, ela geralmente não é considerada uma técnica de modelagem de sólidos. A Figura~\ref{fg:wireframe} esta ilustrando essa técnica.
+É a representação dada por um conjunto de arrestas que define as bordas do objeto\cite{speck}. Tem a vantagem de ser mais rápida quanto a renderização, porém tem um problema relacionado ao fato de dar margem para várias interpretações, além de dificultar cálculos como: volume e massa de sólidos. Por isso, ela geralmente não é considerada uma técnica de modelagem de sólidos. A Figura~\ref{fg:wireframe} esta ilustrando essa técnica.
 
 \begin{figure}[ht!]
-      \centering
-	  \includegraphics[scale=0.2]{wireframe}
-	  \caption{Representação Armada ou Wireframe.}
-	  \label{fg:wireframe}
+	\centering
+	\includegraphics[scale=0.2]{wireframe}
+	\caption{Representação Armada ou Wireframe.}
+	\label{fg:wireframe}
 \end{figure} 
 
 \subsubsection{Representação por Faces} 
+\label{sec:r_faces}
 Usa faces delimitantes que descrevem os contornos do sólido. É uma das formas mais usuais na modelagem de objetos tridimensionais nos dias de hoje. Ela  também é conhecida com  \textbf{Boundary Representation} ou \textbf{B-rep}, que consiste na descrição de  objetos pelos seus contornos, ou seja, arestas e vértices. Para melhor entendimento, temos a Figura~\ref{fg:faces} como exemplo dessa representação.
 
 \begin{figure}[ht!]
@@ -125,7 +127,7 @@ Usa faces delimitantes que descrevem os contornos do sólido. É uma das formas 
 \end{figure} 
 
 \subsubsection{Representação Poligonal}
-Polígono vem do grego \textit{polys}, que significa muitos , e \textit{gonos} que significa ângulos, assim esse representação é formada por figuras planas com muitos seguimentos de reta e muitos ângulos. Então podemos construir sólidos com o polígono mais  simples, o triângulo, até um mais complexo, com um número elevado de lados(Figura~\ref{fg:pilogono}). Essa técnica pode ser considerada uma especificação do caso anterior.\\
+Polígono vem do grego \textit{polys}, que significa muitos , e \textit{gonos} que significa ângulos, assim esse representação é formada por figuras planas com muitos seguimentos de reta e muitos ângulos. Então podemos construir sólidos com o polígono mais  simples, o triângulo, até um mais complexo, com um número elevado de lados(Figura~\ref{fg:pilogono}). Essa técnica pode ser considerada uma especificação do caso apresentado na seção~\ref{sec:r_faces}.\\
 
 \textit{Tesselation} é um das características dessa representação, significa preencher uma dada região através de várias repetições de um mesmo polígono até não haver mais espaços em "branco". A maioria das máquinas de jogos utilizam a representação por faces triangulares. Isso se deve ao fato de esta necessitar de menos processamento e também por possibilitar a representação de qualquer tipo de contorno\cite{traina}.
 
@@ -139,18 +141,18 @@ Polígono vem do grego \textit{polys}, que significa muitos , e \textit{gonos} q
 \subsection{Técnicas de Modelagem Geométrica}
 Quanto ao âmbito da modelagem de objetos tridimensionais, tem-se basicamente três categorias: a manual, matemática e automática. \\
 
-O método manual foi o que a base de toda a modelagem atual. É a técnica mais barata e mais antiga.  Utiliza-se basicamente das medidas do modelo real e , é claro, da habilidade do modelador. Já à matemática utiliza de algoritmos para gerar o objeto desejado. Esse método é muito utilizado para modelar, por exemplo, a proliferação de organismos microscópicos.\\
+O método manual foi a base de toda a modelagem atual. É a técnica mais barata e mais antiga.  Utiliza-se basicamente das medidas do modelo real e, é claro, da habilidade do modelador. Já à matemática utiliza de algoritmos para gerar o objeto desejado. Esse método é muito utilizado para modelar, por exemplo, a proliferação de organismos microscópicos.\\
 
-A modelagem automática é o método mais recente. Utiliza-se de scanners muitos sofisticados para obter o modelo tridimensional de qualquer ambiente ou sólido.
+Modelagem automática é o método mais recente. Utiliza-se de scanners muitos sofisticados para obter o modelo tridimensional de qualquer ambiente ou sólido.
 
 \subsubsection{Combinação de Objetos}
-É um dos métodos mais intuitivos e antigos. É realizado através da combinação de um ou mais sólidos básico para obtenção de um outro\cite{hearn}, mostrada na Figura~\ref{fg:comb}. O  único detalhe que deve-se prestar bastante atenção nessa técnica, é a questão das operações booleanas(interseção , união e subtração) em alguns casos não gerarem como resultado um sólido, ou seja, quando fazemos, por exemplo, a intercessão de dois cubos que não estão em contato, temos como resultado o vazio que não é um sólido válido.
+É um dos métodos mais intuitivos e antigos. É realizado através da combinação de um ou mais sólidos básico para obtenção de um outro\cite{hearn}, mostrado na Figura~\ref{fg:comb}. O  único detalhe que deve-se prestar bastante atenção nessa técnica, é a questão das operações booleanas(interseção, união e subtração) em alguns casos não gerarem como resultado um sólido, por exemplo, no caso da intercessão de dois cubos que não estão em contato, temos como resultado o vazio que não é um sólido válido.
 
 \begin{figure}[ht!]
-      \centering
-	  \includegraphics[scale=0.4]{montagem}
-	  \caption{Modelagem por Combinação de Objetos.}
-	  \label{fg:comb}
+	\centering
+	\includegraphics[scale=0.4]{montagem}
+	\caption{Modelagem por Combinação de Objetos.}
+	\label{fg:comb}
 \end{figure} 
 
 \subsubsection{Modelagem por Varredura(Sweep)}
@@ -159,115 +161,116 @@ A modelagem por varredura é obtida pela movimentação de uma curva $N_1$ na tr
 Ainda no questão da varredura, pode-se sitar dois casos particulares que são: varredura por \textit{Extrusão}(Figura~\ref{fg:etrusao}) ou \textit{Translacional}(Figura~\ref{fg:rotacional}) e a \textit{Rotacional}. Para o a primeira é a translação de uma superfície na forma circular, por exemplo , ao longo de uma direção, gerando um sólido(no caso um cilindro). No segundo caso ocorre a rotação de uma superfície ao longo de um eixo ou ponto de referência, resultando também em um sólido.
 
 \begin{figure}[ht!]
-      \centering
-	  \includegraphics[scale=0.4]{extrude}
-	  \caption{Modelagem por Extrusão.}
-	  \label{fg:etrusao}
+	\centering
+	\includegraphics[scale=0.4]{extrude}
+	\caption{Modelagem por Extrusão.}
+	\label{fg:etrusao}
 \end{figure} 
 \begin{figure}[ht!]
-      \centering
-	  \includegraphics[scale=0.4]{rotacional}
-	  \caption{Modelagem Rotacional.}
-	  \label{fg:rotacional}
+	\centering
+	\includegraphics[scale=0.4]{rotacional}
+	\caption{Modelagem Rotacional.}
+	\label{fg:rotacional}
 \end{figure} 
 
 \subsection{Realidade Virtual}
-O termo Realidade Virtual surgiu na década de 80 pelo artista e cientistas da computação, Jaron Lanier, que uniu os dois universos, que até então eram, muito distantes, o mundo real e o virtual\cite{jane}. Porém há registro de trabalhos anteriores a essa denominação, dentre eles esta o primeiro capacete que permitia imersão, e também pode-se falar do famoso SENSORAMA\cite{rhen}(que não obteve um grande sucesso comercial, pelo seu valor, mas concerteza foi um dos trabalhos que deram impulso para o futuro dos ambientes virtuais).\\
+O termo Realidade Virtual surgiu na década de 80 pelo artista e cientistas da computação, Jaron Lanier, que uniu os dois universos, que até então eram, muito distantes, o mundo real e o virtual\cite{jane}. Porém há registro de trabalhos anteriores a essa denominação, dentre eles esta o primeiro capacete que permitia imersão, e também pode-se falar do famoso SENSORAMA\cite{rhen}(que não obteve um grande sucesso comercial, pelo seu valor, mas com certeza foi um dos trabalhos que deram impulso para o futuro dos ambientes virtuais).\\
 
-Mas o que é Realidade Virtual? É uma interface avançada que permite o usuário, navegar, modificar, interagir em tempo real com uma determinada aplicação. Existem basicamente dois tipos de realidade virtual quanto o fator imersão, a imerssiva e a não-imerssiva. A primeira é caraterizada por permitir ao usuário se sentir dentro do ambiente(através do uso de capacetes especiais, óculos, luvas, roupas, caves~\cite{cave}, sensores, entre outros dispositivos), já a segunda isso não ocorre(onde usa-se mouse, teclado, monitores , etc)\cite{aect}.
+Mas o que é Realidade Virtual? É uma interface avançada que permite o usuário, navegar, modificar, interagir em tempo real com uma determinada aplicação. Existem basicamente dois tipos de realidade virtual quanto o fator imersão a imersiva e a não imersiva. A primeira é caraterizada por permitir ao usuário se sentir dentro do ambiente(através do uso de capacetes especiais, óculos, luvas, roupas, caves~\cite{cave}, sensores, entre outros dispositivos), já a segunda isso não ocorre(onde usa-se mouse, teclado, monitores , etc)\cite{aect}.
 
 \subsubsection{Grafo de Cena}
-É um dos conceitos mais importantes da teoria de jogos, e também da computação gráfica. Sua definição é a de ferramenta para representação e ambientes virtuais tridimensionais. Sendo esse ambiente virtual descrito por diversos aspectos, dentre eles esta: descrição geométrica, câmera, transformação, aparência, comportamento e iluminação\cite{ferreira}. O cenário é formado por todos esses aspectos inseridos dentro do grafo de cena. \\
+É um dos conceitos mais importantes da teoria de jogos, e também da computação gráfica. Sua definição é a de ferramenta para representação de ambientes virtuais tridimensionais. Sendo esse ambiente descrito por diversos aspectos, dentre eles: descrição geométrica, câmera, transformação, aparência, comportamento e iluminação\cite{ferreira}. O cenário é formado por todos esses aspectos inseridos dentro do grafo de cena. \\
 
-O grafo de cena é formado por nós, compondo arrestas que tem como resultado um grafo acíclico direcionado. Com cada nó tendo atributos ,sitados anteriormente, que poderam ou não influenciar nos outros nós que estam conectados a ele. Existe uma classificação para eles, que os divide em três categorias: nós raiz(é o primeiro nó, no qual todos os outros estão ligados de forma direta ou não) ,nós internos (geralmente contem informações de transformações 3D - rotaçao, escala e translação) e por fim estão os nós folha(que por padrão contem as dados de representação geométrica dos objetos da cena).\\ 
+O grafo de cena é formado por nós, compondo arrestas que tem como resultado um grafo acíclico direcionado. Com cada nó tendo atributos ,sitados anteriormente, que poderão ou não influenciar nos outros nós que estão conectados a ele. Existe uma classificação para eles, que os divide em três categorias: nós raiz(é o primeiro nó, no qual todos os outros estão ligados de forma direta ou não) ,nós internos (geralmente contem informações de transformações 3D - rotação, escala e translação) e por fim estão os nós folha(que por padrão contem as dados de representação geométrica dos objetos da cena).\\ 
 
-A propriedade fundamental dessa ferramenta é o que se chama de herança de estado. Que diz que cada nó deve herda as propriedades de estado do seus ancestrais até o nó raiz. Então se tivermos um grafo de cena formado por um nó raiz, casa, e dois nós folhas, sendo o primeiro uma cadeira e o segundo mesa. Se rotacionarmos o nó casa, por consequência teremos a cadeira e a mesa rotacionadas também. Porém no caso da rotacao de um dos nós folha, o nó casa permanecerá inalterado, haja vista que ele esta hierarquicamente no nível acima e a cadeira também não se moverá pelo fato de ter uma ligação direta com esse nó(está no mesmo nível e não tem conecção direta). Na tabela abaixo estão algumas vantagens e desvantagens proporcionadas pelo uso dessa técnica.\\
+A propriedade fundamental dessa ferramenta é o que se chama de herança de estado. Que diz que cada nó deve herda as propriedades de estado do seus ancestrais até o nó raiz. Então se tivermos um grafo de cena formado por um \textit{nó} raiz, casa, e dois \textit{nós folha}, sendo o primeiro uma cadeira e o segundo mesa. Se rotacionarmos o \textit{nó} casa, por consequência teremos a cadeira e a mesa rotacionadas também. Porém no caso da rotação de um dos \textit{nós folha}, o \textit{nó} casa permanecerá inalterado, haja vista que ele esta hierarquicamente no nível acima e a cadeira também não se moverá pelo fato de ter uma ligação direta com esse nó(esta no mesmo nível e não tem conexão direta). Na tabela~\ref{tb:grafo_cena} estão algumas vantagens e desvantagens proporcionadas pelo uso dessa técnica.\\
 
 \begin{center}
 \begin{tabular}{|p{3cm}|p{8cm}|}
-    \hline
-    \multicolumn{2}{|c|}{Vantagens} \\ \hline
-    Produtividade &  Gerencia e reduz o numero de linhas que seriam necessárias para implementar
-                     a mesma funcionalidade utilizando uma interface de baixo nível, como a OpenGL.\\ \hline
-    Portabilidade &  Encapsula todas as tarefas de baixo nível, reduzindo e até 
-                     excluindo a parte de código que é especifica de uma plataforma.\\ \hline
-    Escalabilidade &  Possibilita trabalhar tanto em máquinas com configurações básicas até supercomputadores.\\ 
-    \hline
+	\hline
+	\multicolumn{2}{|c|}{Vantagens} \\ \hline
+	Produtividade &  Gerencia e reduz o numero de linhas que seriam necessárias para implementar
+a mesma funcionalidade utilizando uma interface de baixo nível, como a OpenGL.\\ \hline
+	Portabilidade &  Encapsula todas as tarefas de baixo nível, reduzindo e até 
+excluindo a parte de código que é especifica de uma plataforma.\\ \hline
+	Escalabilidade &  Possibilita trabalhar tanto em máquinas com configurações básicas até supercomputadores.\\ 
+	\hline
 \end{tabular}
+\label{tb:grafo_cena}
 \end{center}
 
 \section{Irrlicht}
-O Irrlicht é uma máquina de jogo de alta performace escrita em linguagem C++\cite{irrlichtbook}. Contem todas as caracteristica que pode-se encontrar em qualquer outra \textit{engine}\footnote{Máquina de jogo.}. Existem muitos projetos desenvolvidos e em desenvolvimento usando-a, com uma boa comunidade, onde pode-se tirar dúvidas e publicar trabalhos e melhorias. E além de tudo isso, é completamente livre\cite{irrlicht}.\\
+O Irrlicht é uma máquina de jogo de alta performasse escrita em linguagem C++\cite{irrlichtbook}. Contem todas as característica que pode-se encontrar em qualquer outra \textit{engine}\footnote{Máquina de jogo.}. Existem muitos projetos desenvolvidos e em desenvolvimento usando-a, com uma boa comunidade, onde pode-se tirar dúvidas e publicar trabalhos e melhorias. E além de tudo isso, é completamente livre\cite{irrlicht}.\\
 
-Ela tem como principais caracteristicas:
+Ela tem como principais características:
 \begin{enumerate}
-\item Renderização em tempo real de alta performace usando \textbf{Direct3D} e \textbf{OpenGL}.
+\item Renderização em tempo real de alta performasse usando \textbf{Direct3D} e \textbf{OpenGL}.
 \item Independe de plataforma.
 \item Renderiza diretamente de arquivos, tais como : .zip, .pak, .pk3, etc.
-\item Rápida e facil detecção de colisão.
-\item Possibilita o uso de vários linguagens de programaçao, como : Java, Delphi, entre outras.
-\item Limpa, facil de entender, e bem documentada.
+\item Rápida e fácil detecção de colisão.
+\item Possibilita o uso de vários linguagens de programação, como : Java, Delphi, entre outras.
+\item Limpa, fácil de entender, e bem documentada.
 \end{enumerate}
 
 \section{Método FDTD}
-O termo Método FDTD(Finite-Differene Time-Domain Method), primeiramente chamado de como Algorítimo de Yee, foi criado por Kane Yee em 1966\cite{yeebook}. Ele é uma técnica capaz de solucionar, de forma simples e elegante, numericamente as equações de Maxwell, de maneira direta. Tem como características principais:1)distribuição geométrica discreta das componentes de campos Elétrico e Magnético em células, de maneira a satisfazer tanto a Lei de Faraday quanto a Lei de Ampère nas formas diferencial e integral e 2)aproximação das derivadas espaciais e temporais por diferenças finitas, de forma a se obterem equações explicitas para a atualização temporal de todas as componentes de campo\cite{rodrigo}.\\
+O termo Método FDTD(Finite-Differene Time-Domain Method), primeiramente chamado de como Algorítimo de Yee, foi criado por Kane Yee em 1966\cite{yeebook}. É uma técnica capaz de solucionar, de forma simples e elegante, numericamente as equações de Maxwell, de maneira direta. Tem como características principais: 1)distribuição geométrica discreta das componentes de campos Elétrico e Magnético em células, de maneira a satisfazer tanto a Lei de Faraday quanto a Lei de Ampère nas formas diferencial e integral e 2)aproximação das derivadas espaciais e temporais por diferenças finitas, de forma a se obterem equações explicitas para a atualização temporal de todas as componentes de campo\cite{rodrigo}.\\
 
 Porém, por algum tempo, esse método foi deixado de lado devido ao fato de ter um custo computacional muito alto, aliado a isso, deve-se levar em consideração o contexto histórico em que ele se encontrava, onde os computadores ainda eram bem limitados. Mas, um tempo depois, ressurgiu através dos trabalhos de dois cientistas, chamados Allen e Brodwin, que aplicaram essa técnica para problemas tridimensionais relacionados à interação eletromagnética com meios materiais\cite{allen}. Assim, novas técnicas apareceram e melhoram a abordagem do método, acompanhado , é claro, da evolução dos computadores.\\
 
 Essa técnica tem sido usada desde então, em uma grande quantidade de aplicações, entre elas estão: radares, antenas, fotônica, sistemas de telecomunicação, medicina, estruturas periódicas, sistemas de aterramento, entre várias outras.\\
 
 O método FDTD aplicado com intuito de simular uma propagação eletromagnética, utiliza as equações de Maxwell na forma diferencial.
-		\begin{equation}\label{eq:faraday}
-			\overline{\nabla}\times\overline{E}=-\mu\frac{\partial \overline{H}}{\partial t},
-		\end{equation}
-		\begin{equation}\label{eq:ampere}
-			\overline{\nabla}\times\overline{H}=\epsilon\frac{\partial \overline{E}}{\partial t} + \overline{J},
-		\end{equation}
+\begin{equation}\label{eq:faraday}
+	\overline{\nabla}\times\overline{E}=-\mu\frac{\partial \overline{H}}{\partial t},
+\end{equation}
+\begin{equation}\label{eq:ampere}
+		\overline{\nabla}\times\overline{H}=\epsilon\frac{\partial \overline{E}}{\partial t} + \overline{J},
+\end{equation}
 		
-		Onde:\\
-			$\overline{J} = \sigma\overline{E}$, vetor densidade de corrente elétrica  de condução(ampere/$m^{2}$).\\ 
-				
-			 As equações (\ref{eq:faraday}) e (\ref{eq:ampere}) expandidas em coordenadas retangulares, geram as respectivas equações escalares, mostradas abaixo.
-		\begin{equation}
-			\frac{\partial H_x}{\partial t} = \frac{1}{\mu}(\frac{\partial E_y}{\partial z}-\frac{\partial E_z}{\partial y}),
-		\end{equation}
-		\begin{equation}
-			\frac{\partial H_y}{\partial t} = \frac{1}{\mu}(\frac{\partial E_z}{\partial x}-\frac{\partial E_x}{\partial z}),
-		\end{equation}
-		\begin{equation}
-			\frac{\partial H_z}{\partial t} = \frac{1}{\mu}(\frac{\partial E_x}{\partial y}-\frac{\partial E_y}{\partial x}),
-		\end{equation}
+	Onde:\\
+	$\overline{J} = \sigma\overline{E}$, vetor densidade de corrente elétrica  de condução(ampere/$m^{2}$).\\ 
 
-		\begin{equation}
-			\frac{\partial E_x}{\partial t} = \frac{1}{\epsilon}(\frac{\partial H_z}{\partial y}-\frac{\partial H_y}{\partial z} -\sigma E_x),
-		\end{equation}
-		\begin{equation}
-			\frac{\partial E_y}{\partial t} = \frac{1}{\epsilon}(\frac{\partial H_x}{\partial z}-\frac{\partial H_z}{\partial x} -\sigma E_y),
-		\end{equation}
-		\begin{equation}
-			\frac{\partial E_z}{\partial t} = \frac{1}{\epsilon}(\frac{\partial H_y}{\partial x}-\frac{\partial H_x}{\partial y} -\sigma E_z)
-		\end{equation}
-	
-		sendo:\\
-		$E_x, E_y, E_z$ e $H_x, H_y, H_z$ representam as componentes dos campos elétrico $\overline{E}$ e magnético $\overline{H}$, respectivamente. Essas componentes são funções do tempo $t$ e das três coordenadas cartesianas ($x,y,z$).\\
+As equações (\ref{eq:faraday}) e (\ref{eq:ampere}) expandidas em coordenadas retangulares, geram as respectivas equações escalares, mostradas abaixo.
+\begin{equation}
+	\frac{\partial H_x}{\partial t} = \frac{1}{\mu}(\frac{\partial E_y}{\partial z}-\frac{\partial E_z}{\partial y}),
+\end{equation}
+\begin{equation}
+	\frac{\partial H_y}{\partial t} = \frac{1}{\mu}(\frac{\partial E_z}{\partial x}-\frac{\partial E_x}{\partial z}),
+\end{equation}
+\begin{equation}
+	\frac{\partial H_z}{\partial t} = \frac{1}{\mu}(\frac{\partial E_x}{\partial y}-\frac{\partial E_y}{\partial x}),
+\end{equation}
+
+\begin{equation}
+	\frac{\partial E_x}{\partial t} = \frac{1}{\epsilon}(\frac{\partial H_z}{\partial y}-\frac{\partial H_y}{\partial z} -\sigma E_x),
+\end{equation}
+\begin{equation}
+	\frac{\partial E_y}{\partial t} = \frac{1}{\epsilon}(\frac{\partial H_x}{\partial z}-\frac{\partial H_z}{\partial x} -\sigma E_y),
+\end{equation}
+\begin{equation}
+	\frac{\partial E_z}{\partial t} = \frac{1}{\epsilon}(\frac{\partial H_y}{\partial x}-\frac{\partial H_x}{\partial y} -\sigma E_z)
+\end{equation}
+
+sendo:\\
+$E_x, E_y, E_z$ e $H_x, H_y, H_z$ representam as componentes dos campos elétrico $\overline{E}$ e magnético $\overline{H}$, respectivamente. Essas componentes são funções do tempo $t$ e das três coordenadas cartesianas ($x,y,z$).\\
+
+A lei de Faraday, equação (\ref{eq:faraday}), informa que quando há variação no tempo do vetor $\overline{B}=\mu\overline{H}$ (vetor densidade de fluxo magnético, em teslas), surgem componentes de campo elétrico circulando em torno da(s) componente(s) deste vetor. Já a lei de Ampère, equação (\ref{eq:ampere}), informa que quando há variação no tempo do vetor $\overline{D}=\epsilon\overline{E}$ (vetor densidade de fluxo elétrico, em ) em certa direção e/ou a presença da fonte de corrente $\overline{J}$, esta causa circulação de campo magnético em torno da direção da(s) componente(s) deste vetor.\\
+			
+Kane Yee se baseou nessa duas observações para definir seu esquema  de distribuição espacial  e temporal das componentes  de campo  de seu algoritmo. Sua representação geométrica, chamada de célula de Yee, esta mostrada na Figura \ref{fg:celulaYee}\cite{rodrigo}.\\
+			
+\begin{figure}[ht!]
+\centering
+	\includegraphics[scale=0.5]{celula}
+	\caption{Célula Yee.}
+	\label{fg:celulaYee}
+\end{figure} 
 		
-			A lei de Faraday, equação (\ref{eq:faraday}), informa que quando há variação no tempo do vetor $\overline{B}=\mu\overline{H}$ (vetor densidade de fluxo magnético, em teslas), surgem componentes de campo elétrico circulando em torno da(s) componente(s) deste vetor. Já a lei de Ampère, equação (\ref{eq:ampere}), informa que quando há variação no tempo do vetor $\overline{D}=\epsilon\overline{E}$ (vetor densidade de fluxo elétrico, em ) em certa direção e/ou a presença da fonte de corrente $\overline{J}$, esta causa circulação de campo magnético em torno da direção da(s) componente(s) deste vetor.\\
-			
-			Kane Yee se baseou nessa duas observações para definir seu esquema  de distribuição espacial  e temporal das componentes  de campo  de seu algoritmo. Sua representação geométrica, chamada de célula de Yee, esta mostrada na Figura \ref{fg:celulaYee}\cite{rodrigo}.\\
-			
-			 \begin{figure}[ht!]
-			  \centering
-			  \includegraphics[scale=0.5]{celula}
-			  \caption{Celula Yee.}
-			  \label{fg:celulaYee}
-			\end{figure} 
-		
-		Para que possam ser realizadas simulações de propagação de onda em FDTD, é criada uma malha 3D formada por múltiplas células de Yee que preenche toda região de análise, Figura\ref{fg:grade}\cite{almeida}, com a finalidade de mostrar as componentes de campo $\overline{E}$ e $\overline{H}$ atuantes em cada ponto da malha desta região.	\\
-			\begin{figure}[ht!]
-			  \centering
-			  \includegraphics[scale=0.5]{Malha3D}
-			  \caption{(a) Posição das componentes dos campos elétrico e magnético em uma célula de Yee;(b) Célula no interior de uma malha 3-D.}
-			  \label{fg:grade}
-			\end{figure} 
-			
-			A referência a cada célula que compõe a malha, assim com as suas respectivas componentes de campo, é feita de forma discreta pelos índices $i, j$ e $k$, de forma que uma determinada posição $x, y, z$ (em metros) é referenciada no espaço discreto por $i, j, k$ (número da célula correspondente). Estas  referências são obtidas através das relações $x = i.\Delta_x, y = j.\Delta_{y}$ e $z = k.\Delta_z$, onde  $\Delta_x,  \Delta_y$ e $\Delta_z$ são as dimensões das células de Yee(Figura\ref{fg:celulaYee}).
+Para que possam ser realizadas simulações de propagação de onda em FDTD, é criada uma malha 3D formada por múltiplas células de Yee que preenche toda região de análise, Figura\ref{fg:grade}\cite{almeida}, com a finalidade de mostrar as componentes de campo $\overline{E}$ e $\overline{H}$ atuantes em cada ponto da malha desta região.	\\
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.5]{Malha3D}
+	\caption{(a) Posição das componentes dos campos elétrico e magnético em uma célula de Yee;(b) Célula no interior de uma malha 3-D.}
+	\label{fg:grade}
+	\end{figure} 
+
+A referência a cada célula que compõe a malha, assim com as suas respectivas componentes de campo, é feita de forma discreta pelos índices $i, j$ e $k$, de forma que uma determinada posição $x, y, z$ (em metros) é referenciada no espaço discreto por $i, j, k$ (número da célula correspondente). Estas  referências são obtidas através das relações $x = i.\Delta_x, y = j.\Delta_{y}$ e $z = k.\Delta_z$, onde  $\Delta_x,  \Delta_y$ e $\Delta_z$ são as dimensões das células de Yee(Figura\ref{fg:celulaYee}).

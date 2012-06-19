@@ -141,6 +141,7 @@
 \RequirePackage{indentfirst}
 \RequirePackage[small]{caption2}
 \RequirePackage{supertabular}
+\RequirePackage{ifthen}
 
 \renewcommand{\captionlabelfont}{\bfseries}
 \captionstyle{hang}
@@ -280,6 +281,10 @@
 %%
 %%%%%
 \newcommand*{\ufpaPaginaDeRosto}{
+	\ufpaPaginaDeRostoData{2010}
+}
+
+\newcommand*{\ufpaPaginaDeRostoData}[1]{
   \pagenumbering{roman}
   \thispagestyle{empty}
   
@@ -317,7 +322,7 @@
 
   \begin{center}
     \normalsize BEL\'{E}M - PAR\'{A}\\
-    2008
+	#1
   \end{center}
 
   \vfill
@@ -327,6 +332,9 @@
 %Inicio da P�gina de rosto 2 
 %%%%%%%%%%%%%%%%%%%%%
 \newcommand*{\ufpaPagRostodo}{
+\ufpaPagRostodoData{2010}
+}
+\newcommand*{\ufpaPagRostodoData}[1]{
   
   
   \thispagestyle{plain}
@@ -363,7 +371,7 @@
 \end{flushright}
 
 \vspace{3cm}    \normalsize BEL\'{E}M - PAR\'{A}\\
-    2008
+  #1
   \end{center}
   \vfill
 }
@@ -414,12 +422,20 @@
   \ufpa@Assinatura{\ufpa@Orientador}
   \vspace{0.3 cm}
   ORIENTADOR
-  %%\ufpa@Assinatura{\ufpa@CoOrientador}
-  %%COORIENTADOR
+  \ifthenelse{\equal{\ufpa@CoOrientador}{}}{
+  }{
+    \ufpa@Assinatura{\ufpa@CoOrientador}
+    COORIENTADOR
+  }
   \ufpa@Assinatura{\ufpa@MembroBancaA}
   MEMBRO DA BANCA EXAMINADORA
   \ufpa@Assinatura{\ufpa@MembroBancaB}
   MEMBRO DA BANCA EXAMINADORA
+  \ifthenelse{\equal{\ufpa@MembroBancaC}{}}{
+  }{
+    \ufpa@Assinatura{\ufpa@MembroBancaC}
+    MEMBRO DA BANCA EXAMINADORA
+  }
   \vspace{0.5 cm}
   \ufpa@Assinatura{\ufpa@CoordenadorCurso}
   DIRETOR DA FACULDADE DE ENGENHARIA DA COMPUTA\c{C}\~{A}O

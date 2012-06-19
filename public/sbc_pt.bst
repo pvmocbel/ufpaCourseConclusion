@@ -37,6 +37,11 @@
 %   24-jan-88	(OP)	Updated for BibTeX version 0.99a, from alpha.bst 0.99a;
 %			apalike now sorts by author, then year, then title;
 %			THIS `apalike' VERSION DOES NOT WORK WITH BIBTEX 0.98i.
+%   25-jun-09	()	Adaptação para português pela Linguateca por Cristina 
+%                       Mota, inspirada em trabalhos anteriores feitos por Nuno 
+%                       Cardoso e Alberto Simões, sobre o estilo para inglês da 
+%                       SBC.
+
 
 ENTRY
   { address
@@ -45,6 +50,7 @@ ENTRY
     chapter
     edition
     editor
+    editor_feminino
     howpublished
     institution
     journal
@@ -59,6 +65,7 @@ ENTRY
     series
     title
     type
+    variante_pt
     volume
     year
   }
@@ -210,17 +217,20 @@ FUNCTION {format.names}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{vv~}{ll}{, jj}{, f.}" format.name$ 't :=   % last name first
+    % sbc original: { s nameptr "{vv~}{ll}{, jj}{, f.}" format.name$ 't :=   % last name first
+    { s nameptr "{ff }{vv~}{ll}" format.name$ 't :=  % first name first  
       nameptr #1 >
 	{ namesleft #1 >
 	    { ", " * t * }
 	    { numnames #2 >
-		{ "," * }
+		% sbc original: { "," * }
+		{ "" * }  
 		'skip$
 	      if$
 	      t "others" =
 		{ " et~al." * }
-		{ " and " * t * }
+		% sbc original: { " and " * t * }
+		{ " e " * t * }  
 	      if$
 	    }
 	  if$
@@ -252,8 +262,19 @@ FUNCTION {format.editors}
     { "" }
     { editor format.names
       editor num.names$ #1 >
-	{ ", editors" * }
-	{ ", editor" * }
+% sbc original:	{ ", editors" * }
+% sbc original:	{ ", editor" * }
+        { 
+		editor_feminino empty$
+			{", editores" *}
+			{", editoras" *}
+		 if$
+		}
+        { editor_feminino empty$
+			{", editor" *}
+			{", editora" *}
+		 if$
+		}
       if$
     }
   if$
@@ -316,7 +337,8 @@ FUNCTION {format.bvolume}
     { "volume" volume tie.or.space.connect
       series empty$
 	'skip$
-	{ " of " * series emphasize * }
+	% sbc original: { " of " * series emphasize * }
+	{ " de " * series emphasize * }
       if$
       "volume and number" number either.or.check
     }
@@ -328,13 +350,16 @@ FUNCTION {format.number.series}
     { number empty$
 	{ series field.or.null }
 	{ output.state mid.sentence =
-	    { "number" }
-	    { "Number" }
+	    % sbc original: { "number" }
+	    % sbc original: { "Number" }
+	    { "n\'{u}mero" }
+	    { "N\'{u}mero" }
 	  if$
 	  number tie.or.space.connect
 	  series empty$
 	    { "there's a number but no series in " cite$ * warning$ }
-	    { " in " * series * }
+	    % sbc original: { " in " * series * }
+	    { " em " * series * }
 	  if$
 	}
       if$
@@ -347,8 +372,10 @@ FUNCTION {format.edition}
 { edition empty$
     { "" }
     { output.state mid.sentence =
-	{ edition "l" change.case$ " edition" * }
-	{ edition "t" change.case$ " edition" * }
+	% sbc original: { edition "l" change.case$ " edition" * }
+	% sbc original: { edition "t" change.case$ " edition" * }
+	{ edition "l" change.case$ "ª edi\c{c}\~{a}o" * }
+	{ edition "t" change.case$ "ª edi\c{c}\~{a}o" * }
       if$
     }
   if$
@@ -380,8 +407,14 @@ FUNCTION {format.pages}
 { pages empty$
     { "" }
     { pages multi.page.check
-	{ "pages" pages n.dashify tie.or.space.connect }
-	{ "page" pages tie.or.space.connect }
+	% sbc original: { "pages" pages n.dashify tie.or.space.connect }
+	% sbc original: { "page" pages tie.or.space.connect }
+        { "p\'{a}ginas" pages n.dashify tie.or.space.connect }
+	{ pages "s/pp" =
+	    { "" }
+            { "p\'{a}gina" pages tie.or.space.connect }
+	  if$
+	}
       if$
     }
   if$
@@ -412,7 +445,8 @@ FUNCTION {format.chapter.pages}
 { chapter empty$
     'format.pages
     { type empty$
-	{ "chapter" }
+	% sbc original: { "chapter" }
+        { "cap\'{i}tulo" }
 	{ type "l" change.case$ }
       if$
       chapter tie.or.space.connect
@@ -428,8 +462,10 @@ FUNCTION {format.in.ed.booktitle}
 { booktitle empty$
     { "" }
     { editor empty$
-	{ "In " booktitle emphasize * }
-	{ "In " format.editors * ", " * booktitle emphasize * }
+	% sbc original: { "In " booktitle emphasize * }
+	% sbc original: { "In " format.editors * ", " * booktitle emphasize * }
+	{ "Em " booktitle emphasize * }
+	{ "Em " format.editors * ", " * booktitle emphasize * }
       if$
     }
   if$
@@ -446,7 +482,8 @@ FUNCTION {format.thesis.type}
 
 FUNCTION {format.tr.number}
 { type empty$
-    { "Technical Report" }
+    % sbc original: { "Technical Report" }
+    { "Relat\'{o}rio T\'{e}cnico"}
     'type
   if$
   number empty$
@@ -456,24 +493,28 @@ FUNCTION {format.tr.number}
 }
 
 FUNCTION {format.article.crossref}
-{ "In"							% this is for apalike
+{ % sbc original: "In"							% this is for apalike
+  "Em"
   " \cite{" * crossref * "}" *
 }
 
 FUNCTION {format.book.crossref}
 { volume empty$
     { "empty volume in " cite$ * "'s crossref of " * crossref * warning$
-      "In "
+      % sbc original: "In "
+      "Em "
     }
     { "Volume" volume tie.or.space.connect
-      " of " *
+      % sbc original: " of " *
+      " de " *
     }
   if$
   "\cite{" * crossref * "}" *				% this is for apalike
 }
 
 FUNCTION {format.incoll.inproc.crossref}
-{ "In"							% this is for apalike
+{ % sbc original: "In"							% this is for apalike
+  "Em"							
   " \cite{" * crossref * "}" *
 }
 
@@ -663,7 +704,8 @@ FUNCTION {mastersthesis}
   new.block
   format.title "title" output.check
   new.block
-  "Master's thesis" format.thesis.type output.nonnull
+  % sbc original: "Master's thesis" format.thesis.type output.nonnull
+  "Tese de mestrado" format.thesis.type output.nonnull
   school "school" output.check
   address output
   new.block
@@ -693,7 +735,15 @@ FUNCTION {phdthesis}
   new.block
   format.btitle "title" output.check
   new.block
-  "PhD thesis" format.thesis.type output.nonnull
+  % sbc original: "PhD thesis" format.thesis.type output.nonnull
+  variante_pt empty$ 
+    { "Tese de doutorado" format.thesis.type output.nonnull }
+    { variante_pt "Portugal" =
+	{ "Tese de doutoramento" format.thesis.type output.nonnull }
+	{ "Tese de doutorado" format.thesis.type output.nonnull }
+      if$
+    }
+  if$
   school "school" output.check
   address output
   new.block
@@ -846,7 +896,8 @@ FUNCTION {format.lab.names}
 	'skip$
 	{ s #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
 	    { " et~al." * }
-	    { " and " * s #2 "{vv~}{ll}" format.name$ * }
+	    % sbc original: { " and " * s #2 "{vv~}{ll}" format.name$ * }
+	    { " e " * s #2 "{vv~}{ll}" format.name$ * } 
 	  if$
 	}
       if$

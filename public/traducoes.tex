@@ -1,0 +1,28 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Snip para criacao de comando
+%%	\traducoes{Texto em portugues}{Texto em ingles}
+%%
+%% Esse comando serve para selecionar um dos blocos, dependendo da
+%% saida do comando de controle \selecionaPortugues
+%%
+%% O usuario deve fornecer o comando \selecionaPortugues, com argumento
+%% 'true' ou 'false'. O default, 'true', selecionará o primeiro bloco.
+%%
+%% Exemplo de uso:
+%%	\newcommand{\selecionaPortugues}{true}
+%%	\input{traducoes}
+%%	... dentro do documento ...
+%%	\traducoes{Ola, mundo!}{Hello, world!}
+%%
+%% Ultima revisao: Igor Almeida Qua Nov 24 14:09:44 BRT 2010
+
+\usepackage{ifthen}
+\providecommand{\selecionaPortugues}{true}
+\newcommand{\traducoes}[2]{%
+	\ifthenelse{\equal{\selecionaPortugues}{true}}{%
+		#1
+	}{%
+		#2
+	}%
+}
+

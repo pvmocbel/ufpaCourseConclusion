@@ -147,6 +147,7 @@
 
 \setlength{\belowcaptionskip}{.5cm}
 
+
 %%%%%
 %% 
 %% Comandos para formatao de tamanhos (margens, espaamento) e cabecalho
@@ -166,7 +167,8 @@
   \fancyfoot{}
   
   \fancypagestyle{plain}{%
-    \fancyhead{}
+ %%   \fancyhead{}
+\fancyhead[R]{\thepage}
     \fancyfoot{}
   }
 }

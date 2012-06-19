@@ -101,11 +101,11 @@
 %%
 %%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ufpatcc} [2012/01/10]
+\ProvidesClass{ufpatcc} [2008/01/10]
 
 \typeout{}
 \typeout{***********************************************}
-\typeout{* ufpatcc.cls vers�o 0.7 - 10/01/2012}
+\typeout{* ufpatcc.cls vers�o 0.7 - 10/01/2008}
 \typeout{* Estilo para Trabalho de Conclus�o de Curso}
 \typeout{* Universidade Federal do Par�}
 \typeout{* Desenvolvido no LaPS: http://www.laps.ufpa.br}
@@ -312,7 +312,7 @@
 
   \begin{center}
     \normalsize BEL\'{E}M - PAR\'{A}\\
-    2012
+    2008
   \end{center}
 
   \vfill
@@ -363,7 +363,7 @@
  \vspace{3cm}
 
     \normalsize BEL\'{E}M - PAR\'{A}\\
-    2012
+    2008
   \end{center}
   \vfill
 }
@@ -399,11 +399,11 @@
   \end{center}
     
   \normalsize \noindent
-  Este trabalho foi julgado adequado em 25/06/2012 para a obten\c{c}\~{a}o do Grau de 
+  Este trabalho foi julgado adequado em 25/06 para a obten\c{c}\~{a}o do Grau de 
   Engenheiro da Computa\c{c}\~{a}o, aprovado em sua forma final pela banca examinadora
-  que atribuiu o conceito $\underline{ \qquad \qquad \qquad}$.
+  que atribui o conceito $\underline{ \qquad \qquad \qquad}$.
 
-  %\vspace{2 cm}
+  \vspace{2 cm}
 
   \fontsize{11pt}{11pt}\selectfont
 
@@ -419,11 +419,9 @@
   MEMBRO DA BANCA EXAMINADORA
   \ufpa@Assinatura{\ufpa@MembroBancaB}
   MEMBRO DA BANCA EXAMINADORA
-  \ufpa@Assinatura{\ufpa@MembroBancaC}
-  MEMBRO DA BANCA EXAMINADORA
   \vspace{0.5 cm}
   \ufpa@Assinatura{\ufpa@CoordenadorCurso}
-  DIRETOR DA FACULDADE DE ENGENHARIA DA COMPUTAÇÃO
+  COORDENADOR DO CURSO
 
   \end{flushright}
   \normalsize

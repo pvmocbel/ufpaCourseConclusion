@@ -61,7 +61,10 @@
 %\def \tp#1#2#3{{\theta_{{#1 #2}}^{#3}}}
 \newcommand{\tp}[3]{{\theta_{{#1 #2}}^{#3}}}
 
+\ifdefined\bm
+\else
 \newcommand{\bm}[1]{{\mbox{\boldmath $#1$}}}
+\fi
 
 \newcommand{\Line}[0]{%
   \rule{0cm}{0cm}\\\hrule\rule{0cm}{0cm}%
@@ -302,7 +305,7 @@
 \def \bc {{\textbf c}}
 \def \bd {{\textbf d}}
 \def \be {{\textbf e}}
-\def \bf {{\textbf f}}
+%\def \bf {{\textbf f}} %cannot use because it gives conflict with \bf
 \def \bg {{\textbf g}}
 \def \bh {{\textbf h}}
 \def \bi {{\textbf i}}
