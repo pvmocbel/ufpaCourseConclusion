@@ -1,26 +1,25 @@
-Com o passar dos anos, a computação tem evoluído de forma exponencial\cite{comp_history}, permitindo cada vez mais o ser humano: armazenar grande quantidades de dados, simular ambientes de grandes magnitudes, fazer previsão de eventos, se comunicar audiovisualmente, etc. Todo esse avanço propiciou sua expanção para quase todas as áreas da vida humana.\\
+Com o passar dos anos, a computação tem evoluído de forma exponencial\cite{comp_history}, permitindo cada vez mais o ser humano: armazenar grande quantidades de dados, simular ambientes de grandes magnitudes, fazer previsão de eventos, se comunicar audiovisualmente, etc. Todo esse avanço vem refletindo de forma crescente na vida do homem.\\
 
 Mas especificamente na área de telecomunicações, pode-se dizer que esse crescimento vem possibilitando avanços nos estudos e aplicações relacionadas às simulações de ondas eletromagnéticas e antenas. O método das Diferenças Finitas no Domínio do Tempo (FDTD)\cite{fdtd_intro} é um dos mais usados, e também mais antigos, nos estudos dessas propagações em ambientes \textit{indoor} e \textit{outdoor}\cite{rodrigo_intro}.\\
 
-Porém, muitas vezes, a representação virtual de determinados ambientes reais não é uma tarefa fácil. Dessa forma, surge a necessidade de criação de softwares que auxiliem nessa modelagem. Estes podendo ser de modelagem 2D ou 3D, que permitam a criação desde de estruturas básicas, como: triângulos, círculos, cubos, esferas , cones, pirâmides; até outras bem mais complexas(fractais e estruturas periódicas) e também gerem uma base que contenha as coordenadas de cada objetos desse cenário. Assim aproximando à área de telecomunicações ao ramo da computação gráfica, realidade virtual e engenharia de software.
+Porém, muitas vezes, a representação virtual de desses ambientes não é uma tarefa fácil. Dessa forma, surge a necessidade de criação de softwares que auxiliem nessa construção. Eles podem ser de modelagem 2D ou 3D desde de que permitam a criação de estruturas básicas, como: triângulos, círculos, cubos, esferas e pirâmides; como também outras bem mais complexas(fractais e estruturas periódicas), gerando sempre a base que contenha as coordenadas de cada objetos desse cenário.
 
 \section{Objetivos}
-Esse trabalho tem com finalidade a construção de um software que permita modelar ambientes tridimensionais (usando conceitos de realidade virtual) que se aproximem, da melhor forma possível, de um cenário real. A partir desse universo virtual, obter a malha compatível com o programa LANE-SAGS. Através dele, simular a propagação de ondas eletromagnéticas utilizando o método FDTD. Assim, tendo a possibilidade de analisar, por exemplo, tanto aterramento e descargas elétricas quanto a reposta desse cenário a propagação do sinal de uma antena.\\
+Esse trabalho tem com finalidade a construção de um software que permita modelar ambientes tridimensionais (usando conceitos de realidade virtual) que se aproximem, da melhor forma possível, de um cenário real. A partir desse universo virtual, obter a malha compatível com o programa LANE-SAGS. Através dele, simular a propagação de ondas eletromagnéticas utilizando o método FDTD. Assim possibilitando analisar tanto aterramento e descargas elétricas quanto a reposta desse cenário a propagação do sinal de uma antena.\\
 
-Abaixo estão listados, de forma enumerada, os principais objetivos desse trabalho:
+Abaixo estão listados, de forma enumerada, os objetivos desse trabalho:
 \begin{enumerate}
-\item {Representar estruturas tridimensionais por meio de alguns objetos básicos, como: cubo, esfera , cilindro, cone, etc.}
-\item {Criar ambientes que representem virtualmente, de forma mais próxima possível, os do mundo real. }
-\item {Gerar uma base de dados com as característica de cada estrutura. No caso específico de propagação de ondas eletromagnéticas, as características físicas dos objetos em questão são $\mu$, $\sigma$ e $\epsilon$.}
-\item {Gerar malha compatível com o simulador LANE-SAGS.}
+\item {Representar estruturas tridimensionais por meio de alguns objetos básicos, como: cubo, esfera, cilindro e cone.}
+\item {Criar AV com base em ambientes reais. }
+\item {Gerar uma base de dados com as característica de cada estrutura, sua posição, dimensão e parâmentros físicos($\mu$, $\sigma$ e $\epsilon$).}
+\item {Gerar malha compatível com o simulador LANE-SAGS e efetuar a simulação.}
 \end{enumerate}
 
 \section{Organização do Trabalho}
 Este trabalho foi estruturado da seguinte forma:
 \begin{itemize}
-\item \textbf{Capítulo 1:} Trata de forma geral os aspectos desse projeto, como: relevância e objetivos. 
-\item \textbf{Capítulo 2:} Esta ligado a base teórica necessária para realização do trabalho. Assim falando de computação gráfica, técnicas de modelagem de sólidos, teoria dos grafos de cena e do método FDTD.
-\item \textbf{Capítulo 3:} Tem como foco a interface desenvolvida nesse trabalho, suas aplicações, classes, aparência, objetos básicos, manipuladores de cena, região de análise e seus parâmetros, geração de malha, posicionamento de câmera, carregamento e salvamento da cena, atalhos de teclado, eventos de mouse, etc. 
-\item \textbf{Capítulo 4:} Fala sobre uma aplicação usando o software com seus resultados. Seguindo todos os 
-passos desde da criação de um ambiente ate sua simulação no LANE-SAGS.
+\item \textbf{Capítulo 2:} Trata da base teórica necessária para realização do trabalho, falando de computação gráfica, técnicas de modelagem de sólidos, teoria dos grafos de cena e do método FDTD.
+\item \textbf{Capítulo 3:} Fala sobre a interface desenvolvida nesse trabalho, suas aplicações, classes, aparência, objetos básicos, manipuladores de cena, região de análise e seus parâmetros, geração de malha, posicionamento de câmera, atalhos de teclado, eventos de mouse, etc. 
+\item \textbf{Capítulo 4:} Mostra uma aplicação usando o software com seus resultados, seguindo todos os 
+passos desde da criação de um ambiente até sua simulação no LANE-SAGS.
 \end{itemize}

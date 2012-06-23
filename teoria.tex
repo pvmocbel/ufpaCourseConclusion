@@ -1,5 +1,6 @@
 \section{Computação Gráfica e Modelagem 3D}
-A computação gráfica esta presente em quase tudo na vida do homem, desde de pequenos jogos para celular até projetos grandiosos para viagens espaciais, tendo também um papel fundamental na medicina, onde possibilita a visualizações de órgãos internos ao corpo humano o que vem ajudando no tratamento de várias doenças\cite{comp_grafica_h}\cite{azevedo}\cite{kirne}. Esta presente também em muitos outros segmentos, tais como os descritos na tabela~\ref{tab:comp_teoria}. \\
+%%------------------------------------------------Introducao--------------------------------------------------------%%%%
+A computação gráfica esta presente em quase tudo na vida do homem, desde de pequenos jogos para celular até projetos grandiosos para viagens espaciais, tendo também um papel importante na medicina, onde possibilita a visualizações de órgãos internos ao corpo humano o que vem ajudando no tratamento de várias doenças\cite{comp_grafica_h}\cite{azevedo}\cite{kirne}. Esta presente também em muitos outros segmentos, tais como os descritos na Tabela~\ref{tab:comp_teoria}. \\
 
 \begin{table}
 \centering
@@ -19,12 +20,16 @@ A computação gráfica esta presente em quase tudo na vida do homem, desde de p
 \label{tab:comp_teoria}
 \end{table}
 
-Um dos pioneiros no quesito computação gráfica foi o aluno do MIT\footnote{MIT - Massachusetts Institute of Technology}, Ivan Sutherland, que criou um programa de desenho chamado Sketchpad\cite{sutherland}. Através de uma caneta a laser, podia-se desenha na tela de um computador, salvar e depois recarregar o desenho feito.\\
+Um dos pioneiros nesse ramo da computação foi o aluno do \textbf{MIT}, \textit{Ivan Sutherland}, que criou um programa de desenho chamado Sketchpad\cite{sutherland}. Onde usando uma caneta a laser podia-se desenha na tela de um computador, salvar e depois recarregar o desenho feito.\\
 
- Mais o primeiro computador com recursos gráficos de visualização de dados numéricos foi o \textbf{Whirlwind I}, também desenvolvido pelo \textbf{MIT}. As industrias automobilística e aeroespacial começaram a utilizá-lo , e assim esse, até então, novo campo da computação foi se desenvolvendo, abrangendo outros segmentos de atuação e com isso melhorando de forma exorbitante\cite{comp_grafica_h2}.  \\
+O primeiro computador com recursos gráficos de visualização de dados numéricos foi o \textbf{Whirlwind I}, também desenvolvido pelo \textbf{MIT}. Utilizado primeiramente pelas industrias automobilística e aeroespacial, ele foi se desenvolvendo, alavancando a computação gráfica a um patamar de grande visibilidade, assim fazendo com que ela evoluisse de forma surpreendente.\cite{comp_grafica_h2}.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%------------------------------------------------------Fim-Introducao-----------------------------------------------------------------%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Sistemas de Coordenadas}
-Um sistema de coordenada é aquele que se utiliza para descrever objetos modelados em um universo. Através dele, consegue-se capturar, por exemplo, a posição e as dimensões dos objetos. Existem vários sistemas, a Figura~\ref{fg:coordenadas} mostra três deles, que são: coordenadas polares, esféricas e cilíndricas. Onde o primeiro, através do raio e um ângulo podemos chegar a qualquer coordenada. Já para o segundo, obtemos as coordenadas pelo raio e dois ângulos. No terceiro, consegue-se um ponto qualquer na região de análise através do raio, um ângulo e um comprimento.\\ 
+Um sistema de coordenada é aquele que se utiliza para descrever objetos modelados em um universo. Através dele consegue-se capturar a posição e as dimensões dos objetos. Existem vários sistemas, a Figura~\ref{fg:coordenadas} mostra três deles, que são: coordenadas polares, esféricas e cilíndricas. O primeiro deles é dado por um raio e um ângulo. Já no segundo sistema, obtemos as coordenadas pelo raio e dois ângulos. No terceiro, consegue-se um ponto qualquer na região de análise através de um raio, um ângulo e um comprimento.\\ 
 
 \begin{figure}[ht!]
 	\centering
@@ -36,21 +41,21 @@ Um sistema de coordenada é aquele que se utiliza para descrever objetos modelad
 \subsection{Transformações}
 As transformações são umas das características mais importantes da computação gráfica. Elas representam um mapeamento de ponto(s) de uma determinada posição para outra~\cite{comp_grafica1}. As transformações mais usadas e conhecidas são: rotação, escala e translação.\\
 
-%--------------tranlasao---------------
-Transladar significa mover o objeto. Essa operação é dada pela equação~\ref{eq:translacao}, onde adicionando quantias($T_x$, $T_y$ e $T_z$) a sua coordenada atual($x$, $y$ e $z$), obtém-se uma nova posição, transladada($x'$, $y'$ e $z'$). A Figura~\ref{fg:trans} mostra essa transformação. \\
+%%%%%%%%%%%%%%%%%%%%%%%%--------------tranlasao---------------%%%%%%%%%%%%%%%%%%%%%%%%%%
+Transladar significa mover o objeto. Essa operação é dada pela equação~\ref{eq:translacao}, onde adicionando quantias($T_x$, $T_y$ e $T_z$) a sua coordenada atual($x$, $y$ e $z$), obtém-se uma nova posição, transladada($x'$, $y'$ e $z'$). A Figura~\ref{fg:trans} ilustra essa transformação. \\
 
 \begin{equation}\label{eq:translacao}
 [x'\ y'\ z'] = [x\ y\ z] + [T_{x}\ T_{y}\ T_{z}]
 \end{equation}
 
 \begin{figure}[ht!]
-      \centering
-	  \includegraphics[scale=0.4]{trans}
-	  \caption{Operação de Translação 2D.}
-	  \label{fg:trans}
+	\centering
+	\includegraphics[scale=0.4]{trans}
+	\caption{Operação de Translação 2D.}
+	\label{fg:trans}
 \end{figure} 
 
-%--------------escala---------------
+%%%%%%%%%%%%%%%%%%%%%--------------escala---------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A operação de escala é aquela associada à mudança de dimensão dos objetos. Ela é representada pela equação matricial~\ref{eq:escala}, que mostra que quando multiplicamos as dimensões atuais ($x$, $y$ e $z$) por alguns fatores ($S_x$, $S_y$ e $S_z$), obtemos um novo objeto escalado ($x'$, $y'$ e $z'$). A Figura~\ref{fg:escala} mostra bem o que ocorre quando escalonamos um objeto.\\
 
 \begin{equation}\label{eq:escala}
@@ -129,7 +134,7 @@ Usa faces delimitantes que descrevem os contornos do sólido. É uma das formas 
 \end{figure} 
 
 \subsubsection{Representação Poligonal}
-Polígono vem do grego \textit{polys}, que significa muitos , e \textit{gonos} que significa ângulos, assim esse representação é formada por figuras planas com muitos seguimentos de reta e muitos ângulos. Então podemos construir sólidos com o polígono mais  simples, o triângulo, até um mais complexo, com um número elevado de lados(Figura~\ref{fg:pilogono}). Essa técnica pode ser considerada uma especificação do caso apresentado na seção~\ref{sec:r_faces}.\\
+Polígono vem do grego \textit{polys}, que significa muitos, e \textit{gonos} que significa ângulos, assim esse representação é formada por figuras planas com muitos seguimentos de reta e muitos ângulos. Então podemos construir sólidos com o polígono mais simples, o triângulo, até um mais complexo, com um número elevado de lados(Figura~\ref{fg:pilogono}). Essa técnica pode ser considerada uma especificação do caso apresentado na seção~\ref{sec:r_faces}.\\
 
 \textit{Tesselation} é um das características dessa representação, significa preencher uma dada região através de várias repetições de um mesmo polígono até não haver mais espaços em "branco". A maioria das máquinas de jogos utilizam a representação por faces triangulares. Isso se deve ao fato de esta necessitar de menos processamento e também por possibilitar a representação de qualquer tipo de contorno\cite{traina}.
 
@@ -275,6 +280,6 @@ Para que possam ser realizadas simulações de propagação de onda em FDTD, é 
 	\includegraphics[scale=0.5]{Malha3D}
 	\caption{(a) Posição das componentes dos campos elétrico e magnético em uma célula de Yee;(b) Célula no interior de uma malha 3-D.}
 	\label{fg:grade}
-	\end{figure} 
+\end{figure} 
 
 A referência a cada célula que compõe a malha, assim com as suas respectivas componentes de campo, é feita de forma discreta pelos índices $i, j$ e $k$, de forma que uma determinada posição $x, y, z$ (em metros) é referenciada no espaço discreto por $i, j, k$ (número da célula correspondente). Estas  referências são obtidas através das relações $x = i.\Delta_x, y = j.\Delta_{y}$ e $z = k.\Delta_z$, onde  $\Delta_x,  \Delta_y$ e $\Delta_z$ são as dimensões das células de Yee(Figura\ref{fg:celulaYee}).
