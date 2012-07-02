@@ -1,0 +1,12 @@
+O \textit{Irrlicht} é um motor de jogos (\textit{Game Engine}) de alta performance escrita em linguagem C++\cite{irrlichtbook}. 
+A plataforma \textit{Irrlicht} contém todas as ferramentas e características que pode-se encontrar em qualquer outra \textit{engine}. Ela , além de tudo isso, é completamente livre.\\
+
+Ela tem como principais características:
+\begin{enumerate}
+	\item Renderização em tempo real de alta performance usando \textbf{Direct3D} e \textbf{OpenGL}.
+	\item Independe de plataforma.
+	\item Renderiza diretamente de arquivos, tais como : .zip, .pak, .pk3, etc.
+	\item Rápida e fácil detecção de colisão.
+	\item Possibilita o uso de várias linguagens de programação, como : Java, Delphi, entre outras.
+	\item É limpa, fácil de entender, e bem documentada.
+\end{enumerate}

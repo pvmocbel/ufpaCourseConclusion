@@ -1,20 +1,17 @@
 \documentclass{./public/ufpatccdoisautores}
 
-\usepackage{multirow}
-\usepackage{graphicx}
-%\usepackage{caption}
-%\usepackage{subcaption}
-\usepackage{url}
-\usepackage{amsmath,amssymb}
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc} 	
+\usepackage{multirow}
+\usepackage{graphicx,url}
+\usepackage{amsmath,amssymb}
 \usepackage{appendix}
 \usepackage{graphicx,color,amsmath,cite,url,amssymb,subfigure}
-\usepackage{multirow} %tables with multiple rows
 \usepackage{listings} % to list source code: http://www.usq.edu.au/users/leis/notes/latex/code.html
 \usepackage{ifpdf} 
-\usepackage[brazil]{babel}
-\usepackage[utf8]{inputenc} 		%For Linux users
+\usepackage{mathrsfs} %math alphabet I will use for sets
+\usepackage{makeidx}  %to generate indices, I guess
+\usepackage{float}
 
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -71,9 +68,9 @@ linewidth=\textwidth} %framed box is the text size
 	\usepackage{pdflscape}
 \usepackage{epstopdf}
 \hypersetup{%
-pdftitle={Realidade Virtual e Equações de Maxwell},
+pdftitle={Criação de Ambientes \textit{indoor} através de Realidade Virtual para Solução Numérica das Equações de Maxwell},
 pdfauthor={Paulo Victor Mocbel dos Santos},
-pdfkeywords={RV, FDTD, Antena},
+pdfkeywords={Computação Gráfica, FDTD, Equações de Maxwell, Perfil de Potência e Retardo e Ambientes \textit{indoor}},
 pdfstartview={FitH}, %% <--
 urlcolor=black,
 linkcolor=black,
@@ -85,7 +82,7 @@ citecolor=black,
 \linespread{1.5}
 
 \sloppy
-\ufpaTitulo{Realidade Virtual e Solução Numérica das Equações de Maxwell}
+\ufpaTitulo{Criação de Ambientes \textit{indoor} através de Realidade Virtual para Solução Numérica das Equações de Maxwell}
 \ufpaAutor{Paulo Victor Mocbel dos Santos}
 \ufpaSegundoAutor{}
 \ufpaOrientador{Prof. Dr. Rodrigo Melo e Silva de Oliveira }
@@ -111,9 +108,9 @@ A adversidade leva alguns a serem vencidos e
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ufpaOferecimento}
     \index{Oferecimento@Oferecimento}%
-    \addcontentsline{toc}{chapter}{Dedicatria}
-    Dedico esse TCC a minha famlia e amigos, pelo apoio e incentivo,
-    sem os quais, este trabalho no seria posível.
+    \addcontentsline{toc}{chapter}{Dedicatória}
+    Dedico este TCC à minha mãe, pai, irmãos, a Laryssa Rosendo e ao meus amigos, pelo apoio e incentivo,
+    sem os quais este trabalho não seria possível.
 \end{ufpaOferecimento}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,13 +119,13 @@ A adversidade leva alguns a serem vencidos e
 \begin{ufpaAgradecimentos}
 	\index{Agradecimentos@Agradecimentos}%
 	\addcontentsline{toc}{chapter}{Agradecimentos}
-		Primeiramento agradeço a oportunidade dada pelo meu orientador, Rodrigo Melo, e co-orientador, Washington, sem os quais não seria possível a realização desse projeto. Sou grato também pela forma com que eles gerenciaram esse trabalho.\\
-		
-		Sou grato a minha mãe, por toda a sua dedicação e sacrifícios para me proporcionar o máximo de conforto em outra cidade. Ao meu pai, pela torcida fiel que sempre me acompanhou, respeitando as minhas decisões. A minha irmã, por todas as tarefas domesticas realizadas e o meu irmão, pelo seu senso crítico e visão de mercado, que me da sempre conselhos visando ajudar no meu futuro profissional.\\
+	Primeiramente agradeço a oportunidade dada pelo meu orientador, Rodrigo Melo, e co-orientador, Washington, sem os quais não seria possível a realização desse projeto. Sou grato também pela forma com que eles gerenciaram esse trabalho.
 
-		Queria agradecer também a minha namorada e companheira, Laryssa Rosendo, que sempre me apoiou mesmo nos momentos mais difíceis durante o curso, por acreditar quando até eu mesmo duvidada da minha capacidade e pelo amor dedicado a mim. Agradeço também a familia dela, que me acolheu e me tratou e trata como um membro deles.\\
+	Agradeço também a minha mãe, por toda a sua dedicação e sacrifícios para me proporcionar o máximo de conforto em outra cidade. Ao meu pai, pela torcida fiel que sempre me acompanhou e respeitou as minhas decisões. A minha irmã, por todas as tarefas domésticas realizadas e o meu irmão, pelo seu senso crítico e visão de mercado, que me da sempre conselhos visando ajudar no meu futuro profissional.
 
-		Por fim agradeço a todos os meus amigos e colegas de faculdade pelo companherismo durante todo o percuso para a obtenção da graduação.
+	Queria agradecer também a minha namorada e companheira, Laryssa Rosendo, que sempre me apoiou mesmo nos momentos mais difíceis durante o curso, por acreditar quando até eu mesmo duvidada da minha capacidade e pelo amor dedicado a mim. Agradeço também a família dela, que me acolheu e me tratou e trata como um membro deles.
+
+	Por fim agradeço a todos os meus amigos e colegas de faculdade pelo companheirismo durante todo o percusso para a obtenção da graduação.
 	\begin{flushright}
 		Paulo Victor Mocbel dos Santos
 	\end{flushright}
@@ -168,7 +165,10 @@ A adversidade leva alguns a serem vencidos e
 \clearpage
 
 \begin{ufpaResumo}
-Neste trabalho, foi realizado o estudo de propagação de ondas eletromagnáticas em um ambiente \textit{indoor}. Estudo esse efetuado através do desenvolvimento de uma interface que modela cenários 3D. Por meio da qual pode-se obeter uma malha compatível com o simulador que usa o método FDTD (LANE-SAGS). Com essa malha, foram feitas várias simulações, cada uma delas referente a um posicionamento diferente da antena nesse ambiente, sempre comparando as repostas simuladas com os valores esperimentais.
+	Neste trabalho, foi realizado o estudo de propagação de ondas eletromagnéticas em um ambiente \textit{indoor}. Este estudo foi efetuado através do desenvolvimento de um \textit{software} que modela cenários 3D, por meio do qual gera-se uma malha computacional compatível com o simulador numérico baseado no método FDTD (LANE-SAGS). Utilizou-se desta ferramenta para modelar parte de um prédio real, localizado no CETUC (PUC-Rio), além das antenas dipolo. Dessa forma o modelo computacional (baseado em realidade virtual), aqui desenvolvido, representa graficamente os parâmetros dos diferentes meio que compõem o modelo numérico baseado no método FDTD. Foi calculada  a resposta impulsiva do canal de rádio e perfil de potência e retardo. Resultados compatíveis com os publicados na literatura, para esta prédio, foram obtidos.
+
+
+\textbf{Palavras-chave:} Computação Gráfica, Modelagem de Ambientes, Ambientes \textit{indoor}, FDTD, Equações de Maxwell e Perfil de Potência e Retardo do Canal.
 \end{ufpaResumo}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -185,7 +185,7 @@ Neste trabalho, foi realizado o estudo de propagação de ondas eletromagnática
 \chapter{Desenvolvimento do Software}
 \input{software}
 
-\chapter{Aplicação e Resultados}
+\chapter{Modelagem, Aplicação e Resultados}
 \input{resultados}
 
 \chapter{Considerações Finais}

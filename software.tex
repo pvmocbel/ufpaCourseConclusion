@@ -1,63 +1,157 @@
-\subsection{Tecnologias de Programação Usadas} 
-As tecnologias de programação usadas foram: o motor gráfico de jogos irrlicht, a plataforma Qt-Creator e a linguagem C++. As informações sobre a engine irrlicht estão na seção $2.2$. O Qt-Creator é um poderoso ambiente multi plataforma que permite a criação de diversas aplicações web e também desktop. O uso dele, neste trabalho, foi voltado para a criação de uma interface desktop, a qual pudesse ser usada em diferentes sistemas operacionais(Linux, Windows ou Macintoch) e com arquiteturas dissemelhante(32 ou 64 bits). Tanto essa plataforma quanto a linguagem foram escolhidas por serem muito usadas pelo comunidade desenvolvedora, por serem robustas e terem uma ótima documentação.
+	O \textit{software} de computadores é a tecnologia mais importante no palco mundial, pelo fato de ter assumido um duplo papel; é o produto e, ao mesmo tempo o veículo para entrega do produto. Como produto, é um transformador de informações - produzindo, gerindo, modificando e exibindo informações que podem ser tão simples como um \textit{bit} ou tão complexas quando uma vídeo aula. Como veículo, o \textit{software} age como base para controlar o computador (sistemas operacionais),  para a comunicação da informação (redes de computadores) e para criação e controle de outros programas (ferramentas e ambientes de desenvolvimento)~\cite{engsoftware}.
 
-\subsection{Conexão Qt-Irrlicht}
-O primeiro passo no desenvolvimento desse trabalho foi a união do universo irrlicht com a plataforma Qt-Creator. Para tanto foi necessário o estudo das classes e funcionalidades básicas desse dois mundos.\\
+	Com toda esse importância,  a área de desenvolvimento de \textit{softwares} cresceu de forma avassaladora, exigindo assim uma padronização, haja vista que todo sistema (\textit{software}) necessita de reparos e melhorias à medida que o tempo passa. Por estes motivos surge a engenharia de \textit{software}, que é um conjunto de métodos e ferramentas que auxiliam no projeto, desenvolvimento, testes e manutenção de um \textit{software}.
 
-A ideia era colocar o motor gráfico irrlicht funcionando como uma janela dentro da interface gerenciada pelo qt. Assim criou-se a classe base de todo esse projeto, chamada IrrViewer. Ela contem os métodos base de uma classe Widget\footnote{Janela padrão do qt.}, que são : paintEvent(), resizeEvent() e paintEngine(); e também os necessários para a criação de um cenário 3D irrlicht, os quais são : createIrrlichtDevice()(responsável pela criação do \textit{device}\footnote{Responsável por todas as informações da cena}, \textit{smgr}\footnote{Gerenciador de cena, ele que responsável por adicionar, remover, clonar e capturar objetos da cena.} e \textit{video-driver}\footnote{Responsável por tudo referente ao driver de video}), cenaIrrlicht()(método que tem a finalidade de criar a cena), drawIrrlichtScene()(método de pintura).\\
+\section{Modelo de Processo de Software}
+	O modelo de desenvolvimento de software utilizado neste projeto foi o incremental. Ele consiste em um processo iterativo, que objetiva entregar o produto operacional a cada incremento~\cite{engsoftware}.
 
-Assim, com o Qt-Creator reconhecendo essa nova classe como uma janela(Widget) normal, pode-se passar para outra fase proposta, que era a criação de outras classes e métodos necessários para concretização do requisitos pré-estabelecidos para esse trabalho.
+	Os primeiros incrementos são versões simplificadas do produto final, que oferecem capacidades mínimas de utilização por parte do usuário. A figura~\ref{fg:engsoftware} ilustra como este modelo se comporta durante o tempo estimado para o projeto.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=0.5]{engsoftware}
+	\caption{Diagrama do modelo de desenvolvimento incremental.}
+	\label{fg:engsoftware}
+\end{figure} 
 
-\subsection{Classes}
-As classes criadas para este projeto foram: \textit{IrrViewer, Cena, IrrNode, ReceiverEvent} e \textit{MainWindow}. A primeira é a base de todo o desenvolvimento do software produzido nesse projeto, é a que conectar o irrlicht com o Qt. A classe \textit{Cena} contem e controla tudo referente a cena,tal como: seleção, inserção, modificação e deleção de \textit{nós}; Assim como também a geração de malha e eventos de mouse e teclado. A terceira classe é responsável pela criação de objetos: prisma, cubo, esfera, cone, haste, cilindro e antena.\\
+	Estão descritas abaixo, as etapas deste modelo:
+\begin{enumerate}
+	\item \textbf{Comunicação:} é responsável pelo levantamento do(s) propósito(s) do projeto.
+	\item \textbf{Planejamento:} tem o papel de definir os requisitos do trabalho.
+	\item \textbf{Modelagem:} define as ferramentas, linguagens, etapas a serem desenvolvidas.
+	\item \textbf{Construção:} é o processo de codificação e testes.
+	\item \textbf{Implementação:} responsável pela entrega do protótipo (inicial ou final).
+\end{enumerate}
 
-Já a classe \textit{ReceiverEvent} tem como finalidade receber os eventos de mouse do Qt e repassá-los para a engine irrlicht. Por fim, temos a classe MainWindow é responsável pela aparência do software, onde se encontram os botões com seus \textit{signals and slots}~\cite{qt}.
+\section{Tecnologias de Programação Usadas}
+	As tecnologias de programação usadas neste projeto foram: o motor de jogos \textit{Irrlicht}, a plataforma \textit{Qt-Creator} e a linguagem C++. 
 
-\section{Interface}
-A interface feita nesse projeto esta ilustrada na Figura~\ref{fg:layout}. Ela foi baseada nos softwares de modelagem mais usados no mercado, que são : Blender, 3DStudio e Maya. A sua estrutura foi dividida em 4 áreas: barra superior, janela da cena, painéis laterais e barra inferior.\\
+	O \textit{Irrlicht} é uma máquina de jogo de alta performance escrita em linguagem C++\cite{irrlichtbook}.  Tem no fato de ser \textit{open source}~(código aberto), uma das suas principais vantagens em relação a outras \textit{engines}~(proprietárias). Abaixo estão listadas, outras características deste motor gráfico~\cite{irrlicht}. 
+\begin{enumerate}
+\item Renderização em tempo real de alta performance usando \textbf{Direct3D} e \textbf{OpenGL}.
+\item Independe de plataforma.
+\item Renderiza diretamente de arquivos, tais como : .zip, .pak, .pk3, etc.
+\item Rápida e fácil detecção de colisão.
+\item Possibilita o uso de vários linguagens de programação, como : C/C++, Java, Delphi, entre outras.
+\item É limpa, fácil de entender, e bem documentada.
+\end{enumerate}
+
+	 O \textit{Qt-Creator} é um poderoso ambiente multi plataforma que permite a criação de diversas aplicações \textit{web} e também \textit{desktop}. Sua importância, neste trabalho, está relacionada com oferecer suporte para a criação de uma interface \textit{desktop}, a qual pudesse ser usada em diferentes sistemas operacionais~(Linux, Windows ou Macintoch) e com arquiteturas dissemelhantes~(32 ou 64 bits), para modelar tanto objetos 3D básicos como ambientes \textit{indoor}. 
+
+	O C++ é uma linguagem orientada a objeto utilizada por milhares de programadores em inúmeros domínios de aplicação. Ela é sustentada por um conjunto vasto de bibliotecas, livros, revistas técnicas e conferências. É tão robusta que está presente no desenvolvimento (total ou de partes) de muitos sistemas operacionais. 
+
+	Tanto as plataformas (\textit{Irrlicht} e \textit{Qt}) quanto a linguagem de programação C/C++, foram escolhidas por serem muito usadas pelo comunidade desenvolvedora por mostrarem robustez,  boa documentação e  terem uma conexão~(tanto o \textit{Irrlicht} quanto o \textit{Qt} usam a linguagem C++).
+
+\section{Classes}
+	O uso do conceito de classes, na implementação deste trabalho, se dá ao fato de que a linguagem C++ baseia-se no paradigma da orientação a objeto. A orientação a objeto é um conjunto de conceitos no qual o desenvolvimento (analise, projeto e programação) de sistemas de software está baseada na composição e iteração entre diversas unidades de software chamadas de objetos. Alguns de seus conceitos essenciais são:
+
+\begin{itemize}
+	\item \textbf{Classe}: representa um conjunto de objetos com características afins. Uma classe define o comportamento dos objetos através de seus métodos, e quais estados ele é capaz de manter através de seus atributos.
+	\item \textbf{Objeto}: um objeto é capaz de armazenar estados através de seus atributos e reagir a mensagens enviadas a ele, assim como se relacionar e enviar mensagens a outros objetos.
+	\item \textbf{Atributos}: são elementos que definem a estrutura de uma classe.
+	\item \textbf{Métodos}: especificam a forma como os dados de um objeto são manipulados.
+	\item \textbf{Herança}: é um princípio que permite que classes compartilhem atributos e métodos.
+\end{itemize}
+
+	As classes criadas para este projeto foram: \textit{IrrViewer, Cena, IrrNode, ReceiverEvent} e \textit{MainWindow}. O diagrama \textit{uml} mostrado na Figura ~\ref{fg:classes}, está representando o relacionamento entres estas classes.
 
 \begin{figure}[ht!]
 	\centering
+	\includegraphics[scale=0.25]{classes}
+	\caption{Diagrama \textit{uml} do relacionamento das classes desenvolvidas neste projeto.}
+	\label{fg:classes}
+\end{figure} 
+
+	O primeiro passo no desenvolvimento deste trabalho foi a união do motor de jogos \textit{Irrlicht} com a plataforma \textit{Qt-Creator}, necessitava-se que a cena \textit{Irrlicht} fosse reconhecida como uma janela padrão do \textit{Qt} (para poder introduzi-la na interface ). Para tanto, foi necessário o estudo das classes básicas destes dois universos, assim como suas principais características. 
+
+	Esta união foi concretizada por meio da criação da classe \textit{IrrViewer}, que contêm tantos os métodos que caracterizam uma classe \textit{Widget} quanto os necessários para criação de um cenário \textit{Irrlicht}. A Figura~\ref{fg:classeirrviewer} ilustra os principais atributos e métodos desta classe.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale = 0.4]{classeirrviewer}
+	\caption{Classe IrrViewer.}
+	\label{fg:classeirrviewer}
+\end{figure}
+
+	Assim, com o \textit{Qt-Creator} reconhecendo essa nova classe como uma de suas janelas(Widget), pode-se passar para segunda fase do projeto (desenvolvimento de outras classes e métodos necessários para preenchimento dos requisitos pré-estabelecidos).
+
+	A classe MyReceiverEvent(Fig.~\ref{fg:classereceiverevent}) foi criada com intuito de comunicar o  evento de \textit{mouse} do \textit{Qt} com a \textit{engine Irrlicht}. Desta forma, quando este evento for disparado ( chamado ), passará para o objeto desta classe o estado do \textit{mouse} que será tratado e enviado para o \textit{Irrlicht}. 
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale = 0.4]{classereceiverevent}
+	\caption{Classe ReceiverEvent.}
+	\label{fg:classereceiverevent}
+\end{figure}
+
+	O papel de dar suporte à criação de objetos tridimensionais para o cenário virtual foi designado a classe \textit{IrrNode} (Fig.~\ref{fg:classeirrnode}). Portanto esta contém a implementação dos métodos de construção dos todos os objetos 3D básicos suportados pela interface criada neste trabalho, tais como os de criação de cubos, esferas, hastes, cilindros e cones.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale = 0.4]{classeirrnode}
+	\caption{Classe IrrNode.}
+	\label{fg:classeirrnode}
+\end{figure}
+
+	Já os atributos e métodos necessários para modificação do cenário virtual estão presentes na classe \textit{Cena}~(\ref{fg:classecena}). Sendo ela, desta forma, a responsável pelo gerenciamento de todo e qualquer evento que ocorra dentro do AV. Ela faz isso, utilizando-se dos : objetos das classes \textit{IrrNode} e \textit{MyReceiverEvent}, dos métodos herdados da classe \textit{IrrViewer} (olhar Figura~\ref{fg:classes}) e dos seus próprios métodos e atributos. 
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale = 0.4]{classecena}
+	\caption{Classe Cena.}
+	\label{fg:classecena}
+\end{figure}
+
+	Por fim, temos a classe \textit{MainWindow}, que utiliza-se de um objeto da classe \textit{Cena} para comunicar as alterações realizadas na interface com a janela {Irrlicht} e vice-versa. Desta forma, fazendo o tratamentos dos eventos de botão, mudança nos valores  dos  painéis laterais e dos campos de posição e rotação. A Figura~\ref{fg:classemainwindow} mostra os principais atributos e métodos deste classe.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale = 0.4]{classemainwindow}
+	\caption{Classe \textit{Mainwindow}.}
+	\label{fg:classemainwindow}
+\end{figure}
+
+\section{Interface}
+	O software desenvolvido neste projeto está ilustrado na Figura~\ref{fg:layout}. Seu layout e suas ferramentas foram baseada nos softwares de modelagem mais utilizados no mercado, que são: Blender, 3DStudio e Maya. A sua estrutura foi dividida em 4 áreas: barra superior, janela da cena, painéis laterais e barra inferior.
+\begin{figure}[!ht]
+	\centering
 	\includegraphics[scale = 0.4]{layout}
-	\caption{Layout interface.}
+	\caption{Layout da interface.}
 	\label{fg:layout}
 \end{figure}
 
-Na barra superior, Figura~\ref{fg:barra_s}, encontramos primeiramente o botão \textit{New}, o qual ativará uma nova cena irrlicht. Quando pressionado ativara uma janela (Figura~\ref{fg:dados_r}) que requisitará os dados necessários para criação da região de análise, tais como dimensão $x$, $y$, $z$ e o valor do $delta$ (dimensão da célula de Yee). Em seguida vem o botão \textit{Open}, que carrega uma cena anterior caso tenha já exista alguma salva. Depois dele temos o botão \textit{Save}, que salva a cena atual em uma arquivo chamado \textit{Map.in}, que contem todas as características dos objetos(dimensões, tipo e parâmetros físicos) assim como suas posições.\\
+	Na barra superior, Figura~\ref{fg:barra_s}, encontra-se primeiramente o botão \textit{New}, que tem o propósito de criar uma nova cena \textit{Irrlicht}. Quando pressionado, ativa uma janela (Figura~\ref{fg:dados_r}) que requisita os dados necessários para criação da região de análise, tais como valores de dimensionamento (tamanho em $x$, $y$ e $z$) e o valor do $delta$ (dimensão da célula de Yee). Em seguida vem o botão \textit{Open}, que carrega uma cena anteriormente salvada (caso exista). Depois dele tem-se o botão \textit{Save}, que salva a cena atual em uma arquivo chamado \textit{Map.in}, que contém todas as características dos objetos (tamanho, tipo e parâmetros físicos), assim como suas posições.
 
-\begin{figure}[ht!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.4]{barra_s}
 	\caption{Barra Superior interface.}
 	\label{fg:barra_s}
 \end{figure}
-\begin{figure}[ht!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.4]{dados_r}
 	\caption{Janela com as característica da região de análise.}
 	\label{fg:dados_r}
 \end{figure}
 
-Mas em frente, encontram-se os botões \textit{Pos} e \textit{Rot}, os quais quando pressionados mostram o posicionamento e ângulos de rotação dos objetos selecionados respectivamente. Logo em seguida temos os criadores de objetos básico da interface, que são \textit{Ponto},\textit{Haste}, \textit{Cubo}, \textit{Esfera}, \textit{Cilindro}, \textit{Cone} e por fim \textit{Antena}. Quando ativados criam o objeto desejado com os parâmetros especificados, assim como sua posição.\\
+	Mas em frente, encontram-se os botões \textit{Pos} e \textit{Rot}, os quais dão suporte à visualização e manipulação do posicionamento e dos ângulos de cada objeto selecionado, respectivamente. Logo em seguida encontram-se os criadores de objetos básico da interface, que são \textit{Ponto},\textit{Haste}, \textit{Cubo}, \textit{Esfera}, \textit{Cilindro}, \textit{Cone} e por fim \textit{Antena}. Quando ativados criam o objeto desejado com a posição e os parâmetros previamente especificados.
 
-A janela da cena, Figura~\ref{fg:janela_c} é onde visualizamos nosso universo virtual. O painel lateral, Figura~\ref{fg:painel_l} é onde encontramos as características como dimensão e caraterísticas físicas do objeto selecionado ou criado.\\
+	A janela da cena, Figura~\ref{fg:janela_c} é uma região do software onde se visualiza o universo virtual. Nesta região, é possível realizar manipulações através do mouse como seleção, translação e rotação. Ela está diretamente relacionada a classe \textit{IrrViewer}, pois é uma instância (objeto) desta classe. 
 
-\begin{figure}[ht!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.4]{janela_c}
 	\caption{Janela da Cena.}
 	\label{fg:janela_c}
 \end{figure}
-\begin{figure}[ht!]
+
+	O painel lateral, Figura~\ref{fg:painel_l} é uma área de visualização e manipulação das características relacionadas ao tamanho e parâmetros físicos dos objetos.
+
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.4]{painel_l}
 	\caption{Painel lateral dos parâmetros da região de análise.}
 	\label{fg:painel_l}
 \end{figure}
 
-Na parte inferior da interface(Figura~\ref{fg:barra_i}) encontram-se os botões \textit{Pos} e \textit{Rot}, que têm as mesmas funcionalidades dos já sitados da barra superior. Assim como a coordenada do objeto selecionado($X$, $Y$ e $Z$). E por fim esta o botão \textit{gerar Malha}, o qual tem a função de gerar a malha compatível com o simulador LANE-SAGS.
+	Na parte inferior da interface(Figura~\ref{fg:barra_i}) encontram-se os botões \textit{Pos} e \textit{Rot}, que têm as mesmas funcionalidades dos já citados da barra superior. Em seguida  há um conjunto de itens que possibilitam a visualização e manipulação das coordenadas relativas a posição e rotação do objeto selecionado ($X$, $Y$ e $Z$). E por fim, o botão \textit{gerar Malha}, o qual tem a função de gerar e salvar a malha representativa de todos os  objetos construídos no cenário virtual.
 
-\begin{figure}[ht!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.4]{barra_i}
 	\caption{Barra inferior da interface.}
@@ -65,12 +159,10 @@ Na parte inferior da interface(Figura~\ref{fg:barra_i}) encontram-se os botões 
 \end{figure}
 
 \section{Funcionalidades}
-	\subsection{Eventos de Mouse e Teclado}
-	Tanto o irrlicht quanto o a biblioteca qt têm suporte à eventos de mouse e teclado. Todavia, o primeiro e realizado de forma distinta nesses dois ambientes. Então apareceu a necessidade de criação de um tipo de "comunicador" que "traduzisse" esse evento entres esses mundos diferentes.\\
-
-	Na interface esse "comunicador" pegar as informações de mouse da janela do qt e envia de forma "traduzida" para o motor gráfico irrlicht. São basicamente três métodos do qt que foram modificados para realizar esse tarefa: mouseMoveEvent(), mousePressEvent() e mouseReleaseEvent().\\
-
-	Já o evento de teclado não foi necessário o uso do "comunicador", pelo fato de não haver necessidade usarmos esse tipo de evento no irrlicht. Foram criados vários atalhos de teclado para facilitar a manipulação e navegação na cena, listados na tabela~\ref{tb:shortcuts}.
+	\subsection{Atalhos de Teclado}
+	A facilidade de navegação e manipulação, são características fundamentais para qualquer software de modelagem. Os atalhos de teclado são criados com o intuito de reduzir esforço e tempo do usuário. Esta ferramenta é um conjunto de teclas que ao serem pressionadas realizam uma ação. As ações realizadas pelas teclas de atalho, normalmente podem ser realizada por outras ferramentas como botões, menus, etc.
+	
+	A Tabela~\ref{tb:shortcuts} contém todos os atalhos de teclado criados para este projeto.
 
 \begin{table}
 \centering
@@ -101,25 +193,27 @@ Na parte inferior da interface(Figura~\ref{fg:barra_i}) encontram-se os botões 
 \label{tb:shortcuts}
 \end{table}
 	
-	\subsection{Colisão}
-	O evento de colisão foi feito baseado na teoria de jogos. Existem vários tipos de colisão, porém a utilizada nesse trabalho foi por reta. Seu funcionamento é bem simples, cria-se uma reta imaginária na cena onde seu ponto de origem é a câmera e seu fim esta localizado em um ponto bastante distante ao inicial. O ponto final acompanha o movimento do mouse. Então quando clica-se em um dado ponto do universo criado na interface é disparado o evento de colisão o qual retorna \textit{nó}\footnote{Objeto selecionado} selecionado. \\
-	
-	Mas isso só vale quando o há um objeto na coordenada selecionada sendo ele selecionável. No caso de se clicar em um dos gizmos\footnote{Orientadores de eixo, gizmo verde(representa o eixo $y$), gizmo azul(representa o eixo $x$) e gizmo vermelho(representa o eixo $z$)} da região de análise, por exemplo, o evento de colisão retornará um objeto vazio, apesar de o gizmo ser um objeto normal ele foi configurado como não selecionável assim fazendo com que mesmo que a reta colida com ele o resultado será nulo. A Figura~\ref{fg:colision} mostra a ocorrência desse evento na interface, como pode-se observar o objeto selecionado é pintado na sua forma armada ou wireframe para diferenciar dos não selecionados.
-	
-\begin{figure}[ht!]
+\subsection{Eventos de Colisão}
+\label{sec:colisao}
+	Os eventos de colisão possibilitam que duas ou mais formas geométrica existentes no AV possam colidir.  Neste trabalho utilizou-se a colisão por reta, que é ortogonal ao plano de visualização da câmera. Seu ponto inicial fica posicionado no centro ecrã (tela), já seu o ponto final é deslocado do inicial por uma distância consideravelmente maior do que qual uma das arestas da região de análise. Este ponto final responde ao evento de \textit{mouse}, ou seja, no caso da ocorrência de um \textit{click}  em um determinado ponto do cenário 3D a reta de colisão terá o seu ponto inicial recebendo o valor central da tela e o final obtendo o valor da posição do \textit{mouse}.  No caso de esta reta encontrar (colidir) algum objeto entre seus pontos ele será o objeto selecionado. 
+ 
+	Para diferenciar, visualmente, objetos selecionados dos não selecionados, utilizou-se da técnica de representação \textit{wireframe}. Portanto, quando ocorrer um evento de colisão e um objeto é selecionado, a visualização deste objeto muda, passando a ser representado somente por suas arestas e vértices. A Figura~\ref{fg:colision} demostra este fato.
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.4]{colision}
 	\caption{Ilustração do evento de colisão com o objeto cubo.}
 	\label{fg:colision}
 \end{figure}
 
-	\subsection{Visualizações}
-	Ter vários ângulos de visualização é fundamental quando esta se modelando um ambiente 3D, principalmente quando vamos usá-lo para simulação de ondas eletromagnéticas pelo fato de qualquer erro deixado na estrutura poderá alterar no resultado final. Para sanar esse problema, o software confeccionado nesse projeto, permitir visualizar a região de análise por seis câmeras diferentes: frente(padrão), lateral esquerda, lateral direita, por trás, topo e base. 
-	
-	\subsection{Aproximação e Afastamento}
-	É uma característica importante da interface criada nesse projeto. Ela permite se aproximar(através do atalho de teclado $Shift+P$) e afastar(por meio de $Shift+O$) de uma objeto que se encontra dentro da região de análise. Assim permitindo navegar pelo cenário virtual criado, podendo alterar, remover e duplicar objetos conforme necessário. Uma outra especificação dessa propriedade esta no fato de quando se tem um objeto selecionado. Se pressionarmos a tecla $W$ a câmera irá focalizar nesse objeto. Para melhor entendimento a Figura~\ref{fg:nor} mostra a visualização de um objeto sem alteração de foco da câmera e distancia, já a Figura~\ref{fg:afas} mostra a visualização após um determinado afastamento e por fim as Figuras~\ref{fg:apr} e \ref{fg:w} mostram a aproximação normal e a por seleção.
+\subsection{Visualizações}
+	A possibilidade de visualização de um cenário por vários ângulos é fundamental quando se está modelando um ambiente 3D, principalmente quando o cenário modelado será utilizado em simulações eletromagnéticas, onde qualquer erro estrutural poderá gerar resultados não desejados (sem sentido). Para sanar esse problema, o software confeccionado neste projeto, permiti visualizar o AV por seis câmeras diferentes: frontal(padrão), lateral esquerda, lateral direita, traseira, topo e base. 
 
-\begin{figure}[htp]
+\subsection{Aproximação e Afastamento}
+	Tem a finalidade de, juntamente com as seis visualizações possíveis(seis câmeras diferentes), facilitar a navegação e alteração do cenário virtual. Sendo uma ferramenta importante na modelagem, por permitir a aproximação e afastamento de um determinado região ou objeto selecionado dentro do ambiente virtual. As teclas de atalho associadas a aproximação são $Shift+P$ ou $W$ e as associadas aos afastamento são $Shift+O$.
+
+	As figuras a seguir ilustram o uso desta ferramenta. A Figura~\ref{fg:nor} mostra um objeto a uma distância padrão (sem afastamento ou aproximação). Na Figura~\ref{fg:afas} pode ser visto o mesmo objeto após um determinado afastamento (utilizando $Shift+O$). Já as Figuras~\ref{fg:apr} e \ref{fg:w} mostra os efeitos da  aproximação normal (usando o atalho $Shift+P$) e a por seleção (dada pela tecla $W$).
+
+\begin{figure}[!ht]
 	\begin{center}
 		\subfigure[Visualização de objeto cilindro sem aproximação, afastamento ou mudança de foco da câmera.]{\label{fg:nor}\includegraphics[scale=0.25]{nor}}
 \qquad
@@ -129,7 +223,7 @@ Na parte inferior da interface(Figura~\ref{fg:barra_i}) encontram-se os botões 
 	\label{fg:afastamento}
 \end{figure}
 
-\begin{figure}[htp]
+\begin{figure}[!ht]
 	\begin{center}
 		\subfigure[[Visualização de objeto por aproximação normal(sem mudança de foco).]{\label{fg:apr}\includegraphics[scale=0.25]{apr}}
 \qquad
@@ -139,40 +233,15 @@ Na parte inferior da interface(Figura~\ref{fg:barra_i}) encontram-se os botões 
 	\label{fg:aproximacao}
 \end{figure}
 
-	\subsection{Remoção e Duplicação de Objetos}
-	Nesse trabalho houve a necessidade criação de um mapa de objetos, pelo fato do irrlicht não permitir acesso direto ao seu array de objetos criados na cena. Dessa forma, qualquer alteração, remoção ou clonagem feita em um objeto na cena terá correspondência no mapa de \textit{nós} gerenciado pela interface. Com isso, quando removemos um objeto criado na região de análise, ele também será removido do mapa. As Figuras~\ref{fg:b_r} e \ref{fg:a_r} mostram a antes e depois de removermos um \textit{nó} do nosso universo virtual. \\
-	
-	O mesmo ocorre quando deseja-se duplicar um objeto, uma vez que isso ocorra o mapa receberá mais um \textit{nó} com as mesmas característica do selecionado. Esse evento esta representado pelas Figuras~\ref{fg:b_c} e \ref{fg:a_c}.
+\subsection{Conexão com o LANE-SAGS}
+\label{sec:c_sags}
+	Depois de implementar todas as funcionalidades do software, passou-se para o último requisito proposto para este projeto, a conexão com o simulado LANE-SAGS. Esta conexão foi realizada por meio de dois arquivos.
 
+	O primeiro arquivo é o bd.in (bd - bloco dielétrico), que contém os prismas retangulares (células) que representam, por enumeração de ocupação espacial, os objetos contínuos modelados na interface. A sequência de gravação de cada prismas no arquivo segue a forma: célula inicial $X$, célula final $X$, célula inicial $Y$, célula final $Y$, célula inicial $Z$, célula final $Z$, $\epsilon_r$, $\sigma$ e $\mu_r$.
+ Além do arquivo bd.in, é gerado um segundo arquivo chamado \textit{simconf.in}(simconf- configuração da simulação) contendo as informações referentes às: dimensões das células de Yee (em metros) e a dimensão em células do Espaço Delimitador (região de análise).
+Com os arquivos gerados e a conexão estabelecida, basta inserir (utilizando o LANE-SAGS) alguns fatores fundamentais para efetuar uma simulação de propagação eletromagnética, tais como: antena, planos de visualização, fonte e corrente. O diagrama mostrado na Figura \ref{fg:c_sags}, ilustra o processo de execução de uma simulação utilizando os dois softwares.
 
-\begin{figure}[htp]
-	\begin{center}
-		\subfigure[Antes da remoção.]{\label{fg:b_r}\includegraphics[scale=0.25]{b_r}}
-\qquad
-		\subfigure[Depois da remoção.]{\label{fg:a_r}\includegraphics[scale=0.25]{a_r}}
-	\end{center}
-	\caption{Operação de remoção.}
-	\label{fg:remocao}
-\end{figure}
-\begin{figure}[htp]
-	\begin{center}
-		\subfigure[Antes da duplicação do objeto cone.]{\label{fg:b_c}\includegraphics[scale=0.25]{b_c}}
-\qquad
-		\subfigure[Depois da duplicação do objeto cone.]{\label{fg:a_c}\includegraphics[scale=0.25]{a_c}}
-	\end{center}
-	\caption{Operação de duplicação.}
-	\label{fg:duplicacao}
-\end{figure}
-
-	\subsection{Conexão com o LANE-SAGS}
-	Depois de implementar todas as funcionalidades do software, passamos para o último requisito proposto para este projeto que foi a conexão com o simulado LANE-SAGS. Isso foi realizado por meio de arquivos de saída (da interface) e entrada (no software LANE-SAGS).
-
-	Como a representação dos objetos e diferente no simulador, cada objeto da interface foi discretizado em um conjunto de prismas retangulares (com o menor prisma possível sendo a célula de Yee). Com cada prisma possuindo as características físicas $\epsilon$ (Permissividade Elétrica), $\sigma$ (Condutividade Elétrica) e $\mu$ (Permeabilidade Magnética) do objeto.\\
-
-	A sequência de prismas representativos é gravada em um arquivo de saída chamado \textit{bd.in}\footnote{bd - bloco dielétrico.}, compatível com o simulador LANE-SAGS. Cada prisma da sequência tem suas coordenadas e características físicas armazenados da seguinte forma: célula inicial $X$, célula final $X$, célula inicial $Y$, célula final $Y$, célula inicial $Z$, célula final $Z$, $\epsilon$, $\sigma$ e $\mu$; Além deste arquivo, contendo a sequência de prismas representativo dos objetos, é gerado um segundo arquivo chamado \textit{simconf.in}\footnote{simconf- configuração da simulação.} contendo as informações referentes às: dimensões das células de Yee (em metros) e a dimensão em células do Espaço Delimitador (região de análise).\\
-
-	Com a conexão realizada, basta inserir alguns parâmetros, como: antena(s), planos de visualização, fonte e corrente; para então simular o ambiente. O diagrama mostrado na Figura \ref{fg:c_sags}, ilustra o processo de execução de uma simulação utilizando os dois softwares.
-\begin{figure}[htp]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.8]{c_sags}
 	\caption{Diagrama de conexão com o LANE-SAGS.}

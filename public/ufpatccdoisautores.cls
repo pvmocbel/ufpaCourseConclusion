@@ -205,7 +205,7 @@
   \ClassError{ufpatese}
     {Faltou especificar o tipo de tese.}
     {Utilize o comando \protect\ufpaTipoTese{} no preambulo para
-    especificar o tipo de tese: Tese ou Dissertac�o.}
+    especificar o tipo de tese: Tese ou Dissertacão.}
 }
 
 \newcommand*{\ufpa@Grau}{
@@ -217,9 +217,9 @@
 
 \newcommand*{\ufpa@AreaConcentracao}{
   \ClassError{ufpatese}
-    {Faltou especificar a area de concentra��o.}
+    {Faltou especificar a area de concentração.}
     {Utilize o comando \protect\ufpaAreaConcentracao{} no preambulo para
-    especificar a area de concentra��o (e.g. sistemas de computa��o ou
+    especificar a area de concentração (e.g. sistemas de computação ou
     sistemas de conhecimento).}
 }
 
@@ -409,7 +409,7 @@
   \end{center}
     
   \normalsize \noindent
-  Este trabalho foi julgado adequado em \underline{ \qquad \qquad \qquad     } para a obten\c{c}\~{a}o do Grau de Engenheiro da Computa\c{c}\~{a}o, aprovado em sua forma pela banca examinadora que atribuiu o conceito \underline{  \qquad \qquad      }.
+  Este trabalho foi julgado adequado em \underline{ \qquad \qquad \qquad     } para a obten\c{c}\~{a}o do Grau de Engenheiro da Computa\c{c}\~{a}o, aprovado em sua forma final pela banca examinadora que atribuiu o conceito \underline{  \qquad \qquad      }.
   
   \vspace{2 cm}
 
@@ -420,23 +420,27 @@
   \fontsize{11pt}{11pt}\selectfont
   
   \ufpa@Assinatura{\ufpa@Orientador}
-  \vspace{0.3 cm}
-  ORIENTADOR
+  \vspace{0.1 cm}
+	ORIENTADOR\\
+	(UFPA)
   \ifthenelse{\equal{\ufpa@CoOrientador}{}}{
   }{
     \ufpa@Assinatura{\ufpa@CoOrientador}
-    COORIENTADOR
+    COORIENTADOR\\
+	(UFPA)
   }
   \ufpa@Assinatura{\ufpa@MembroBancaA}
-  MEMBRO DA BANCA EXAMINADORA
+	MEMBRO DA BANCA EXAMINADORA\\
+	(UFPA/Campus de Tucuru\'{i})
   \ufpa@Assinatura{\ufpa@MembroBancaB}
-  MEMBRO DA BANCA EXAMINADORA
+	MEMBRO DA BANCA EXAMINADORA\\
+	(UFPA)
   \ifthenelse{\equal{\ufpa@MembroBancaC}{}}{
   }{
     \ufpa@Assinatura{\ufpa@MembroBancaC}
     MEMBRO DA BANCA EXAMINADORA
   }
-  \vspace{0.5 cm}
+  \vspace{0.2 cm}
   \ufpa@Assinatura{\ufpa@CoordenadorCurso}
   DIRETOR DA FACULDADE DE ENGENHARIA DA COMPUTA\c{C}\~{A}O
 
